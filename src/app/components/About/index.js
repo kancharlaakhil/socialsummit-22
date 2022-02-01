@@ -1,10 +1,18 @@
 import React from "react";
+import Header from '../../layouts/header'
+
+import FirstComp from "./FirstComp";
+import SecondComp from "./SecondComp";
+import ThirdComp from "./ThirdComp";
 
 function About() {
   return (
-    <div>
-      <p>This is about page</p>
-    </div>
+    <React.Fragment>
+       <Header />
+       <FirstComp />
+      <SecondComp />
+      <ThirdComp/>
+    </React.Fragment>
   );
 }
 
