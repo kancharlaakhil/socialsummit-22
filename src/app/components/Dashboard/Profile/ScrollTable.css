@@ -1,0 +1,37 @@
+.table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+    background: #F6F6F6;
+  border-radius: 10px;
+  }
+  
+  .table-fixed thead,
+  .table-fixed tbody,
+  .table-fixed tr,
+  .table-fixed td,
+  .table-fixed th {
+    display: block;
+  }
+  
+  .table-fixed tbody td,
+  .table-fixed tbody th,
+  .table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background : #8561B5; 
+    border-radius : 5px
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #E5E5E5 ;
+    border-radius: 5px;
+  }
+ 
