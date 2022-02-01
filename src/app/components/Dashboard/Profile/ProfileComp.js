@@ -1,7 +1,7 @@
 import React from "react";
 import DetailsComp from "./DetailsComp";
 import ScrollTable from "./ScrollTable";
-import  {useWidthAndHeight}  from "../../../hooks/useWidthAndHeight";
+import  {useWidthAndHeight}  from "../../../../hooks/useWidthAndHeight";
 import "./ProfileComp.css";
 function ProfileComp(props) {
   const { height, width } = useWidthAndHeight();

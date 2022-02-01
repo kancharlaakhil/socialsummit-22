@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileComp from "./ProfileComp";
-import FirstComp from "./FirstComp";
+
 import './index.css';
 function index(props) {
 
@@ -9,9 +9,7 @@ function index(props) {
 
 <div className="main-container">
       <div>
-        <div>
-          <FirstComp />
-        </div>
+      
         <div
           className="row"
 
