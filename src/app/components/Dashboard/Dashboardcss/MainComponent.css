@@ -4,11 +4,12 @@
     background: #FFFFFF;
     box-shadow: 2px 2px 4px rgba(102, 58, 163, 0.25);
     border-radius: 10px;
+    padding : 1rem;
 }
 
 .main-component-head{
     height : 10%;
-    
+
 }
 
 
