@@ -3,7 +3,11 @@ import './css/index.css'
 
 const ProfileHeader = ({points}) => {
     return (
-        <div className='profile-header-container'>
+        <div className='profile-header-container p-0 m-2'
+            style={{
+                paddingBottom:'0.2rem'
+            }}
+        >
             <div className='row'>
                 <div className='col-md-6'
                     style={{
@@ -20,8 +24,11 @@ const ProfileHeader = ({points}) => {
                     My Profile
                 </div>
                 <div className='col-md-6'>
-                    <div className='col-md-8'> Current Points : </div>
-                    <div className='col-md-4 points'>{points}</div>
+                   <div className='row'>
+                   <div className='col-md-10 current-points d-flex align-self-end justify-content-end'> Current Points : </div>
+                    <div className='col-md-2 points d-flex justify-content-start'>{points}</div>
+                   </div>
+
                 </div>
 
             </div>

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import ProfileNew from './ProfileNew'
+
 import './Dashboardcss/MainComponent.css'
 
 const MainComponent = ({selectedOption, options}) =>{
@@ -8,7 +11,7 @@ const MainComponent = ({selectedOption, options}) =>{
    return(
        <div className="main-component-container">
            
-        
+        <ProfileNew></ProfileNew>
 
        </div>
    )

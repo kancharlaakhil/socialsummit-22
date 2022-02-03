@@ -89,7 +89,7 @@ const Dashboard = (props) => {
                 maxWidth: '79.16635%'
                 }}>
                 <MainComponent selectedOption={selectedIndex} options={options}>
-                    <ProfileNew></ProfileNew>
+                   
                 </MainComponent>
             </div>
         </div>
