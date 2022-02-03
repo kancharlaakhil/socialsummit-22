@@ -1,18 +1,17 @@
 import React from 'react';
-import Profile from './Profile'
+import './Dashboardcss/MainComponent.css'
 
 const MainComponent = ({selectedOption, options}) =>{
 
-    const ProfileComponent = <Profile/>;
-    
+    console.log(options[selectedOption].componentName)
 
-  
-    return (
-        <div>
-        {`${options[selectedOption].name}Component`}
-   </div>
-    )
-   ;
+   return(
+       <div className="main-component-container">
+           
+        
+
+       </div>
+   )
 
 }
 
