@@ -1,0 +1,14 @@
+.main-component-container{
+    height : 100%;
+    width : 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(102, 58, 163, 0.25);
+    border-radius: 10px;
+}
+
+.main-component-head{
+    height : 10%;
+    
+}
+
+
