@@ -7,7 +7,7 @@ const SideDrawer = (props) => {
   let [width] = useWidthAndHeight();
   return (
     <div>
-      {width > 780 ? (
+      {width > 1150 ? (
         <SidebarWeb show={props.show} clicked={props.clicked} width={width} />
       ) : (
         <SidebarMob show={props.show} clicked={props.clicked} width={width} />

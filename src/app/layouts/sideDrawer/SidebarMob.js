@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { X } from "react-feather";
+import { connect } from 'react-redux'
 
 class SideDrawerMob extends Component {
   render() {
@@ -8,6 +9,8 @@ class SideDrawerMob extends Component {
     if (this.props.show) {
       drawerClasses = "th-sidedrawer-mob open";
     }
+
+    const {auth} = this.props;
 
     return (
       <div>
@@ -61,6 +64,16 @@ class SideDrawerMob extends Component {
                 <p className="th-sidebar-list-item mb-3">Contact</p>
               </Link>
               <hr style={{ width: "70%", color: "#FFFFFF", opacity: "1" }} />
+              {
+                auth.isLoggedIn ? 
+                <Link
+                to="/dashboard"
+                onClick={this.props.clicked}
+                className="th-link"
+              >
+                <p className="th-sidebar-list-item mb-3">Dashboard</p>
+              </Link>
+              :
               <div className="th-sidebar-list-item1">
                 <Link
                   to="/login"
@@ -77,6 +90,8 @@ class SideDrawerMob extends Component {
                   <p className="th-sidebar-list-item mb-3">Register</p>
                 </Link>
               </div>
+              }
+              
             </div>
           </div>
         </div>
@@ -85,4 +100,17 @@ class SideDrawerMob extends Component {
   }
 }
 
-export default SideDrawerMob;
+const mapStateToProps = (state) => {
+  return {
+    auth : state.authState
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideDrawerMob);

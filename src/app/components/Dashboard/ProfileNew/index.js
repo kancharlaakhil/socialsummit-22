@@ -49,7 +49,7 @@ const ProfileNew = () => {
             <div className='row profile-component'>
 
                 <div className='col-md-6 details-component'>
-                    <Details></Details>
+                    <Details details={data}></Details>
                 </div>
                 <div className='col-md-6 delegates-registered'>
 

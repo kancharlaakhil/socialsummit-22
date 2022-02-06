@@ -3,11 +3,21 @@ import React from 'react';
 import './css/details.css'
 
 const singleDetail = (detailName, detailValue) => {
+
+    const color = detailName === 'CA Rank' ? '#663AA3' : '#444444';
+    const weight = detailName === 'CA Rank' ? '600' : 'normal'
+
     return (
-        <div className='row'>
+        <div className='row single-detail'>
                 <div className='col-md-3'>{detailName}</div>
                 <div className='col-md-1'> : </div>
-                <div className='col-md-8'>{detailValue}</div>
+                <div className='col-md-8'
+                    style={{
+                        color : `${color}`,
+                        fontWeight : `${weight}`
+                    }}
+                
+                >{detailValue}</div>
           </div>
     )
 }

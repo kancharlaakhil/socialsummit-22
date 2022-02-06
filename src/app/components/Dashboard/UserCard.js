@@ -1,6 +1,5 @@
 import React from "react";
 
-import  {useWidthAndHeight}  from "../../../hooks/useWidthAndHeight";
 import "./Dashboardcss/UserCard.css";
 
 //placeholder export
@@ -8,7 +7,7 @@ import "./Dashboardcss/UserCard.css";
 import UserProfiePlaceholder from "../../assets/images/UserProfilePlaceholder.png"
 
 function UserCard(props) {
-  const { height, width } = useWidthAndHeight();
+  
   return (
     <div style={{height : '100vh'}}>
     <div className="user-container" style={{height : '20%'}}>
