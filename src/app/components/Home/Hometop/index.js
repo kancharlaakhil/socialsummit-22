@@ -34,7 +34,7 @@ class Hometop extends Component {
               edition of its annual flagship event, the National Social Summit.
             </p>
             <div className="d-flex mt-3">
-              <Link to="" className="th-register-btn w-50 mr-3">
+              <Link to="/signup" className="th-register-btn w-50 mr-3">
                 <span className="th-register-btn-text">Register</span>
               </Link>
             </div>

@@ -53,26 +53,6 @@ function createEntry(emojiTerm) {
   );
 }
 
-// function () {
-//   return (
-//     <div>
-//       <div className="th-home-event-parent">
-//         <h1>Testimonials</h1>
-//         <div>
-//           <LeftArrow />
-//         </div>
-//         <div>
-//           <RightArrow />
-//         </div>
-//       </div>
-//       <div className="col col-md-1 col-sm-0"></div>
-
-//       <Slider {...settings}>{emojipedia.map(createEntry)}</Slider>
-//       <div className="col col-md-1 col-sm-0"></div>
-//     </div>
-//   );
-// }
-
 class Testimonials extends Component {
   render() {
     return (
