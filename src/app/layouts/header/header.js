@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import SideDrawer from "../sideDrawer";
 import BackDrop from "../sideDrawer/Backdrop";
 import { NavLink } from "react-router-dom";
+import { connect } from 'react-redux'
 
 class Header extends Component {
   constructor(props) {
@@ -13,6 +14,8 @@ class Header extends Component {
       sideDrawerOpen: false,
     };
   }
+
+   
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
@@ -33,6 +36,8 @@ class Header extends Component {
     if (this.state.sideDrawerOpen) {
       backdrop = <BackDrop click={this.openSideDrawer} />;
     }
+
+   const {auth} = this.props;
 
     return (
       <div className="pe-3 ps-3">
@@ -66,14 +71,26 @@ class Header extends Component {
                   CONTACT
                 </p>
               </NavLink>
-              <NavLink
+              {
+                auth.isLoggedIn ? 
+                <NavLink
                 style={{ position: "absolute", marginLeft: "70vw" }}
-                to="/login"
+                to="/dashboard"
               >
                 <p className="mb-0 th-nss" activeClassName="active">
-                  LOGIN
+                  DASHBOARD
                 </p>
-              </NavLink>
+              </NavLink>:
+              <NavLink
+              style={{ position: "absolute", marginLeft: "70vw" }}
+              to="/login"
+            >
+              <p className="mb-0 th-nss" activeClassName="active">
+                LOGIN
+              </p>
+            </NavLink>
+              }
+              
             </div>
           </div>
           <Menu
@@ -93,4 +110,16 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    auth : state.authState
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

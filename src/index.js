@@ -4,10 +4,19 @@ import "./app/assets/css/header.css";
 import "./app/assets/css/register.css";
 import App from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from 'react-redux';
+import store from './redux/store'
+
+import axios from 'axios';
+
+axios.defaults.baseURL = "http://127.0.0.1:3000/api"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store = {store}>
+      <App />
+    </Provider>
+    
   </React.StrictMode>,
   document.getElementById("root")
 );

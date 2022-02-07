@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
+import { useHistory } from "react-router-dom";
 
-function LoginForm() {
+import { LoginAuthAction } from '../../redux/actions/AuthAction'
+
+function LoginForm(props) {
+
+  const {login} = props;
+ 
+  const [loginState, setLoginState] = useState({});
+  const history = useHistory();
+
   return (
     <div className="th-login">
       <div className="row login" style={{ paddingTop: "8rem" }}>
@@ -15,7 +25,12 @@ function LoginForm() {
           </div>
         </div>
         <div class="th-register-col-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
-          <form class="p-5 registration-form">
+          <form class="p-5 registration-form"
+            onSubmit = {(event) => {
+              event.preventDefault();
+              login(loginState, history)
+            }}
+          >
             <div class="row">
               <div class="col-md-12 mb-4">
                 <div className="pt-5 th-form-group">
@@ -24,6 +39,10 @@ function LoginForm() {
                     className="th-form-control form-control"
                     id=""
                     name=""
+                    onChange={(event) => {
+                      const email = event.target.value;
+                      setLoginState({...loginState,  ...{email}})
+                    }}
                   />
                   <label>
                     Email-ID/Summit-ID
@@ -39,6 +58,10 @@ function LoginForm() {
                   className="th-form-control form-control flex"
                   id=""
                   name=""
+                  onChange={(event) => {
+                    const password = event.target.value;
+                    setLoginState({...loginState,  ...{password}})
+                  }}
                 />
                 <label
                   style={{ flexWrap: "wrap", justifyContent: "space-between" }}
@@ -68,4 +91,19 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+const mapStateToProps = (state) => {
+  
+  return {
+    user : state.authState,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    login : (loginState, history) => {
+      dispatch(LoginAuthAction(loginState, history))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

@@ -8,7 +8,7 @@ const HeaderHome = () => {
 
   return (
     <React.Fragment>
-      {width > 780 ? <HeaderWeb width={width} /> : <HeaderMob width={width} />}
+      {width > 1150 ? <HeaderWeb width={width} /> : <HeaderMob width={width} />}
     </React.Fragment>
   );
 };

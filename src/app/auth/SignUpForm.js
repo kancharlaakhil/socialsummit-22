@@ -1,7 +1,17 @@
-import React from "react";
+import React , {useState} from "react";
+import { useHistory } from 'react-router-dom'
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
-function SignUpForm() {
+import { AuthActionType } from '../../redux/actions/type'
+import { SignupAuthAction } from '../../redux/actions/AuthAction'
+
+function SignUpForm({user, signup}) {
+
+  
+  const [userState, setUserState] = useState({})
+  const history = useHistory()
+
   return (
     <div className="th-registration">
       <div className="row" style={{ paddingTop: "8rem" }}>
@@ -15,7 +25,13 @@ function SignUpForm() {
           </div>
         </div>
         <div class="th-register-col-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
-          <form class="p-3 registration-form">
+          <form class="p-3 registration-form"
+            onSubmit = {(event) => {
+              event.preventDefault();
+              signup(userState, history)
+              
+            }}
+          >
             <div class="row justify-content-center">
               <div class="col-md-12 col-12 mb-4">
                 <div className="th-form-group">
@@ -24,6 +40,10 @@ function SignUpForm() {
                     className="th-form-control form-control"
                     id=""
                     name=""
+                    onChange = {(event) => {
+                        const name = event.target.value;
+                        setUserState({...userState, ...{ name }})
+                    }}
                   />
                   <label>
                     Name <span className="th-required-span">*</span>
@@ -39,6 +59,10 @@ function SignUpForm() {
                     className="th-form-control form-control"
                     id=""
                     name=""
+                    onChange = {(event) => {
+                      const email = event.target.value;
+                      setUserState({...userState, ...{ email }})
+                  }}
                   />
                   <label>
                     Email-ID <span className="th-required-span">*</span>
@@ -53,6 +77,10 @@ function SignUpForm() {
                     id=""
                     maxLength={20}
                     name=""
+                    onChange = {(event) => {
+                      const contactNumber = event.target.value;
+                      setUserState({...userState, ...{ contactNumber }})
+                  }}
                   />
                   <label>
                     Phone No. <span className="th-required-span">*</span>
@@ -67,6 +95,11 @@ function SignUpForm() {
                   className="th-form-control form-control"
                   id=""
                   name=""
+                  onChange = {(event) => {
+                    const referenceCAid = event.target.value;
+                    setUserState({...userState, ...{ referenceCAid }})
+                }}
+                  
                 />
                 <label>Reference CA-ID (if any)</label>
               </div>
@@ -78,6 +111,10 @@ function SignUpForm() {
                   className="th-form-control form-control"
                   id=""
                   name=""
+                  onChange = {(event) => {
+                    const password = event.target.value;
+                    setUserState({...userState, ...{ password }})
+                }}
                 />
                 <label>Create Password</label>
               </div>
@@ -105,4 +142,19 @@ function SignUpForm() {
   );
 }
 
-export default SignUpForm;
+const mapStateToProps = (state) => {
+  
+  return {
+    user : state.authState,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    signup : (userState, history) => {
+      dispatch(SignupAuthAction(userState, history))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignUpForm);

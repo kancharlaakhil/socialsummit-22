@@ -1,12 +1,8 @@
-import React , {useState} from 'react';
-import MainComponent from './MainComponent';
-import NavBox from './Navbox'
-import UserCard from './UserCard'
-import DashboardId from './DashboardId';
-import ProfileNew from './ProfileNew'
+import React, {useState} from 'react';
 
-
-import './Dashboardcss/index.css'
+import { useWidthAndHeight } from './../../../hooks/useWidthAndHeight'
+import DashboardWebView from './DashboardWebView'
+import DashboardMobileView from './DashboardMobileView';
 
 import isSelectedProfile from "./assets/isSelectedProfile.svg";
 import isSelectedMyTasks from "./assets/isSelectedMyTasks.svg";
@@ -20,8 +16,10 @@ import isNotSelectedDeadlines from "./assets/isNotSelectedDeadlines.svg";
 import isNotSelectedUpdates from "./assets/isNotSelectedUpdates.svg";
 import isNotSelectedLeaderboard from "./assets/isNotSelectedLeaderboard.svg";
 
+import './Dashboardcss/index.css'
 
-const Dashboard = (props) => {
+const Dashboard = () => {
+
 
     const options = [
         {
@@ -55,47 +53,27 @@ const Dashboard = (props) => {
 
     const [selectedIndex, setSelectedOption] = useState(0);
 
-    const onNavbarClick = (optionIndex) =>{
-        console.log(optionIndex)
+    const onNavboxClick = (optionIndex) =>{
+       
         setSelectedOption(optionIndex);
 
     }
 
+    let windowSize = useWidthAndHeight();
+    let width = windowSize[0];
+  
 
-  return(
-      <div className='page-container' style={{height : '100vh', background : 'none', paddingLeft:"3rem", paddingRight:"3rem"}}>
-          
-          <div className='row h-25 d-flex justify-content-between'>
-            <div className='col-md-3'>
-               <DashboardId></DashboardId>
-            </div>
-            <div className='col-md-4'>
-                <UserCard/>
-
-            </div>
-          </div>
-          <div className='row h-50'>
-            <div className='col-md-2' style={{
-                width: '20.83325%',
-                flex: '0 0 20.83325%',
-                maxWidth: '20.83325%'
-                }}>
-            <NavBox options={options} selectedIndex={selectedIndex} onComponentClick = {onNavbarClick}></NavBox>
-            </div>
-            
-            <div className='col-md-9' style={{
-                width: '79.16635%',
-                flex: '0 0 79.16635%',
-                maxWidth: '79.16635%'
-                }}>
-                <MainComponent selectedOption={selectedIndex} options={options}>
-                   
-                </MainComponent>
-            </div>
+    return (
+        <div className='body-container'>
+            {
+            (width > 1150) ?
+            <DashboardWebView options={options} selectedIndex={selectedIndex} onNavboxClick = {onNavboxClick}></DashboardWebView>
+            :
+            <DashboardMobileView options={options} selectedIndex={selectedIndex} onNavboxClick = {onNavboxClick}></DashboardMobileView>
+        }
+       
         </div>
-          
-      </div>
-  )
+    )
 }
 
 export default Dashboard;

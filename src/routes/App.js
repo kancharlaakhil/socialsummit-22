@@ -3,7 +3,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import { ComingSoon } from "../app/components/ComingSoon";
-import Dashboard from "../app/components/Dashboard";
+import Dashboard from "../app/components/Dashboard/Dashboard";
 
 
 
@@ -17,10 +17,10 @@ const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew"
 const App = (props) => {
   return (
     <BrowserRouter>
-  
+     <Header/>
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route exact path={["/home", "/"]} component={ComingSoon} />
+          <Route exact path={["/home", "/"]} component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />

@@ -12,7 +12,7 @@ const SingleComponent = ({componentName, isSelectedIcon, isNotSelectedIcon, sele
 
     console.log(icon)
     return (
-        <div className='component-container' style={{ height : '7.5vh'}}>
+        <div className='single-component-container' style={{ height : '7.5vh'}}>
             <div className='row'>
                 <div className='col-sm-3' style={{
                     backgroundImage : `url(${icon})`,

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { X } from "react-feather";
+import { connect } from 'react-redux'
 
 class SideDrawerWeb extends Component {
   render() {
@@ -8,6 +9,8 @@ class SideDrawerWeb extends Component {
     if (this.props.show) {
       drawerClasses = "th-sidedrawer-web open";
     }
+
+    const {auth} = this.props;
 
     return (
       <div>
@@ -61,22 +64,33 @@ class SideDrawerWeb extends Component {
                 <p className="th-sidebar-list-item mb-4">Contact</p>
               </Link>
               <hr style={{ width: "70%", color: "#FFFFFF", opacity: "1" }} />
+              {
+                auth.isLoggedIn? 
+                <Link
+                to="/dashboard"
+                onClick={this.props.clicked}
+                className="th-link"
+              >
+                <p className="th-sidebar-list-item mb-4">Dashboard</p>
+              </Link>:
               <div className="th-sidebar-list-item1">
-                <Link
-                  to="/login"
-                  onClick={this.props.clicked}
-                  className="th-link"
-                >
-                  <p className="th-sidebar-list-item mb-3">Login</p>
-                </Link>
-                <Link
-                  to="/register"
-                  onClick={this.props.clicked}
-                  className="th-link ms-5"
-                >
-                  <p className="th-sidebar-list-item mb-3">Register</p>
-                </Link>
-              </div>
+              <Link
+                to="/login"
+                onClick={this.props.clicked}
+                className="th-link"
+              >
+                <p className="th-sidebar-list-item mb-3">Login</p>
+              </Link>
+              <Link
+                to="/signup"
+                onClick={this.props.clicked}
+                className="th-link ms-5"
+              >
+                <p className="th-sidebar-list-item mb-3">Sign Up</p>
+              </Link>
+            </div>
+              }
+              
             </div>
           </div>
         </div>
@@ -85,4 +99,16 @@ class SideDrawerWeb extends Component {
   }
 }
 
-export default SideDrawerWeb;
+const mapStateToProps = (state) => {
+  return {
+    auth : state.authState
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideDrawerWeb);
