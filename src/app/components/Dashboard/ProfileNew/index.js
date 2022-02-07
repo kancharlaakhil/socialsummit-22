@@ -1,12 +1,13 @@
 import React from 'react';
 
 import ProfileHeader from './ProfileHeader';
-import Details from './Details'
+import Details from './Details';
+import RegisteredDelegates from './RegisteredDelegates';
 
 
 import './css/index.css'
 
-const ProfileNew = () => {
+const Profile = () => {
 
     const data = [
         {
@@ -52,7 +53,7 @@ const ProfileNew = () => {
                     <Details details={data}></Details>
                 </div>
                 <div className='col-md-6 delegates-registered'>
-
+                    <RegisteredDelegates/>
                 </div>
             </div>
 
@@ -60,4 +61,4 @@ const ProfileNew = () => {
     );
 }
 
-export default ProfileNew
+export default Profile

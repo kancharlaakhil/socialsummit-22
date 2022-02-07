@@ -57,7 +57,7 @@ class Events extends Component {
           <div>
             <div className="th-home-event-parent">
               <h1>EVENTS</h1>
-              <div>See all</div>
+              
             </div>
             <div className="th-home-testimonialslider">
             <Slider {...settings} >
@@ -73,7 +73,7 @@ class Events extends Component {
           <div>
             <div className="th-home-event-parent">
               <h1>EVENTS</h1>
-              <div>See all</div>
+              
             </div>
 
             <div className="th-home-event-container">

@@ -50,7 +50,7 @@ class PastSpeakers extends Component {
       <div>
         <div className="th-home-event-parent">
           <h1>SPEAKERS</h1>
-          <div>See all</div>
+         
         </div>
         <div className="pt-3 ">
 

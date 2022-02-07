@@ -90,7 +90,7 @@ class Testimonials extends Component {
           <div>
             <div className="th-home-event-parent">
               <h1>Testimonials</h1>
-              <div>See all</div>
+            
             </div>
 
             <div className="th-home-event-container">
