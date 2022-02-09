@@ -5,7 +5,6 @@ import SingleComponent from './SingleComponent';
 import './css/mobile-navbox.css'
 const MobileNavbox = ({options, selectedIndex, onComponentClick}) => {
 
-    console.log('from mobile', selectedIndex)
     return(
         <div className="container slide-me">
             {

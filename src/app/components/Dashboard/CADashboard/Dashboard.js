@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 
-import { useWidthAndHeight } from './../../../hooks/useWidthAndHeight'
-import DashboardWebView from './DashboardWebView'
-import DashboardMobileView from './DashboardMobileView';
+
+import { useWidthAndHeight } from '../../../../hooks/useWidthAndHeight'
+import DashboardWebView from '../DashboardWebView'
+import DashboardMobileView from '../DashboardMobileView';
 
 import isSelectedProfile from "./assets/isSelectedProfile.svg";
 import isSelectedMyTasks from "./assets/isSelectedMyTasks.svg";
@@ -16,9 +17,9 @@ import isNotSelectedDeadlines from "./assets/isNotSelectedDeadlines.svg";
 import isNotSelectedUpdates from "./assets/isNotSelectedUpdates.svg";
 import isNotSelectedLeaderboard from "./assets/isNotSelectedLeaderboard.svg";
 
-import './Dashboardcss/index.css'
+import '../Dashboardcss/index.css'
 
-const Dashboard = () => {
+const CADashboard = () => {
 
 
     const options = [
@@ -76,4 +77,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard;
+export default CADashboard;

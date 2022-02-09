@@ -6,9 +6,9 @@ import Leaderboard from './Leaderboard';
 import Deadlines from './Deadlines';
 import Updates from './Updates'
 
-import './Dashboardcss/MainComponent.css'
+import '../Dashboardcss/MainComponent.css'
 
-const MainComponent = ({selectedOption, options}) =>{
+const CAMainComponent = ({selectedOption, options}) =>{
 
     let Comp;
 
@@ -40,4 +40,4 @@ const MainComponent = ({selectedOption, options}) =>{
 
 }
 
-export default MainComponent;
+export default CAMainComponent;

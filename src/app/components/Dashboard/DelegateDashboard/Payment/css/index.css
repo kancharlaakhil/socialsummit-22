@@ -1,0 +1,11 @@
+.payment-header{
+    height : 15%;
+    width : 100%;
+    margin-bottom : 1rem
+}
+
+
+
+.payment-component{
+    height: 85%;
+}
