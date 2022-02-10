@@ -9,7 +9,7 @@ import './css/index.css'
 
 const MyTasks = () => {
 
-    const data = [
+  /*  const data = [
         {
             detailName : 'Task #4',
             detailValue : 'Share the Sociothon poster among these platforms and upload theem here. '   
@@ -26,7 +26,9 @@ const MyTasks = () => {
             detailName : 'Points to gain',
             detailValue : '20 points (5 points each)'   
         }]
+*/
 
+        const data = []
     return (
         <div className='mytasks-container p-0 m-0 h-100'>
             <div className='row mytasks-header'>

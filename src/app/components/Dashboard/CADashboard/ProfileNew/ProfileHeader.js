@@ -9,7 +9,7 @@ const ProfileHeader = ({points}) => {
             }}
         >
             <div className='row'>
-                <div className='col-md-6'
+                <div className='col-6'
                     style={{
                         fontFamily: 'Raleway',
                         fontStyle: 'normal',
@@ -23,10 +23,10 @@ const ProfileHeader = ({points}) => {
                 >
                     My Profile
                 </div>
-                <div className='col-md-6'>
+                <div className='col-6'>
                    <div className='row'>
-                   <div className='col-md-10 current-points d-flex align-self-end justify-content-end'> Current Points : </div>
-                    <div className='col-md-2 points d-flex justify-content-start'>{points}</div>
+                   <div className='col-11 current-points d-flex align-self-end justify-content-end'> Current Points : </div>
+                    <div className='col-1 points d-flex justify-content-start'>{points}</div>
                    </div>
 
                 </div>
