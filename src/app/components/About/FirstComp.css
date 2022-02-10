@@ -1,36 +1,38 @@
-#bgp {
-    background: url(../../assets/images/gp.png) no-repeat center center;
+.th-first-box {
+  background: url('./assets/gp.png') no-repeat center center;
+  background-size: cover;
+  overflow : hidden;
+
+  height: 100vh;
+}
+
+.th-first-material{
+  display: flex;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+  width:45%;
+  margin-left:5rem;
+}
+
+@media (max-width: 1000px){
+  .th-first-material{
+    padding-top:150px;
+    align-items: flex-start;
+    width:85%;
+    margin:0 auto;
+  }
+  
+  .th-first-box {
+    background: url('./assets/mbbg.png') no-repeat center center;
     background-size: cover;
-    overflow : hidden
-  }
-  img.bg {
+    overflow : hidden;
+
     height: 100vh;
-    min-width: 760px;
-  
-    width: 100%;
-  
-    position: sticky;
-    top: 0;
-    left: 0;
   }
-  
-  @media screen and (max-width: 760px) {
-    img.bg {
-      left: 50%;
-      margin-left: -512px;
-    }
+
+  .containCard{
+    display : flex;
+    flex-direction: column;
   }
-  
-  @media screen and (max-width: 760px) {
-    .row {
-      padding-top: 10rem;
-      padding-left: 2rem;
-    }
-  }
-  @media screen and (min-width: 760px) {
-    .row {
-      padding-top: 19rem;
-      padding-bottom: 10rem;
-      padding-left: 5rem;
-    }
-  }
+}

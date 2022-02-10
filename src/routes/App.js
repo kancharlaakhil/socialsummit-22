@@ -24,7 +24,7 @@ const App = ({user}) => {
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path={["/home", "/"]} component={Home} />
-          <Route exact path="/about" component={ComingSoon} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/speakers" component={ComingSoon} />
           <Route exact path="/partners" component={ComingSoon} />
           <Route exact path="/events" component={ComingSoon} />

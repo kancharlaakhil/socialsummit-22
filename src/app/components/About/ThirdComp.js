@@ -1,7 +1,6 @@
 import React from "react";
 import TeamCardComponent from "./TeamCardComponent";
 import img1 from "../../assets/images/dummy.png";
-
 function ThirdComp() {
   return (
     <div className="p-5-sm-0">
@@ -18,7 +17,7 @@ function ThirdComp() {
         </div>
         <div className="col-sm-0 col-md-6"></div>
       </div>
-      <div className="row justify-content-center p-5">
+      <div className="row justify-content-center p-5 pt-0">
         <div className="col-sm-12 col-md-3 d-flex justify-content-center">
           <TeamCardComponent img={img1} memberName="Ishank" memberPost="Overall-Co-ordinator" />
         </div>
@@ -26,7 +25,7 @@ function ThirdComp() {
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
       </div>
-      <div className="row justify-content-center p-5">
+      <div className="row justify-content-center p-5 pt-0">
         <div className="col-sm-12 col-md-3 d-flex justify-content-center">
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
@@ -37,7 +36,7 @@ function ThirdComp() {
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
       </div>
-      <div className="row justify-content-center p-5">
+      <div className="row justify-content-center p-5 pt-0">
         <div className="col-sm-12 col-md-3 d-flex justify-content-center">
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
@@ -48,7 +47,7 @@ function ThirdComp() {
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
       </div>
-      <div className="row justify-content-center p-5">
+      <div className="row justify-content-center p-5 pt-0">
         <div className="col-sm-12 col-md-3 d-flex justify-content-center">
           <TeamCardComponent img={img1} memberName="VISION" memberPost="" />
         </div>
@@ -59,5 +58,4 @@ function ThirdComp() {
     </div>
   );
 }
-
 export default ThirdComp;
