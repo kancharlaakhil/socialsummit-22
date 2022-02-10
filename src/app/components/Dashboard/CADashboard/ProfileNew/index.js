@@ -4,40 +4,43 @@ import ProfileHeader from './ProfileHeader';
 import Details from './Details';
 import RegisteredDelegates from './RegisteredDelegates';
 
+import { connect } from 'react-redux'
+
 
 import './css/index.css'
 
-const Profile = () => {
+const Profile = ({user}) => {
 
+   
     const data = [
         {
             detailName : 'Name',
-            detailValue : 'Pramegh Uikey'   
+            detailValue : user.name 
         },
         {
             detailName : 'CA Rank',
-            detailValue : '12th Rank'   
+            detailValue : user.CARank
         },
         {
             detailName : 'Email',
-            detailValue : 'abcd@gmail.com'   
+            detailValue : user.email 
         },
         {
             detailName : 'Mobile No.',
-            detailValue : '01234 56789'   
+            detailValue : user.contactNumber
         },
         {
             detailName : 'College',
-            detailValue : 'IIT ROORKEE'   
+            detailValue : user.college  
         },
         {
             detailName : 'Address',
-            detailValue : 'B14, Type 4, Krishi Kunj Colony, Bajaj Nagar, City,State'   
+            detailValue : user.address 
         },
         {
             detailName : 'Registrations by your CA-ID',
-            detailValue : '18 People'   
-        }
+            detailValue : user.numberOfRegisteredDelegates
+         }
 
 
     ]
@@ -45,7 +48,7 @@ const Profile = () => {
     return (
         <div className='profile-container p-0 m-0 h-100'>
             <div className='row profile-header'>
-                <ProfileHeader points='850'></ProfileHeader>
+                <ProfileHeader points={user.points}></ProfileHeader>
             </div>
             <div className='row profile-component'>
 
@@ -61,4 +64,16 @@ const Profile = () => {
     );
 }
 
-export default Profile
+const mapStateToProps = (state) => {
+  
+    return {
+      user : state.authState.user,
+    }
+  }
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+     
+    }
+  }
+  export default connect(mapStateToProps, mapDispatchToProps)(Profile);

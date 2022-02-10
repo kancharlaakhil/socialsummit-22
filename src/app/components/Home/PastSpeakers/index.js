@@ -45,7 +45,7 @@ class PastSpeakers extends Component {
 
 
   render() {
-    console.log(emojipedia);
+   
     return (
       <div>
         <div className="th-home-event-parent">

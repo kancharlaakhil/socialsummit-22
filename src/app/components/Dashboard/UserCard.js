@@ -2,11 +2,20 @@ import React from "react";
 
 import "./Dashboardcss/UserCard.css";
 
+import { useHistory } from 'react-router-dom'
+
 //placeholder export
 
 import UserProfiePlaceholder from "../../assets/images/UserProfilePlaceholder.png"
 
-function UserCard(props) {
+import { connect } from 'react-redux'
+import { LogoutAuthAction } from "../../../redux/actions/AuthAction";
+
+function UserCard({user, logout}) {
+
+    const history = useHistory()
+
+    const Role = (user.role==='ca') ? 'Campus Ambassador' : 'Delegate'
   
   return (
     <div style={{height : '100vh'}}>
@@ -26,11 +35,18 @@ function UserCard(props) {
 
            <div className="col-sm-1"></div>
             <div className="col-sm-8 h-100">
-                <div className="row user-name">Mukul Dhiman</div>
-                <div className="row user-role"> Campus Ambassador </div>
+                <div className="row user-name">{user.name}</div>
+                <div className="row user-role"> {Role} </div>
                 <div className="row link h-50 ">
                     <div className="col-sm-8 p-0 d-flex align-self-end">Profile Completion</div>
-                    <div className="col-sm-4 p-0 d-flex justify-content-end align-self-end">Logout</div>
+                    <div 
+                        className="col-sm-4 p-0 d-flex justify-content-end align-self-end"
+                        onClick = {() => {
+                          
+                            logout(history);
+
+                        }}
+                        >Logout</div>
                 </div>
             </div>
 
@@ -46,4 +62,18 @@ function UserCard(props) {
   );
 }
 
-export default UserCard;
+const mapStateToProps = (state) => {
+  
+    return {
+      user : state.authState.user,
+    }
+  }
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+        logout : (history) => {
+            dispatch(LogoutAuthAction(history))
+        }
+    }
+  }
+  export default connect(mapStateToProps, mapDispatchToProps)(UserCard);

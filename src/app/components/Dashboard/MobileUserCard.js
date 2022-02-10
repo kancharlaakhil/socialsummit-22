@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux'
+import { useHistory } from 'react-router-dom'
+import { LogoutAuthAction } from "../../../redux/actions/AuthAction";
 
 import "./Dashboardcss/UserCard.css";
 
@@ -6,8 +9,10 @@ import "./Dashboardcss/UserCard.css";
 
 import UserProfiePlaceholder from "../../assets/images/UserProfilePlaceholder.png"
 
-const MobileUserCard = ({open, onClick}) => {
+const MobileUserCard = ({open, onClick, user, logout}) => {
 
+    const history = useHistory();
+    const Role = (user.role==='ca') ? 'Campus Ambassador' : 'Delegate'
 
     return (
 
@@ -24,8 +29,8 @@ const MobileUserCard = ({open, onClick}) => {
 
             <div className="col-8">
 
-                <div className="row user-name">Mukul Dhiman</div>
-                <div className="row user-role"> Campus Ambassador </div>
+                <div className="row user-name">{user.name}</div>
+                <div className="row user-role">{Role}</div>
             </div>
                 <div className="col-4 h-75"
                     style={{
@@ -45,7 +50,12 @@ const MobileUserCard = ({open, onClick}) => {
               </div>
               <div className = "row link h-25 justify-content-between">
                     <div className="col-8 p-0">Profile Completion</div>
-                    <div className="col-4 p-0 d-flex justify-content-end">Logout</div>
+                    <div 
+                        className="col-4 p-0 d-flex justify-content-end"
+                        onClick={() => {
+                            logout(history)
+                        }}
+                        >Logout</div>
               </div>
     
             </div>
@@ -78,15 +88,22 @@ const MobileUserCard = ({open, onClick}) => {
             </div>
      
             
-         )
-
-           
-    
-    
-     
-
-      
-    )
+         ))
 }
 
-export default MobileUserCard;
+const mapStateToProps = (state) => {
+  
+    return {
+      user : state.authState.user,
+    }
+  }
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+        logout : (history) => {
+            dispatch(LogoutAuthAction(history))
+        }
+    }
+  }
+export default connect(mapStateToProps, mapDispatchToProps)(MobileUserCard);
+

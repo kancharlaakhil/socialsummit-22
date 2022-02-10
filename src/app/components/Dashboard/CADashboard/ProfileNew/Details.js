@@ -27,7 +27,11 @@ const Details = ({details}) => {
         <div className='details-component'>
             {
                 details.map((ele) => {
-                    return singleDetail(ele.detailName, ele.detailValue)
+                    if(ele.detailValue){
+                        return singleDetail(ele.detailName, ele.detailValue)
+                    }
+                    else return ''
+                    
                 })
             }
 

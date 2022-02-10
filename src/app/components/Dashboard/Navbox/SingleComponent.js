@@ -10,7 +10,6 @@ const SingleComponent = ({componentName, isSelectedIcon, isNotSelectedIcon, sele
     const selectClass = 'col-sm-8 ' + select 
     const icon = selected ? isSelectedIcon : isNotSelectedIcon
 
-    console.log(icon)
     return (
         <div className='single-component-container' style={{ height : '7.5vh'}}>
             <div className='row'>

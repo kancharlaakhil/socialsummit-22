@@ -1,15 +1,22 @@
 import axios from "axios";
 import { AuthActionType } from "../actions/type";
 
+
 const authState = {
     isLoggedIn : false,
     user : {
         name :"",
         email : "",
         contactNumber : "",
+        college : "",
+        role : "",
+        CARank : "",
         referenceCAid : "",
         expiresIn : "",
-        token : ""
+        token : "",
+        points : "",
+        numberOfRegisteredDelegates : "",
+
     }
 }
 
@@ -53,9 +60,15 @@ const authReducer = (state = newAuth, action) => {
 
             axios.defaults.headers.common["Authorization"] = `Bearer ${action.payload.token}`
             localStorage.setItem("auth", JSON.stringify(newLoginState))
-            return newLoginState
+            return newLoginState;
 
-       
+        case AuthActionType.LOGOUT_SUCCESS :
+            localStorage.removeItem("auth")
+            return newAuth;
+        
+        case AuthActionType.LOGOUT_FAIL : 
+            localStorage.removeItem("auth")
+            return newAuth
 
         default : return state
     }

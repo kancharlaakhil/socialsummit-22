@@ -3,7 +3,10 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import { ComingSoon } from "../app/components/ComingSoon";
-import Dashboard from "../app/components/Dashboard/Dashboard";
+import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
+import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
+
+import { connect } from 'react-redux'
 
 
 
@@ -11,10 +14,10 @@ const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
-const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
+//const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
 
 
-const App = (props) => {
+const App = ({user}) => {
   return (
     <BrowserRouter>
      <Header/>
@@ -28,10 +31,26 @@ const App = (props) => {
           <Route exact path="/contact" component={ComingSoon} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
-          <Route exact path="/dashboard" component={Dashboard} />
+          {user.user.role === 'delegate'?
+          <Route exact path="/dashboard" component={DelegateDashboard} />:
+          <Route exact path="/dashboard" component={CADashboard} />
+  }
         </Switch>
       </Suspense>
     </BrowserRouter>
 );
 };
-export default App;
+
+const mapStateToProps = (state) => {
+  
+  return {
+    user : state.authState,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+   
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(App);

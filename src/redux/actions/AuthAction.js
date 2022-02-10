@@ -12,7 +12,12 @@ export const SignupAuthAction = (userState, history) => {
                 token : data.token,
                 name : data.data.user.name,
                 email : data.data.user.email,
-                contactNumber : data.data.user.contactNumber
+                contactNumber : data.data.user.contactNumber,
+                college : data.data.user.college,
+                role : data.data.user.role,
+                referenceCAid : data.data.user.referenceCAid,
+                points : data.data.user.points,
+                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates
             } 
             dispatch({
                 type : AuthActionType.SIGNUP_SUCCESS,
@@ -40,8 +45,14 @@ export const LoginAuthAction = (loginState, history) => {
                 token : data.token,
                 name : data.data.user.name,
                 email : data.data.user.email,
-                contactNumber : data.data.user.contactNumber
-            } 
+                contactNumber : data.data.user.contactNumber,
+                college : data.data.user.college,
+                role : data.data.user.role,
+                referenceCAid : data.data.user.referenceCAid,
+                points : data.data.user.points,
+                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates
+            }
+            
             dispatch({
                 type : AuthActionType.LOGIN_SUCCESS,
                 payload : newUser
@@ -54,6 +65,29 @@ export const LoginAuthAction = (loginState, history) => {
                     payload : error.message
                 })
             }
+        }
+    }
+}
+
+export const LogoutAuthAction = (history) => {
+    return async (dispatch) => {
+        try {
+            const {data}= await axios.get("/auth/logout");
+          
+            dispatch({
+                type : AuthActionType.LOGOUT_SUCCESS,
+                payload : data.status
+            })
+            history.push('/')
+        } catch (error) {
+            if(error.message){
+            dispatch({
+                type : AuthActionType.LOGOUT_FAIL,
+                payload : error.message
+            })
+        }
+
+        history.push('/')
         }
     }
 }

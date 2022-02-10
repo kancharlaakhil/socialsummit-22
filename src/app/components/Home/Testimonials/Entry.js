@@ -2,6 +2,7 @@ import React from "react";
 
 function Entry(props) {
 
+
 let customStyle= {
   backgroundColor: "",
   marginTop: "0px",
@@ -20,14 +21,12 @@ let customStyle= {
   return (
     <div className="th-home-testimonial-card" >
       <div className="th-home-testimonial-uc" style={customStyle}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc,
-        scelerisque ullamcorper fringilla gravida id rhoncus sed. Fusce nunc,
-        scelerisque ullamcorper.
+       {props.description}
       </div>
       <div className="th-home-testimonial-lc">
         <img src={props.image} className="th-home-testimonial-img" />
         <div className="th-home-testimonial-lc-2">
-          <h1>{props.title}</h1>
+          <h4>{props.title}</h4>
           <h5>{props.post}</h5>
         </div>
       </div>

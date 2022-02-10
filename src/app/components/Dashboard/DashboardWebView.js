@@ -1,17 +1,17 @@
 import React from 'react';
-import MainComponent from './MainComponent';
+import DelegateMainComponent from './DelegateDashboard/DelegateMainComponent';
+import CAMainComponent from './CADashboard/CAMainComponent';
 import NavBox from './Navbox'
 import UserCard from './UserCard'
 import DashboardId from './DashboardId';
 
-
+import { connect } from 'react-redux'
 
 import './Dashboardcss/index.css'
 
 
 
-const DashboardWebView = ({options, selectedIndex, onNavboxClick}) => {
-
+const DashboardWebView = ({options, selectedIndex, onNavboxClick, user}) => {
 
   return(
       <div className='page-container' style={{height : '100vh', background : 'none', paddingLeft:"3rem", paddingRight:"3rem", paddingTop:"6rem"}}>
@@ -39,9 +39,12 @@ const DashboardWebView = ({options, selectedIndex, onNavboxClick}) => {
                 flex: '0 0 79.16635%',
                 maxWidth: '79.16635%'
                 }}>
-                <MainComponent selectedOption={selectedIndex} options={options}>
-                   
-                </MainComponent>
+                  {
+                    user.user.role === 'delegate'? 
+                    <DelegateMainComponent selectedOption={selectedIndex} options={options}></DelegateMainComponent>:
+                    <CAMainComponent selectedOption={selectedIndex} options={options}></CAMainComponent>
+                  }
+                
             </div>
         </div>
           
@@ -49,4 +52,17 @@ const DashboardWebView = ({options, selectedIndex, onNavboxClick}) => {
   )
 }
 
-export default DashboardWebView;
+const mapStateToProps = (state) => {
+  
+  return {
+    user : state.authState,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+   
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardWebView);
+

@@ -1,0 +1,14 @@
+.profile-header{
+    height : 15%;
+    width : 100%
+}
+
+.profile-header-container{
+    border-bottom : 0.1rem solid #8561B5;
+    
+}
+
+.profile-component{
+    height: 85%;
+}
+
