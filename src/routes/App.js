@@ -31,10 +31,20 @@ const App = ({user}) => {
           <Route exact path="/contact" component={ComingSoon} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
-          {user.user.role === 'delegate'?
-          <Route exact path="/dashboard" component={DelegateDashboard} />:
-          <Route exact path="/dashboard" component={CADashboard} />
-  }
+
+          {
+            (!user.isLoggedIn) ?
+            <Route exact path="/dashboard" component={ComingSoon} />
+            : 
+            ((user.user.role === 'delegate')?
+              <Route exact path="/dashboard" component={DelegateDashboard}/>
+             :
+              <Route exact path="/dashboard" component={CADashboard}/>
+            )
+          }
+          
+          
+          
         </Switch>
       </Suspense>
     </BrowserRouter>

@@ -6,10 +6,10 @@ const singleDetail = (detailName, detailValue) => {
 
     
     return (
-        <div className='row single-detail'>
-                <div className='col-md-3'>{detailName}</div>
-                <div className='col-md-1'> : </div>
-                <div className='col-md-8'
+        <div className='row d-flex flex-row single-detail'>
+                <div className='col-3'>{detailName}</div>
+                <div className='col-1'> : </div>
+                <div className='col-8'
                     style={{
                         color : '#444444',
                         fontWeight : 'normal'

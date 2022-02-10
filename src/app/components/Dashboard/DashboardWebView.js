@@ -40,7 +40,7 @@ const DashboardWebView = ({options, selectedIndex, onNavboxClick, user}) => {
                 maxWidth: '79.16635%'
                 }}>
                   {
-                    user.user.role === 'delegate'? 
+                    user.role === 'delegate'? 
                     <DelegateMainComponent selectedOption={selectedIndex} options={options}></DelegateMainComponent>:
                     <CAMainComponent selectedOption={selectedIndex} options={options}></CAMainComponent>
                   }
@@ -55,7 +55,7 @@ const DashboardWebView = ({options, selectedIndex, onNavboxClick, user}) => {
 const mapStateToProps = (state) => {
   
   return {
-    user : state.authState,
+    user : state.authState.user,
   }
 }
 

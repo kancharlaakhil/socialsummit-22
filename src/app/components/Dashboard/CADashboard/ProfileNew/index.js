@@ -44,6 +44,9 @@ const Profile = ({user}) => {
 
 
     ]
+   /* <div className='col-0 col-md-6 delegates-registered'>
+    <RegisteredDelegates/>
+</div>*/
 
     return (
         <div className='profile-container p-0 m-0 h-100'>
@@ -52,12 +55,14 @@ const Profile = ({user}) => {
             </div>
             <div className='row profile-component'>
 
-                <div className='col-md-6 details-component'>
+                <div className='col-12 col-md-6 details-component'
+                    style={{
+                        margin : '0.3rem'
+                    }}
+                >
                     <Details details={data}></Details>
                 </div>
-                <div className='col-md-6 delegates-registered'>
-                    <RegisteredDelegates/>
-                </div>
+               
             </div>
 
         </div>

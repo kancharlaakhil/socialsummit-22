@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 
 import MobileNavbox from './MobileNavbox';
 import MobileUserCard from './MobileUserCard';
+import DelegateMainComponent from './DelegateDashboard/DelegateMainComponent';
+import CAMainComponent from './CADashboard/CAMainComponent';
+
+import { connect } from 'react-redux'
 
 import './Dashboardcss/index.css'
 import DashboardId from './DashboardId';
 
 
 
-const DashboardMobileView = ({options, selectedIndex, onNavboxClick}) => {
+const DashboardMobileView = ({options, selectedIndex, onNavboxClick, user}) => {
 
     const [open, setOpen] = useState(false);
    
@@ -33,10 +37,40 @@ const DashboardMobileView = ({options, selectedIndex, onNavboxClick}) => {
               <div className='row'>
                 <MobileNavbox options={options} selectedIndex={selectedIndex} onComponentClick = {onNavboxClick}></MobileNavbox>
              </div>
+             <div className='row col-11'
+                  style={{
+                    height:'65%',
+                    width: '95.8333%',
+                  flex: '0 0 95.8333%',
+                  maxWidth: '95.8333%',
+                    margin : '0.3rem',
+                    marginTop : '0.5rem'
+                  }}
+             >
+             {
+                    user.role === 'delegate'? 
+                    <DelegateMainComponent selectedOption={selectedIndex} options={options}></DelegateMainComponent>:
+                    <CAMainComponent selectedOption={selectedIndex} options={options}></CAMainComponent>
+                  }
+                
+             </div>
             </div>
       
         
     )
 };
 
-export default DashboardMobileView
+const mapStateToProps = (state) => {
+  
+  return {
+    user : state.authState.user,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+   
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardMobileView);
+
