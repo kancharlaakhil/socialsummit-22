@@ -49,6 +49,7 @@ function createEntry(emojiTerm) {
       title={emojiTerm.title}
       post={emojiTerm.post}
       number={emojiTerm.number}
+      description={emojiTerm.description}
     />
   );
 }
