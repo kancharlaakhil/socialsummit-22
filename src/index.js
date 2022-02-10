@@ -9,8 +9,7 @@ import store from './redux/store'
 
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://127.0.0.1:3000/api"
-//axios.defaults.baseURL = "https://api.socialsummit.iitr.ac.in/api"
+axios.defaults.baseURL = "https://api.socialsummit.iitr.ac.in/api"
 
 ReactDOM.render(
   <React.StrictMode>
