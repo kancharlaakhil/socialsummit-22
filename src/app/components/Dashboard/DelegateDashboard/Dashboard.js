@@ -6,12 +6,12 @@ import DashboardWebView from '../DashboardWebView'
 import DashboardMobileView from '../DashboardMobileView';
 
 import isSelectedProfile from "./assets/isSelectedProfile.svg";
-import isSelectedEvents from "./assets/isNotSelectedEvents.svg";
-import isSelectedPayment from "./assets/isNotSelectedPayment.svg";
-import isSelectedUpdates from "./assets/isNotSelectedUpdates.svg";
-import isSelectedTimeline from "./assets/isNotSelectedTimeline.svg";
+import isSelectedEvents from "./assets/isSelectedEvents.svg";
+import isSelectedPayment from "./assets/isSelectedPayment.svg";
+import isSelectedUpdates from "./assets/isSelectedUpdates.svg";
+import isSelectedTimeline from "./assets/isSelectedTimeline.svg";
 
-import isNotSelectedProfile from "./assets/isSelectedProfile.svg";
+import isNotSelectedProfile from "./assets/isNotSelectedProfile.svg";
 import isNotSelectedEvents from "./assets/isNotSelectedEvents.svg";
 import isNotSelectedPayment from "./assets/isNotSelectedPayment.svg";
 import isNotSelectedUpdates from "./assets/isNotSelectedUpdates.svg";
