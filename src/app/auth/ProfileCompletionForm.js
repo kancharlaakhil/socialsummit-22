@@ -44,7 +44,7 @@ function ProfileCompletionForm({user, updateMe}) {
                     }}
                   />
                   <label>
-                    College <span className="th-required-span">*</span>
+                    College 
                   </label>
                 </div>
               </div>
@@ -63,7 +63,7 @@ function ProfileCompletionForm({user, updateMe}) {
                   }}
                   />
                   <label>
-                    Address <span className="th-required-span">*</span>
+                    Address 
                   </label>
                 </div>
               </div>
