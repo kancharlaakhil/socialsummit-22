@@ -7,11 +7,12 @@ function FirstComp() {
     <div>
       <h1 style={{ fontFamily: "Raleway" ,fontWeight:"700"}}>OUR STORY</h1>
       <p style={{ fontFamily: "Inter" }}>
-        NSS IIT Roorkee is taking a step forward to dedicate the next
-        edition of its annual flagship event, the National Social Summit,
-        to the healthcare workers, including doctors, nurses, and all
-        social service warriors, who are battling against the threat of
-        COVID-19 to keep us safe.
+      The National Social Summit, organized by the National Service Scheme(NSS) IIT
+Roorkee was established in 2016. It is a platform to come together to address the
+socio-economic problems persisting in the country. It brings together the socially active groups
+present all across the country. This tech-fest includes various events such as Panel
+Discussions, Case Studies, Social Drama, Workshops, Model United Nations and Cultural
+shows.
       </p>
     </div>
     </div>

@@ -9,6 +9,7 @@ const authState = {
         email : "",
         contactNumber : "",
         college : "",
+        address : "",
         role : "",
         CARank : "",
         referenceCAid : "",
@@ -16,6 +17,7 @@ const authState = {
         token : "",
         points : "",
         numberOfRegisteredDelegates : "",
+        graduationYear : ""
 
     }
 }
@@ -69,6 +71,22 @@ const authReducer = (state = newAuth, action) => {
         case AuthActionType.LOGOUT_FAIL : 
             localStorage.removeItem("auth")
             return newAuth
+
+        case AuthActionType.PROFILE_COMPLETION_SUCCESS : 
+            const profileCompletionState = {
+                isLoggedIn : true,
+                user : {
+                    ...state.user,
+                    ...action.payload
+                }
+            }   
+
+            console.log('state', profileCompletionState)
+
+            localStorage.setItem("auth", JSON.stringify( profileCompletionState ))
+            return profileCompletionState;
+
+       
 
         default : return state
     }

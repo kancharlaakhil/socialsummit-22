@@ -41,7 +41,7 @@ export const LoginAuthAction = (loginState, history) => {
             const {data}= await axios.post("/auth/login", loginState);
             
             const newUser = {
-                expiresIn : data.expiresIn,
+           expiresIn : data.expiresIn,
                 token : data.token,
                 name : data.data.user.name,
                 email : data.data.user.email,
@@ -88,6 +88,38 @@ export const LogoutAuthAction = (history) => {
         }
 
         history.push('/')
+        }
+    }
+}
+
+export const ProfileCompletionAction = (userState, history) => {
+    
+    return async (dispatch) => {
+        try {
+            const {data}= await axios.patch("/users/updateMe", userState);
+
+            console.log('yo',data)
+            
+            const newUser = {
+                college : data.user.college,
+                address : data.user.address,
+                graduationYear : data.user.graduationYear
+            } 
+
+            
+            dispatch({
+                type : AuthActionType.PROFILE_COMPLETION_SUCCESS,
+                payload : newUser
+            })
+            history.push('/dashboard')
+        } catch (error) {
+            
+            if(error.message){
+            dispatch({
+                type : AuthActionType.PROFILE_COMPLETION_FAIL,
+                payload : error.message
+            })
+        }
         }
     }
 }

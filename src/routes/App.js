@@ -14,6 +14,7 @@ const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
+const ProfileCompletionForm = React.lazy(() => import("../app/auth/ProfileCompletionForm"));
 //const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
 
 
@@ -34,13 +35,21 @@ const App = ({user}) => {
 
           {
             (!user.isLoggedIn) ?
-            <Route exact path="/dashboard" component={ComingSoon} />
+              <Route exact path="/dashboard" component={ComingSoon} />
+
             : 
             ((user.user.role === 'delegate')?
               <Route exact path="/dashboard" component={DelegateDashboard}/>
              :
               <Route exact path="/dashboard" component={CADashboard}/>
             )
+          }
+          {
+
+            (!user.isLoggedIn) ?
+            <Route exact path="/profileCompletion" component={ComingSoon} />
+            :
+            <Route exact path="/profileCompletion" component={ProfileCompletionForm} />
           }
           
           

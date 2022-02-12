@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Dashboardcss/UserCard.css";
 
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 //placeholder export
 
@@ -38,9 +38,19 @@ function UserCard({user, logout}) {
                 <div className="row user-name">{user.name}</div>
                 <div className="row user-role"> {Role} </div>
                 <div className="row link h-50 ">
-                    <div className="col-sm-8 p-0 d-flex align-self-end">Profile Completion</div>
+                    <div 
+                        className="col-sm-8 p-0 d-flex align-self-end"
+                        style={{
+                           cursor: "pointer",
+                        }}>
+                        <Link to="/profileCompletion">
+                        Profile Completion
+                        </Link></div>
                     <div 
                         className="col-sm-4 p-0 d-flex justify-content-end align-self-end"
+                        style={{
+                            cursor: "pointer"
+                         }}
                         onClick = {() => {
                           
                             logout(history);

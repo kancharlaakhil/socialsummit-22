@@ -49,7 +49,7 @@
     color: #AAAAAA;
   }
 
-  .link{
+  .link a{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -61,6 +61,17 @@
 
   }
 
+  .link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-decoration-line: underline;
+
+    color: #663AA3;
+
+  }
   
   .modal {
     padding-top: 4rem;

@@ -21,17 +21,17 @@ function SecondComp() {
               fontWeight: "600",
               fontSize: "2rem",
               color: " #444444",
-              position:"sticky"
+              position:"sticky",
+              
             }}
           >
             VISION
           </h5>
-          <p class="card-text" style={{ fontFamily: "Roboto" }}>
-            NSS IIT Roorkee is taking a step forward to dedicate the next
-            edition of its annual flagship event, the National Social Summit, to
-            the healthcare workers, including doctors, nurses, and all social
-            service warriors, who are battling against the threat of COVID-19 to
-            keep us safe.
+          <p class="card-text" style={{ fontFamily: "Roboto", textAlign : "center" }}>
+          National Social Summit 2022 envisions an inclusive society for ourselves and our posterity.
+Today, the Indian society falls short due to the prevalence of prejudices, bigotry and
+disproportionate representation. This year we seek to reform these societal values and bring
+about the much needed change.
           </p>
         </div>
       </div>
@@ -51,17 +51,16 @@ function SecondComp() {
               fontWeight: "600",
               fontSize: "2rem",
               color: " #444444",
-              position:"sticky"
+              position:"sticky",
+             
             }}
           >
             DYNAMICS
           </h5>
-          <p class="card-text " style={{ fontFamily: "Roboto" }}>
-            NSS IIT Roorkee is taking a step forward to dedicate the next
-            edition of its annual flagship event, the National Social Summit, to
-            the healthcare workers, including doctors, nurses, and all social
-            service warriors, who are battling against the threat of COVID-19 to
-            keep us safe.
+          <p class="card-text " style={{ fontFamily: "Roboto" , textAlign : "center" }}>
+          We are a dedicated workforce of over 1000 volunteers striving selflessly for the growth of our
+nation. This year, we unite the youth of the nation to be the fire that burns the foundation of
+prejudices and disparity in our society.
           </p>
         </div>
         </div>
@@ -86,12 +85,13 @@ function SecondComp() {
     >
       MISSION
     </h5>
-    <p class="card-text col">
-      NSS IIT Roorkee is taking a step forward to dedicate the next
-      edition of its annual flagship event, the National Social Summit, to
-      the healthcare workers, including doctors, nurses, and all social
-      service warriors, who are battling against the threat of COVID-19 to
-      keep us safe.
+    <p class="card-text col"
+      style={{ fontFamily: "Roboto" , textAlign : "center" }}
+    >
+    The growing unrest in the society gives us a premonition about our grim future in a voice that is
+dark and foreboding. With the soaring disparities in the current global scenario we seem ill
+prepared to deal with the challenges. Hence, the National Social Summit is here to highlight
+these issues at a national platform in order to envision an inclusive society.
     </p>
   </div>
   </div>
