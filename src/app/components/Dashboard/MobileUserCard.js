@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { useHistory } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { LogoutAuthAction } from "../../../redux/actions/AuthAction";
 
 import "./Dashboardcss/UserCard.css";
@@ -49,9 +50,21 @@ const MobileUserCard = ({open, onClick, user, logout}) => {
     
               </div>
               <div className = "row link h-25 justify-content-between">
-                    <div className="col-8 p-0">Profile Completion</div>
+                    <div 
+                        className="col-8 p-0"
+                        style={{
+                            cursor: "pointer"
+                        }}
+                        >
+                            <Link to="/profileCompletion">
+                            Profile Completion
+                            </Link>
+                            </div>
                     <div 
                         className="col-4 p-0 d-flex justify-content-end"
+                        style={{
+                            cursor: "pointer"
+                         }}
                         onClick={() => {
                             logout(history)
                         }}
