@@ -10,9 +10,9 @@ class Counter extends Component {
           <div className="col-sm-3 col-6 text-center">
             <CountUp
               start={0}
-              end={10}
+              end={10000}
               className="mb-1 th-home-count"
-              suffix="K+"
+              suffix="+"
               duration={5}
             />
             <p className="th-home-count-text mb-0">Footfall</p>
@@ -30,12 +30,12 @@ class Counter extends Component {
           <div className="col-sm-3 col-6 text-center">
             <CountUp
               start={0}
-              end={25}
+              end={100}
               className="mb-1 th-home-count"
               suffix="+"
               duration={5}
             />
-            <p className="th-home-count-text mb-0">Teams</p>
+            <p className="th-home-count-text mb-0">Prizes</p>
           </div>
           <div className="col-sm-3 col-6 text-center">
             <CountUp
