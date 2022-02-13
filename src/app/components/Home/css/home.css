@@ -86,8 +86,8 @@
 }
 .th-home-event-card h1{
   margin-top: -70px;
-  margin-left: 1em;
-  font-size: 2rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
   color:white;
 }
 
@@ -239,12 +239,15 @@
   width: 60.12239583333333vw;
   background: linear-gradient(180deg, #FFE8D7 0%, #663AA3 100%);
   border-radius: 25px 0px 0px 25px;
-  height: 600px;
+  height: 500px;
   display:flex;
 }
 
 .th-home-speakercontent{
-  padding:8.463541666666666vw;
+
+  padding: 3rem;
+  padding-left:5.5rem;
+ 
 }
 
 .th-home-speakercontent h5{
@@ -270,7 +273,7 @@ color: #444444;
 }
 
 .th-home-speakercontent p{
-  padding:50px  13.020833333333334vw 0 0 ;
+  padding:2rem  7rem 0 0 ;
   font-family: Inter;
     font-style: normal;
   font-weight: normal;
@@ -327,6 +330,11 @@ color: #444444;
     width: 67.12239583333333vw;
     height: 400px;
   }
+  .th-home-speakercontent{
+    padding: 1.5rem;
+    padding-top: 0.9rem;
+  }
+
   .th-home-speakercontent h1{
   font-size: 2em;
   }
@@ -463,7 +471,8 @@ color: #444444;
 
 @media only screen and (min-width: 1440px) {
   .th-home-footfall-container {
-    padding: 2rem 0;
+    padding-top: 6rem;
+    padding-bottom : 2rem
   }
 }
 
@@ -475,7 +484,7 @@ color: #444444;
 
 @media only screen and (min-width: 1232px) and (max-width: 1330px) {
   .th-home-footfall-container {
-    padding: 2rem 0;
+    padding-top: 2rem 0;
   }
 }
 
