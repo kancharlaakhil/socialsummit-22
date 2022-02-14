@@ -9,3 +9,8 @@ export const AuthActionType = {
     PROFILE_COMPLETION_FAIL : "PROFILE_COMPLETION_FAIL"
 }
 
+export const AdminActionType = {
+    UPLOAD_TASK_SUCCESS : "UPLOAD_TASK_SUCCESS",
+    UPLOAD_TASK_FAIL : "UPLOAD_TASK_FAIL" 
+}
+
