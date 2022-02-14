@@ -2,9 +2,11 @@ import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
+import {Footer} from '../app/layouts/Footer/Footer'
 import { ComingSoon } from "../app/components/ComingSoon";
 import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
+import UploadTaskForm from "../app/admin/UploadTaskForm";
 
 import { connect } from 'react-redux'
 
@@ -51,11 +53,20 @@ const App = ({user}) => {
             :
             <Route exact path="/profileCompletion" component={ProfileCompletionForm} />
           }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/uploadTasks" component={UploadTaskForm}></Route>:
+            <Route exact path="/admin/uploadTasks" component={ComingSoon} />
+
+             
+            
+          }
           
           
           
         </Switch>
       </Suspense>
+     
     </BrowserRouter>
 );
 };
