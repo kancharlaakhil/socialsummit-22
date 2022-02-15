@@ -142,7 +142,7 @@ const WebView = () => {
                                     
                                         
                             <a
-                            href="https://www.facebook.com/nssiitr"
+                            href="https://m.facebook.com/iitrsocialsummit/"
                             target="blank"
                             rel="noreferrer"
                             className="th-link"
@@ -153,7 +153,7 @@ const WebView = () => {
                              </a>
                                            
                              <a
-                            href="https://www.instagram.com/nssiitr/"
+                            href="https://instagram.com/iitrsocialsummit?utm_medium=copy_link"
                             target="blank"
                             rel="noreferrer"
                             className="th-link"
@@ -162,7 +162,7 @@ const WebView = () => {
                                         </a>
 
                              <a
-                            href="https://twitter.com/NSS_IITR?s=09"
+                            href="https://twitter.com/natsocialsummit?t=_E-S4iDRCvoqO3bGh4u6sw&s=08"
                             target="blank"
                             rel="noreferrer"
                             className="th-link"
@@ -170,7 +170,7 @@ const WebView = () => {
                                         <div className='col-md-12 h-75' style={{ backgroundImage : `url(${Twitter})`,  backgroundSize: 'contain', backgroundRepeat :'no-repeat', backgroundPosition:'center'}}></div>
                             </a>
                             <a
-                            href="https://www.linkedin.com/company/nssiitr/mycompany/"
+                            href="https://www.linkedin.com/company/national-social-summit"
                             target="blank"
                             rel="noreferrer"
                             className="th-link"
