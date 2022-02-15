@@ -4,6 +4,7 @@ import axios from 'axios'
 
 export const SignupAuthAction = (userState, history) => {
     return async (dispatch) => {
+        console.log('from signup', userState)
         try {
             const {data}= await axios.post("/auth/signup", userState);
             

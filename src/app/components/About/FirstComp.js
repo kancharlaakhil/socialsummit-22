@@ -10,7 +10,7 @@ function FirstComp() {
       The National Social Summit, organized by the National Service Scheme(NSS) IIT
 Roorkee was established in 2016. It is a platform to come together to address the
 socio-economic problems persisting in the country. It brings together the socially active groups
-present all across the country. This tech-fest includes various events such as Panel
+present all across the country. This social-fest includes various events such as Panel
 Discussions, Case Studies, Social Drama, Workshops, Model United Nations and Cultural
 shows.
       </p>

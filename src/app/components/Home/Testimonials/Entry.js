@@ -1,20 +1,29 @@
 import React from "react";
 
+import whiteTestimonialCard from './images/whiteTestimonialCard.png'
+import purpleTestimonialCard from './images/purpleTestimonialCard.png'
+
+
 function Entry(props) {
 
 
 let customStyle= {
-  backgroundColor: "",
+  backgroundColor : '',
+  backgroundImage: '',
   marginTop: "0px",
-  color:"white"
+  color:'#F8F8F8',
+  backgroundSize : 'cover',
+  backgroundPosition : 'center'
 }
   if(props.number%2){
-    customStyle.backgroundColor = "#F8F8F8";
+    customStyle.backgroundColor = '#F8F8F8'
+    customStyle.backgroundImage = `url(${whiteTestimonialCard})`;
     customStyle.color= "#663AA3"
 
   }
   else{
-    customStyle.backgroundColor = "#663AA3";
+    customStyle.backgroundColor = '#663AA3'
+    customStyle.backgroundImage = `url(${purpleTestimonialCard})`;
 
     customStyle.marginTop = "120px";
   }
