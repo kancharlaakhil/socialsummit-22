@@ -1,4 +1,8 @@
 import TestimonialBackground from '../images/TestimonialBackground.png'
+import Sahil from './images/sahil.png';
+import Priyanka from './images/priyanka.png';
+import Abhishek from './images/abhishek.png'
+
 
 const emojipedia = [
     {
@@ -7,7 +11,7 @@ const emojipedia = [
       post: "Past Delegate",
       description : "National Social Summit 2021 was a unique experience for me, the inputs from the judges on my presentation helped me understand my shortcomings and helped me improve my outlook towards healthcare and its workers",
       title:"Sahil Kumar",
-      image:TestimonialBackground
+      image:Sahil
     },
     {
       id: 2,
@@ -15,7 +19,7 @@ const emojipedia = [
       post: "Past Delegate",
       description : "I am thankful to team NSS for organising this awesome fest, which instils the power of social work through fun and engaging events.",
       title:"Priyanka Gupta",
-      image:TestimonialBackground
+      image:Priyanka
     },
     {
       id: 3,
@@ -23,7 +27,7 @@ const emojipedia = [
       post: "Past Delegate",
       description:"National Social Summit is not just a fest, but an emotion where one learns how to be more aware towards the society, and it gives us youth a chance to work towards the betterment, however little, it is very significant.",
       title : "Abhishek Yadav",
-      image:TestimonialBackground
+      image:Abhishek
     }
   ];
 

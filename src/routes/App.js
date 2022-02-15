@@ -2,13 +2,16 @@ import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
-import {Footer} from '../app/layouts/Footer/Footer'
+import Footer from '../app/layouts/Footer/index'
 import { ComingSoon } from "../app/components/ComingSoon";
 import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
 import UploadTaskForm from "../app/admin/UploadTaskForm";
+import RegisterCAForm from "../app/admin/RegisterCA";
+
 
 import { connect } from 'react-redux'
+import GetAllRegistration from "../app/admin/GetAllRegistration";
 
 
 
@@ -56,17 +59,24 @@ const App = ({user}) => {
           {
             (user.isLoggedIn && user.user.role === 'admin') ?
             <Route exact path = "/admin/uploadTasks" component={UploadTaskForm}></Route>:
-            <Route exact path="/admin/uploadTasks" component={ComingSoon} />
-
-             
-            
+            <Route exact path="/admin/uploadTasks" component={ComingSoon} /> 
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/registerCA" component={RegisterCAForm}></Route>:
+            <Route exact path="/admin/registerCA" component={ComingSoon} /> 
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/getAllUsers" component={GetAllRegistration}></Route>:
+            <Route exact path="/admin/getAllUsers" component={ComingSoon} /> 
           }
           
           
           
         </Switch>
       </Suspense>
-     
+     <Footer/>
     </BrowserRouter>
 );
 };
