@@ -75,10 +75,36 @@
 
 
   margin:0 10px;
-  height:300px;
+  height:16rem;
+  width:16rem;
+  background: #FFFFFF;
 
-  border-radius:10px;
+border-radius: 8px;
+box-sizing: border-box;
 }
+
+.event-card-name{
+  background: linear-gradient(180deg, rgba(102, 58, 163, 0.15) 0%, rgba(255, 255, 255, 0.3) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  backdrop-filter: blur(20px);
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ 
+/* or 45px */
+
+
+
+color: #444444;
+  }
 
 .th-home-event-card img{
   width:15rem;

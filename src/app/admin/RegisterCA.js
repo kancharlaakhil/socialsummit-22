@@ -13,6 +13,7 @@ function RegisterCAForm() {
   const history = useHistory()
 
   const RegisterCA = async () => {
+      console.log()
       const {data} = await axios.post("/admin/registerCA", userState);
       
   }
