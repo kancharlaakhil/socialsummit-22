@@ -20,6 +20,8 @@ const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 const ProfileCompletionForm = React.lazy(() => import("../app/auth/ProfileCompletionForm"));
+const Contact = React.lazy(() => import("../app/components/ContactUs"));
+const Events = React.lazy(() => import("../app/components/Events"));
 //const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
 
 
@@ -33,10 +35,11 @@ const App = ({user}) => {
           <Route exact path="/about" component={About} />
           <Route exact path="/speakers" component={ComingSoon} />
           <Route exact path="/partners" component={ComingSoon} />
-          <Route exact path="/events" component={ComingSoon} />
-          <Route exact path="/contact" component={ComingSoon} />
+          <Route exact path="/events" component={Events} />
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
+
 
           {
             (!user.isLoggedIn) ?

@@ -4,8 +4,22 @@ function Entry(props) {
   return (
     <div className="th-home-event-card">
 
-        <img src={props.image} />
-        <h1>{props.name}</h1>
+        <div className="event-illustration"
+          style={{
+            height : '80%',
+            backgroundImage : `url(${props.image})`,
+            backgroundSize : 'contain',
+            backgroundPosition : 'center',
+            backgroundRepeat:'no-repeat'
+          }}
+        ></div>
+        <div className="event-card-name"
+          style={{
+            height : '20%'
+          }}
+        >
+          {props.name}
+        </div>
 
 
     </div>
