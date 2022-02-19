@@ -36,7 +36,7 @@ function index() {
             </svg>
             <p>
               NSS Office, 2nd floor, Multi Activity Centre (MAC), IIT Roorkee
-              <span>(View map)</span>
+            
             </p>
           </div>
           <div className="details">
