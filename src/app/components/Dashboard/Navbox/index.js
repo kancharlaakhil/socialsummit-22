@@ -12,7 +12,11 @@ function Navbox({options, selectedIndex, onComponentClick}) {
             options.map((element, index) =>{
                
                 return(
-                    <div className="row" id={index}  onClick={()=>{
+                    <div className="row" id={index}
+                    style={{
+                        cursor: "pointer"
+                    }}
+                    onClick={()=>{
                         onComponentClick(index);
                     }}>
                         <SingleComponent componentName={element.componentName} isSelectedIcon ={element.isSelectedIcon} isNotSelectedIcon ={element.isNotSelectedIcon}  selected={selectedIndex===index}></SingleComponent>
