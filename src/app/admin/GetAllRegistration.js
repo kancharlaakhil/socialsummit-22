@@ -7,11 +7,15 @@ import SingleComponent from "./SingleComponent";
 function GetAllRegistration(){
 
     const [delegatesState, setDelegatesState] = useState([])
+    const [num, setNum] = useState(0)
 
     React.useEffect(() => {
-        axios.get("/auth/getAllUsers?role=delegate").then((response) => {
+        axios.get("auth/getAllUsers?role=delegate&limit=600").then((response) => {
+            
           setDelegatesState(response.data.data.data);
+          setNum(response.data.results)
         });
+        
       }, []);
 
     
@@ -24,6 +28,7 @@ function GetAllRegistration(){
                 marginTop : '10rem'
             }}
         >
+            <div className="row"> number of registrations = {num}</div>
             <div className="row" style={{ marginLeft : '6rem', marginRight : '6rem'}}>
                 <div className="col-3" style={{
                     fontSize : '2rem',

@@ -1,43 +1,63 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import MyTasksHeader from './MyTasksHeader';
 import Details from './Details';
+import SelectTasks from './SelectTasks'
 
-
+import { connect } from 'react-redux';
+import { GetAllTasksAction } from '../../../../../redux/actions/TaskAction'
 
 import './css/index.css'
 
-const MyTasks = () => {
+const MyTasks = ({tasks, getTasks}) => {
 
-  /*  const data = [
-        {
-            detailName : 'Task #4',
-            detailValue : 'Share the Sociothon poster among these platforms and upload theem here. '   
-        },
-        {
-            detailName : 'Date Issued',
-            detailValue : '1st Feb 2022 '   
-        },
-        {
-            detailName : 'Deadline',
-            detailValue : '10 Feb 2022 ; 11:59pm'   
-        },
-        {
-            detailName : 'Points to gain',
-            detailValue : '20 points (5 points each)'   
-        }]
-*/
+    const [index, setIndex] = useState(0);
 
-        const data = []
+    
+    
+
+    React.useEffect(()=> {
+       getTasks();
+        console.log('hey')
+      },[getTasks]);
+
+
+    const setDeets  = () =>{
+
+     
+
+        const deets = [
+            {
+                detailName : `Task #${index+1}`,
+                detailValue : tasks[index]?.description
+            },{
+                detailName : 'Date Issued',
+                detailValue : tasks[index]?.issuedDate   
+            },
+            {
+                detailName : 'Deadline',
+                detailValue : tasks[index]?.deadlineDate 
+            },
+            {
+                detailName : 'Points to gain',
+                detailValue : `${tasks[index]?.totalPoints} points (${tasks[index]?.eachPoints} each)`  
+            }
+
+        ]
+
+        
+    } 
+    
+
     return (
         <div className='mytasks-container p-0 m-0 h-100'>
             <div className='row mytasks-header'>
                 <MyTasksHeader/>
             </div>
             <div className='row mytasks-component'>
-
-                <div className='col-md-6  details-component'>
-                    <Details details={data}></Details>
+                
+                <div className='col-md-6 details-component'>
+                   
                 </div>
                 <div className='col-md-6 upload-component'>
                     
@@ -48,4 +68,21 @@ const MyTasks = () => {
     );
 }
 
-export default MyTasks;
+
+const mapStateToProps = (state) => {
+  
+    return {
+     tasks : state.tasks,
+    }
+  }
+  
+  
+const mapDispatchToProps = (dispatch) => {
+    return {
+      getTasks : () => {
+        dispatch(GetAllTasksAction())
+      }
+    }
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyTasks);

@@ -1,9 +1,11 @@
 import { AdminActionType } from "../actions/type";
+import { GetTasksActionType } from "../actions/type";
+
 
 
 const taskState = []
 
-const uploadTaskReducer = (state = taskState, action) => {
+const TaskReducer = (state = taskState, action) => {
     
     switch (action.type){
         case AdminActionType.UPLOAD_TASK_SUCCESS : 
@@ -16,10 +18,14 @@ const uploadTaskReducer = (state = taskState, action) => {
         case AdminActionType.UPLOAD_TASK_FAIL : 
             return state;
 
-       
+        case GetTasksActionType.GET_TASKS_SUCCESS:
+            return action.payload;
+
+        case GetTasksActionType.GET_TASKS_FAIL : 
+        return state;
 
         default : return state
     }
  }
 
- export default uploadTaskReducer
+ export default TaskReducer

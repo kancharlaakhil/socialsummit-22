@@ -9,23 +9,27 @@ const data = [
     {
         name : 'Action Plan'
     },{
-        name : 'Action Plan'
+        name : 'Model United Nations'
     },{
-        name : 'Action Plan'
+        name : 'Social conclave'
     },{
-        name : 'Action Plan'
+        name : 'Sociothon'
     },{
-        name : 'Action Plan'
+        name : 'Policy Case Competition'
     },{
-        name : 'Action Plan'
+        name : 'Innovision'
     },{
-        name : 'Action Plan'
+        name : 'Case Study'
     },{
-        name : 'Action Plan'
+        name : 'Workshop'
     },{
-        name : 'Action Plan'
+        name : 'Abhivyakti'
     },{
-        name : 'Action Plan'
+        name : 'TurnCoat'
+    },{
+        name : 'Treasure Hunt'
+    },{
+        name : 'Pre summit Events'
     }
 ]
 
