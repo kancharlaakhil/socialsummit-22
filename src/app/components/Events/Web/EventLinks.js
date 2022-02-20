@@ -10,8 +10,9 @@ function EventLinks() {
           <h4>List Of Events</h4>
           <hr className="line" />
           <a href="/">Action Plan</a>
+          <a href="/">Model United Nations(MUN)</a>
+          <a href="/">Social conclave</a>
           <a href="/">Sociothon</a>
-          <a href="/">Model United Stations(MUN)</a>
           <a href="/">Policy Case Competition</a>
           <a href="/">Innovision</a>
           <a href="/">Case Study</a>

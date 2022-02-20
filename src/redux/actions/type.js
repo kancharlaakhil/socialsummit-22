@@ -14,3 +14,7 @@ export const AdminActionType = {
     UPLOAD_TASK_FAIL : "UPLOAD_TASK_FAIL" 
 }
 
+export const GetTasksActionType = {
+    GET_TASKS_SUCCESS : "GET_TASKS_SUCCESS",
+    GET_TASKS_FAIL : "GET_TASKS_FAIL"
+}

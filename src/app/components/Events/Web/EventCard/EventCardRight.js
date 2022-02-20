@@ -21,10 +21,11 @@ const EventCardRight = ({image, name, description, rulebook, prizeWorth, id}) =>
                             rulebook? 
                             <a href={rulebook}>Rulebook</a>:''
                         }</div>
+                        {prizeWorth?
                         <div className="col-6 prize-worth d-flex justify-content-end">
-                            Prize Worth :  
-                            <span className="amount">{prizeWorth}</span>
-                        </div>
+                        Prize Worth :  
+                        <span className="amount">{prizeWorth}</span>
+                    </div>:''}
                     </div>
                 </div>
             </div>

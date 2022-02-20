@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import './css/details.css'
 
 const singleDetail = (detailName, detailValue) => {
@@ -24,7 +25,29 @@ const singleDetail = (detailName, detailValue) => {
     )
 }
 
-const Details = ({details}) => {
+const Details = ({tasks, index}) => {
+
+    const details = [
+        {
+            detailName : `Task #${index+1}`,
+            detailValue : tasks[index]?.description
+        },{
+            detailName : 'Date Issued',
+            detailValue : tasks[index]?.issuedDate   
+        },
+        {
+            detailName : 'Deadline',
+            detailValue : tasks[index]?.deadlineDate 
+        },
+        {
+            detailName : 'Points to gain',
+            detailValue : `${tasks[index]?.totalPoints} points (${tasks[index]?.eachPoints} each)`  
+        }
+
+    ]
+
+
+   
     return(
         <div className='details-component'>
             {
@@ -37,4 +60,6 @@ const Details = ({details}) => {
     )
 }
 
-export default Details;
+
+  
+  export default Details;

@@ -24,7 +24,7 @@ let customStyle= {
   else{
     customStyle.backgroundColor = '#663AA3'
     customStyle.backgroundImage = `url(${purpleTestimonialCard})`;
-
+    customStyle.color = "#F8F8F8"
     customStyle.marginTop = "120px";
   }
   return (

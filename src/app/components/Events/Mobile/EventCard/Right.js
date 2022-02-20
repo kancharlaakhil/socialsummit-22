@@ -32,15 +32,16 @@ const EventCardRight = ({image, name, description, rulebook, prizeWorth, id}) =>
                     <div className="row h-75 mobile-description-content">
                         {description}
                     </div>
-                    <div className="row h-25 mobile-description-prizes">
-                        <div className="col-4 p-0 m-0 mobile-rulebook">{
+                    <div className="row h-25 mobile-description-prizes d-flex justify-content-between p-0 m-0">
+                        <div className="col-4 mobile-rulebook">{
                             rulebook? 
                             <a href={rulebook}>Rulebook</a>:''
                         }</div>
-                        <div className="col-8 p-0 m-0 mobile-prize-worth d-flex justify-content-end align-content-center">
-                            Prize Worth :  
-                            <span className="mobile-amount">{prizeWorth}</span>
-                        </div>
+                        {prizeWorth?
+                        <div className="col-6 mobile-prize-worth d-flex justify-content-end">
+                        Prize Worth :  
+                        <span className="mobile-amount">{prizeWorth}</span>
+                    </div>:''}
                     </div>
                 </div>
             </div>
