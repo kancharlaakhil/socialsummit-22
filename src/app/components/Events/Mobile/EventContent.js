@@ -25,7 +25,7 @@ function EventContent(props) {
       image : ActionPlan,
       name: "Action Plan",
       rulebook : "https://drive.google.com/file/d/16l_M9f-FqAVOu73CQJ1XnZRCv4E_fAtX/view?usp=sharing",
-      prizeWorth : "120K",
+      prizeWorth : "100K",
       description:
         "This competition provides a platform for those entrepreneurs who bring feasible solutions to real-time problems with their innovative ideas...",
     },
