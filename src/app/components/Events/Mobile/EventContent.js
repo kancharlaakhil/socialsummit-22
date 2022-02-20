@@ -12,7 +12,7 @@ import CaseStudy from '../images/caseStudy.svg';
 import Workshop from '../images/Workshop.svg';
 import Abhivyakti from '../images/abhivyakti.svg';
 import TurnCoat from '../images/turnCoat.svg';
-import TreasureHunt from '../images/treasureHunt.svg';
+import TreasureHunt from '../images/treasureHunt.png';
 import PreSummit from '../images/preSummit.svg';
 
 import "./css/EventContent.css";
