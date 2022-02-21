@@ -28,6 +28,8 @@ const data = [
         name : 'TurnCoat'
     },{
         name : 'Treasure Hunt'
+    },{
+        name : 'Pre Summit Events'
     }
 ]
 

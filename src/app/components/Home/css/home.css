@@ -72,8 +72,6 @@
 }
 
 .th-home-event-card{
-
-
   margin:0 10px;
   height:16rem;
   width:16rem;
@@ -313,6 +311,16 @@ color: #444444;
 
 
 @media only screen and (max-width: 900px) {
+  .th-home-event-card{
+    margin:0 10px;
+    height:16rem;
+    width:16rem ;
+    background: #FFFFFF;
+  
+  border-radius: 8px;
+  box-sizing: border-box;
+  }
+
   .th-register-btn-text {
     font-size: 15px;
   }

@@ -20,6 +20,7 @@ function EventLinks() {
           <a href="/events">Abhivyakti</a>
           <a href="/events">TurnCoat</a>
           <a href="/events">Treasure Hunt</a>
+          <a href="/events">Pre Summit Events</a>
           
         </div>
       </div>
