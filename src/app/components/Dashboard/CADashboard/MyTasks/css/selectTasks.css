@@ -8,30 +8,64 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.2rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin : 0.4rem;
     display: flex;
     align-items: center;
 }
 
 .select-tasks-dropdown{
-    
+    width : 60%;
     background: rgba(142, 142, 147, 0.12);
     border-radius: 5px;
-    padding : 0.4rem
+    padding : 0.4rem;
+    margin : 0.4rem
 }
 
 .select-task-name{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
     /* identical to box height */
-
+    padding:0;
     display: flex;
     align-items: center;
 
     color: #666666;
 
 }
+
+.select-tasks-dropdown{
+    position :relative
+}
+
+.dropdown-list{
+    position: absolute;
+    top : 2.5rem;
+    z-index : 1000
+}
+
+.select-task-list-component{
+    padding-top: 0.3rem;
+}
+
+.select-tasks-single-component{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    /* identical to box height */
+    padding:0;
+    display: flex;
+    align-items: center;
+
+    color: #666666;
+}
+
+.select-tasks-single-component:hover {
+    background: rgba(142, 142, 147, 0.3);;
+  }

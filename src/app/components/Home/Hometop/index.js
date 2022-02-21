@@ -30,8 +30,8 @@ class Hometop extends Component {
             <p className=" th-hometop-event-date ">19th - 20th MARCH, 2022</p>
 
             <p className=" th-hometop-content ">
-              NSS IIT Roorkee is taking a step forward to dedicate the next
-              edition of its annual flagship event, the National Social Summit.
+            Take the next step forward with National Social Summit 2022 and dabble in the color of inclusion.
+
             </p>
             <div className="d-flex mt-3">
               <Link to="/signup" className="th-register-btn w-50 mr-3">

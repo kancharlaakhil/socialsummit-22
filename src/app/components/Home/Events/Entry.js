@@ -8,6 +8,7 @@ function Entry(props) {
         <div className="event-illustration"
           style={{
             height : '80%',
+            width : '16rem',
             backgroundImage : `url(${props.image})`,
             backgroundSize : 'contain',
             backgroundPosition : 'center',

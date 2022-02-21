@@ -79,7 +79,7 @@ function EventContent(props) {
     },{
       id: 8,
       image : Workshop,
-      prizeWorth : "10K",
+     
       name: "Workshop",
       description:
         "Like every year this year also the National Social Summit 2022, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social aspects and formulate socially active mindsets among people.",
@@ -108,6 +108,12 @@ function EventContent(props) {
       name: "Treasure Hunt",
       description:
         "This is a fun activity in which an individual or a team solves clues for further hints and finally, the one who becomes the first to solves all the puzzles finds the treasure and wins the game. The game will be 2 rounds. For the detailed instruction please refer to the rulebook.",
+    },{
+      id: 12,
+      image : PreSummit,
+      name: "Pre Summit Events",
+      description:
+        "To merge you all in the vibe of our social fest the National Social Summit 2022, we are presenting you with some amazing pre-summit events like Pixels, Caricature, Microfiction, Meme making competition, and Inquisition. These fun engaging events will give you all a glimpse of our Summit. Come and show up your talents and be a part of this rich legacy of the National Social Summit.",
     }];
 
   return (

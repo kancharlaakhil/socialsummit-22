@@ -22,30 +22,8 @@ const MyTasks = ({tasks, getTasks}) => {
       },[getTasks]);
 
 
-    const setDeets  = () =>{
-
-     
-
-        const deets = [
-            {
-                detailName : `Task #${index+1}`,
-                detailValue : tasks[index]?.description
-            },{
-                detailName : 'Date Issued',
-                detailValue : tasks[index]?.issuedDate   
-            },
-            {
-                detailName : 'Deadline',
-                detailValue : tasks[index]?.deadlineDate 
-            },
-            {
-                detailName : 'Points to gain',
-                detailValue : `${tasks[index]?.totalPoints} points (${tasks[index]?.eachPoints} each)`  
-            }
-
-        ]
-
-        
+    const changeIndex = (index) => {
+        setIndex(index)
     } 
     
 
