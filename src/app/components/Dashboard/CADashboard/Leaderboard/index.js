@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LeaderboardHeader from './LeaderboardHeader';
+import LeaderboardList from './LeaderboardList';
 
 import './css/index.css'
 
@@ -13,7 +14,7 @@ const Leaderboard = () => {
                 <LeaderboardHeader/>
             </div>
             <div className='row leader-component'>
-
+                <LeaderboardList/>
                 
             </div>
 

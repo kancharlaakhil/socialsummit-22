@@ -1,8 +1,8 @@
-/*
+
 import React from "react";
 import {AiOutlineUpload} from "react-icons/ai"
 
-import './App.css'
+import '../css/uploads.css'
 
 
 function Change(e){
@@ -73,4 +73,3 @@ function Uploads()  {
 }
 
 export default Uploads;
-*/

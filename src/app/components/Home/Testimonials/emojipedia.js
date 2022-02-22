@@ -1,7 +1,7 @@
 import TestimonialBackground from '../images/TestimonialBackground.png'
-import Sahil from './images/sahil.png';
-import Priyanka from './images/priyanka.png';
-import Abhishek from './images/abhishek.png'
+import Sahil from './images/Sahil.png';
+import Priyanka from './images/Priyanka.png';
+import Abhishek from './images/Abhishek.png'
 
 
 const emojipedia = [
