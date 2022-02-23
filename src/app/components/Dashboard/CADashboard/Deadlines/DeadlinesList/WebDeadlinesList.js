@@ -65,7 +65,9 @@ function WebDeadlinesList() {
     
   }
 
-  
+  const firstBorder = (data.length > 6)? 'with-border' : '';
+  const secondBorder = (data.length > 12)? 'with-border' : ''
+
 
   
 
@@ -79,7 +81,7 @@ function WebDeadlinesList() {
         <h3 className="loadMore">Load more</h3>
       </div>
       <div className="row items" style={{height : '90%'}}>
-        <div className="col-4 with-border">
+        <div className={`col-4 ${firstBorder}`}>
         {data.map((element, index) => {
           if(index<6){
             return (
@@ -97,7 +99,7 @@ function WebDeadlinesList() {
           
         })}
         </div>
-        <div className="col-4 with-border">
+        <div className={`col-4 ${secondBorder}`}>
             {data.map((element, index) => {
               if(index>=6 && index<12){
                 return (
