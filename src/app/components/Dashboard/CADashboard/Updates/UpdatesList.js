@@ -1,9 +1,11 @@
-import React from "react";
+import React , { useState, useEffect } from "react";
 import './css/updateList.css';
 import profilephoto from "./images/ProfilePhoto.svg";
 
+import axios from "axios";
+
 function UpdatesList() {
-  const updates = [
+/*  const updates = [
     {
       createdAt: "1 Feb 2022",
       allUpdates: [
@@ -104,17 +106,31 @@ function UpdatesList() {
         },
       ],
     },
-  ];
+  ];*/
+
+  const [updates, setUpdates] = useState([]);
+
+  useEffect(() => {
+    axios.get("/users/ca/myUpdates").then((response) => {
+        
+      const data = response.data.data.data
+      console.log("updates", data)
+      setUpdates(data)
+    });
+    
+  }, []);
+
+
   return (
     <div>
       <div className="update-list-component">
         {updates.map((update) => {
           return (
             <div className="component">
-              <div className="date">{update.createdAt}</div>
+              <div className="date">{update._id}</div>
               <hr className="line"></hr>
               <div className="person">
-                {update.allUpdates.map((updatenum) => {
+                {update.items.map((updatenum) => {
                   return (
                     <>
                       <div className="updates">
@@ -131,7 +147,7 @@ function UpdatesList() {
                             </div>
                           </div>
                         </div>
-                        <div className="time">5 mins ago</div>
+                        
                       </div>
                     </>
                   );

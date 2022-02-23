@@ -6,7 +6,7 @@ function Header() {
     <div className="header">
       <h1 className="events_heading">Our Events</h1>
       <p className="events_para">
-        Let's be a part of Summit's amazing events.
+        Experience the Summit
       </p>
     </div>
   );

@@ -1,21 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Entry from "./Entry";
-import emojipedia from "./emojipedia";
-
-import '../css/registeredDelegates.css'
 
 
+import '../css/registeredDelegates.css';
 
-function createEntry(emojiTerm) {
-  return (
-    <Entry key={emojiTerm.id} status={emojiTerm.status} name={emojiTerm.name} />
-  );
-}
-
+import axios from 'axios'
 
 
 function RegisteredDelegates()  {
+
+  const [delegates, setDelegates] = useState([])
+
+  React.useEffect(() => {
+    axios.get(`/users/ca/getMyRegisteredDelegates`).then((response) => {
+      const delegates = response.data.data.data
+       
+      setDelegates(delegates)
+    
+      
+    });
+   
+    /*const getDates = tasks.map((ele) => {
+      const date = ele.deadlineDate.split('T')[0];
+      console.log("dekh bro",date)
+     */
+    
+     
+  }, []);
 
     return (
       <div className="th-home-dashboard">
@@ -28,7 +40,9 @@ function RegisteredDelegates()  {
           </div>
         </div>
         <div className="th-home-dashboard-body">
-          {emojipedia.map(createEntry)}
+          {delegates.map((ele, index) => {
+            return (<Entry key={index} status={ele.paymentStatus} name={ele.name} />)
+          })}
           </div>
       </div>
         

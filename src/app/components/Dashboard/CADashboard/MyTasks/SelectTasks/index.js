@@ -26,7 +26,13 @@ const SelectTasks = ({tasks, index, changeIndex}) => {
                     onClick = {()=> {setOpen(!open)}}
                 ></div>
                 {
-                    open?<ListComponent tasks={tasks} index={index} changeIndex={changeIndex} open={open} setOpen={setOpen} />:''
+                    open?<div className='list-component-div'
+                        style={{
+                            background : '#ffffff'
+                        }}
+                    >
+                        <ListComponent tasks={tasks} index={index} changeIndex={changeIndex} open={open} setOpen={setOpen} /> </div>:''
+                   
                 }
             </div>
         </div>

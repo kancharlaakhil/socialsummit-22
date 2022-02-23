@@ -1,26 +1,34 @@
 
-import React from "react";
-import {AiOutlineUpload} from "react-icons/ai"
+import React, {useState} from "react";
+import {AiOutlineUpload} from "react-icons/ai";
+import axios from 'axios'
 
 import '../css/uploads.css'
 
+function Uploads({tasks, index})  {
+  const [facebookUpload, setFacebookUpload] = useState(null);
+  const [instagramUpload, setInstagramUpload] = useState(null);
+  const [linkedinUpload, setLinkedinUpload] = useState(null);
+  const [whatsappUpload, setWhatsappUpload] = useState(null);
 
-function Change(e){
-
-  let files = e.target.files;
-  let reader = new FileReader();
-  reader.readAsDataURL(files[0]);
-  reader.onload=(e)=>{
-    console.warn("img data", e.target.result)
-     //request for file upload
-  }
- 
-}
-
-
-
-function Uploads()  {
   
+
+ 
+    const onSubmitClick = async (e) => {
+        
+        const data = new FormData();
+        if(facebookUpload)
+        data.append('facebookUpload', facebookUpload);
+        if(instagramUpload)
+        data.append('instagramUpload', instagramUpload);
+        if(linkedinUpload)
+        data.append('linkedinUpload', linkedinUpload);
+        if(whatsappUpload)
+        data.append('whatsappUpload', whatsappUpload)
+
+        const what = await axios.post(`/taskSubmission/${tasks[index]._id}`, data)
+        console.log("ab here", what)
+    }
 
     return (
       <div >
@@ -30,7 +38,10 @@ function Uploads()  {
              Instagram
           </div>
           <div>
-          <input type="file" name="file" id="file1" class="inputfile" onChange={(e)=>Change(e)}/>
+          <input type="file" name="file" id="file1" class="inputfile" onChange={(e)=>{
+            const file =  e.target.files[0];
+            setInstagramUpload(file)
+          }}/>
           <label for="file1">Upload <AiOutlineUpload></AiOutlineUpload></label>
           </div>
         </div>
@@ -40,7 +51,10 @@ function Uploads()  {
              Facebook
           </div>
           <div>
-          <input type="file" name="file" id="file2" class="inputfile"  onChange={(e)=>Change(e)} />
+          <input type="file" name="file" id="file2" class="inputfile"  onChange={(e)=>{
+            const file =  e.target.files[0];
+            setFacebookUpload(file)
+          }} />
           <label for="file2">Upload <AiOutlineUpload></AiOutlineUpload></label>
           </div>
         </div>
@@ -50,8 +64,11 @@ function Uploads()  {
              LinkedIn
           </div>
           <div>
-          <input type="file" name="file" id="file3" class="inputfile" onChange={(e)=>Change(e)}/>
-          <label for="file3">Upload <AiOutlineUpload></AiOutlineUpload></label>
+          <input type="file" name="file" id="file3" class="inputfile" onChange={(e)=>{
+            const file =  e.target.files[0];
+            setLinkedinUpload(file)
+          }}/>
+           <label for="file3">Upload <AiOutlineUpload></AiOutlineUpload></label>
           </div>
         </div>
         <div className="th-home-CurrentTask">
@@ -60,12 +77,17 @@ function Uploads()  {
              Whatsapp
           </div>
           <div>
-          <input type="file" name="file" id="file4" class="inputfile" onChange={(e)=>Change(e)}/>
+          <input type="file" name="file" id="file4" class="inputfile" onChange={(e)=>{
+            const file =  e.target.files[0];
+            setWhatsappUpload(file)
+          }}/>
           <label for="file4">Upload <AiOutlineUpload></AiOutlineUpload></label>
           </div>
           
         </div>
-        <button className="Submitbtn">Submit</button>
+        <button className="Submitbtn"
+                onClick = {onSubmitClick}
+        >Submit</button>
       </div>
         
     );

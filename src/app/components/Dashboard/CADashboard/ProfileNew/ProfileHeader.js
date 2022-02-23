@@ -25,7 +25,7 @@ const ProfileHeader = ({points}) => {
                 </div>
                 <div className='col-6'>
                    <div className='row'>
-                   <div className='col-11 current-points d-flex align-self-end justify-content-end'> Current Points : </div>
+                   <div className='col-9 current-points d-flex align-self-end justify-content-end'> Current Points : </div>
                     <div className='col-1 points d-flex justify-content-start'>{points}</div>
                    </div>
 

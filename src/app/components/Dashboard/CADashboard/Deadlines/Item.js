@@ -1,16 +1,16 @@
 import React from "react";
 import "./css/Item.css";
 
-function Item(props) {
+function Item({day, month, taskNumber, name}) {
   return (
     <div className="itemCard">
       <div className="dateBlock">
-        <h1>{props.date}</h1> {/* Date */}
-        <h2>{props.month}</h2> {/* Month */}
+        <h1>{day}</h1> {/* Date */}
+        <h2>{month}</h2> {/* Month */}
       </div>
       <div className="tasks">
-        <h1>Task {props.taskNumber}</h1>
-        <p>Insta post sharing Sociothon</p>
+        <h1>Task {taskNumber}</h1>
+        <p>{name}</p>
       </div>
     </div>
   );

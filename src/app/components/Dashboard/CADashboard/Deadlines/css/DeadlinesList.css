@@ -39,11 +39,6 @@
   text-decoration-line: underline;
   color: #663aa3;
 }
-.items {
-    column-count: 3;
-    column-gap: 2rem;
-    column-rule: 2px solid #663aa3;
-}
 
 .verticalLine1 {
   position: absolute;
@@ -58,4 +53,8 @@
   height: 27rem;
   opacity: 0.5;
   border: 0.5px solid #663aa3;
+}
+
+.with-border{
+  border-right : 0.5px solid #663aa3;
 }

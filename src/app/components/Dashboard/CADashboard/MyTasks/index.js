@@ -36,11 +36,12 @@ const MyTasks = ({tasks, getTasks}) => {
             <div className='row mytasks-component'>
                 
                 <div className='col-md-6 my-tasks-details-component'>
+                  
                     <SelectTasks tasks={tasks} index={index} changeIndex={changeIndex}></SelectTasks>    
                     <Details tasks={tasks} index={index}></Details>
                 </div>
                 <div className='col-md-6 upload-component'>
-                      <Uploads></Uploads>
+                      <Uploads tasks={tasks} index={index}></Uploads>
                 </div>
             </div>
 

@@ -62,6 +62,13 @@ const Profile = ({user}) => {
                 >
                     <Details details={data}></Details>
                 </div>
+                <div className='col-12 col-md-5 registered-delegates'
+                    style={{
+                        margin : '0.3rem'
+                    }}
+                >
+                    <RegisteredDelegates/>
+                </div>
                
             </div>
 

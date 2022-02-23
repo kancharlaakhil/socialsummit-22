@@ -1,11 +1,16 @@
 import React from 'react';
 
+
 import DeadlinesHeader from './DeadlinesHeader';
-import DeadlinesList from './DeadlinesList'
+import DeadlinesList from './DeadlinesList';
+
 
 import './css/index.css'
 
 const Deadlines = () => {
+
+    
+ 
 
 
     return (
@@ -21,5 +26,6 @@ const Deadlines = () => {
         </div>
     );
 }
+
 
 export default Deadlines;

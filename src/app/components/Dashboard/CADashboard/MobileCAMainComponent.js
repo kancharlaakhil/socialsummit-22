@@ -8,16 +8,17 @@ import Updates from './Updates'
 
 import '../Dashboardcss/MainComponent.css'
 
-const CAMainComponent = ({selectedOption, options}) =>{
+
+const CAMainComponent = ({selectedOption, options, componentNumber}) =>{
 
     let Comp;
 
     if(selectedOption === 0){
-        Comp = <Profile points='850'></Profile>
+        Comp = <Profile></Profile>
     }
     else if(selectedOption === 1){
-        Comp = <MyTasks/>
-    }
+        Comp = <MyTasks></MyTasks>
+    }  
     else if(selectedOption === 2){
         Comp = <Updates/>
     }
@@ -31,11 +32,17 @@ const CAMainComponent = ({selectedOption, options}) =>{
     
 
    return(
-       <div className="main-component-container">
+       <div>
+           <div className="main-component-container">
            
-        {Comp}
+           {Comp}
+   
+          </div>
+          
+          
 
        </div>
+       
    )
 
 }

@@ -13,12 +13,21 @@
   color: #222222;
 }
 
-.rankers {
+.rankers-2{
     column-count: 2;
     row-gap: 0.1rem;
     column-gap: 10rem;
     column-rule: 4px solid #663aa36c;
 }
+
+.rankers-1{
+  column-count: 1;
+  row-gap: 0.1rem;
+  column-gap: 10rem;
+  column-rule: 4px solid #663aa36c;
+}
+
+
 
 .ranker {
     width: 100%;
