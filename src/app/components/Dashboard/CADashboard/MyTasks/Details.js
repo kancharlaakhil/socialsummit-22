@@ -12,9 +12,9 @@ const singleDetail = (detailName, detailValue) => {
 
     return (
         <div className='row single-detail'>
-                <div className='col-md-3'>{detailName}</div>
-                <div className='col-md-1'> : </div>
-                <div className='col-md-8'
+                <div className='col-3'>{detailName}</div>
+                <div className='col-1'> : </div>
+                <div className='col-8'
                     style={{
                         color : `${color}`,
                         fontWeight : `${weight}`
@@ -27,17 +27,55 @@ const singleDetail = (detailName, detailValue) => {
 
 const Details = ({tasks, index}) => {
 
+    const getMonth = (month) => {
+        if(month==='01') return 'Jan'
+        else if (month ==='02') return 'Feb'
+        else if (month ==='03') return 'Mar'
+        else if (month ==='04') return 'Apr'
+        else if (month ==='05') return 'May'
+        else if (month ==='06') return 'Jun'
+        else if (month ==='07') return 'Jul'
+        else if (month ==='08') return 'Aug'
+        else if (month ==='09') return 'Sep'
+        else if (month ==='10') return 'Oct'
+  
+        else if (month ==='11') return 'Nov'
+        else if (month ==='12') return 'Dec'
+      }
+
+    const convertDate = (date) => {
+        const d = date?.split('T')[0];
+        const use = d?.split('-');
+        if(use){
+            const month = getMonth(use[1]);
+            const day = use[2];
+            const year = use[0];
+    
+            const finalDate = `${day} ${month} ${year}`
+    
+            return finalDate
+        }
+       
+    }
+
+    
+
+    
+
+    const issuedDate = convertDate(tasks[index]?.issuedDate);
+    const deadlineDate = convertDate(tasks[index]?.deadlineDate)
+
     const details = [
         {
             detailName : `Task #${index+1}`,
             detailValue : tasks[index]?.description
         },{
             detailName : 'Date Issued',
-            detailValue : tasks[index]?.issuedDate   
+            detailValue : issuedDate 
         },
         {
             detailName : 'Deadline',
-            detailValue : tasks[index]?.deadlineDate 
+            detailValue : deadlineDate 
         },
         {
             detailName : 'Points to gain',

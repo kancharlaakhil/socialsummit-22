@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 
 import MyTasksHeader from './MyTasksHeader';
 import Details from './Details';
-import SelectTasks from './SelectTasks'
+import SelectTasks from './SelectTasks';
+import Uploads from './Uploads'
 
 import { connect } from 'react-redux';
 import { GetAllTasksAction } from '../../../../../redux/actions/TaskAction'
@@ -34,11 +35,13 @@ const MyTasks = ({tasks, getTasks}) => {
             </div>
             <div className='row mytasks-component'>
                 
-                <div className='col-md-6 details-component'>
-                   
+                <div className='col-md-6 my-tasks-details-component'>
+                  
+                    <SelectTasks tasks={tasks} index={index} changeIndex={changeIndex}></SelectTasks>    
+                    <Details tasks={tasks} index={index}></Details>
                 </div>
                 <div className='col-md-6 upload-component'>
-                    
+                      <Uploads tasks={tasks} index={index}></Uploads>
                 </div>
             </div>
 

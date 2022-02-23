@@ -1,10 +1,16 @@
 import React from 'react';
 
+
 import DeadlinesHeader from './DeadlinesHeader';
+import DeadlinesList from './DeadlinesList';
+
 
 import './css/index.css'
 
 const Deadlines = () => {
+
+    
+ 
 
 
     return (
@@ -13,12 +19,13 @@ const Deadlines = () => {
                 <DeadlinesHeader/>
             </div>
             <div className='row deadlines-component'>
-
+                <DeadlinesList/>
                 
             </div>
 
         </div>
     );
 }
+
 
 export default Deadlines;

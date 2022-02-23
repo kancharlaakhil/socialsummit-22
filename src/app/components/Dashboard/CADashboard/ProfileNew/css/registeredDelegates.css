@@ -1,7 +1,8 @@
 .th-home-dashboard{
     border : solid #f6f6f6 0.2rem;
     
-    border-radius:10px
+    border-radius:10px;
+    overflow-x: hidden;
   }
   
   .th-home-dashboard-header{
@@ -62,6 +63,7 @@
   .th-home-dashboard-body{
     height : 20rem;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   
   .dot{

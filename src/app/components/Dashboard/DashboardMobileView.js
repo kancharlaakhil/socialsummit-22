@@ -23,7 +23,7 @@ const DashboardMobileView = ({options, selectedIndex, onNavboxClick, user}) => {
     return(
         
 
-<div className='page-container' style={{height : '100vh', paddingLeft:"0.25rem", paddingRight:"0.25rem"}}>
+<div className='page-container' style={{height : '100%', paddingLeft:"0.25rem", paddingRight:"0.25rem", paddingTop : "4rem"}}>
              
               
               <div className='row h-25 d-flex align-items-end justify-content-between'>
@@ -49,11 +49,13 @@ const DashboardMobileView = ({options, selectedIndex, onNavboxClick, user}) => {
              >
              {
                     user.role === 'delegate'? 
-                    <DelegateMainComponent selectedOption={selectedIndex} options={options}></DelegateMainComponent>:
-                    <CAMainComponent selectedOption={selectedIndex} options={options}></CAMainComponent>
+                    <DelegateMainComponent componentNumber={1} selectedOption={selectedIndex} options={options}></DelegateMainComponent>:
+                    <CAMainComponent componentNumber={1} selectedOption={selectedIndex} options={options}></CAMainComponent>
                   }
                 
              </div>
+             
+             
             </div>
       
         
