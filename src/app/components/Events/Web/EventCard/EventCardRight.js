@@ -3,7 +3,7 @@ import React from "react";
 
 import '../css/EventCard.css'
 
-const EventCardRight = ({image, name, description, rulebook, prizeWorth, id}) => {
+const EventCardRight = ({image, name, description, rulebook, prizeWorth, id, link1, link2}) => {
     return (
         <div className="single-event-container">
             <div className="row h-100">
@@ -15,6 +15,12 @@ const EventCardRight = ({image, name, description, rulebook, prizeWorth, id}) =>
                 <div className="row h-75 single-event-description-right">
                     <div className="row h-75 description-content">
                         {description}
+                        <div className="row case-study-links d-flex justify-space-between" style={{width : '50%'}}>
+                            <div className="col-6 d-flex justify-content-start case-study-link">{link1 ? 
+                            <a href={link1}>Case Study - 1</a>:''}</div>
+                            <div className="col-6 d-flex justify-content-end case-study-link">{link2 ? 
+                            <a href={link2}>Case Study - 2</a>:''}</div>
+                        </div>
                     </div>
                     <div className="row h-25 description-prizes">
                         <div className="col-6 rulebook">{

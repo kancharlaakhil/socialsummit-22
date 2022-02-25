@@ -18,7 +18,7 @@ const DashboardWebView = ({options, selectedIndex, onNavboxClick, user}) => {
           
           <div className='row h-25 d-flex justify-content-between'>
             <div className='col-md-3'>
-               <DashboardId></DashboardId>
+               <DashboardId summitID ={user.summitID}></DashboardId>
             </div>
             <div className='col-md-4'>
                 <UserCard/>

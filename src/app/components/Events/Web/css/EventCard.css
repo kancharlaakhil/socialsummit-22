@@ -112,3 +112,28 @@
 
     color: #222222;
 }
+
+.case-study-link a{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-decoration-line: underline;
+
+    color: #663AA3;
+
+  }
+
+  .case-study-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-decoration-line: underline;
+
+    color: #663AA3;
+
+  }
+  

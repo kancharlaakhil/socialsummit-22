@@ -34,7 +34,7 @@ function EventContent(props) {
       id: 2,
       image : MUN,
       name: "Model United Nations",
-      rulebook : "https://drive.google.com/file/d/1si0iHoZFDDJJ5rLIX5bkUzJhepPUTgCP/view?usp=sharing",
+      rulebook : "https://drive.google.com/file/d/1kiDow4lh1lgl4qGtXxpOmSkjQcLCXOH8/view",
       prizeWorth : "120K",
       description:
         "This event provides a platform for the students to have practical experience of diplomacy and allow them to be the representative of a country or an organization and let them speak up about the issues and find their solutions along with other delegates. The detailed instructions and guidelines are provided in the Rulebook.",
@@ -48,8 +48,9 @@ function EventContent(props) {
     },{
       id: 4,
       image : Sociothon,
-      prizeWorth : "100K",
+      prizeWorth : "50K",
       name: "Sociothon",
+      rulebook : "https://drive.google.com/file/d/14xIKXFEM_jycvqNG3bBcW5a8dOCunKaI/view",
       description:
         "Sociothon is an event where participants will be provided with a problem statement and they will be asked to present their solutions by critically analyzing the issue. This event aims to enhance the creative minds of the participants. For more information, please refer to the rulebook provided in the link.",
     },{
@@ -58,6 +59,8 @@ function EventContent(props) {
       rulebook : "https://drive.google.com/file/d/1rm_JDDH9dVWrLY6ojVSFeAm9KIhlaieT/view?usp=sharing",
       prizeWorth : "50K",
       name: "Policy Case Competition",
+      link1: "https://drive.google.com/file/d/1LNVxt6bMusyVC07Pfng183rDK8iMzHPt/view?usp=sharing",
+      link2:"https://drive.google.com/file/d/1owN_u3XH-uOQxDnPnDGDZu7qxO25OGAB/view?usp=sharing",
       description:
         "As the name suggests this competition encourages the students to become policymakers by critically analyzing the present issues and evaluating the faults in existing policies and finally coming up with great ideas to solve these issues. This is a 2 round competition. The detailed guidelines of the event are provided in the Rulebook.",
     },{
@@ -73,6 +76,8 @@ function EventContent(props) {
       image : CaseStudy,
       name: "Case Studies",
       rulebook : "https://drive.google.com/file/d/11_vXyK4YUE91Ir3ibr2SAtAwqrNa3wFu/view?usp=sharing",
+      link1:"https://drive.google.com/file/d/1dk0GtCOkyIQF8Kha3gAPJep_vLSRbme_/view?usp=sharing",
+      link2: "https://drive.google.com/file/d/1WLFKxWhf4qWv0S9tAsMuSc65_TOlagXL/view?usp=sharing",
       prizeWorth : "75K",
       description:
         "This Case Study Competition is the best way to understand the real-time issues and come up with the best feasible solutions to them. This case study competition will go in two rounds. The shortlisted ones in the 1st round will proceed to the 2nd round. The detailed guidelines of the event are provided in the Rulebook.",
@@ -130,6 +135,8 @@ function EventContent(props) {
             image ={element.image}
             rulebook={element.rulebook}
             prizeWorth={element.prizeWorth}
+            link1={element.link1}
+            link2={element.link2}
           />
           </div>
           

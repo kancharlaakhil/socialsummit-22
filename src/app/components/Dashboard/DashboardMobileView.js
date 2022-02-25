@@ -28,7 +28,7 @@ const DashboardMobileView = ({options, selectedIndex, onNavboxClick, user}) => {
               
               <div className='row h-25 d-flex align-items-end justify-content-between'>
                 <div className='col-8'>
-                   <DashboardId isMobile={true}></DashboardId>
+                   <DashboardId isMobile={true} summitID ={user.summitID}></DashboardId>
                 </div>
                 <div className='col-4' >
                   <MobileUserCard open={open} onClick={onUserCardClick}></MobileUserCard>    

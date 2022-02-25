@@ -1,14 +1,19 @@
 import React from 'react';
 
+
 import './Dashboardcss/DashboardId.css';
 
 
-const DashboardId = ({isMobile}) => {
+const DashboardId = ({isMobile, summitID}) => {
 
     const dashboardTextClass = isMobile ? 'mobile-dashboard-text' : 'dashboard-text';
     const caIdTextClass = isMobile ? 'mobile-ca-id-text' : 'ca-id-text';
     const height = isMobile ? '7.5rem' : '20%';
     const containerHeight = isMobile ? '7.5rem' : '100vh'
+
+    console.log("yahan pe",summitID)
+
+    const summitId = summitID ? summitID : 'SOCIALSUMMIT-ID'
 
     return (
         <div style={{height : {containerHeight}}}>
@@ -21,7 +26,7 @@ const DashboardId = ({isMobile}) => {
                 Dashboard
             </div>
             <div className={`row h-25 ${caIdTextClass}`}>
-                #SOCIALSUMMIT-ID
+                #{summitId}
             </div>
                
     
