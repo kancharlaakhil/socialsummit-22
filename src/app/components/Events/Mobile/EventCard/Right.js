@@ -35,7 +35,7 @@ const EventCardRight = ({image, name, description, rulebook, prizeWorth, id, lin
                             <div className="col-6 d-flex justify-content-start case-study-link">{link1 ? 
                             <a href={link1}>{(name === "Policy Case Competition")? 'Policy-Case-1' : 'Case-Study-1' }</a>:''}</div>
                             <div className="col-6 d-flex justify-content-end case-study-link">{link2 ? 
-                            <a href={link2}>{(name === "Policy Case Competition")? 'Policy-Case-1' : 'Case-Study-1' }</a>:''}</div>
+                            <a href={link2}>{(name === "Policy Case Competition")? 'Policy-Case-2' : 'Case-Study-2' }</a>:''}</div>
                         </div>
                     </div>
                     <div className="row h-25 mobile-description-prizes d-flex justify-content-between p-0 m-0">
