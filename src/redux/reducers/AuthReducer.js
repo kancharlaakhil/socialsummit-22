@@ -17,7 +17,8 @@ const authState = {
         token : "",
         points : "",
         numberOfRegisteredDelegates : "",
-        graduationYear : ""
+        graduationYear : "",
+        summitID : ""
 
     }
 }

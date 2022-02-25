@@ -18,7 +18,8 @@ export const SignupAuthAction = (userState, history) => {
                 role : data.data.user.role,
                 referenceCAid : data.data.user.referenceCAid,
                 points : data.data.user.points,
-                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates
+                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates,
+                summitID : data.data.user.summitID
             } 
             dispatch({
                 type : AuthActionType.SIGNUP_SUCCESS,
@@ -40,7 +41,7 @@ export const LoginAuthAction = (loginState, history) => {
     return async (dispatch) => {
         try {
             const {data}= await axios.post("/auth/login", loginState);
-            
+
             const newUser = {
            expiresIn : data.expiresIn,
                 token : data.token,
@@ -51,7 +52,8 @@ export const LoginAuthAction = (loginState, history) => {
                 role : data.data.user.role,
                 referenceCAid : data.data.user.referenceCAid,
                 points : data.data.user.points,
-                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates
+                numberOfRegisteredDelegates : data.data.user.numberOfRegisteredDelegates,
+                summitID : data.data.user.summitID
             }
             
             dispatch({
