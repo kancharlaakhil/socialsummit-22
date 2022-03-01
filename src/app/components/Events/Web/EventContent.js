@@ -124,7 +124,7 @@ function EventContent(props) {
   return (
     <div className="EventContent">
       {data.map((element) => {
-        console.log(element.id);
+      
         return (
           <div className="contain-card">
             <EventCard

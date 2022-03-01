@@ -37,7 +37,7 @@ function LeaderboardList() {
       
       <div className={rankClass}>
         {data.map((element, index) => {
-          //   console.log(element.id);
+       
           return (
             <div className="">
               <Ranker

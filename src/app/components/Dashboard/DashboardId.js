@@ -11,7 +11,7 @@ const DashboardId = ({isMobile, summitID}) => {
     const height = isMobile ? '7.5rem' : '20%';
     const containerHeight = isMobile ? '7.5rem' : '100vh'
 
-    console.log("yahan pe",summitID)
+  
 
     const summitId = summitID ? summitID : 'SOCIALSUMMIT-ID'
 

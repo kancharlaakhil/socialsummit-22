@@ -1,0 +1,23 @@
+.tabs-container{
+    height : 100%,
+    
+}
+
+.selected-tab{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-decoration-line: underline;
+    color: #663AA3;
+}
+
+.not-selected-tab{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    color: #666666;
+}

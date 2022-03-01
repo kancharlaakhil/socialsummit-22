@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const SignupAuthAction = (userState, history) => {
     return async (dispatch) => {
-        console.log('from signup', userState)
+      
         try {
             const {data}= await axios.post("/auth/signup", userState);
             
@@ -101,7 +101,7 @@ export const ProfileCompletionAction = (userState, history) => {
         try {
             const {data}= await axios.patch("/users/updateMe", userState);
 
-            console.log('yo',data)
+       
             
             const newUser = {
                 college : data.user.college,

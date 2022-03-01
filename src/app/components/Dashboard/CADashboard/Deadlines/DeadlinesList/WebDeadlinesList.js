@@ -51,16 +51,13 @@ function WebDeadlinesList() {
       
     });
    
-    /*const getDates = tasks.map((ele) => {
-      const date = ele.deadlineDate.split('T')[0];
-      console.log("dekh bro",date)
-     */
+   
     
      
   }, [page]);
 
   const loadMoreHandler = () => {
-    console.log('yo')
+   
     setPage(page+1)
     
   }
