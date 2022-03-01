@@ -21,10 +21,6 @@ function RegisteredDelegates()  {
       
     });
    
-    /*const getDates = tasks.map((ele) => {
-      const date = ele.deadlineDate.split('T')[0];
-      console.log("dekh bro",date)
-     */
     
      
   }, []);

@@ -82,7 +82,6 @@ const authReducer = (state = newAuth, action) => {
                 }
             }   
 
-            console.log('state', profileCompletionState)
 
             localStorage.setItem("auth", JSON.stringify( profileCompletionState ))
             return profileCompletionState;

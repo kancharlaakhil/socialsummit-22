@@ -19,7 +19,7 @@ const MyTasks = ({tasks, getTasks}) => {
 
     React.useEffect(()=> {
        getTasks();
-        console.log('hey')
+    
       },[getTasks]);
 
 

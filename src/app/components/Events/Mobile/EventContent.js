@@ -123,7 +123,7 @@ function EventContent(props) {
   return (
     <div className="mobile-event-content">
       {data.map((element) => {
-        console.log(element.id);
+    
         return (
           <div className="mobile-contain-card">
             <EventCard

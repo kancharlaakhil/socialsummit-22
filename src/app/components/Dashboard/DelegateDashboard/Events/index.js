@@ -1,7 +1,7 @@
 import React from 'react';
 
 import EventsHeader from './EventsHeader';
-
+import EventsMainComponent from './components';
 import './css/index.css'
 
 const Events = () => {
@@ -14,7 +14,7 @@ const Events = () => {
             </div>
             <div className='row events-component'>
 
-                
+                <EventsMainComponent/>
             </div>
 
         </div>

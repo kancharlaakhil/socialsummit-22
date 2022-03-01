@@ -114,7 +114,7 @@ function UpdatesList() {
     axios.get("/users/ca/myUpdates").then((response) => {
         
       const data = response.data.data.data
-      console.log("updates", data)
+     
       setUpdates(data)
     });
     

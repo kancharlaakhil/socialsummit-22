@@ -27,7 +27,7 @@ function Uploads({tasks, index})  {
         data.append('whatsappUpload', whatsappUpload)
 
         const what = await axios.post(`/taskSubmission/${tasks[index]._id}`, data)
-        console.log("ab here", what)
+      
     }
 
     return (
