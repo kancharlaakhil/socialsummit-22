@@ -3,5 +3,11 @@
 }
 
 .tab-main-view{
-    height : 90%
+    height : 90%;
+   
+}
+
+.mobile-tab-main-view{
+    height : 90%;
+    margin-top : 3rem
 }

@@ -45,7 +45,7 @@ function LoginForm(props) {
                     }}
                   />
                   <label>
-                    Email-ID/Summit-ID
+                    Email-ID
                     <span className="th-required-span">*</span>
                   </label>
                 </div>

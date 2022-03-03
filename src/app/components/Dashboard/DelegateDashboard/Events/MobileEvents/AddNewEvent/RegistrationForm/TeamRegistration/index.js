@@ -7,10 +7,10 @@ import '../css/teamRegistration.css'
 
 // slr se bntaa hai yeh
 
-const TeamRegistrationForm = ({leader, members, event, appendTeamMembers, setLeader, removeTeamMember, removeLeader, changeTeamName}) => {
+const TeamRegistrationForm = ({ leader, members, event, appendTeamMembers, removeTeamMember, removeLeader, setLeader, changeTeamName}) => {
 
   
-  
+ 
   const [show, setShow] = useState(false)
   const [isLeader, setIsLeader] = useState(false)
 
@@ -28,24 +28,25 @@ const TeamRegistrationForm = ({leader, members, event, appendTeamMembers, setLea
     
     if(isLeader){
       setLeader(member)
-    
+     // setTeamLeader(member)
     }
     appendTeamMembers(member)
-  
+    //setTeamMembers((members)=> [...members, member])
+    
 }
 
   return (
-    <div className="team-registration-container">
-      <div className="row team-name-row" style={{height : '10%'}}>
-        <div className="col-8">
-        <div className="input-form-field">
+    <div className="mobile-team-registration-container">
+      <div className="row mobile-team-name-row" style={{height : '10%'}}>
+        <div className="col-12">
+        <div className="mobile-input-form-field">
             <label>
                    Team Name
                     
                   </label>
                   <input
                     type="text"
-                    className="th-form-control my-form-control"
+                    className="th-form-control mobile-my-form-control"
                     id=""
                     name=""
                     onChange={(event) => {
@@ -57,9 +58,9 @@ const TeamRegistrationForm = ({leader, members, event, appendTeamMembers, setLea
                 </div> 
         </div>
       </div>
-      <div className="add-participant-component d-flex" style={{height : '90%'}}>
-          <div className="col-5" style={{padding : '0.7rem'}}><Details removeLeader={removeLeader} removeTeamMember={removeTeamMember} leader={leader} members={members} handleAdd={handleAdd} /></div>
-          {show?<div className="col-7"><IndividualRegistration addTeamMember={addTeamMember} isTeamMember={true} isLeader={isLeader}/></div>:null}
+      <div className="mobile-add-participant-component" style={{height : '90%'}}>
+          <div className="col-12" style={{padding : '0.7rem'}}><Details leader={leader} members={members} handleAdd={handleAdd} removeTeamMember={removeTeamMember} removeLeader={removeLeader} /></div>
+          {show?<div className="col-12"><IndividualRegistration addTeamMember={addTeamMember} isTeamMember={true} isLeader={isLeader}/></div>:null}
       </div>
 
     </div>

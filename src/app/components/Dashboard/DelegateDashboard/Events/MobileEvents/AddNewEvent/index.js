@@ -25,7 +25,8 @@ const AddNewEvent = () => {
 
     const onClickRegister = async () => {
         if(eventsList[selectedIndex].isTeamEvent){
-            
+
+
             const registerObject = {
                 event : eventsList[selectedIndex]._id,
                 eventName : eventsList[selectedIndex].name,
@@ -41,7 +42,7 @@ const AddNewEvent = () => {
             const registerObject = {
                 event : eventsList[selectedIndex]._id,
                 eventName : eventsList[selectedIndex].name,
-                eventInfo : eventsList[selectedIndex].info,
+                eventInfo : eventsList[selectedIndex].eventInfo,
             }
             await axios.post("/eventRegistrations", registerObject)
 
@@ -52,6 +53,10 @@ const AddNewEvent = () => {
     const setParticipantDetails = (details) => {
         setParticipant(details)
     }
+
+    const appendTeamMembers = (member) => {
+        setTeamMembers((teamMembers)=>[...teamMembers, member])
+    } 
 
     const removeTeamMember = (index) => {
         const newMembers = teamMembers.filter((ele, i) => index!==i )
@@ -66,10 +71,6 @@ const AddNewEvent = () => {
         console.log("now new members", newMembers);
         setTeamMembers(newMembers)
     }
-
-    const appendTeamMembers = (member) => {
-        setTeamMembers((teamMembers)=>[...teamMembers, member])
-    } 
 
     const setLeader = (leader) => {
         setTeamLeader(leader)
@@ -88,11 +89,11 @@ const AddNewEvent = () => {
 
     return (
         <div className='row add-new-event-container'>
-            <div className='col-4 choose-event'>
+            <div className='col-12 choose-event'>
                 <ChooseEvent eventsList={eventsList} handleSelectChange={handleSelectChange} onClickRegister={onClickRegister} />
             </div>
-            <div className='col-8 event-specific-registration-form h-100'>
-                <RegistrationForm removeTeamMember={removeTeamMember} removeLeader={removeLeader} eventsList={eventsList} selectedIndex={selectedIndex} setParticipantDetails={setParticipantDetails}  appendTeamMembers={appendTeamMembers} setLeader={setLeader} changeTeamName={changeTeamName} leader={teamLeader} members={teamMembers} />
+            <div className='col-12 event-specific-registration-form h-100'>
+                <RegistrationForm leader={teamLeader} members={teamMembers} eventsList={eventsList} selectedIndex={selectedIndex} setParticipantDetails={setParticipantDetails}  appendTeamMembers={appendTeamMembers} removeTeamMember={removeTeamMember} removeLeader={removeLeader} setLeader={setLeader} changeTeamName={changeTeamName} />
             </div>
         </div>
     )
