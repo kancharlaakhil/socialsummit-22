@@ -12,7 +12,11 @@ const Tabs = ({tabs, selectedIndex, changeSelectedIndex}) => {
 
    
     return (
-        <div className='tabs-container d-flex justify-content-between'>
+        <div className='tabs-container d-flex justify-content-between'
+            style={{
+                cursor : 'pointer'
+            }}
+        >
             {
                 tabs.map((ele, index)=> {
                     const name = ele.name;

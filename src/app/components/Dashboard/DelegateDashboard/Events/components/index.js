@@ -27,7 +27,11 @@ const EventsMainComponent = () => {
 
     return (
     <div className="events-main-component">
-        <div className="col-md-6 col-12 tabs">
+        <div className="col-md-6 col-12 tabs"
+            style={{
+                cursor : 'pointer'
+            }}
+        >
             <Tabs tabs={tabs} selectedIndex={selectedTab} changeSelectedIndex={changeSelectedIndex}></Tabs>
         </div>
         <div className={tabMainViewClass}>{
