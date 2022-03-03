@@ -3,7 +3,7 @@ import Dropdown from './Dropdown'
 
 import './css/chooseEvent.css'
 
-const checkboxMessage = "I hereby declear Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+const checkboxMessage = "I hereby declare that the information furnished above is true, complete and correct to the best of my knowledge and belief."
 
 const ChooseEvent = ({eventsList, handleSelectChange, onClickRegister}) => {
 
