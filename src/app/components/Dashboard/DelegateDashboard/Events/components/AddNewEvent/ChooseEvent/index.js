@@ -5,7 +5,7 @@ import './css/chooseEvent.css'
 
 const checkboxMessage = "I hereby declare that the information furnished above is true, complete and correct to the best of my knowledge and belief."
 
-const ChooseEvent = ({eventsList, handleSelectChange, onClickRegister}) => {
+const ChooseEvent = ({eventsList, handleSelectChange, onClickRegister, err, registeredClass}) => {
 
     const [checked, setChecked] = useState(false);
 
@@ -13,9 +13,8 @@ const ChooseEvent = ({eventsList, handleSelectChange, onClickRegister}) => {
         setChecked(!checked);
     };
 
-    
-
-
+    const buttonClass = err ? `choose-event-err` :`choose-event-${registeredClass}`;
+   
     return(
         <div className='choose-event-container'>
          <div className="dropdown-container">
@@ -30,9 +29,14 @@ const ChooseEvent = ({eventsList, handleSelectChange, onClickRegister}) => {
                 />
                 {checkboxMessage}
               </label>
-              <button className="choose-event-register-button" onClick={onClickRegister}>
-              Register
-            </button>
+              {
+                (registeredClass === 'successfully-registered') ?(<div className='successfully-registered-class'>Successfully Registered!</div>) : (
+                  <button className={buttonClass} onClick={onClickRegister}>
+                      Register
+                  </button>
+                )
+              }
+              
 
           </div>
          

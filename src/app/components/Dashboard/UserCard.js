@@ -15,7 +15,7 @@ function UserCard({user, logout}) {
 
     const history = useHistory()
 
-    const Role = (user.role==='ca') ? 'Campus Ambassador' : 'Delegate'
+    const Role = (user.role==='ca') ? 'Campus Ambassador' : ((user.role ==='delegate') ? 'Delegate' : 'Admin')
   
   return (
     <div style={{height : '100vh'}}>

@@ -13,7 +13,7 @@ import UserProfiePlaceholder from "../../assets/images/UserProfilePlaceholder.pn
 const MobileUserCard = ({open, onClick, user, logout}) => {
 
     const history = useHistory();
-    const Role = (user.role==='ca') ? 'Campus Ambassador' : 'Delegate'
+    const Role = (user.role==='ca') ? 'Campus Ambassador' : ((user.role ==='delegate') ? 'Delegate' : 'Admin')
 
     return (
 
