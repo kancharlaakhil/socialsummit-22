@@ -10,6 +10,8 @@ function Uploads({tasks, index})  {
   const [instagramUpload, setInstagramUpload] = useState(null);
   const [linkedinUpload, setLinkedinUpload] = useState(null);
   const [whatsappUpload, setWhatsappUpload] = useState(null);
+  const [show, setShow] = useState(false)
+  const [err, setErr] = useState(false)
 
   
 
@@ -27,6 +29,17 @@ function Uploads({tasks, index})  {
         data.append('whatsappUpload', whatsappUpload)
 
         const what = await axios.post(`/taskSubmission/${tasks[index]._id}`, data)
+
+        console.log("in upload", what)
+
+        if(what.data.status === 'success'){
+          setShow(true)
+          setErr(false)
+        }
+        else {
+          setShow(false)
+          setErr(true)
+        }
       
     }
 
@@ -85,9 +98,15 @@ function Uploads({tasks, index})  {
           </div>
           
         </div>
-        <button className="Submitbtn"
+        <div>
+        <button className={err?(`errButton`): ( show? 'uploadedBtn' : 'Submitbtn')}
                 onClick = {onSubmitClick}
-        >Submit</button>
+        >{
+          err? 'Failed' :
+         ( show? 'Uploaded!' : 'Submit')
+        }</button>
+       
+        </div>
       </div>
         
     );

@@ -69,3 +69,37 @@ font-weight: normal;
 font-size: 1rem;
 line-height: 1.1rem;
 }
+
+.errButton{
+  margin:0 50px;
+  width:80%;
+  background: #F0EBF6;
+  border-radius: 5px;
+  background-color: #b83535;
+  cursor: pointer;
+  height: 32px;
+  border:none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color:#ffffff;
+}
+
+.uploadedBtn{
+  color:#ffffff;
+  margin:0 50px;
+  width:80%;
+  background: #F0EBF6;
+  border-radius: 5px;
+  background-color: #3c9468;
+  cursor: pointer;
+  height: 32px;
+  border:none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
