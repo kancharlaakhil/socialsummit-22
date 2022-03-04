@@ -8,6 +8,7 @@ import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Das
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
 import UploadTaskForm from "../app/admin/UploadTaskForm";
 import RegisterCAForm from "../app/admin/RegisterCA";
+import ShowTasks from "../app/admin/ShowTasks";
 
 import { connect } from "react-redux";
 import GetAllRegistration from "../app/admin/GetAllRegistration";
@@ -51,6 +52,7 @@ const App = ({ user }) => {
           )}
           {!user.isLoggedIn ? (
             <Route exact path="/profileCompletion" component={ComingSoon} />
+
           ) : (
             <Route
               exact
@@ -85,6 +87,7 @@ const App = ({ user }) => {
           ) : (
             <Route exact path="/admin/getAllUsers" component={ComingSoon} />
           )}
+
         </Switch>
       </Suspense>
       <Footer />

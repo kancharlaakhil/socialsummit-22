@@ -12,16 +12,32 @@ const AddNewEvent = () => {
     const [participant, setParticipant] = useState({});
     const [teamMembers, setTeamMembers] = useState([]);
     const [teamLeader, setTeamLeader] = useState({});
-    const [teamName, setTeamName] = useState('')
+    const [teamName, setTeamName] = useState('');
+    const [regEventsIds, setRegisteredEventsIDsList] = useState('');
+    const [registeredClass, setRegisteredClass] = useState('not-registered');
+    const [errClass, setErr] = useState(false) 
 
     React.useEffect(() => {
-        axios.get("/events").then((response) => {
-            const events = response.data.data.data
-            setEventsList(events)
-         
-        });
+
+        axios.get("/eventRegistrations/getMyEventRegistrations").then((response) => {
+            const registeredEvents = response.data.data.data
+            const regEventsIds = registeredEvents.map((ele) => ele.event)
+            setRegisteredEventsIDsList(regEventsIds)
+            axios.get("/events").then((response) => {
+             
+                const events = response.data.data.data
+                const eventsList = events.filter((ele)=> {
+                   
+                    return !(regEventsIds.includes(ele._id))
+                })
+               
+                setEventsList(eventsList)
+                
+            });
+        });       
         
-      }, []);
+      }, [registeredClass]);
+
 
     const onClickRegister = async () => {
         if(eventsList[selectedIndex].isTeamEvent){
@@ -34,7 +50,16 @@ const AddNewEvent = () => {
                 leader : teamLeader,
                 teamName 
             }
-            await axios.post("/teams", registerObject)
+            const teamFormed =await axios.post("/teams", registerObject);
+            if(teamFormed.data.status === 'success'){
+                console.log("hey")
+                setRegisteredClass('successfully-registered')
+                setErr(false)
+            }
+            else{
+                setRegisteredClass('not-registered')
+                setErr(true)
+            }
         }
         else{
             
@@ -43,9 +68,25 @@ const AddNewEvent = () => {
                 eventName : eventsList[selectedIndex].name,
                 eventInfo : eventsList[selectedIndex].info,
             }
-            await axios.post("/eventRegistrations", registerObject)
+            const what = await axios.post("/eventRegistrations", registerObject)
+            console.log("im gere", what)
+            if(what.data.status === 'success'){
+                console.log("hey")
+                setRegisteredClass('successfully-registered')
+                setErr(false)
+            }
+            else{
+                setRegisteredClass('not-registered')
+                setErr(true)
+            }
 
         }
+        axios.get("/eventRegistrations/getMyEventRegistrations").then((response) => {
+            const registeredEvents = response.data.data.data
+            const regEventsIds = registeredEvents.map((ele) => ele.event)
+            setRegisteredEventsIDsList(regEventsIds)
+        })
+
       
     }
 
@@ -89,7 +130,7 @@ const AddNewEvent = () => {
     return (
         <div className='row add-new-event-container'>
             <div className='col-4 choose-event'>
-                <ChooseEvent eventsList={eventsList} handleSelectChange={handleSelectChange} onClickRegister={onClickRegister} />
+                <ChooseEvent registeredClass={registeredClass} errClass={errClass} eventsList={eventsList} handleSelectChange={handleSelectChange} onClickRegister={onClickRegister} />
             </div>
             <div className='col-8 event-specific-registration-form h-100'>
                 <RegistrationForm removeTeamMember={removeTeamMember} removeLeader={removeLeader} eventsList={eventsList} selectedIndex={selectedIndex} setParticipantDetails={setParticipantDetails}  appendTeamMembers={appendTeamMembers} setLeader={setLeader} changeTeamName={changeTeamName} leader={teamLeader} members={teamMembers} />
