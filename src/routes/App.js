@@ -8,7 +8,7 @@ import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Das
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
 import UploadTaskForm from "../app/admin/UploadTaskForm";
 import RegisterCAForm from "../app/admin/RegisterCA";
-import ShowTasks from "../app/admin/ShowTasks";
+import CAList from "../app/admin/CAList";
 
 import { connect } from "react-redux";
 import GetAllRegistration from "../app/admin/GetAllRegistration";
@@ -88,6 +88,34 @@ const App = ({ user }) => {
             <Route exact path="/admin/getAllUsers" component={ComingSoon} />
           )}
 
+           { (!user.isLoggedIn) ?
+            <Route exact path="/profileCompletion" component={ComingSoon} />
+            :
+            <Route exact path="/profileCompletion" component={ProfileCompletionForm} />
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/uploadTasks" component={UploadTaskForm}></Route>:
+            <Route exact path="/admin/uploadTasks" component={ComingSoon} /> 
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/registerCA" component={RegisterCAForm}></Route>:
+            <Route exact path="/admin/registerCA" component={ComingSoon} /> 
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/getAllUsers" component={GetAllRegistration}></Route>:
+            <Route exact path="/admin/getAllUsers" component={ComingSoon} /> 
+          }
+          {
+            (user.isLoggedIn && user.user.role === 'admin') ?
+            <Route exact path = "/admin/showTasks" component={CAList}></Route>:
+            <Route exact path="/admin/showTasks" component={ComingSoon} /> 
+          }
+          
+          
+          
         </Switch>
       </Suspense>
       <Footer />

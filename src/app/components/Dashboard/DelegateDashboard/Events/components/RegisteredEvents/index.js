@@ -39,6 +39,7 @@ const RegisteredEvents = () => {
           );
         })}
       </div>
+      
     </div>
   );
 };
