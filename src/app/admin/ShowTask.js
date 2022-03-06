@@ -1,18 +1,9 @@
 import React,{useState} from 'react';
 import axios from 'axios'
 
-const ShowTasks = () => {
+const ShowTask = ({task}) => {
 
-    const [tasks, setTasks] = useState([])
-
-    React.useEffect(() => {
-        axios.get("/tasks").then((response) => {
-            
-          const tasks = response.data.data.data
-          setTasks(tasks)
-        });
-        
-      }, []);
+  
 
       
     const getMonth = (month) => {
@@ -45,30 +36,29 @@ const ShowTasks = () => {
         }
        
     }
+    const issuedDate = convertDate(task.issuedDate);
+    const deadlineDate = convertDate(task.deadlineDate)
+  
 
     return (
         <div className='admin-show-tasks-container'>
-            {
-                tasks.map((ele) => {
-                    const issuedDate = convertDate(ele?.issuedDate);
-                    const deadlineDate = convertDate(ele?.deadlineDate)
 
-
-                    return(
+            
+           
+                    
                         <div>
-                            <div> Task Name : {ele.name}</div>
-                            <div> Task Description : {ele.description}</div>
+                            <div> Task Name : {task.name}</div>
+                            <div> Task Description : {task.description}</div>
                             <div> Issued Date : {issuedDate}</div>
-                            <div> Deadline Date : {issuedDate}</div>
-                            <div> Total Points : {ele.totalPoints}</div>
-                            <div> Each Points : {ele.eachPoints}</div>
+                            <div> Deadline Date : {deadlineDate}</div>
+                            <div> Total Points : {task.totalPoints}</div>
+                            <div> Each Points : {task.eachPoints}</div>
                         </div>
-                    )
-                })
+                    
+                
 
-            }
         </div>
     )
 }
 
-export default ShowTasks
+export default ShowTask

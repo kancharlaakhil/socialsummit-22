@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const AddNewEvent = () => {
 
-    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState(-1);
     const [eventsList, setEventsList] = useState([]);
 
     const [participant, setParticipant] = useState({});
@@ -40,6 +40,7 @@ const AddNewEvent = () => {
 
 
     const onClickRegister = async () => {
+        console.log("events on click register", eventsList[selectedIndex] )
         if(eventsList[selectedIndex].isTeamEvent){
             
             const registerObject = {
@@ -69,7 +70,7 @@ const AddNewEvent = () => {
                 eventInfo : eventsList[selectedIndex].info,
             }
             const what = await axios.post("/eventRegistrations", registerObject)
-            console.log("im gere", what)
+            console.log("im now gere", what)
             if(what.data.status === 'success'){
                 console.log("hey")
                 setRegisteredClass('successfully-registered')
@@ -86,6 +87,7 @@ const AddNewEvent = () => {
             const regEventsIds = registeredEvents.map((ele) => ele.event)
             setRegisteredEventsIDsList(regEventsIds)
         })
+        setSelectedIndex(-1)
 
       
     }
@@ -123,6 +125,7 @@ const AddNewEvent = () => {
 
       const handleSelectChange = (index) => {
           setSelectedIndex(index)
+          setRegisteredClass('not-registered')
       }
 
     

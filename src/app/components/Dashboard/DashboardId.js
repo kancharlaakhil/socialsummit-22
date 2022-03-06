@@ -26,7 +26,7 @@ const DashboardId = ({isMobile, summitID}) => {
                 Dashboard
             </div>
             <div className={`row h-25 ${caIdTextClass}`}>
-                #{summitId}
+                {summitId}
             </div>
                
     

@@ -12,6 +12,9 @@ const EventsMainComponent = () => {
     
     let windowSize = useWidthAndHeight();
     let width = windowSize[0];
+
+    const [buttonStyles, setButtonStyles]= useState({});
+    const [eventTextStyles, setEventTextStyles] = useState({})
   
 
     const tabs = [
@@ -22,6 +25,27 @@ const EventsMainComponent = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
     const changeSelectedIndex = (index) => setSelectedTab(index)
+
+    
+    React.useEffect(() => {
+        const mobileButtonStyles = {
+            fontSize : '0.9rem',
+            padding:'0.5rem',
+            margin:'0rem'
+        }
+    
+       
+    
+        const mobileEventTextStyles = {
+            fontSize :'0.8rem',
+            padding : '0.5rem'
+            
+        }
+    if(width<1150) setButtonStyles(mobileButtonStyles);
+    if(width<1150) setEventTextStyles(mobileEventTextStyles)
+    },[width])
+
+    
 
     const tabMainViewClass = (width > 1150 ) ? 'tab-main-view' : 'mobile-tab-main-view'
 
@@ -43,6 +67,23 @@ const EventsMainComponent = () => {
         }
 
         </div>
+        {
+            (selectedTab===0) ? <div className="form-button d-flex justify-content-end"
+            style={{
+                height : '13%'
+            }}>
+
+            <div className="col-md-6 col-12 d-flex justify-content-end">
+                <div className="col-6 event-submission-form-text d-flex align-content-center justify-content-end" style={eventTextStyles}>Event Submission Form</div>
+                <div className="col-6">
+                    
+                    <div className="event-submission-form-button">
+                            <a style={buttonStyles} href="https://forms.gle/QQFA65iHxbcPRp896" target="_blank" rel="noreferrer" >Go To Forms</a>
+                    </div>
+                </div>
+            </div>
+        </div>:null
+        }
 
     </div>
     )
