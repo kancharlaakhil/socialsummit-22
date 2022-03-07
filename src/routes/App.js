@@ -24,7 +24,7 @@ const Contact = React.lazy(() => import("../app/components/ContactUs"));
 const Events = React.lazy(() => import("../app/components/Events"));
 //const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
 const SpecificEvents = React.lazy(() =>
-  import("../app/components/SpecificEvents/Sociothon")
+  import("../app/components/SpecificEvents/ExecutiveBoard")
 );
 
 const App = ({ user }) => {
@@ -52,7 +52,6 @@ const App = ({ user }) => {
           )}
           {!user.isLoggedIn ? (
             <Route exact path="/profileCompletion" component={ComingSoon} />
-
           ) : (
             <Route
               exact
@@ -87,7 +86,6 @@ const App = ({ user }) => {
           ) : (
             <Route exact path="/admin/getAllUsers" component={ComingSoon} />
           )}
-
         </Switch>
       </Suspense>
       <Footer />
