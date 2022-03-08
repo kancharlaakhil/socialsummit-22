@@ -13,7 +13,7 @@ const AddNewEvent = () => {
     const [teamMembers, setTeamMembers] = useState([]);
     const [teamLeader, setTeamLeader] = useState({});
     const [teamName, setTeamName] = useState('');
-    const [regEventsIds, setRegisteredEventsIDsList] = useState('');
+    
     const [registeredClass, setRegisteredClass] = useState('not-registered');
     const [errClass, setErr] = useState(false) 
 
@@ -22,7 +22,7 @@ const AddNewEvent = () => {
         axios.get("/eventRegistrations/getMyEventRegistrations").then((response) => {
             const registeredEvents = response.data.data.data
             const regEventsIds = registeredEvents.map((ele) => ele.event)
-            setRegisteredEventsIDsList(regEventsIds)
+           
             axios.get("/events").then((response) => {
              
                 const events = response.data.data.data
@@ -82,11 +82,7 @@ const AddNewEvent = () => {
             }
 
         }
-        axios.get("/eventRegistrations/getMyEventRegistrations").then((response) => {
-            const registeredEvents = response.data.data.data
-            const regEventsIds = registeredEvents.map((ele) => ele.event)
-            setRegisteredEventsIDsList(regEventsIds)
-        })
+        
         setSelectedIndex(-1)
 
       

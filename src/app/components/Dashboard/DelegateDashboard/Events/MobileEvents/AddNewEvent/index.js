@@ -14,19 +14,34 @@ const AddNewEvent = () => {
     const [teamLeader, setTeamLeader] = useState({});
     const [teamName, setTeamName] = useState('')
 
+    const [registeredClass, setRegisteredClass] = useState('not-registered');
+    const [errClass, setErr] = useState(false) 
+
     React.useEffect(() => {
-        axios.get("/events").then((response) => {
-            const events = response.data.data.data
-            setEventsList(events)
-         
-        });
+
+        axios.get("/eventRegistrations/getMyEventRegistrations").then((response) => {
+            const registeredEvents = response.data.data.data
+            const regEventsIds = registeredEvents.map((ele) => ele.event)
+           
+            axios.get("/events").then((response) => {
+             
+                const events = response.data.data.data
+                const eventsList = events.filter((ele)=> {
+                   
+                    return !(regEventsIds.includes(ele._id))
+                })
+               
+                setEventsList(eventsList)
+                
+            });
+        });       
         
-      }, []);
+      }, [registeredClass]);
 
     const onClickRegister = async () => {
+        console.log("events on click register", eventsList[selectedIndex] )
         if(eventsList[selectedIndex].isTeamEvent){
-
-
+            
             const registerObject = {
                 event : eventsList[selectedIndex]._id,
                 eventName : eventsList[selectedIndex].name,
@@ -35,18 +50,40 @@ const AddNewEvent = () => {
                 leader : teamLeader,
                 teamName 
             }
-            await axios.post("/teams", registerObject)
+            const teamFormed =await axios.post("/teams", registerObject);
+            if(teamFormed.data.status === 'success'){
+                console.log("hey")
+                setRegisteredClass('successfully-registered')
+                setErr(false)
+            }
+            else{
+                setRegisteredClass('not-registered')
+                setErr(true)
+            }
         }
         else{
             
             const registerObject = {
                 event : eventsList[selectedIndex]._id,
                 eventName : eventsList[selectedIndex].name,
-                eventInfo : eventsList[selectedIndex].eventInfo,
+                eventInfo : eventsList[selectedIndex].info,
             }
-            await axios.post("/eventRegistrations", registerObject)
+            const what = await axios.post("/eventRegistrations", registerObject)
+            console.log("im now gere", what)
+            if(what.data.status === 'success'){
+                console.log("hey")
+                setRegisteredClass('successfully-registered')
+                setErr(false)
+            }
+            else{
+                setRegisteredClass('not-registered')
+                setErr(true)
+            }
 
         }
+        
+        setSelectedIndex(-1)
+
       
     }
 
@@ -81,16 +118,17 @@ const AddNewEvent = () => {
     }
 
 
-      const handleSelectChange = (index) => {
-          setSelectedIndex(index)
-      }
+    const handleSelectChange = (index) => {
+        setSelectedIndex(index)
+        setRegisteredClass('not-registered')
+    }
 
     
 
     return (
         <div className='row add-new-event-container'>
             <div className='col-12 choose-event'>
-                <ChooseEvent eventsList={eventsList} handleSelectChange={handleSelectChange} onClickRegister={onClickRegister} />
+                <ChooseEvent registeredClass={registeredClass}  errClass={errClass} eventsList={eventsList} handleSelectChange={handleSelectChange} onClickRegister={onClickRegister} />
             </div>
             <div className='col-12 event-specific-registration-form h-100'>
                 <RegistrationForm leader={teamLeader} members={teamMembers} eventsList={eventsList} selectedIndex={selectedIndex} setParticipantDetails={setParticipantDetails}  appendTeamMembers={appendTeamMembers} removeTeamMember={removeTeamMember} removeLeader={removeLeader} setLeader={setLeader} changeTeamName={changeTeamName} />
