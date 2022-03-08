@@ -28,6 +28,7 @@ function LoginForm(props) {
           <form class="p-5 registration-form"
             onSubmit = {(event) => {
               event.preventDefault();
+              console.log(loginState)
               login(loginState, history)
             }}
           >
@@ -68,7 +69,7 @@ function LoginForm(props) {
                 >
                   {" "}
                   <span>Password</span>{" "}
-                  <Link to="/forgot-password" className="th-right-link">
+                  <Link to="/forgotPassword" className="th-right-link">
                     Forgot Password
                   </Link>
                 </label>
