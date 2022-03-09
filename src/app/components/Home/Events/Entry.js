@@ -9,10 +9,12 @@ function Entry(props) {
           style={{
             height : '80%',
             width : '16rem',
+            borderRadius:'40%',
             backgroundImage : `url(${props.image})`,
             backgroundSize : 'contain',
             backgroundPosition : 'center',
             backgroundRepeat:'no-repeat'
+            
           }}
         ></div>
         <div className="event-card-name"

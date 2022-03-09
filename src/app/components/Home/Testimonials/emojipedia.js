@@ -17,7 +17,7 @@ const emojipedia = [
       id: 2,
       number:2,
       post: "Past Delegate",
-      description : "I am thankful to team NSS for organising this awesome fest, which instils the power of social work through fun and engaging events.",
+      description : "I am thankful to team NSS for organising this awesome fest, which instils the power of social work through fun and engaging events. I loved the fest and got to learn a lot during it.",
       title:"Priyanka Gupta",
       image:Priyanka
     },
