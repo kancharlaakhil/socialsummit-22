@@ -1,7 +1,6 @@
 import React from "react";
 import "./css/EventLinks.css";
 
-
 function EventLinks() {
   return (
     <>
@@ -9,19 +8,18 @@ function EventLinks() {
         <div className="left">
           <h4>List Of Events</h4>
           <hr className="line" />
-          <a href="/events">Action Plan</a>
-          <a href="/events">Model United Nations(MUN)</a>
-          <a href="/events">Social conclave</a>
-          <a href="/events">Sociothon</a>
-          <a href="/events">Policy Case Competition</a>
-          <a href="/events">Innovision</a>
-          <a href="/events">Case Study</a>
-          <a href="/events">Workshop</a>
-          <a href="/events">Abhivyakti</a>
-          <a href="/events">TurnCoat</a>
-          <a href="/events">Treasure Hunt</a>
-          <a href="/events">Pre Summit Events</a>
-          
+          <a href="#1">Action Plan</a>
+          <a href="#2">Model United Nations(MUN)</a>
+          <a href="#3">Social conclave</a>
+          <a href="#4">Sociothon</a>
+          <a href="#5">Policy Case Competition</a>
+          <a href="#6">Innovision</a>
+          <a href="#7">Case Study</a>
+          <a href="#8">Workshop</a>
+          <a href="#9">Abhivyakti</a>
+          <a href="#10">TurnCoat</a>
+          <a href="#11">Treasure Hunt</a>
+          <a href="#12">Pre Summit Events</a>
         </div>
       </div>
 
