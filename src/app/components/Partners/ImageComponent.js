@@ -9,7 +9,13 @@ function ImageComponent(props) {
 
   return (
     <div className="partner" style={{ padding: "0.6rem" }}>
-      <div className="imageContainer" href={props.link}>
+      <a
+        className="imageContainer"
+        href={props.link}
+        target="_blank"
+        without
+        rel="noreferrer"
+      >
         <div
           style={{
             width: `${width}`,
@@ -20,7 +26,7 @@ function ImageComponent(props) {
             backgroundPosition: "center",
           }}
         ></div>
-      </div>
+      </a>
 
       <h1 className="partnerType">{props.title}</h1>
     </div>
