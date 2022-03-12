@@ -61,12 +61,8 @@ const App = ({ user }) => {
 
           <Route exact path="/template" component={Template}></Route>
           <Route exact path="/events/MUN" component={MUN}></Route>
-<<<<<<< HEAD
           <Route exact path="/events/PreSummitEvents" component={PreSummitEvents}></Route>
       
-=======
-
->>>>>>> f0c08eee626d51e15ef9668b99ef0a7fb5fa9c43
           <Route
             exact
             path="/resetPassword/:resetToken"
