@@ -20,7 +20,8 @@ const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
 const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
 const Template = React.lazy(() => import("../app/components/SpecificEvents/Template"));
-const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"))
+const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"));
+const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents/PreSummitEvents"))
 
 const ProfileCompletionForm = React.lazy(() =>
   import("../app/auth/ProfileCompletionForm")
@@ -46,6 +47,7 @@ const App = ({ user }) => {
           <Route exact path="/login" component={LoginForm} />
           <Route exact path="/template" component={Template}></Route>
           <Route exact path="/events/MUN" component={MUN}></Route>
+          <Route exact path="/events/PreSummitEvents" component={PreSummitEvents}></Route>
       
           <Route
               exact
