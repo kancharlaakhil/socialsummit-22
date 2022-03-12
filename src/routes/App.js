@@ -17,22 +17,23 @@ const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
-const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
-const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
+const EmailSend = React.lazy(() =>
+  import("../app/auth/forgotPassword/EmailSend")
+);
+const ResetPassword = React.lazy(() =>
+  import("../app/auth/forgotPassword/ResetPassword")
+);
 
 const ProfileCompletionForm = React.lazy(() =>
   import("../app/auth/ProfileCompletionForm")
 );
 const Contact = React.lazy(() => import("../app/components/ContactUs"));
 const Events = React.lazy(() => import("../app/components/Events"));
+const Partner = React.lazy(() => import("../app/components/Partners"));
 //const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
-<<<<<<< HEAD
-
-=======
 const SpecificEvents = React.lazy(() =>
   import("../app/components/SpecificEvents/ExecutiveBoard")
 );
->>>>>>> b96d63c812dc13aa59e66d493ec494aa66472b11
 
 const App = ({ user }) => {
   return (
@@ -45,20 +46,19 @@ const App = ({ user }) => {
           <Route exact path="/speakers" component={ComingSoon} />
           <Route exact path="/partners" component={ComingSoon} />
           <Route exact path="/events" component={Events} />
+
+          {/* skjfeshjkhf */}
+          <Route exact path="/partners1" component={Partner} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
-      
+
+          <Route exact path="/forgotPassword" component={EmailSend} />
           <Route
-              exact
-              path="/forgotPassword"
-              component={EmailSend}
-            />
-             <Route
-              exact
-              path="/resetPassword/:resetToken"
-              component={ResetPassword}
-            />
+            exact
+            path="/resetPassword/:resetToken"
+            component={ResetPassword}
+          />
 
           {!user.isLoggedIn ? (
             <Route exact path="/dashboard" component={ComingSoon} />
