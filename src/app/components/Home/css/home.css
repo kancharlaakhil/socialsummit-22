@@ -47,7 +47,7 @@
   font-weight: 600;
   font-size: 6vw;
   color: #323232;
-  line-height: 140%;
+  line-height: 110%;
 }
 
 .th-home-top-header span {
@@ -77,12 +77,14 @@
   width:16rem;
   background: #FFFFFF;
 
-border-radius: 8px;
+border-radius: 15px;
 box-sizing: border-box;
 }
 
 .event-card-name{
-  background: linear-gradient(180deg, rgba(102, 58, 163, 0.15) 0%, rgba(255, 255, 255, 0.3) 100%);
+  border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  background-color:#663AA3 ;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   backdrop-filter: blur(20px);
@@ -96,12 +98,12 @@ box-sizing: border-box;
   justify-content: center;
   align-items: center;
   align-content: center;
- 
+  text-align: center;
 /* or 45px */
 
 
 
-color: #444444;
+color: #FFFFFF;
   }
 
 .th-home-event-card img{
@@ -130,11 +132,14 @@ color: #444444;
   padding:20px;
   text-align: center;
   background-color: azure;
+  height: 12rem;
+  margin-bottom: 2px;
 }
 
 
 .th-home-testimonial-lc{
   display: flex;
+  align-items: center;
 }
 .th-home-testimonial-lc img{
   width:50px;
@@ -216,17 +221,18 @@ color: #444444;
   color: white;
   border-radius: 5.48863px;
   text-decoration: none !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
   text-align: center;
+  width: 60%;
 }
 
 .th-register-btn-text {
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 30px;
   color: white;
 }

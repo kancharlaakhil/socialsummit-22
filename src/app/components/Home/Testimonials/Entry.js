@@ -1,10 +1,18 @@
 import React from "react";
 
 import whiteTestimonialCard from './images/whiteTestimonialCard.png'
-import purpleTestimonialCard from './images/purpleTestimonialCard.png'
+import purpleTestimonialCard from './images/purpleTestimonialCard.png';
+
+import {useWidthAndHeight} from './../../../../hooks/useWidthAndHeight';
+
 
 
 function Entry(props) {
+
+  let windowSize = useWidthAndHeight();
+  let width = windowSize[0];
+
+  const cardClass = (width>1150) ? 'th-home-testimonial-uc' : 'th-home-testimonial-uc-mobile'
 
 
 let customStyle= {
@@ -15,18 +23,11 @@ let customStyle= {
   backgroundSize : 'cover',
   backgroundPosition : 'center'
 }
-  if(props.number%2){
     customStyle.backgroundColor = '#F8F8F8'
     customStyle.backgroundImage = `url(${whiteTestimonialCard})`;
     customStyle.color= "#663AA3"
 
-  }
-  else{
-    customStyle.backgroundColor = '#663AA3'
-    customStyle.backgroundImage = `url(${purpleTestimonialCard})`;
-    customStyle.color = "#F8F8F8"
-    customStyle.marginTop = "120px";
-  }
+  
   return (
     <div className="th-home-testimonial-card" >
       <div className="th-home-testimonial-uc" style={customStyle}>

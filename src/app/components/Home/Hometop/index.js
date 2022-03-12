@@ -34,7 +34,7 @@ class Hometop extends Component {
 
             </p>
             <div className="d-flex mt-3">
-              <Link to="/signup" className="th-register-btn w-50 mr-3">
+              <Link to="/signup" className="th-register-btn mr-3">
                 <span className="th-register-btn-text">Register</span>
               </Link>
             </div>

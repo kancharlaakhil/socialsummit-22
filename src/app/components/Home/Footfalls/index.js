@@ -9,9 +9,10 @@ class Footfall extends Component {
         {this.props.width > 780 ? (
           <div >
             <div >
-
+              <br/><br/>
 
               <Counter />
+              <br/><br/>
 
             </div>
             {/* image overlay */}
@@ -22,9 +23,9 @@ class Footfall extends Component {
           <div className="mt-5 pt-5">
             <div >
               <div >
-
+              <br/><br/>
                 <Counter />
-
+              <br/><br/>
 
               </div>
               {/* image overlay */}
