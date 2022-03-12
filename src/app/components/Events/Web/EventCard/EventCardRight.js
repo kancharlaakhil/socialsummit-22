@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 import '../css/EventCard.css'
 
-const EventCardRight = ({image, name, description, rulebook, prizeWorth, id, link1, link2}) => {
+const EventCardRight = ({image, name, description, rulebook, prizeWorth, id, link1, link2, eventLink}) => {
     return (
         <div className="single-event-container">
             <div className="row h-100">
@@ -15,6 +15,7 @@ const EventCardRight = ({image, name, description, rulebook, prizeWorth, id, lin
                 <div className="row h-75 single-event-description-right">
                     <div className="row h-75 description-content">
                         {description}
+                        <div> <Link to={`/events/${eventLink}`} className="link-text">Click here</Link> to know more about the events. </div>
                         <div className="row case-study-links d-flex justify-space-between" style={{width : '50%'}}>
                             <div className="col-6 d-flex justify-content-start case-study-link">{link1 ? 
                             <a href={link1}>{(name === "Policy Case Competition")? 'Policy-Case-1' : 'Case-Study-1' }</a>:''}</div>

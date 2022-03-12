@@ -27,9 +27,9 @@ const Header = ({data}) => {
               {data.eventDescription}
             </div>
             <div className="th-event-sociothon-top1-links">
-              <a href="#">Register &gt; </a>
-              <a href={`${data.rulebook}`}>Rulebook &gt;</a>
-              {data.form ? <a href={`${data.form}`}>Country Preference Form &gt;</a> : null}
+              <a href="#" target="_blank" rel="noreferrer">Register &gt; </a>
+              <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>
+              {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer" >Country Preference Form &gt;</a> : null}
             </div>
           </div>
           <div className="th-event-sociothon-top2">
@@ -61,9 +61,9 @@ const Header = ({data}) => {
               <span style={{ color: "#663AA3", fontSize: "1.8rem" }}>{data.prizeWorth}</span>
             </h2>
             <div className="th-event-sociothon-top1-links">
-              <a href="#">Register &gt; </a>
-              <a href={`${data.rulebook}`}>Rulebook &gt;</a>
-              {data.form ? <a href={`${data.form}`}>Country Preference Form &gt;</a> : null}
+              <a href="#" target="_blank" rel="noreferrer">Register &gt; </a>
+              <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>
+              {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer">Country Preference Form &gt;</a> : null}
             </div>
           </div>
         </div>
