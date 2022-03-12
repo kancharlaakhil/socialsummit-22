@@ -8,7 +8,7 @@ const Events = () => {
 
   return (
     <React.Fragment>
-      {width > 1150 ? <EventsWeb/> : <EventsMob/>}
+      {width > 1150 ? <EventsWeb /> : <EventsMob />}
     </React.Fragment>
   );
 };

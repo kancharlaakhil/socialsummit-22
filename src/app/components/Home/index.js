@@ -18,8 +18,8 @@ const HomeMain = () => {
       <div className="th-home-top-container">
         <Hometop width={width} />
 
-        <Events width={width} />
         <PastSpeakers width={width} />
+        <Events width={width} />
         <Footfall width={width} />
         <Testimonials width={width} />
       </div>

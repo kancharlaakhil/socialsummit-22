@@ -1,0 +1,57 @@
+.partnerPage {
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.patronage {
+  width: 40%;
+  margin: auto;
+}
+
+.associate {
+  width: 40%;
+  margin: auto;
+}
+
+.sponsors .logo2 {
+  width: 60%;
+  margin: auto;
+}
+
+.logo2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sponsors .logo3 {
+  width: 80%;
+  margin: auto;
+}
+
+.onlinePartner .logo3 {
+  width: 80%;
+  margin: auto;
+}
+
+.logo3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo4 {
+  justify-content: space-around;
+}
+
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  /* line-height: 44px; */
+  /* identical to box height */
+  text-align: center;
+  color: #4f4f4f;
+}

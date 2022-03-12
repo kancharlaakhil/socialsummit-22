@@ -1,0 +1,57 @@
+.partnerPageMob {
+  width: 100%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.patronageMob {
+  width: 100%;
+  margin: auto;
+}
+
+.associateMob {
+  width: 100%;
+  margin: auto;
+}
+
+.sponsorsMob .logo2Mob {
+  width: 100%;
+  margin: auto;
+}
+
+.logo2Mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sponsorsMob .logo3Mob {
+  width: 100%;
+  margin: auto;
+}
+
+.onlinePartnerMob .logo3Mob {
+  width: 80%;
+  margin: auto;
+}
+
+.logo3Mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo4Mob {
+  justify-content: space-around;
+}
+
+.headingMob {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  /* line-height: 44px; */
+  /* identical to box height */
+  text-align: center;
+  color: #4f4f4f;
+}
