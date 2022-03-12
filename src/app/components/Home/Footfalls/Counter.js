@@ -10,7 +10,7 @@ class Counter extends Component {
           <div className="col-sm-3 col-6 text-center">
             <CountUp
               start={0}
-              end={10000}
+              end={12000}
               className="mb-1 th-home-count"
               suffix="+"
               duration={5}
