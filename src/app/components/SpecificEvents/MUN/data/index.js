@@ -2,6 +2,8 @@ import unhcr from './unhcr.png';
 import uncsw from './uncsw.png';
 import lokSabha from './lok-sabha.png'
 
+import MUN from './mun.svg'
+
 import Sarbanga from './Sarbanga.jpeg';
 import Kashish from './Kashish.jpeg';
 import Naman from './Naman.jpeg';
@@ -11,7 +13,7 @@ import Albert from './Albert.jpeg'
 
 export const header = {
     eventName : "Model United Nations (MUN)",
-    image : Albert,
+    image : MUN,
     eventInfo : "19th Mar’22 ; 10 am-1pm",
     eventDescription : "With an ever-increasing craze of MUN, the National Social Summit 2022 brings you the opportunity to put yourself in the shoes of a nation’s representative. Grab the opportunity and see what it feels like to present your oratory, behavioral and thinking skills. ",
     prizeWorth :"120K",

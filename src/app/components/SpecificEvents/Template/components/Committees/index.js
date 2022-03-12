@@ -5,7 +5,9 @@ import SingleComponent from './SingleComponent';
 
 import './css/Committees.css'
 
-const Committees = ({data}) => {
+const Committees = ({data, style}) => {
+
+    
     return (
         <div className='committees-component'>
             <div className='committees-container-header d-flex justify-content-center'>Committees</div>
@@ -13,7 +15,7 @@ const Committees = ({data}) => {
             {
                 data.map((ele)=> {
                     return(
-                        <SingleComponent ele={ele}></SingleComponent>
+                        <SingleComponent ele={ele} style={style}></SingleComponent>
                     )
                 })
             }

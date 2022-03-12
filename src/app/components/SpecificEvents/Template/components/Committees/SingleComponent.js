@@ -2,9 +2,12 @@ import React from 'react';
 
 import './css/SingleComponent.css'
 
-const SingleComponent = ({ele}) => {
+const SingleComponent = ({ele, style}) => {
+
+  const {fontSize, padding, margin, widthContainer} = style
+
     return(
-        <div className="committee-card">
+        <div className="committee-card" style={{width : `${widthContainer}`}}>
         <div className="committee-card-image"
           style={{
             height : '40%',
@@ -18,17 +21,17 @@ const SingleComponent = ({ele}) => {
           
         </div>
         <div className="committee-card-description" style={{ height : '40%'}}>
-          <p>{ele.description}</p>
+          <p style={{  fontSize :`${fontSize}` }}>{ele.description}</p>
         </div>
 
         <div className='committee-card-buttons d-flex' style={{ height : '15%'}}>
           <div className='button' style={{ cursor :"pointer"}}>
-            <a href={`${ele.button1Link}`}>
+            <a href={`${ele.button1Link}`} style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
             {ele.button1Name}
             </a>
           </div>
           <div className='button' style={{cursor :"pointer"}}>
-          <a href={`${ele.button2Link}`}>
+          <a href={`${ele.button2Link}`} style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
             {ele.button2Name}
             </a>
           </div>
