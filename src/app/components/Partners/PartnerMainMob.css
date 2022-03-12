@@ -1,51 +1,51 @@
-.partnerPage {
-  width: 80%;
+.partnerPageMob {
+  width: 100%;
   margin: auto;
   margin-top: 10rem;
 }
 
-.patronage {
-  width: 40%;
+.patronageMob {
+  width: 100%;
   margin: auto;
 }
 
-.associate {
-  width: 40%;
+.associateMob {
+  width: 100%;
   margin: auto;
 }
 
-.sponsors .logo2 {
-  width: 60%;
+.sponsorsMob .logo2Mob {
+  width: 100%;
   margin: auto;
 }
 
-.logo2 {
+.logo2Mob {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.sponsors .logo3 {
+.sponsorsMob .logo3Mob {
+  width: 100%;
+  margin: auto;
+}
+
+.onlinePartnerMob .logo3Mob {
   width: 80%;
   margin: auto;
 }
 
-.onlinePartner .logo3 {
-  width: 80%;
-  margin: auto;
-}
-
-.logo3 {
+.logo3Mob {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.logo4 {
+.logo4Mob {
   justify-content: space-around;
 }
 
-.heading {
+.headingMob {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;

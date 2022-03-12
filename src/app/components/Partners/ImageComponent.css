@@ -8,7 +8,7 @@
   margin: auto;
   margin-bottom: 1rem;
   height: 100%;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .imageContainer img {
@@ -23,6 +23,7 @@
 }
 
 .partnerType {
+  margin-top: 1.5rem;
   justify-self: flex-end;
   font-family: "Inter";
   font-style: normal;

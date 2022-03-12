@@ -30,6 +30,7 @@ const ProfileCompletionForm = React.lazy(() =>
 const Contact = React.lazy(() => import("../app/components/ContactUs"));
 const Events = React.lazy(() => import("../app/components/Events"));
 const Partner = React.lazy(() => import("../app/components/Partners"));
+const Speakers = React.lazy(() => import("../app/components/Speakers"));
 //const Profile = React.lazy(() => import("../app/components/Dashboard/ProfileNew") )
 const SpecificEvents = React.lazy(() =>
   import("../app/components/SpecificEvents/ExecutiveBoard")
@@ -49,6 +50,8 @@ const App = ({ user }) => {
 
           {/* skjfeshjkhf */}
           <Route exact path="/partners1" component={Partner} />
+          <Route exact path="/speakers1" component={Speakers} />
+
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
