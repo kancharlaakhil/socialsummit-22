@@ -27,7 +27,12 @@ const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents
 const PolicyCase = React.lazy(() => import("../app/components/SpecificEvents/PolicyCase"));
 const CaseStudy = React.lazy(() => import("../app/components/SpecificEvents/CaseStudy"));
 const ActionPlan = React.lazy(() => import("../app/components/SpecificEvents/ActionPlan"));
-const Workshop = React.lazy(()=> import("../app/components/SpecificEvents/Workshops"))
+const Workshop = React.lazy(()=> import("../app/components/SpecificEvents/Workshops"));
+const Innovision = React.lazy(() => import("../app/components/SpecificEvents/Innovision"));
+const TurnCoat = React.lazy(() => import("../app/components/SpecificEvents/TurnCoat"));
+const TreasureHunt = React.lazy(() => import("../app/components/SpecificEvents/TreasureHunt"));
+const Sociothon = React.lazy(() => import("../app/components/SpecificEvents/Sociothon"));
+const Abhivyakti = React.lazy(() => import("../app/components/SpecificEvents/Abhivyakti"));
 
 
 const ProfileCompletionForm = React.lazy(() =>
@@ -71,12 +76,12 @@ const App = ({ user }) => {
           <Route exact path="/events/PolicyCase" component={PolicyCase}></Route>
           <Route exact path="/events/ActionPlan" component={ActionPlan}></Route>
           <Route exact path="/events/Workshop" component={Workshop}></Route>
-          <Route exact path="/events/Sociothon" component={ComingSoon}></Route>
+          <Route exact path="/events/Sociothon" component={Sociothon}></Route>
           <Route exact path="/events/SocialConclave" component={ComingSoon}></Route>
-          <Route exact path="/events/Innovision" component={ComingSoon}></Route>
-          <Route exact path="/events/TreasureHunt" component={ComingSoon}></Route>
-          <Route exact path="/events/Abhivyakti" component={ComingSoon}></Route>
-          <Route exact path="/events/TurnCoat" component={ComingSoon}></Route>
+          <Route exact path="/events/Innovision" component={Innovision}></Route>
+          <Route exact path="/events/TreasureHunt" component={TreasureHunt}></Route>
+          <Route exact path="/events/Abhivyakti" component={Abhivyakti}></Route>
+          <Route exact path="/events/TurnCoat" component={TurnCoat}></Route>
           
 
       
@@ -129,6 +134,15 @@ const App = ({ user }) => {
             ></Route>
           ) : (
             <Route exact path="/admin/getAllUsers" component={ComingSoon} />
+          )}
+          {user.isLoggedIn && user.user.role === "admin" ? (
+            <Route
+              exact
+              path="/admin/showTasks"
+              component={CAList}
+            ></Route>
+          ) : (
+            <Route exact path="/admin/showTasks" component={ComingSoon} />
           )}
         </Switch>
       </Suspense>
