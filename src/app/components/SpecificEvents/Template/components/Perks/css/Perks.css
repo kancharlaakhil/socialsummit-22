@@ -16,5 +16,12 @@
 }
 
 .perks-list-container{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
     
+    color: #222222;
+    margin: 2rem;
 }

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 
 import Entry from "./Entry";
-import emojipedia from "./emojipedia";
 
 
 
@@ -13,6 +12,7 @@ function createEntry(emojiTerm) {
       
       title={emojiTerm.title}
       content={emojiTerm.content}
+      rulebook={emojiTerm.rulebook}
     />
   );
 }

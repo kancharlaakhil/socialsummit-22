@@ -59,7 +59,7 @@ class Events extends Component {
         {this.props.width > 1024 ? (
           <div>
             <div className="th-home-event-parent">
-              <h1>EVENTS</h1>
+              <h1>Events</h1>
               
             </div>
             <div className="th-home-testimonialslider">

@@ -2,9 +2,9 @@ import React from 'react'
 
 import Template from '../Template';
 
-import {header, subEventsList, perks} from './data'
+import {header, subEventsList} from './data'
 
-const PolicyCase = () => {
+const Workshop = () => {
 
 
 
@@ -13,11 +13,11 @@ const PolicyCase = () => {
             <Template 
                 header={header}
                 subEventsList={subEventsList} 
-                perks={perks}
+                
                 />
         </div>
     )
 
 }
 
-export default PolicyCase
+export default Workshop
