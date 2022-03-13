@@ -20,9 +20,14 @@ const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 
 const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
 const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
+
 const Template = React.lazy(() => import("../app/components/SpecificEvents/Template"));
 const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"));
-const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents/PreSummitEvents"))
+const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents/PreSummitEvents"));
+const PolicyCase = React.lazy(() => import("../app/components/SpecificEvents/PolicyCase"));
+const CaseStudy = React.lazy(() => import("../app/components/SpecificEvents/CaseStudy"));
+const ActionPlan = React.lazy(() => import("../app/components/SpecificEvents/ActionPlan"));
+const Workshop = React.lazy(()=> import("../app/components/SpecificEvents/Workshops"))
 
 
 const ProfileCompletionForm = React.lazy(() =>
@@ -62,6 +67,18 @@ const App = ({ user }) => {
           <Route exact path="/template" component={Template}></Route>
           <Route exact path="/events/MUN" component={MUN}></Route>
           <Route exact path="/events/PreSummitEvents" component={PreSummitEvents}></Route>
+          <Route exact path="/events/CaseStudy" component={CaseStudy}></Route>
+          <Route exact path="/events/PolicyCase" component={PolicyCase}></Route>
+          <Route exact path="/events/ActionPlan" component={ActionPlan}></Route>
+          <Route exact path="/events/Workshop" component={Workshop}></Route>
+          <Route exact path="/events/Sociothon" component={ComingSoon}></Route>
+          <Route exact path="/events/SocialConclave" component={ComingSoon}></Route>
+          <Route exact path="/events/Innovision" component={ComingSoon}></Route>
+          <Route exact path="/events/TreasureHunt" component={ComingSoon}></Route>
+          <Route exact path="/events/Abhivyakti" component={ComingSoon}></Route>
+          <Route exact path="/events/TurnCoat" component={ComingSoon}></Route>
+          
+
       
           <Route
             exact

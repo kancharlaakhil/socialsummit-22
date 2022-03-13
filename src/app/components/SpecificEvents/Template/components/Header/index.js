@@ -27,8 +27,8 @@ const Header = ({data}) => {
               {data.eventDescription}
             </div>
             <div className="th-event-sociothon-top1-links">
-              <a href="#" target="_blank" rel="noreferrer">Register &gt; </a>
-              <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>
+              <a href="https://socialsummit.iitr.ac.in/dashboard" target="_blank" rel="noreferrer">Register &gt; </a>
+              {data.rulebook? <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>:null}
               {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer" >Country Preference Form &gt;</a> : null}
             </div>
           </div>
@@ -61,8 +61,8 @@ const Header = ({data}) => {
               <span style={{ color: "#663AA3", fontSize: "1.8rem" }}>{data.prizeWorth}</span>
             </h2>
             <div className="th-event-sociothon-top1-links">
-              <a href="#" target="_blank" rel="noreferrer">Register &gt; </a>
-              <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>
+              <a href="https://socialsummit.iitr.ac.in/dashboard" target="_blank" rel="noreferrer">Register &gt; </a>
+              {data.rulebook? <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>:null}
               {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer">Country Preference Form &gt;</a> : null}
             </div>
           </div>

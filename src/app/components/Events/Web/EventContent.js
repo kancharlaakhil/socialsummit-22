@@ -22,6 +22,7 @@ function EventContent(props) {
     {
       id: 1,
       image: ActionPlan,
+      eventLink : "ActionPlan",
       name: "Action Plan",
       rulebook:
         "https://drive.google.com/file/d/16l_M9f-FqAVOu73CQJ1XnZRCv4E_fAtX/view?usp=sharing",
@@ -43,11 +44,13 @@ function EventContent(props) {
       id: 3,
       image: SocialConclave,
       name: "Social Conclave",
+      eventLink : "SocialConclave",
       description:
         "This event is mainly focused on the concept of CSR, providing a platform to build a network between NGOs and Companies. The NGOs will bring initiative ideas for social causes and the interested companies can tie up with them by funding them for the implementation of those initiatives practically.",
     },{
       id: 4,
       image: Sociothon,
+      eventLink : "Sociothon",
       prizeWorth: "50K",
       name: "Sociothon",
       rulebook:
@@ -57,6 +60,7 @@ function EventContent(props) {
     },{
       id: 5,
       image: PolicyCase,
+      eventLink : "PolicyCase",
       rulebook:
         "https://drive.google.com/file/d/1rm_JDDH9dVWrLY6ojVSFeAm9KIhlaieT/view?usp=sharing",
       prizeWorth: "50K",
@@ -70,6 +74,7 @@ function EventContent(props) {
     },{
       id: 6,
       image: Innovision,
+      eventLink : "Innovision",
       name: "Innovision",
       prizeWorth: "50K",
       description:
@@ -78,6 +83,7 @@ function EventContent(props) {
       },{
       id: 7,
       image: CaseStudy,
+      eventLink : "CaseStudy",
       name: "Case Studies",
       rulebook:
         "https://drive.google.com/file/d/11_vXyK4YUE91Ir3ibr2SAtAwqrNa3wFu/view?usp=sharing",
@@ -91,7 +97,7 @@ function EventContent(props) {
     },{
       id: 8,
       image: Workshop,
-
+      eventLink : "Workshop",
       name: "Workshop",
       description:
         "Like every year this year also the National Social Summit 2022, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social aspects and formulate socially active mindsets among people.",
@@ -99,6 +105,7 @@ function EventContent(props) {
     {
       id: 9,
       image: Abhivyakti,
+      eventLink : "Abhivyakti",
       name: "Abhivyakti",
       rulebook:
         "https://drive.google.com/file/d/1ZqbkeSaa1AYNMV6llw2CkN0kztEqLvd2/view?usp=sharing",
@@ -108,6 +115,7 @@ function EventContent(props) {
     },{
       id: 10,
       image: TurnCoat,
+      eventLink : "TurnCoat",
       rulebook:
         "https://drive.google.com/file/d/1kz_1qN1AQ5jqiTMheGz7pdYH0-C-hNry/view?usp=sharing",
       prizeWorth: "15K",
@@ -118,6 +126,7 @@ function EventContent(props) {
     {
       id: 11,
       image: TreasureHunt,
+      eventLink : "TreasureHunt",
       rulebook:
         "https://drive.google.com/file/d/15-DxTlDVxryACIemtoDfjwInf4rC5Qpw/view?usp=sharing",
       prizeWorth: "10K",
