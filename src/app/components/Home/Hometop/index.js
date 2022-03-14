@@ -42,6 +42,10 @@ class Hometop extends Component {
               <Link to="/signup" className="th-register-btn mr-3">
                 <span className="th-register-btn-text">Register</span>
               </Link>
+              <div className="payment-button m-3">
+                <a href="https://secure-ptg.payphi.com/pg/portal/pay/initiatePayOrder?merchantID=P_30861" target="_blank" rel="noreferrer">Payment </a>
+            </div>
+                
             </div>
           </div>
 
