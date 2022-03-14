@@ -3,3 +3,25 @@
   margin: 0 auto;
   margin-top: 10rem;
 }
+
+.headingSpeaker h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.625vw;
+  line-height: 126.19%;
+  /* or 73px */
+  color: #333333;
+}
+
+.headingSpeaker p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 126.19%;
+  /* or 25px */
+  margin-bottom: 4vw;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+}
