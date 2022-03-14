@@ -33,7 +33,7 @@ function EventContent(props) {
       id: 2,
       image : MUN,
       name: "Model United Nations",
-      rulebook : "https://drive.google.com/file/d/1kiDow4lh1lgl4qGtXxpOmSkjQcLCXOH8/view",
+      rulebook : "https://drive.google.com/file/d/1VbDOBJ9hEWeOMi9wgI0IwZHCDIIcuD0R/view?usp=sharing",
       prizeWorth : "120K",
       description:
         "This event provides a platform for the students to have practical experience of diplomacy and allow them to be the representative of a country or an organization...",

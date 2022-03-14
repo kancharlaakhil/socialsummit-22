@@ -1,0 +1,25 @@
+import React from "react";
+
+import './css/SubEventsList.css'
+
+function Entry(props) {
+
+
+  return (
+    <div className="th-Sociothon-content" >
+      <div className="th-Sociothon-content1">
+        {props.title}
+      </div>
+      <div className="line"></div>
+        <div className="th-Sociothon-content2">
+          <p>{props.content}</p>
+        </div>
+        <div className="th-event-sociothon-top1-links">
+          <a href="#">Register &gt; </a><a href="#">Resources &gt;</a>
+          </div>
+     </div>
+   
+  );
+}
+
+export default Entry;
