@@ -23,6 +23,17 @@
   width: 12.5%;
 }
 
+.payment-button a{
+  background: #663AA3;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding : 1rem;
+  margin : 1rem 0 1rem 0;
+  color : #ffffff;
+  font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+}
 
 @media only screen and (max-width: 992px) {
   .th-home-float {
@@ -327,6 +338,9 @@ color: #444444;
   box-sizing: border-box;
   }
 
+  .payment-button a{
+    font-size: 15px;
+  }
   .th-register-btn-text {
     font-size: 15px;
   }
