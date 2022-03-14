@@ -26,12 +26,12 @@ const SingleComponent = ({ele, style}) => {
 
         <div className='committee-card-buttons d-flex' style={{ height : '15%'}}>
           <div className='button' style={{ cursor :"pointer"}}>
-            <a href={`${ele.button1Link}`} style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
+            <a href={`${ele.button1Link}`} target="_blank" rel="noreferrer" style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
             {ele.button1Name}
             </a>
           </div>
           <div className='button' style={{cursor :"pointer"}}>
-          <a href={`${ele.button2Link}`} style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
+          <a href={`${ele.button2Link}`} target="_blank" rel="noreferrer" style={{  fontSize : `${fontSize}`, padding:`${padding}`, margin:`${margin}`}}>
             {ele.button2Name}
             </a>
           </div>

@@ -15,7 +15,7 @@ function Entry(props) {
           <p>{props.content}</p>
         </div>
         <div className="th-event-sociothon-top1-links">
-          <a href="#">Register &gt; </a><a href="#">Resources &gt;</a>
+          <a href="https://socialsummit.iitr.ac.in/dashboard" target="_blank" rel="noreferrer">Register &gt; </a>{props.rulebook?<a href={props.rulebook} target="_blank" rel="noreferrer" >Resources &gt;</a>:null}
           </div>
      </div>
    

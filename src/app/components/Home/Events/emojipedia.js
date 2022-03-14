@@ -17,62 +17,74 @@ const emojipedia = [
     {
       id: 1,
       name: "Action Plan",
-      image:ActionPlan
+      image:ActionPlan,
+      eventLink : "ActionPlan"
     },
     {
       id: 2,
       name: "Sociothon",
-      image:Sociothon
+      image:Sociothon,
+      eventLink : "Sociothon"
     },
     {
       id: 3,
       name: "Model United Nations(MUN)",
-     image:MUN
+     image:MUN,
+     eventLink : "MUN"
     },
     {
       id: 4,
       name: "Policy Case Competition",
-      image:PolicyCase
+      image:PolicyCase,
+      eventLink : "PolicyCase"
     },
     {
         id: 5,
         name: "Innovision",
-        image:Innovision
+        image:Innovision,
+        eventLink : "Innovision"
       },
       {
         id: 6,
         name: "Case Study",
-        image:CaseStudy
+        image:CaseStudy,
+        eventLink : "CaseStudy"
       },
       {
         id: 7,
         name: "Workshop",
-        image:Workshop
+        image:Workshop,
+        eventLink : "Workshop"
       },
       {
         id: 8,
         name: "Abhivyakti",
-        image:Abhivyakti
+        image:Abhivyakti,
+        eventLink : "Abhivyakti"
       },
       {
         id: 9,
         name: "TurnCoat",
-        image:TurnCoat
+        image:TurnCoat,
+        eventLink : "TurnCoat"
       },
       {
         id: 10,
         name: "Treasure Hunt",
-        image:TreasureHunt
+        image:TreasureHunt,
+        eventLink : "TreasureHunt"
       },
       {
         id: 11,
         name: "Social Conclave",
-        image:SocialConclave
+        image:SocialConclave,
+        eventLink : "SocialConclave"
       },
       {
         id: 12,
-        name: "Online Events",
-        image:PreSummitEvents
+        name: "Pre Summit Events",
+        image:PreSummitEvents,
+        eventLink : "PreSummitEvents"
       }
 
   ];
