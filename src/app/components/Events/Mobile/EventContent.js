@@ -66,7 +66,7 @@ function EventContent(props) {
       prizeWorth : "50K",
       name: "Policy Case Competition",
       description:
-        "As the name suggests this competition encourages the students to become policymakers by critically ...",
+        "As the name suggests this competition encourages the students to become policymakers by critically",
     },{
       id: 6,
       image : Innovision,
@@ -86,7 +86,7 @@ function EventContent(props) {
       rulebook : "https://drive.google.com/file/d/11_vXyK4YUE91Ir3ibr2SAtAwqrNa3wFu/view?usp=sharing",
       prizeWorth : "75K",
       description:
-        "This Case Study Competition is the best way to understand the real-time issues and ...",
+        "This Case Study Competition is the best way to understand the real-time issues and",
     },{
       id: 8,
       image : Workshop,
