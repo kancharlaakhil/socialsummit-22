@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const CATaskSubmissions = ({task, ca, onCloseClick}) => {
 
-    const baseBackendLink = `http://127.0.0.1:3000`
+    const baseBackendLink = `https://api.socialsummit.iitr.ac.in`
 
     const [taskSubmissions, setTaskSubmissions] = useState([]);
     const [points, setPoints] = useState(0);
