@@ -2,6 +2,9 @@ import Abhyanand from './images/Abhyanand.png';
 import Atrayee from './images/Atrayee.png';
 import Devendra from './images/Devendra.png';
 import DPSingh from './images/DPSingh.png';
+import Aruna from './images/Aruna.png';
+import Mangesh from './images/Mangesh.png';
+import Patanjali from './images/Patanjali.png'
 
 
 const emojipedia = [
@@ -32,6 +35,27 @@ const emojipedia = [
       title:"Vice President HRM, Tata Steel",
       des:"Atrayee S Sanyal is vice president HRM of India’s multinational steel manufacturing company and longstanding CEDEP member of Tata Steel. She spent almost 20 years in sales and marketing at Tata Steel where she spearheaded the company’s branding journey. Then, she moved into human resources gaining front line experience in talent management, leadership and L&D. She is a passionate advocate of diversity and inclusion and has been at the forefront of D&I benchmarking practices within Tata Steel. She won the British government’s chevening scholarship and sits on the boards of four companies within the Tata Steel Group. Atrayee brings to the CEDEP board a wealth of international operational and HR management expertise in addition to in-depth knowledge of rapidly expanding manufacturing markets in South Asia.",
       image:Atrayee
+    },
+    {
+      id: 5,
+      name: "PATANJALI KESHWANI",
+      title:"Chairman and Managing Director at Lemon Tree Hotels",
+      des:"Patanjali Keshwani graduated from IIMC in 1983, started his career with Tata Administrative Services and after 15 years, rose to the top as the Senior Vice President and Chief Operating Officer in the Taj Group of Hotels. He started Lemon Tree Hotels in 2002. He pioneered the concept of the mid-market hotel segment and created this “low cost carrier” equivalent of the hotel industry in India. As a transformative entrepreneur, he conceived and implemented a disruptive market innovation in providing high-quality yet affordable services in the Indian hotel industry. Patanjali’s extraordinary achievements have been recognized repeatedly and he has received many awards like the ‘Best Employer-National Award 2011’ by the Ministry of Social Justice and Empowerment, Govt. of India and the ‘Hall of Fame Award’ in 2011 from FHRAI (Federation of Hotels and Restaurant Associations of India).",
+      image:Patanjali
+    },
+    {
+      id: 6,
+      name: "MANGESH WANGE",
+      title:"CEO, Swades Foundation",
+      des:"Mangesh Wange is the CEO of Swades Foundation and has more than 27 years of General Management experience with P&L responsibility and in leading successful start-ups across multiple sectors and various organizations viz. Farm Inputs (Farm Machinery, Agri-Inputs, Animal Feeds & Micro Information), Retail and Micro Finance. Having rich experience in strategy formulation & implementation he has for both organic & inorganic growth of businesses. He has started his career in Sales & Distribution with Mahindra Tractors in 1987. Before joining Swades, Mangesh was the Head of Animal Feeds Business at Godrej Agrovet Limited.",
+      image:Mangesh
+    },
+    {
+      id: 7,
+      name: "ARUNA ROY",
+      title:"Social Activist",
+      des:"Aruna Roy is one of India’s most prominent activists. Formerly, she was a civil servant till 1975, before she resigned to work for the rural poor section in Rajasthan area. She collectively formed the MKSS Mazdoor Kisan Shakti Sangathan in 1990, an organization for the empowerment of workers and peasants. She played a pivotal role in drafting and advocating for the Right to Information Law in 2005. Being an active member of India’s National Advisory Council, she played a crucial role in the passage of the MGNREGA act in 2005. Currently the president of the National Federation of Indian Women; she was awarded the Ramon Magsaysay Award in 2000, Lal Bahadur Shastri National Award for Excellence in Public Administration, Academia and Management in 2010 and listed one of the 100 most influential people in the world by the TIME magazine in 2011.",
+      image:Aruna
     }
   ];
 
