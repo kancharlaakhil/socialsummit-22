@@ -11,6 +11,11 @@
     position: relative;
     z-index: 100;
 }
+.read-more{
+    color : #663AA3;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
 
 .mobile-single-event-heading{
     position: absolute;
