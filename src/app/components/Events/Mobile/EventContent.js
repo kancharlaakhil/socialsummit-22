@@ -93,7 +93,7 @@ function EventContent(props) {
       eventLink : "Workshop",
       name: "Workshop",
       description:
-        "Like every year this year also the National Social Summit 2022, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social aspects and ",
+        "Like every year this year also the National Social Summit 2022, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social",
     },{
       id: 9,
       image : Abhivyakti,
@@ -102,7 +102,7 @@ function EventContent(props) {
       rulebook : "https://drive.google.com/file/d/1ZqbkeSaa1AYNMV6llw2CkN0kztEqLvd2/view?usp=sharing",
       prizeWorth : "15K",
       description:
-        "It is a monologue competition providing a platform for the youths of our nation to express their inner voice to the world. The competition has 3 rounds and one individual can submit ",
+        "It is a monologue competition providing a platform for the youths of our nation to express their inner voice to the world. The competition has 3 rounds and one individual",
     },{
       id: 10,
       image : TurnCoat,
@@ -111,7 +111,7 @@ function EventContent(props) {
       prizeWorth : "15K",
       name: "Turncoat",
       description:
-        "This is a form of debate where one states both the pros and cons of a situation by switching sides after a specific duration. The competition is of 3 rounds. The participants are ",
+        "This is a form of debate where one states both the pros and cons of a situation by switching sides after a specific duration. The competition is of 3 rounds. The participants",
     },
     {
       id: 11,
@@ -121,7 +121,7 @@ function EventContent(props) {
       prizeWorth : "10K",
       name: "Treasure Hunt",
       description:
-        "This is a fun activity in which an individual or a team solves clues for further hints and finally, the one who becomes the first to solves all the puzzles finds the treasure and ",
+        "This is a fun activity in which an individual or a team solves clues for further hints and finally, the one who becomes the first to solves all the puzzles finds the",
     },{
       id: 12,
       image : PreSummit,
