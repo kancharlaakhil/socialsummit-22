@@ -18,11 +18,16 @@ const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 
-const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
-const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
-const Template = React.lazy(() => import("../app/components/SpecificEvents/Template"));
-const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"))
-
+const EmailSend = React.lazy(() =>
+  import("../app/auth/forgotPassword/EmailSend")
+);
+const ResetPassword = React.lazy(() =>
+  import("../app/auth/forgotPassword/ResetPassword")
+);
+const Template = React.lazy(() =>
+  import("../app/components/SpecificEvents/Template")
+);
+const MUN = React.lazy(() => import("../app/components/SpecificEvents/MUN"));
 
 const ProfileCompletionForm = React.lazy(() =>
   import("../app/auth/ProfileCompletionForm")
@@ -45,16 +50,13 @@ const App = ({ user }) => {
           <Route exact path={["/home", "/"]} component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/speakers" component={ComingSoon} />
+          <Route exact path="/speakers1" component={Speakers} />
           <Route exact path="/partners" component={Partner} />
           <Route exact path="/events" component={Events} />
-
-       
-         
 
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
-
 
           <Route exact path="/forgotPassword" component={EmailSend} />
 
