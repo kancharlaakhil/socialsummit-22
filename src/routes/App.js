@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import Footer from "../app/layouts/Footer/index";
@@ -92,7 +92,7 @@ const App = ({ user }) => {
           />
 
           {!user.isLoggedIn ? (
-            <Route exact path="/dashboard" component={ComingSoon} />
+            <Route exact path="/dashboard"><Redirect to="/signup" /> </Route>
           ) : user.user.role === "delegate" ? (
             <Route exact path="/dashboard" component={DelegateDashboard} />
           ) : (

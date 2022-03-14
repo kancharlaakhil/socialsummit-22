@@ -3,8 +3,8 @@ import React from "react";
 
 function Entry(props) {
   return (
-    <div>
-      <a className="th-home-event-card" href={`https://socialsummit.iitr.ac.in/events/${props.eventLink}`} target="_blank" rel="noreferrer" >
+    <div className="th-home-event-card">
+      <a href={`https://socialsummit.iitr.ac.in/events/${props.eventLink}`} target="_blank" rel="noreferrer" >
       <div className="event-illustration"
           style={{
             height : '80%',
