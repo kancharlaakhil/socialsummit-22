@@ -24,7 +24,7 @@ const emojipedia = [
     },
     {
       id: 3,
-      name: "ABHYANAND",
+      name: "ABHAYANAND",
       title:"The Man Behind Super 30",
       des:"Abhayanand is an IPS officer and educationalist, who along with Anand Kumar, conceptualized Super 30 to teach poor students to crack IIT JEE. He was selected as the IPS officer for the Bihar cadre after clearing UPSC in 1977. He was the ADG in 2006 and as such he concentrated on the speedy trial of Arms Act cases in Bihar. Later, during his tenure as the ADG of Bihar Military Police, Patna; he motivated the constables to donate from their salaries to convert a dilapidated government hospital into a modern nursing home with state-of-the-art facilities for treatment of the police force and their family members. He was appointed the D.G.P. Bihar in August 2011, following the footsteps of his late father, who was the 28th D.G.P. Bihar in 1985-86.",
      image:Abhyanand
@@ -36,13 +36,7 @@ const emojipedia = [
       des:"Atrayee S Sanyal is vice president HRM of India’s multinational steel manufacturing company and longstanding CEDEP member of Tata Steel. She spent almost 20 years in sales and marketing at Tata Steel where she spearheaded the company’s branding journey. Then, she moved into human resources gaining front line experience in talent management, leadership and L&D. She is a passionate advocate of diversity and inclusion and has been at the forefront of D&I benchmarking practices within Tata Steel. She won the British government’s chevening scholarship and sits on the boards of four companies within the Tata Steel Group. Atrayee brings to the CEDEP board a wealth of international operational and HR management expertise in addition to in-depth knowledge of rapidly expanding manufacturing markets in South Asia.",
       image:Atrayee
     },
-    {
-      id: 5,
-      name: "PATANJALI KESHWANI",
-      title:"Chairman and Managing Director at Lemon Tree Hotels",
-      des:"Patanjali Keshwani graduated from IIMC in 1983, started his career with Tata Administrative Services and after 15 years, rose to the top as the Senior Vice President and Chief Operating Officer in the Taj Group of Hotels. He started Lemon Tree Hotels in 2002. He pioneered the concept of the mid-market hotel segment and created this “low cost carrier” equivalent of the hotel industry in India. As a transformative entrepreneur, he conceived and implemented a disruptive market innovation in providing high-quality yet affordable services in the Indian hotel industry. Patanjali’s extraordinary achievements have been recognized repeatedly and he has received many awards like the ‘Best Employer-National Award 2011’ by the Ministry of Social Justice and Empowerment, Govt. of India and the ‘Hall of Fame Award’ in 2011 from FHRAI (Federation of Hotels and Restaurant Associations of India).",
-      image:Patanjali
-    },
+    
     {
       id: 6,
       name: "MANGESH WANGE",
