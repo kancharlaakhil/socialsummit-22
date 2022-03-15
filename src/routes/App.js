@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import Footer from "../app/layouts/Footer/index";
@@ -18,16 +18,24 @@ const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 
-const EmailSend = React.lazy(() =>
-  import("../app/auth/forgotPassword/EmailSend")
-);
-const ResetPassword = React.lazy(() =>
-  import("../app/auth/forgotPassword/ResetPassword")
-);
-const Template = React.lazy(() =>
-  import("../app/components/SpecificEvents/Template")
-);
-const MUN = React.lazy(() => import("../app/components/SpecificEvents/MUN"));
+
+const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
+const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
+
+const Template = React.lazy(() => import("../app/components/SpecificEvents/Template"));
+const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"));
+const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents/PreSummitEvents"));
+const PolicyCase = React.lazy(() => import("../app/components/SpecificEvents/PolicyCase"));
+const CaseStudy = React.lazy(() => import("../app/components/SpecificEvents/CaseStudy"));
+const ActionPlan = React.lazy(() => import("../app/components/SpecificEvents/ActionPlan"));
+const Workshop = React.lazy(()=> import("../app/components/SpecificEvents/Workshops"));
+const Innovision = React.lazy(() => import("../app/components/SpecificEvents/Innovision"));
+const TurnCoat = React.lazy(() => import("../app/components/SpecificEvents/TurnCoat"));
+const TreasureHunt = React.lazy(() => import("../app/components/SpecificEvents/TreasureHunt"));
+const Sociothon = React.lazy(() => import("../app/components/SpecificEvents/Sociothon"));
+const Abhivyakti = React.lazy(() => import("../app/components/SpecificEvents/Abhivyakti"));
+
+
 
 const ProfileCompletionForm = React.lazy(() =>
   import("../app/auth/ProfileCompletionForm")
@@ -62,7 +70,20 @@ const App = ({ user }) => {
 
           <Route exact path="/template" component={Template}></Route>
           <Route exact path="/events/MUN" component={MUN}></Route>
+          <Route exact path="/events/PreSummitEvents" component={PreSummitEvents}></Route>
+          <Route exact path="/events/CaseStudy" component={CaseStudy}></Route>
+          <Route exact path="/events/PolicyCase" component={PolicyCase}></Route>
+          <Route exact path="/events/ActionPlan" component={ActionPlan}></Route>
+          <Route exact path="/events/Workshop" component={Workshop}></Route>
+          <Route exact path="/events/Sociothon" component={Sociothon}></Route>
+          <Route exact path="/events/SocialConclave" component={ComingSoon}></Route>
+          <Route exact path="/events/Innovision" component={Innovision}></Route>
+          <Route exact path="/events/TreasureHunt" component={TreasureHunt}></Route>
+          <Route exact path="/events/Abhivyakti" component={Abhivyakti}></Route>
+          <Route exact path="/events/TurnCoat" component={TurnCoat}></Route>
+          
 
+      
           <Route
             exact
             path="/resetPassword/:resetToken"
@@ -70,7 +91,7 @@ const App = ({ user }) => {
           />
 
           {!user.isLoggedIn ? (
-            <Route exact path="/dashboard" component={ComingSoon} />
+            <Route exact path="/dashboard"><Redirect to="/signup" /> </Route>
           ) : user.user.role === "delegate" ? (
             <Route exact path="/dashboard" component={DelegateDashboard} />
           ) : (
@@ -112,6 +133,15 @@ const App = ({ user }) => {
             ></Route>
           ) : (
             <Route exact path="/admin/getAllUsers" component={ComingSoon} />
+          )}
+          {user.isLoggedIn && user.user.role === "admin" ? (
+            <Route
+              exact
+              path="/admin/showTasks"
+              component={CAList}
+            ></Route>
+          ) : (
+            <Route exact path="/admin/showTasks" component={ComingSoon} />
           )}
         </Switch>
       </Suspense>

@@ -11,7 +11,7 @@ import emojipedia from "./emojipedia";
 
 function createEntry(emojiTerm) {
   return (
-    <Entry key={emojiTerm.id} image={emojiTerm.image} name={emojiTerm.name} />
+    <Entry key={emojiTerm.id} image={emojiTerm.image} name={emojiTerm.name} eventLink={emojiTerm.eventLink} />
   );
 }
 

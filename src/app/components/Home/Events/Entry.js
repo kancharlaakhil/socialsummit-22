@@ -4,8 +4,8 @@ import React from "react";
 function Entry(props) {
   return (
     <div className="th-home-event-card">
-
-        <div className="event-illustration"
+      <a href={`https://socialsummit.iitr.ac.in/events/${props.eventLink}`} target="_blank" rel="noreferrer" >
+      <div className="event-illustration"
           style={{
             height : '80%',
             width : '16rem',
@@ -24,6 +24,9 @@ function Entry(props) {
         >
           {props.name}
         </div>
+      </a>
+
+        
 
 
     </div>

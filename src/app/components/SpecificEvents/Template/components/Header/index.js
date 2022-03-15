@@ -27,19 +27,19 @@ const Header = ({data}) => {
               {data.eventDescription}
             </div>
             <div className="th-event-sociothon-top1-links">
-              <a href="#">Register &gt; </a>
-              <a href={`${data.rulebook}`}>Rulebook &gt;</a>
-              {data.form ? <a href={`${data.form}`}>Country Preference Form &gt;</a> : null}
+              <a href="https://socialsummit.iitr.ac.in/dashboard" target="_blank" rel="noreferrer">Register &gt; </a>
+              {data.rulebook? <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>:null}
+              {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer" >Country Preference Form &gt;</a> : null}
             </div>
           </div>
           <div className="th-event-sociothon-top2">
             <div className="th-event-sociothon-top2-imagecontainer">
               <img className="th-event-sociothon-top2-image" src={data.image} />
             </div>
-            <h2>
+            {data.prizeWorth ? <h2>
               Prize Worth :{" "}
               <span style={{ color: "#663AA3", fontSize: "2rem" }}>{data.prizeWorth}</span>
-            </h2>
+            </h2>: null}
           </div>
         </div>
       </div>
@@ -56,14 +56,16 @@ const Header = ({data}) => {
               {data.eventDescription}
             </div>
 
-            <h2 className="th-event-sociothon-prize">
+            {
+              data.prizeWorth ? <h2 className="th-event-sociothon-prize">
               Prize Worth :{" "}
               <span style={{ color: "#663AA3", fontSize: "1.8rem" }}>{data.prizeWorth}</span>
-            </h2>
+            </h2>:null
+            }
             <div className="th-event-sociothon-top1-links">
-              <a href="#">Register &gt; </a>
-              <a href={`${data.rulebook}`}>Rulebook &gt;</a>
-              {data.form ? <a href={`${data.form}`}>Country Preference Form &gt;</a> : null}
+              <a href="https://socialsummit.iitr.ac.in/dashboard" target="_blank" rel="noreferrer">Register &gt; </a>
+              {data.rulebook? <a href={`${data.rulebook}`} target="_blank" rel="noreferrer">Rulebook &gt;</a>:null}
+              {data.form ? <a href={`${data.form}`} target="_blank" rel="noreferrer">Country Preference Form &gt;</a> : null}
             </div>
           </div>
         </div>

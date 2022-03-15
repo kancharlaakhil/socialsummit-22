@@ -136,4 +136,16 @@
     color: #663AA3;
 
   }
+
+
+  .link-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-decoration-line: underline;
+
+    color: #663AA3;
+  }
   

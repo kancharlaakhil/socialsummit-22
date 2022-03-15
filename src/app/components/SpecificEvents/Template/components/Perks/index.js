@@ -2,11 +2,11 @@ import React from 'react';
 
 import SingleComponent from './SingleComponent';
 
-import data from './data'
+//import data from './data'
 
 import './css/Perks.css'
 
-const Perks = () => {
+const Perks = ({data}) => {
     return (
         <div className='perks-container'>
             <div className='perks-container-header'>Perks</div>

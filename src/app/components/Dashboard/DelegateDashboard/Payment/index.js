@@ -13,7 +13,9 @@ const Payment = () => {
                 <PaymentHeader/>
             </div>
             <div className='row payment-component'>
-
+            <div className="payment-button">
+                <a href="https://secure-ptg.payphi.com/pg/portal/pay/initiatePayOrder?merchantID=P_30861" target="_blank" rel="noreferrer">Initiate Payment </a>
+            </div>
                 
             </div>
 

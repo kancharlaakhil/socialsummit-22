@@ -10,7 +10,7 @@ function GetAllRegistration(){
     const [num, setNum] = useState(0)
 
     React.useEffect(() => {
-        axios.get("auth/getAllUsers?role=delegate&limit=1000").then((response) => {
+        axios.get("auth/getAllUsers?role=delegate&limit=1500").then((response) => {
             
           setDelegatesState(response.data.data.data);
           setNum(response.data.results)

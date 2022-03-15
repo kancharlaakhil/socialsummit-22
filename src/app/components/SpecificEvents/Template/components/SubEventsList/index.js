@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 
 import Entry from "./Entry";
-import emojipedia from "./emojipedia";
 
 
 
@@ -13,6 +12,7 @@ function createEntry(emojiTerm) {
       
       title={emojiTerm.title}
       content={emojiTerm.content}
+      rulebook={emojiTerm.rulebook}
     />
   );
 }
@@ -21,10 +21,10 @@ class SubEventsList extends Component {
 
   render() {
 
-   // const {data} = this.props
+   const {data} = this.props
     return (
       <div className="" style={{marginTop :"10rem", marginBottom:"10rem"}}>
-       {emojipedia.map(createEntry)}
+       {data.map(createEntry)}
             
       </div>
     );
