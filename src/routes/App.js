@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import Footer from "../app/layouts/Footer/index";
@@ -18,12 +18,31 @@ const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));
 const LoginForm = React.lazy(() => import("../app/auth/LoginForm"));
 
+<<<<<<< HEAD
 const EmailSend = React.lazy(() =>
   import("../app/auth/forgotPassword/EmailSend")
 );
 const ResetPassword = React.lazy(() =>
   import("../app/auth/forgotPassword/ResetPassword")
 );
+=======
+
+const EmailSend = React.lazy(() => import("../app/auth/forgotPassword/EmailSend"));
+const ResetPassword = React.lazy(() => import("../app/auth/forgotPassword/ResetPassword"));
+
+const Template = React.lazy(() => import("../app/components/SpecificEvents/Template"));
+const MUN = React.lazy(() =>import("../app/components/SpecificEvents/MUN"));
+const PreSummitEvents = React.lazy(()=> import("../app/components/SpecificEvents/PreSummitEvents"));
+const PolicyCase = React.lazy(() => import("../app/components/SpecificEvents/PolicyCase"));
+const CaseStudy = React.lazy(() => import("../app/components/SpecificEvents/CaseStudy"));
+const ActionPlan = React.lazy(() => import("../app/components/SpecificEvents/ActionPlan"));
+const Workshop = React.lazy(()=> import("../app/components/SpecificEvents/Workshops"));
+const Innovision = React.lazy(() => import("../app/components/SpecificEvents/Innovision"));
+const TurnCoat = React.lazy(() => import("../app/components/SpecificEvents/TurnCoat"));
+const TreasureHunt = React.lazy(() => import("../app/components/SpecificEvents/TreasureHunt"));
+const Sociothon = React.lazy(() => import("../app/components/SpecificEvents/Sociothon"));
+const Abhivyakti = React.lazy(() => import("../app/components/SpecificEvents/Abhivyakti"));
+>>>>>>> 6405da632fe90085dff20dfe515df5ac7adbda76
 
 const Template = React.lazy(() =>
   import("../app/components/SpecificEvents/Template")
@@ -60,6 +79,7 @@ const Abhivyakti = React.lazy(() =>
   import("../app/components/SpecificEvents/Abhivyakti")
 );
 
+
 const ProfileCompletionForm = React.lazy(() =>
   import("../app/auth/ProfileCompletionForm")
 );
@@ -80,7 +100,13 @@ const App = ({ user }) => {
         <Switch>
           <Route exact path={["/home", "/"]} component={Home} />
           <Route exact path="/about" component={About} />
+<<<<<<< HEAD
           <Route exact path="/speakers" component={Speakers} />
+=======
+
+          <Route exact path="/speakers" component={Speakers} />
+
+>>>>>>> 6405da632fe90085dff20dfe515df5ac7adbda76
           <Route exact path="/partners" component={Partner} />
           <Route exact path="/events" component={Events} />
 
@@ -123,7 +149,7 @@ const App = ({ user }) => {
           />
 
           {!user.isLoggedIn ? (
-            <Route exact path="/dashboard" component={ComingSoon} />
+            <Route exact path="/dashboard"><Redirect to="/signup" /> </Route>
           ) : user.user.role === "delegate" ? (
             <Route exact path="/dashboard" component={DelegateDashboard} />
           ) : (

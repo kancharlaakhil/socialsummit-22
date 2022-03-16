@@ -4,7 +4,7 @@ import React from "react";
 import EventCardLeft from "./Left";
 import EventCardRight from "./Right";
 
-const EventCard = ({image, name, description, rulebook, prizeWorth, id, link1, link2}) => {
+const EventCard = ({image, name, description, rulebook, prizeWorth, id, link1, link2, eventLink}) => {
     return (
         
             (id % 2 )?
@@ -17,6 +17,7 @@ const EventCard = ({image, name, description, rulebook, prizeWorth, id, link1, l
                 prizeWorth={prizeWorth}
                 link1={link1}
                 link2={link2}
+                eventLink={eventLink}
             />
             :
             <EventCardRight
@@ -28,6 +29,7 @@ const EventCard = ({image, name, description, rulebook, prizeWorth, id, link1, l
                 prizeWorth={prizeWorth}
                 link1={link1}
                 link2={link2}
+                eventLink={eventLink}
             />
         
     )
