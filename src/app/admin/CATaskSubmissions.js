@@ -7,16 +7,17 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
 
     const [taskSubmissions, setTaskSubmissions] = useState([]);
     const [points, setPoints] = useState(0);
-
-
+    const [approvedState, setApprovedState] = useState({ text : 'Approve'})
+    const [rejectedState, setRejectedState] =useState({text :'Reject'})
+    const [addPointsState, setAddPointsState] = useState({text : "Add Points"})
+   
     React.useEffect(() => {
         axios.get(`/taskSubmission/${task._id}/${ca._id}`).then((response) => {
             console.log("hey")
             console.log(response.data)
           const taskSubmissions = response.data.data.data
           console.log(taskSubmissions)
-          setTaskSubmissions(taskSubmissions)
-         
+          setTaskSubmissions(taskSubmissions)   
         });
         
       }, [ca, task]);
@@ -24,19 +25,38 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
       const onSubmissionApprovedClick = async () => {
           console.log("submission approved", taskSubmissions[0])
 
-          await axios.patch(`/admin/statusOfCompletionUpdate/${taskSubmissions[0]._id}`, {
+          const response = await axios.patch(`/admin/statusOfCompletionUpdate/${taskSubmissions[0]._id}`, {
               "statusOfApproval" : "approved",
               "taskName": `${task.name}`
           })
-
+          if(response.data.status === 'success'){
+              setApprovedState({
+                  text:"Approved"
+              })
+          }else{
+            setApprovedState({
+                text : "Failed"
+            })
+          }
+         // console.log("here is the response", response.data)
       }
 
       const onSubmissionRejectedClick = async () => {
         console.log("submission rejected")
-        await axios.patch(`/admin/statusOfCompletionUpdate/${taskSubmissions[0]._id}`, {
+        const response = await axios.patch(`/admin/statusOfCompletionUpdate/${taskSubmissions[0]._id}`, {
             "statusOfCompletion" : "rejected",
             "taskName": `${task.name}`
         })
+
+        if(response.data.status === 'success'){
+            setRejectedState({
+                text:"Rejected"
+            })
+        }else{
+          setRejectedState({
+              text : "Failed"
+          })
+        }
     }
 
     const onAddPoints = async () => {
@@ -44,6 +64,16 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
             "points" : points
         }
         const updatedCA = await axios.patch(`/admin/updateCAPoints/${ca._id}`, myBody)
+        if(updatedCA.data.status === 'success'){
+            setAddPointsState({
+                text : "Points Added"
+            })
+        }
+        else {
+            setAddPointsState({
+                text : "Failed"
+            })
+        }
     }
 
     return(
@@ -76,8 +106,8 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
             }
 
             <div>
-                <button className='approve-task-submissions-button' onClick={onSubmissionApprovedClick}> Approve </button>
-                <button className='reject-task-submissions-button' onClick={onSubmissionRejectedClick}> Reject </button>
+                <button className='approve-task-submissions-button' onClick={onSubmissionApprovedClick}>{approvedState.text} </button>
+                <button className='reject-task-submissions-button' onClick={onSubmissionRejectedClick}> {rejectedState.text} </button>
             </div>
             <div className='points-input'>
             <div className="pt-5 th-form-group">
@@ -95,7 +125,7 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
                     Points
                   </label>
                   <div>
-                    <button onClick={onAddPoints}> Add Points </button>
+                    <button onClick={onAddPoints}> {addPointsState.text} </button>
                   </div>
             </div>
             </div>
