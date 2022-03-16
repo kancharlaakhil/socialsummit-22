@@ -3,44 +3,57 @@ import React from "react";
 import "./PartnersMain.css";
 import Image from "./ImageComponent";
 
-import img1 from "./assets/UNESCO.png";
-import img2 from "./assets/Recode.png";
-import img3 from "./assets/GeeksForGeeks.png";
-import img4 from "./assets/IndiaIsUs.png";
-import img5 from "./assets/Tides.png";
-import img6 from "./assets/SankalpTaru.png";
-import img7 from "./assets/Lakshyam.png";
-import img8 from "./assets/Sponbar.png";
-import img9 from "./assets/Certopus.png";
-import img10 from "./assets/SponPartner.png";
-import img11 from "./assets/D2C.png";
-import img12 from "./assets/Timed.png";
-import img13 from "./assets/hackerearth.png";
-import img14 from "./assets/3izone.png";
-import img15 from "./assets/mrida.png";
-import img16 from "./assets/ADR.png";
-import img17 from "./assets/CSR.png";
-import img18 from "./assets/divami.png";
-import img19 from "./assets/Straw.png";
-import img20 from "./assets/Milan.png";
-import img21 from "./assets/Pagalguy.png";
-import img22 from "./assets/youth.png";
-import img23 from "./assets/DUupdates.png";
-import img24 from "./assets/KnowAfest.png";
-import img25 from "./assets/ohcampus.png";
-import img26 from "./assets/PanIIT.png";
-import img27 from "./assets/IndiaEducation.png";
-import img28 from "./assets/IndiaEducation.png";
+import UNESCO from "./assets/UNESCO.png";
+import Recode from "./assets/Recode.png";
+import GeeksForGeeks from "./assets/GeeksForGeeks.png";
+import IndiaIsUs from "./assets/IndiaIsUs.png";
+import Tides from "./assets/Tides.png";
+import SankalpTaru from "./assets/SankalpTaru.png";
+import Lakshyam from "./assets/Lakshyam.png";
+import Sponbar from "./assets/Sponbar.png";
+import Certopus from "./assets/Certopus.png";
+import SponPartner from "./assets/SponPartner.png";
+import D2C from "./assets/D2C.png";
+import Timed from "./assets/Timed.png";
+import hackerearth from "./assets/hackerearth.png";
+import izone from "./assets/3izone.png";
+import mrida from "./assets/mrida.png";
+import ADR from "./assets/ADR.png";
+import CSR from "./assets/CSR.png";
+import divami from "./assets/divami.png";
+import Straw from "./assets/Straw.png";
+import Milan from "./assets/Milan.png";
+import Pagalguy from "./assets/Pagalguy.png";
+import youth from "./assets/youth.png";
+import DUupdates from "./assets/DUupdates.png";
+import KnowAfest from "./assets/KnowAfest.png";
+import ohcampus from "./assets/ohcampus.png";
+import PanIIT from "./assets/PanIIT.png";
+import IndiaEducation from "./assets/IndiaEducation.png";
+import AFI from "./assets/AFI.png";
+import amarujala from "./assets/amarujala.png";
+import atai from "./assets/atai.png";
+import C3india from "./assets/C3india.png";
+import avtar from "./assets/avtar.png";
+import collegeduniya from "./assets/collegeduniya.png";
+import edtimes from "./assets/edtimes.jpg";
+import Goonj from "./assets/Goonj.png";
+import Homeflicwegrow from "./assets/Homeflicwegrow.png";
+import prepp from "./assets/prepp.jpg";
+import unltd from "./assets/unltd.png";
+import Vskills from "./assets/Vskills.png";
+import zoutons from "./assets/zoutons.png";
+import makeroom from "./assets/makeroom.png";
+import supreme from "./assets/supreme.png";
+import earthhouse from "./assets/earthhouse.jpg";
 
-{
-}
 const WebView = () => {
   return (
     <div className="partnerPage">
       <div className="patronage">
         <h1 className="heading">UNDER THE PATRONAGE OF</h1>
         <Image
-          image={img1}
+          image={UNESCO}
           width="30rem"
           height="15rem"
           link="https://en.unesco.org/"
@@ -49,7 +62,7 @@ const WebView = () => {
       <div className="associate">
         <h1 className="heading">ASSOCIATE PARTNERS</h1>
         <Image
-          image={img2}
+          image={Recode}
           width="30rem"
           height="15rem"
           link="https://shop.recodestudios.com/"
@@ -60,110 +73,132 @@ const WebView = () => {
         <h1 className="heading">SPONSORS</h1>
         <div className="logo2">
           <Image
-            image={img3}
+            image={GeeksForGeeks}
             title="Learning Partner"
             link="https://www.geeksforgeeks.org/"
           />
           <Image
-            image={img4}
+            image={IndiaIsUs}
             title="Consulting Partner"
             link="https://www.indiaisus.com/"
           />
         </div>
         <div className="logo2">
           <Image
-            image={img5}
+            image={Tides}
             title="Learning Partner"
             link="http://tides.iitr.ac.in/"
           />
           <Image
-            image={img6}
+            image={SankalpTaru}
             title="Green Initiative Partner"
             link="https://sankalptaru.org/"
           />
         </div>
         <div className="logo2">
           <Image
-            image={img7}
+            image={Lakshyam}
             title="Education Partner"
             link="https://www.lakshyam.co.in/"
           />
           <Image
-            image={img8}
+            image={Sponbar}
             title="Relation Partner"
             link="https://sponbar.tech/"
           />
         </div>
         <div className="logo2">
           <Image
-            image={img9}
+            image={Certopus}
             title="Certificate Partner"
             link="https://certopus.com/"
           />
           <Image
-            image={img10}
+            image={SponPartner}
             title="Sponsorship Partner"
             linnk="http://sponsorbull.com/"
           />
         </div>
         <div className="logo2">
           <Image
-            image={img11}
+            image={D2C}
             title="Online Hosting Partner"
             link="https://dare2compete.com/"
           />
-          <Image
-            image={img12}
-            title="Action Plan Event Partner"
-            link="https://www.timed.org.in/"
-          />
+          <Image image={C3india} title="Research Partner" link="" />
+        </div>
+        <div className="logo2">
+          <Image image={Vskills} title="Growth Partner" link="" />
+          <Image image={Homeflicwegrow} title="Community Partner" link="" />
+        </div>
+        <div className="logo2">
+          <Image image={earthhouse} title="Food Partner" link="" />
         </div>
 
         <div className="logo3">
           <Image
-            image={img13}
+            image={hackerearth}
             title="Sociothon Event Partner"
             link="https://www.hackerearth.com/"
           />
           <Image
-            image={img14}
+            image={izone}
             title="Action Plan Event Partner"
             link="https://3izone.com/"
           />
           <Image
-            image={img15}
+            image={mrida}
             title="Case Study Partner"
             link="https://www.mridagroup.com/"
           />
         </div>
         <div className="logo3">
           <Image
-            image={img16}
+            image={ADR}
             title="Policy Case Partner"
             link="https://adrindia.org/"
           />
           <Image
-            image={img17}
+            image={CSR}
             title="Case Study Partner"
             link="https://www.csrindia.org/"
           />
           <Image
-            image={img18}
+            image={divami}
             title="Wokshop Partner"
             link="https://www.divami.com/"
           />
         </div>
         <div className="logo3">
+          <Image image={atai} title="Action Plan Event Partner" link="" />
+          <Image image={unltd} title="Action Plan Event Partner" link="" />
+          <Image image={AFI} title="Action Plan Event Partner" link="" />
+        </div>
+        <div className="logo3">
+          <Image image={makeroom} title="Action Plan Event Partner" link="" />
+          <Image image={supreme} title="Action Plan Event Partner" link="" />
+          <Image image={zoutons} title="Online Coupons Partner" link="" />
+        </div>
+        <div className="logo3">
           <Image
-            image={img19}
+            image={Straw}
             title="Webinar Partner"
             link="https://www.strawindia.org/"
           />
           <Image
-            image={img20}
+            image={Milan}
             title="NGO Partner"
             link="https://milaanfoundation.org/"
           />
+          <Image image={prepp} title="Online Education Partner" link="" />
+        </div>
+        <div className="logo3">
+          <Image
+            image={Timed}
+            title="Action Plan Event Partner"
+            link="https://www.timed.org.in/"
+          />
+          <Image image={avtar} title="Awareness Partner" link="" />
         </div>
       </div>
 
@@ -171,41 +206,46 @@ const WebView = () => {
         <h1 className="heading">ONLINE MEDIA PARTNER</h1>
         <div className="logo3">
           <Image
-            image={img21}
+            image={Pagalguy}
             title="Online Media Partner"
             link="https://www.pagalguy.com/"
           />
           <Image
-            image={img22}
+            image={youth}
             title="Youth Media Partner"
             link="https://youthincmag.com/"
           />
           <Image
-            image={img23}
+            image={DUupdates}
             title="Online Media Partner"
             link="https://www.duupdates.in/"
           />
         </div>
         <div className="logo3">
           <Image
-            image={img24}
+            image={KnowAfest}
             title="Online Media Partner"
             link="https://www.knowafest.com/college-fests/events"
           />
           <Image
-            image={img25}
+            image={ohcampus}
             title="Online Media Partner"
             link="https://ohcampus.com/"
           />
           <Image
-            image={img26}
+            image={PanIIT}
             title="Online Media Partner"
             link="https://www.paniit.org/"
           />
         </div>
+        <div className="logo3">
+          <Image image={amarujala} title="News Partner" link="" />
+          <Image image={edtimes} title="Blog Partner" link="" />
+          <Image image={collegeduniya} title="Online Media Partner" link="" />
+        </div>
         <div className="logo3 logo4">
           <Image
-            image={img27}
+            image={IndiaEducation}
             title="Online Media Partner"
             link="https://www.indiaeducation.net/"
           />
