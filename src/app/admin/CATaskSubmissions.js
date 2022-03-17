@@ -79,25 +79,37 @@ const CATaskSubmissions = ({task, ca, onCloseClick}) => {
     return(
         <div className='ca-task-submission-container'>
             {
-                taskSubmissions.map((ele) => {
+                taskSubmissions.map((ele, index) => {
                     return(
-                        <div className='task-submission-container'>
+                        <div className='task-submission-container' style={{
+                            border : '0.2rem solid #663aa3',
+                            margin : '1rem'
+                        }}>
+                            Submission - {index+1}
                             <div className='task-submission-status-of-approval'>
                                 Status of Approval : {ele.statusOfApproval}
                             </div>
                             <div className='link-to-submitted-image'>
+                                <div>
                                 Facebook Upload : {
-                                    (ele.facebookUpload) ? <a href={`${baseBackendLink}/${ele.facebookUpload}}`}>facebookUpload</a>:"Not Uploaded"
+                                    (ele.facebookUpload) ? <a target="_blank" rel="noreferrer" href={`${baseBackendLink}/${ele.facebookUpload}`}>facebookUpload</a>:"Not Uploaded"
                                 }
+                                </div>
+                                <div>
                                 Instagram Upload : {
-                                    (ele.instagramUpload) ? <a href={`${baseBackendLink}/${ele.instagramUpload}}`}>instagramUpload</a>:"Not Uploaded"
+                                    (ele.instagramUpload) ? <a target="_blank" rel="noreferrer" href={`${baseBackendLink}/${ele.instagramUpload}`}>instagramUpload</a>:"Not Uploaded"
                                 }
+                                </div>
+                                <div>
                                 Whatsapp Upload : {
-                                    (ele.whatsappUpload) ? <a href={`${baseBackendLink}/${ele.whatsappUpload}}`}>whatsappUpload</a>:"Not Uploaded"
+                                    (ele.whatsappUpload) ? <a target="_blank" rel="noreferrer" href={`${baseBackendLink}/${ele.whatsappUpload}`}>whatsappUpload</a>:"Not Uploaded"
                                 }
+                                </div>
+                                <div>
                                 Linkedin Upload : {
-                                    (ele.linkedinUpload) ? <a href={`${baseBackendLink}/${ele.linkedinUpload}}`}>linkedinUpload</a>:"Not Uploaded"
+                                    (ele.linkedinUpload) ? <a target="_blank" rel="noreferrer" href={`${baseBackendLink}/${ele.linkedinUpload}`}>linkedinUpload</a>:"Not Uploaded"
                                 }
+                                </div>
                             </div>
 
                         </div>
