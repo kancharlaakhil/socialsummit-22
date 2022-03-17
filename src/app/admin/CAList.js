@@ -37,6 +37,7 @@ const CAList = () => {
     return(
         <div style={{margin : '12rem'}}>
             <div className='ca-task-container'>
+                These are the tasks. Select one.
                 {
                     (selectedTaskIndex === -1) ? <div className='choose-task-container'>
 
@@ -45,7 +46,9 @@ const CAList = () => {
                                 return(
                                     <div className='single-task-container'
                                             style={{
-                                                cursor:'pointer'
+                                                cursor:'pointer',
+                                                border : '0.2rem solid #663aa3',
+                                                margin : '1rem'
                                             }}
                                             onClick = {
                                                 () => {
@@ -59,12 +62,16 @@ const CAList = () => {
                             })
                         }
                     </div>:(
-                        <div className='ca-task-details-container'>
+                        <div className='ca-task-details-container' style={{
+                            border : '0.2rem solid #663aa3',
+                            margin : '1rem',
+                            padding : '0.5rem'
+                        }}>
                             <div>
                             <ShowTask task={tasks[selectedTaskIndex]}></ShowTask>
                             <div 
                             
-                                style={{height : '10%', cursor:'pointer'}}
+                                style={{height : '10%', cursor:'pointer', fontWeight : '600'}}
                                 onClick={()=>{
                                     setSelectedTaskIndex(-1)
                                 }}
@@ -75,6 +82,7 @@ const CAList = () => {
                 }
             </div>
             <div className='ca-list-container'>
+            These are the CAs. Select one.
                 {
                     (selectedCAIndex === -1) ? <div className='choose-task-container'>
 
@@ -82,9 +90,11 @@ const CAList = () => {
                             caList.map((ele, index) => {
                                 return(
                                     <div className='single-task-container'
-                                            style={{
-                                                cursor:'pointer'
-                                            }}
+                                    style={{
+                                        cursor:'pointer',
+                                        border : '0.2rem solid #663aa3',
+                                        margin : '1rem'
+                                    }}
                                             onClick = {
                                                 () => {
                                                     setSelectedCAIndex(index)
@@ -97,7 +107,11 @@ const CAList = () => {
                             })
                         }
                     </div>:(
-                        <div className='ca-details-container'>
+                        <div className='ca-details-container' style={{
+                            border : '0.2rem solid #663aa3',
+                            margin : '1rem',
+                            padding : '0.5rem'
+                        }}>
                             <div>
                             <div className='ca-name'> {caList[selectedCAIndex].name} </div>
                         <div className='ca-summit-id'> {caList[selectedCAIndex].summitID} </div>
@@ -121,6 +135,7 @@ const CAList = () => {
             
     {
         (selectedCAIndex !== -1 && selectedTaskIndex!==-1) ? <div>
+            Here are their submissions for the selected Task.
             <CATaskSubmissions ca={caList[selectedCAIndex]} task={tasks[selectedTaskIndex]} onCloseClick={onCloseClick}></CATaskSubmissions>
 
         </div>:null
