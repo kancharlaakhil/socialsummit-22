@@ -46,6 +46,7 @@ import zoutons from "./assets/zoutons.png";
 import makeroom from "./assets/makeroom.png";
 import supreme from "./assets/supreme.png";
 import earthhouse from "./assets/earthhouse.jpg";
+import titlesponsor from "./assets/titlesponsor.png";
 
 const WebView = () => {
   return (
@@ -58,6 +59,10 @@ const WebView = () => {
           height="15rem"
           link="https://en.unesco.org/"
         />
+      </div>
+      <div className="patronage">
+        <h1 className="heading">TITLE SPONSOR</h1>
+        <Image image={titlesponsor} width="30rem" height="15rem" link="" />
       </div>
       <div className="associate">
         <h1 className="heading">ASSOCIATE PARTNERS</h1>
@@ -132,7 +137,7 @@ const WebView = () => {
           <Image image={Homeflicwegrow} title="Community Partner" link="" />
         </div>
         <div className="logo2">
-          <Image image={earthhouse} title="Food Partner" link="" />
+          <Image image={earthhouse} title="Earth House Food Partner" link="" />
         </div>
 
         <div className="logo3">
