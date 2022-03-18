@@ -137,7 +137,7 @@ const WebView = () => {
           <Image image={Homeflicwegrow} title="Community Partner" link="" />
         </div>
         <div className="logo2">
-          <Image image={earthhouse} title="Food Partner" link="" />
+          <Image image={earthhouse} title="Earth House Food Partner" link="" />
         </div>
 
         <div className="logo3">
