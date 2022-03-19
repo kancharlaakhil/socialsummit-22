@@ -47,6 +47,7 @@ import makeroom from "./assets/makeroom.png";
 import supreme from "./assets/supreme.png";
 import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
+import bharat from "./assets/bharat.png";
 
 const WebView = () => {
   return (
@@ -106,37 +107,38 @@ const WebView = () => {
             title="Education Partner"
             link="https://www.lakshyam.co.in/"
           />
+          <Image image={bharat} title="Training Partner" link="" />
+        </div>
+        <div className="logo2Mob">
           <Image
             image={Sponbar}
             title="Relation Partner"
             link="https://sponbar.tech/"
           />
-        </div>
-        <div className="logo2Mob">
           <Image
             image={Certopus}
             title="Certificate Partner"
             link="https://certopus.com/"
           />
+        </div>
+        <div className="logo2Mob">
           <Image
             image={SponPartner}
             title="Sponsorship Partner"
             linnk="http://sponsorbull.com/"
           />
-        </div>
-        <div className="logo2Mob">
           <Image
             image={D2C}
             title="Online Hosting Partner"
             link="https://dare2compete.com/"
           />
+        </div>
+        <div className="logo2Mob">
           <Image image={C3india} title="Research Partner" link="" />
-        </div>
-        <div className="logo2Mob">
           <Image image={Vskills} title="Growth Partner" link="" />
-          <Image image={Homeflicwegrow} title="Community Partner" link="" />
         </div>
         <div className="logo2Mob">
+          <Image image={Homeflicwegrow} title="Community Partner" link="" />
           <Image image={earthhouse} title="Earth House Food Partner" link="" />
         </div>
 
