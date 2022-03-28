@@ -76,7 +76,7 @@ const WebView = () => {
         />
       </div>
       <div className="associate">
-        <h1 className="heading">PAYMENT PARTNERS</h1>
+        <h1 className="heading">PAYMENT PARTNER</h1>
         <Image image={PayPhi} width="30rem" height="15rem" link="" />
       </div>
 
