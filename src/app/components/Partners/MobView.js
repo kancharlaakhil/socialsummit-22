@@ -48,6 +48,7 @@ import supreme from "./assets/supreme.png";
 import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
+import PayPhi from "./assets/PayPhi.png";
 
 const WebView = () => {
   return (
@@ -72,6 +73,15 @@ const WebView = () => {
           width="30rem"
           height="15rem"
           link="https://shop.recodestudios.com/"
+        />
+      </div>
+      <div className="associateMob">
+        <h1 className="headingMob">PAYMENT PARTNER</h1>
+        <Image
+          image={PayPhi}
+          width="30rem"
+          height="15rem"
+          link="https://payphi.com/"
         />
       </div>
 
