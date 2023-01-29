@@ -1,8 +1,8 @@
 import "./css/home.css"
-import Hometop from "./Hometop";
-import Events from "./Events";
+import Hometop from "./Hometop/Main";
+import Events from "./Events/Events";
 import Footfall from "./Footfalls";
-import PastSpeakers from "./PastSpeakers";
+import PastSpeakers from "./PastSpeakers/Speakers";
 import { useWidthAndHeight } from "../../../hooks/useWidthAndHeight"
 import Testimonials from "./Testimonials";
 import "./css/slider.css"
