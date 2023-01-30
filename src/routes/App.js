@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
-import Footer from "../app/layouts/Footer/index";
+import Footer from "../app/layouts/Footer/ContactUs";
 import { ComingSoon } from "../app/components/ComingSoon";
 import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";

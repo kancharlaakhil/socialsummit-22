@@ -1,0 +1,88 @@
+.ourstory-container{
+    /* border: 2px solid black; */
+    height: 90vh;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 0.01%, rgba(0, 0, 0, 0.8) 100%); */
+   
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    
+}
+.imagbox{
+    /* border: 1px solid red; */
+    height:90vh;
+    width:25vw;
+    /* filter: grayscale(80%); */ 
+    
+}
+.id{
+    height:90vh;
+    width:25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6)); */   
+}
+#id1{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 0.01%, rgba(0, 0, 0, 0.8) 100%), url('./assets/image\ 6.png');
+}
+#id2{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 0.01%, rgba(0, 0, 0, 0.8) 100%), url('./assets/image\ 5.png');
+}
+#id3{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 0.01%, rgba(0, 0, 0, 0.8) 100%), url('./assets/image\ 4.png');
+}
+#id4{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 0.01%, rgba(0, 0, 0, 0.8) 100%), url('./assets/image\ 10.png');
+}
+
+.content{
+    
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 25vw;
+    top: 55vh;
+    width: 50em;
+    /* height: 30vh; */
+    text-align: center;
+    z-index: 1;
+    /* backdrop-filter: opacity(50%); */
+}
+.hd1{
+    color: rgba(253, 101, 45, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.para{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+
+@media only screen and (width<=720px){
+    .content{
+        left: 2em;
+        top: 30vh;
+        width: 20em;
+        height: 40vh;
+    }
+    #id1{
+        width: 5vw;
+    }
+    #id2{
+        width: 90vw;
+    }
+    #id3{
+        width: 5vw;
+    }
+    #id4{
+        width: 0vw;
+    }
+}
