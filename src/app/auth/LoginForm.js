@@ -2,29 +2,26 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { useHistory } from "react-router-dom";
-
+import nsslogin from "../assets/images/nsslogin1.png";
 import { LoginAuthAction } from '../../redux/actions/AuthAction'
 
 function LoginForm(props) {
 
   const {login} = props;
- 
+ const [user,setUser]=useState(false);
   const [loginState, setLoginState] = useState({});
   const history = useHistory();
 
   return (
+<>
     <div className="th-login">
-      <div className="row login" style={{ paddingTop: "8rem" }}>
-        <div class="th-register-col-2 col-md-5 offset-md-1 col-sm-12 th-register-right-mobile mb-4">
-          <div class="th-right-text-1">Login to Dashboard</div>
-          <div class="th-right-text-2">
-            Do not have an account?{" "}
-            <Link to="/signup" className="th-right-link">
-              Register Now
-            </Link>
-          </div>
+      <div className="login" id="mainlogdiv" style={{ paddingTop: "8rem" }}>  
+        <div class="th-register-col-2  th-register-right-mobile  login_img ">
+          <img src={nsslogin} id="nsslogin1" alt="img" />
         </div>
-        <div class="th-register-col-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+        
+        <div class="th-register-col-1 colmarg pad-left col-sm-8">
+
           <form class="p-5 registration-form"
             onSubmit = {(event) => {
               event.preventDefault();
@@ -32,29 +29,34 @@ function LoginForm(props) {
               login(loginState, history)
             }}
           >
+        <div id="logintxthead1">Log In</div>
+        <div id="loginlinehead"></div>
+        
             <div class="row">
               <div class="col-md-12 mb-4">
-                <div className="pt-5 th-form-group">
+                <div className="pt-5 th-form-group" id="emailinput">
                   <input
                     type="email"
+                    required
                     className="th-form-control form-control"
                     id=""
-                    name=""
+                    name=""    
                     onChange={(event) => {
                       const email = event.target.value;
                       setLoginState({...loginState,  ...{email}})
                     }}
                   />
-                  <label>
+                  <label className="logintxthead">
+                    <span className="th-required-span star1">*</span>
                     Email-ID
-                    <span className="th-required-span">*</span>
                   </label>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div className="th-form-group">
+              <div className="th-form-group" id="passwordinput">
                 <input
+                required
                   type="text"
                   className="th-form-control form-control flex"
                   id=""
@@ -64,31 +66,35 @@ function LoginForm(props) {
                     setLoginState({...loginState,  ...{password}})
                   }}
                 />
-                <label
-                  style={{ flexWrap: "wrap", justifyContent: "space-between" }}
-                >
-                  {" "}
-                  <span>Password</span>{" "}
-                  <Link to="/forgotPassword" className="th-right-link">
-                    Forgot Password
-                  </Link>
-                </label>
+                  <label className="logintxthead">
+                    <span className="th-required-span star1">*</span>
+                    Password
+                  </label>
               </div>
             </div>
             <div className="row pb-4">
+            <Link to="/forgotPassword" id="forgotpass" className="th-right-link">
+                    Forgot your Password?
+                  </Link>
               <div
-                className="col-md-6 th-registration-btn-1 pb-5"
+                className="col-md-6  pb-5" id="loginbtn"
                 th-form-group
               >
                 <button class="th-registration-btn-2 btn mt-4" type="submit">
-                  Login
+                  Log in
                 </button>
               </div>
+              <div id="regnow">
+              <Link to="/signup" className="th-right-link">
+              <div id="regtxt1"><div id="black1">Don't have an account?</div> Register</div>
+            </Link>
+            </div>
             </div>
           </form>
         </div>
       </div>
     </div>
+    </>
   );
 }
 
