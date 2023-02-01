@@ -1,15 +1,14 @@
 import React from "react";
-import OurStory from "./OurStory";
-import Dynamics from "./Dynamics"
-import VandM from "./VandM"
 
-
+import FirstComp from "./FirstComp";
+import SecondComp from "./SecondComp";
+import ThirdComp from "./ThirdComp";
 function About() {
   return (
     <React.Fragment>
-      <OurStory/>
-      <Dynamics/>
-      <VandM/>
+    
+       <FirstComp />
+      <SecondComp />
     </React.Fragment>
 
 );
