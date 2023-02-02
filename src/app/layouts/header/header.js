@@ -46,35 +46,37 @@ class Header extends Component {
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
             </Link>
-            <div className=" navbar1 d-flex align-items-center">
-              <NavLink to="/home" activeClassName="active">
-                <p className="mb-0 ms-5 th-nss">HOME</p>
+            <div style={{ position: "absolute", marginLeft: "32vw" }}
+            className=" navbar1 d-flex align-items-center"  >
+              <NavLink  
+              to="/home" activeClassName="active">
+                <p className="mb-0 ms-5 th-nss">Home</p>
               </NavLink>
               <NavLink to="/about" activeClassName="active">
-                <p className="mb-0 ms-5 th-nss">ABOUT</p>
+                <p className="mb-0 ms-5 th-nss">About</p>
               </NavLink>
               <NavLink to="/speakers" activeClassName="active">
-                <p className="mb-0 ms-5 th-nss">SPEAKERS</p>
+                <p className="mb-0 ms-5 th-nss">Speakers</p>
               </NavLink>
               <NavLink to="/partners">
                 <p className="mb-0 ms-5 th-nss" activeClassName="active">
-                  PARTNERS
+                  Partners
                 </p>
               </NavLink>
               <NavLink to="/events">
                 <p className="mb-0 ms-5 th-nss" activeClassName="active">
-                  EVENTS
+                  Events
                 </p>
               </NavLink>
               <NavLink to="/contact">
                 <p className="mb-0 ms-5 th-nss" activeClassName="active">
-                  CONTACT
+                  Contact Us
                 </p>
               </NavLink>
               {
                 auth.isLoggedIn ? 
                 <NavLink
-                style={{ position: "absolute", marginLeft: "70vw" }}
+                style={{ position: "absolute", marginLeft: "54vw" }}
                 to="/dashboard"
               >
                 <p className="mb-0 th-nss" activeClassName="active">
@@ -82,12 +84,14 @@ class Header extends Component {
                 </p>
               </NavLink>:
               <NavLink
-              style={{ position: "absolute", marginLeft: "70vw" }}
+              style={{ position: "absolute", marginLeft: "54vw" }}
               to="/login"
+              
             >
-              <p className="mb-0 th-nss" activeClassName="active">
-                LOGIN
-              </p>
+              <button type="button" className="b1234">Login</button>
+              {/* <p className="mb-0 th-nss" activeClassName="active">
+                
+              </p> */}
             </NavLink>
               }
               

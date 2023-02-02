@@ -1,75 +1,208 @@
+// import React from "react";
+// import content from "./components/ReadMore"
+// import Speaker from "./components/Speaker";
+
+// import "./styles/Speakers.css";
+
+// import Devendra from "./assets/Group 701.png";
+// import Roderico from "./assets/Group 702.png";
+// import Atrayee from "./assets/Group 708.png";
+// import Kiran from "./assets/Group 709.png";
+// import Pushkar from "./assets/Group 710.png";
+// import Sonam from "./assets/Group 711.png";
+
+// function Speakers() {
+//   const data = [
+//     {
+//       id: 1,
+//       name: "DEVENDRA JHAJHARIA",
+//       post: "",
+//       descp:
+//         "Devendra Jhajharia was born in 1981 and hails from the churu district of rajasthan. He is an Indian Paralympic javelin thrower competing in F46 events. He is the first Indian Paralympics player to win two gold medals at the Paralympics. He won his first gold in the javelin throw at the 2004 Summer Paralympics in Athens, becoming the second gold medalist at the Paralympics for his country. At the 2016 Summer Paralympics in Rio de Janeiro, he won a second gold medal in the same event, bettering his previous record.He became India's most decorated Paralympic player by winning his third medal, a silver at the 2020 Summer Paralympics at Tokyo.He delivered an astonishing lecture on 'A journey beyond differences', to inspire youths out of his journey, during national social summit 2022 ",
+        
+       
+//       image: Devendra,
+//     },
+//     {
+//       id: 2,
+//       name: "Dr Roderico H. Ofrin",
+//       post: "",
+//       descp:
+//         "Born in 1968 in the Philippines, Dr Roderico H. Ofrin is currently WHO India representative. Dr Ofrin holds a Doctor of Medicine from the University of the Philippines; and a Master’s in Public Health from Hebrew University Hadassah, Israel.Dr Ofrin comes with a rich experience of over two decades in public health. His extensive experience and expertise covers critical issues impacting health of people in the 11 Member countries, including India.Dr Ofrin has served in multiple roles starting as a Public Health Officer in a war-ravaged island nation of Timor-Leste, assisting in setting up of its health systems.Dr Ofrin was a keynote speaker under the 'Impact Series' , a series of guest lectures, and delivered a session on 'The gargantuan inoculation drive: a vaccine for everyone'.",
+//       image: Roderico,
+//     },
+
+//     {
+//       id: 3,
+//       name: "Atrayee S Sanyal",
+//       post: " Guest of Honor",
+//       descp:
+//         "'A journey where all of us are sensitized about the problem and all are ambassadors of it, becomes easier to combat', said Miss atreeya s sanyal, chief guest of social summit 2k22. She delivered a session on 'Embracing target-driven D & I at workplace', under the 'impact series', the guest lecture series of social summit. Atreeya sarkar sanyal is currently the vice president, HRM of tata steel Ltd. She did her graduation from University of Calcutta and masters from IIM Calcutta. She served tata steel for the last 5 years, starting from marketing and sales and then in human resource management.",
+//       image: Atrayee,
+//     },
+//     {
+//       id: 4,
+//       name: "Kiran Bedi",
+//       post: "",
+//       descp:
+//         "Kiran Bedi is an Indian social activist, former-tennis player who became the first woman in India to join the officer ranks of the Indian Police Service.Her talk revolved mostly around the concept of ‘Leadership with Conscience’. Conscience, as Dr. Bedi explained it, is a person’s ability to discern right from wrong. In a holistic way, she tried to propose a solution to the quintessential problem of lack of moral discipline among the country’s population.She believed that this lack of morality could be attributed to the absence of ethical education. Dr. Kiran Bedi’s presence quite easily left an imprint on the listeners’ mind.",
+//       image: Kiran,
+//     },
+
+//     {
+//       id: 5,
+//       name: "Shri. Pushkar Singh Dhami",
+//       post: "CEO- Swades Foundation",
+//       descp:
+//         "Shri. Pushkar Singh Dhami, hon’ble Chief Minister of Uttarakhand had joined us at our institute and made the opening ceremony of the first ever event of NSS, IITR called Sustainability Conclave, was organized in alignment with the United Nations Sustainable Development Goals.Pushkar Singh Dhami launched the TechSarthi scheme which will focus on industries to help adopt technically sound solutions, gear up their growth, and realize the objective of “Local to Global”. The Conclave was divided into conferences for sustainable development, followed by a series of innovative exchanges of strategies to help achieve long-term sustainability, workshops, hackathons, ideation, case studies and policy case competitions, among others. He hosted The Sustainability Conclave 2022 which aimed to model and address the rising issues including climate change, environmental degradation, energy crisis, and water shortage. His presence made the day and the ceremony even more contented.",
+//       image: Pushkar,
+//     },
+//     {
+//       id: 6,
+//       name: "Sonam Wangchuk",
+//       post: "Vice President HRM- Tata Steel",
+//       descp:
+//         "An Indian Engineer, Raman Magsaysay Awardee, innovative and education reformist. The pioneer of the Ice Stupa project; fully solar powered SECMOL campus and Operations New Hope.He gave a tremendous speech in an event organised by the NSS team of IIT Roorkee. His speech focuses on the minute things which each one us should take care about nature and most precious climate, this focuses on the sustainable innovations and eco-friendship.",
+//       image: Sonam,
+//     },
+//   ];
+
+//   return (
+//     <div className="speakersPage">
+//       <div className="headingSpeaker">
+//         <h1>Speakers</h1>
+        
+//       </div>
+
+//       {data.map((element) => {
+//         return (
+//           <Speaker
+//             key={element.id}
+//             id={element.id}
+//             name={element.name}
+//             post={element.post}
+//             descp={element.descp}
+//             image={element.image}
+//           />
+//         );
+//       })}
+//     </div>
+//   );
+// }
+
+// export default Speakers;
+
+import Speaker from './components/Speaker';
+// import './App.css';
 import React from "react";
-
-import Speaker from "./components/Speaker";
-// import SpeakerRight from "./components/SpeakerRight";
 import "./styles/Speakers.css";
+// import Speaker from './main/Main';
+// import './main/Mains.css';
+import img1 from './assets/img1.png';
+import img2 from './assets/img2.png';
+import img3 from './assets/img3.png';
+import img4 from './assets/img4.png';
+import img5 from './assets/img5.png';
+import img6 from './assets/img6.png';
+import img1mob from './assets/Group 701.png';
+import img2mob from './assets/Group 702.png';
+import img3mob from './assets/Group 708.png';
+import img4mob from './assets/Group 709.png';
+import img5mob from './assets/Group 710.png';
+import img6mob from './assets/Group 711.png';
 
-import Devendra from "./assets/Devendra.png";
-import Abhayanand from "./assets/Abhyanand.png";
-import Atrayee from "./assets/Atrayee.png";
-import DPSingh from "./assets/DPSingh.png";
-import Mangesh from "./assets/Wange.png";
-import Aruna from "./assets/Aruna.png";
+// function App() {
+//   return (
+//     <div className="App">
+//       <Main className="App-main" title="Speakers"/>
+        
+        
+      
+//     </div>
+//   );
+// }
+
+// export default App;
 
 function Speakers() {
   const data = [
     {
       id: 1,
-      name: "Major DP Singh",
-      post: "",
+      name: "DEVENDRA JHAJHARIA",
+      post: "Silver medalist at Tokyo Paralympics",
       descp:
-        "Major DP Singh happens to be a pronounced Kargil war survivor, who is also India’s first amputee marathon runner, first blade runner of our nation and also the first disabled solo skydiver of Asia. He is a proud recipient of the National Award for the empowerment of persons with disabilities (2018), by the government of India as a role model in the category of multiple disabilities. He also received the Limca People of the year award in 2016, became the ambassador of the year of disabled celebration of Indian Army in 2018 and is the Indian brand ambassador for WIngs of Life world run, an across-the-world social initiative of Red Bull for cancer awareness. His life struggle and motivation is a great role model for this generation.",
-      image: DPSingh,
+        "Devendra Jhajharia was born in 1981 and hails from the churu district of rajasthan. He is an Indian Paralympic javelin thrower competing in F46 events. He is the first Indian Paralympics player to win two gold medals at the Paralympics. He won his first gold in the javelin throw at the 2004 Summer Paralympics in Athens, becoming the second gold medalist at the Paralympics for his country. At the 2016 Summer Paralympics in Rio de Janeiro, he won a second gold medal in the same event, bettering his previous record.He became India's most decorated Paralympic player by winning his third medal, a silver at the 2020 Summer Paralympics at Tokyo.He delivered an astonishing lecture on 'A journey beyond differences', to inspire youths out of his journey, during national social summit 2022 ",
+        
+       
+      image: img1,
+      imagemob: img1mob,
+      color: '#FD652D',
+      left: '50px',
     },
     {
       id: 2,
-      name: "Aruna Roy",
-      post: "",
+      name: "Dr Roderico H. Ofrin",
+      post: "WHO Representative to India",
       descp:
-        "Aruna Roy is one of India’s most prominent activists. Formerly, she was a civil servant till 1975, before she resigned to work for the rural poor section in Rajasthan area. She collectively formed the MKSS Mazdoor Kisan Shakti Sangathan in 1990, an organization for the empowerment of workers and peasants. She played a pivotal role in drafting and advocating for the Right to Information Law in 2005. Being an active member of India’s National Advisory Council, she played a crucial role in the passage of the MGNREGA act in 2005. Currently the president of the National Federation of Indian Women; she was awarded the Ramon Magsaysay Award in 2000, Lal Bahadur Shastri National Award for Excellence in Public Administration, Academia and Management in 2010 and listed one of the 100 most influential people in the world by the TIME magazine in 2011.",
-      image: Aruna,
+        "Born in 1968 in the Philippines, Dr Roderico H. Ofrin is currently WHO India representative. Dr Ofrin holds a Doctor of Medicine from the University of the Philippines; and a Master’s in Public Health from Hebrew University Hadassah, Israel.Dr Ofrin comes with a rich experience of over two decades in public health. His extensive experience and expertise covers critical issues impacting health of people in the 11 Member countries, including India.Dr Ofrin has served in multiple roles starting as a Public Health Officer in a war-ravaged island nation of Timor-Leste, assisting in setting up of its health systems.Dr Ofrin was a keynote speaker under the 'Impact Series' , a series of guest lectures, and delivered a session on 'The gargantuan inoculation drive: a vaccine for everyone'.",
+      image: img2,
+      imagemob: img2mob,
+      color:'#FF980D',
+      left: '50px',
     },
 
     {
       id: 3,
-      name: "Devendra Jhajharia",
-      post: " Guest of Honor",
+      name: "Atrayee S Sanyal",
+      post: " Vice President HRM at Tata Steel",
       descp:
-        "Devendra Jhajharia is an Indian Paralympic javelin thrower. He is the first Indian Paralympics player to win two gold medals at the Paralympics. He won his first gold in the javelin throw at the 2004 Summer Paralympics in Athens, becoming the second gold medalist at the Paralympics for his country. At the 2016 Summer Paralympics in Rio de Janeiro, he won a second gold medal in the same event, bettering his previous record. Devendra is currently being supported by the Olympic Gold Quest. He became India’s most decorated Paralympic player by winning his third medal, a silver at the 2020 Summer Paralympics at Tokyo.",
-      image: Devendra,
+        "'A journey where all of us are sensitized about the problem and all are ambassadors of it, becomes easier to combat', said Miss atreeya s sanyal, chief guest of social summit 2k22. She delivered a session on 'Embracing target-driven D & I at workplace', under the 'impact series', the guest lecture series of social summit. Atreeya sarkar sanyal is currently the vice president, HRM of tata steel Ltd. She did her graduation from University of Calcutta and masters from IIM Calcutta. She served tata steel for the last 5 years, starting from marketing and sales and then in human resource management.",
+      image: img3,
+      imagemob: img3mob,
+      color:'#22495A',
+      left: '50px',
     },
     {
       id: 4,
-      name: "Abhayanand",
-      post: "",
+      name: "Kiran Bedi",
+      post: "Lt. Governor of Puducherry",
       descp:
-        "Abhayanand is an IPS officer and educationalist, who along with Anand Kumar, conceptualized Super 30 to teach poor students to crack IIT JEE. He was selected as the IPS officer for the Bihar cadre after clearing UPSC in 1977. He was the ADG in 2006 and as such he concentrated on the speedy trial of Arms Act cases in Bihar. Later, during his tenure as the ADG of Bihar Military Police, Patna; he motivated the constables to donate from their salaries to convert a dilapidated government hospital into a modern nursing home with state-of-the-art facilities for treatment of the police force and their family members. He was appointed the D.G.P. Bihar in August 2011, following the footsteps of his late father, who was the 28th D.G.P. Bihar in 1985-86.",
-      image: Abhayanand,
+        "Kiran Bedi is an Indian social activist, former-tennis player who became the first woman in India to join the officer ranks of the Indian Police Service.Her talk revolved mostly around the concept of ‘Leadership with Conscience’. Conscience, as Dr. Bedi explained it, is a person’s ability to discern right from wrong. In a holistic way, she tried to propose a solution to the quintessential problem of lack of moral discipline among the country’s population.She believed that this lack of morality could be attributed to the absence of ethical education. Dr. Kiran Bedi’s presence quite easily left an imprint on the listeners’ mind.",
+      image: img4,
+      imagemob:img4mob,
+      color: '#FD652D',
+      left: '50px',
     },
 
     {
       id: 5,
-      name: "Mangesh Wange",
-      post: "CEO- Swades Foundation",
+      name: "Shri. Pushkar Singh Dhami",
+      post: "Chief Minister of Uttarakhand",
       descp:
-        "Mangesh Wange is the CEO of Swades Foundation and has more than 27 years of General Management experience with P&L responsibility and in leading successful start-ups across multiple sectors and various organizations viz. Farm Inputs (Farm Machinery, Agri-Inputs, Animal Feeds & Micro Information), Retail and Micro Finance. Having rich experience in strategy formulation & implementation he has for both organic & inorganic growth of businesses. He has started his career in Sales & Distribution with Mahindra Tractors in 1987. Before joining Swades, Mangesh was the Head of Animal Feeds Business at Godrej Agrovet Limited.",
-      image: Mangesh,
+        "Shri. Pushkar Singh Dhami, hon’ble Chief Minister of Uttarakhand had joined us at our institute and made the opening ceremony of the first ever event of NSS, IITR called Sustainability Conclave, was organized in alignment with the United Nations Sustainable Development Goals.Pushkar Singh Dhami launched the TechSarthi scheme which will focus on industries to help adopt technically sound solutions, gear up their growth, and realize the objective of “Local to Global”. The Conclave was divided into conferences for sustainable development, followed by a series of innovative exchanges of strategies to help achieve long-term sustainability, workshops, hackathons, ideation, case studies and policy case competitions, among others. He hosted The Sustainability Conclave 2022 which aimed to model and address the rising issues including climate change, environmental degradation, energy crisis, and water shortage. His presence made the day and the ceremony even more contented.",
+      image: img5,
+      imagemob:img5mob,
+      color:'#FF980D',
+      left: '50px',
     },
     {
       id: 6,
-      name: "Atrayee S Sanyal",
-      post: "Vice President HRM- Tata Steel",
+      name: "Sonam Wangchuk",
+      post: "Founding Director SECMOL",
       descp:
-        "Atrayee S Sanyal is vice president HRM of India’s multinational steel manufacturing company and longstanding CEDEP member of Tata Steel. She spent almost 20 years in sales and marketing at Tata Steel where she spearheaded the company’s branding journey. Then, she moved into human resources gaining front line experience in talent management, leadership and L&D. She is a passionate advocate of diversity and inclusion and has been at the forefront of D&I benchmarking practices within Tata Steel. She won the British government’s chevening scholarship and sits on the boards of four companies within the Tata Steel Group. Atrayee brings to the CEDEP board a wealth of international operational and HR management expertise in addition to in-depth knowledge of rapidly expanding manufacturing markets in South Asia.",
-      image: Atrayee,
+        "An Indian Engineer, Raman Magsaysay Awardee, innovative and education reformist. The pioneer of the Ice Stupa project; fully solar powered SECMOL campus and Operations New Hope.He gave a tremendous speech in an event organised by the NSS team of IIT Roorkee. His speech focuses on the minute things which each one us should take care about nature and most precious climate, this focuses on the sustainable innovations and eco-friendship.",
+      image: img6,
+      imagemob:img6mob,
+      color:'#22495A',
+      left: '50px',
     },
   ];
 
   return (
     <div className="speakersPage">
       <div className="headingSpeaker">
-        <h1>Speakers</h1>
-        <p>10+ hours of thrilling session</p>
+        <h1>Past Speakers</h1>
+        {/* <p>10+ hours of thrilling session</p> */}
       </div>
 
       {data.map((element) => {
@@ -81,6 +214,9 @@ function Speakers() {
             post={element.post}
             descp={element.descp}
             image={element.image}
+            color={element.color}
+            left={element.left}
+            imagemob={element.imagemob}
           />
         );
       })}

@@ -14,7 +14,7 @@ class SideDrawerMob extends Component {
 
     return (
       <div>
-        <div className={drawerClasses}>
+        <div className={drawerClasses} >
           <div className="pt-2 pb-4 ps-3 pe-3">
             <div className="d-flex justify-content-end mb-3">
               <X
@@ -33,7 +33,8 @@ class SideDrawerMob extends Component {
                 onClick={this.props.clicked}
                 className="th-link"
               >
-                <p className="th-sidebar-list-item mb-3">About</p>
+                <p 
+                className="th-sidebar-list-item mb-3">About</p>
               </Link>
               <Link
                 to="/partners"
@@ -63,34 +64,10 @@ class SideDrawerMob extends Component {
               >
                 <p className="th-sidebar-list-item mb-3">Contact</p>
               </Link>
-              <hr style={{ width: "70%", color: "#FFFFFF", opacity: "1" }} />
-              {
-                auth.isLoggedIn ? 
-                <Link
-                to="/dashboard"
-                onClick={this.props.clicked}
-                className="th-link"
-              >
-                <p className="th-sidebar-list-item mb-3">Dashboard</p>
-              </Link>
+             
               :
-              <div className="th-sidebar-list-item1">
-                <Link
-                  to="/login"
-                  onClick={this.props.clicked}
-                  className="th-link"
-                >
-                  <p className="th-sidebar-list-item mb-3">Login</p>
-                </Link>
-                <Link
-                  to="/signup"
-                  onClick={this.props.clicked}
-                  className="th-link ms-5"
-                >
-                  <p className="th-sidebar-list-item mb-3">Register</p>
-                </Link>
-              </div>
-              }
+              
+              
               
             </div>
           </div>
