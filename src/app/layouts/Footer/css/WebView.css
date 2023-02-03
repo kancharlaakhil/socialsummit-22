@@ -44,29 +44,25 @@
 .nss-logo {
     border-right : solid 0.1rem #222222
 }
-.embracing-inclusion{
-    color : #444444;
-    font-family:  Raleway;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1rem;
-    text-align: center;
-}
+
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #663AA3;
+    /* color: #663AA3; */
+    background-color: white;
     opacity: 1; /* Firefox */
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #663AA3;
+    background-color: white;
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
-    color: #663AA3;
+    background-color: white;
 }
 
 .th-form-group textarea{
-    height : 100% !important
+    height : 100% !important;
+    /* background-color: white; */
+    
 }
 
 .footer-find-us-head {

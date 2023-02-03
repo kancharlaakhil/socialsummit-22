@@ -50,7 +50,7 @@ class SideDrawerMob extends Component {
                 <p className="th-sidebar-list-item mb-3">Events</p>
               </Link>
               <Link
-                to="/teams"
+                to="/speakers"
                 onClick={this.props.clicked}
                 className="th-link"
               >
