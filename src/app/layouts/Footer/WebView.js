@@ -7,6 +7,10 @@ import Facebook from './images/facebook.svg';
 import Instagram from './images/instagram.svg';
 import Twitter from './images/twitter.svg';
 import Linkedin from './images/linkedin.svg';
+import im1 from './images/facebook.png'
+import im2 from './images/inst.png'
+import im3 from './images/Linkedin.png'
+import im4 from './images/Twitter.png'
 
 
 const WebView = () => {
@@ -26,7 +30,7 @@ const WebView = () => {
                     <div className='row' style={{ height : '100%'}}>
                     <div className='col-md-4'>
                         </div>
-                    <div className='col-md-7'
+                    {/* <div className='col-md-7'
                         style={{
                           
                             backgroundImage : `url(${NSSLogo})`,
@@ -36,7 +40,25 @@ const WebView = () => {
                         }}
                     >
 
+                    </div> */}
+                    <div className="socialmedia">
+                <div className="socialmain">
+                    <img src="images/Logo2.png" alt="" />
+                    <h2 className='hd1'>BREAKING CONVENTIONS</h2>
+                    <br />
+                    <br />
+                    
+                    <p>Follow us on</p>
+                    <div className="socialicons">
+                        <img src={im1} alt="" />
+                        <img src={im2} alt="" />
+                        <img src={im3}alt="" />
+                        <img src={im4} alt="" />
+                        
+
                     </div>
+                </div>
+            </div>
                     </div>
                 </div>
                 <div className='col-md-8 footer-contact-form'>
@@ -44,9 +66,9 @@ const WebView = () => {
                 <form onSubmit = {(event) => {
                         event.preventDefault();
                         }}>
-                            <div className='row' style={{height : '90%'}}>
-                                <div className='col-md-6'>
-                                    <div className='row  th-form-group' style={{height : '33.33%', margin:'0.5rem'}}>
+                            <div className='' style={{height : '90%'}}>
+                                <div className=''>
+                                    <div className='' style={{height : '33.33%', margin:'0.5rem'}}>
                                     <input
                                         type="text"
                                         className="th-form-control form-control"
@@ -57,7 +79,7 @@ const WebView = () => {
                                     />
 
                                     </div>
-                                    <div className='row  th-form-group'  style={{height : '33.33%' , margin:'0.5rem'}}>
+                                    <div className='th-form-group'  style={{height : '33.33%' , margin:'0.5rem'}}>
                                     <input
                                         type="text"
                                         className="th-form-control form-control"
@@ -67,7 +89,7 @@ const WebView = () => {
                                        
                                     />
                                     </div>
-                                    <div className='row  th-form-group'  style={{height : '33.33%' , margin:'0.5rem'}}>
+                                    <div className='th-form-group'  style={{height : '33.33%' , margin:'0.5rem'}}>
                                     <input
                                         type="text"
                                         className="th-form-control form-control"
@@ -79,8 +101,8 @@ const WebView = () => {
                                     </div>
 
                                 </div>
-                                <div className='col-md-6'>
-                                <div className='row  th-form-group' style={{height : '100%', margin:'0.5rem'}}>
+                                <div className=''>
+                                <div className='th-form-group' style={{height : '100%', margin:'0.5rem'}}>
                                     <textarea
                                         height={'100%'}
                                         type="text"
@@ -95,9 +117,9 @@ const WebView = () => {
                                 </div>
 
                             </div>
-                            <div className='row' style={{ height : '10%' , margin:'0.5rem'}}>
-                            <div className="col-md-6 th-registration-btn-1" th-form-group style={{ paddingLeft : '0' }}>
-                                <button class="th-registration-btn-2 btn mt-4" type="submit">
+                            <div className='' style={{ height : '10%' , margin:'0.5rem'}}>
+                            <div className=" th-registration-btn-1" th-form-group style={{ paddingLeft : '0' }}>
+                                <button class="th-registration-btn-2 btn " type="submit">
                                 Send Message
                                 </button>
                             </div>
@@ -108,7 +130,7 @@ const WebView = () => {
 
             </div>
             </div>
-            <div className='row footer-row-3'>
+            {/* <div className='row footer-row-3'>
                 <div className='col-md-4'>
                 <div className='row' style={{ height : '100%'}}>
                     <div className='col-md-4'>
@@ -120,65 +142,24 @@ const WebView = () => {
                    
                         </div>
                 </div>
-                <div className='col-md-8'>
+                <div className=''>
 
                 </div>
 
-            </div>
-            <div className='row footer-row-4'>
-                <div className='col-md-4'>
+            </div> */}
+            <div className='footer-row-4'>
+                <div className=''>
 
                 </div>
-                <div className='col-md-8'>
-                    <div className='row footer-find-us'>
-                        <div className='col-md-5'>
+                <div className=''>
+                    <div className=' footer-find-us'>
+                        <div className=''>
 
                         </div>
-                        <div className='col-md-7 footer-social-media-icons'>
-                            <div className='row h-100'>
-                                <div className='col-md-3 footer-find-us-head'> Find Us On</div>
-                                <div className='col-md-9'>
-                                    <div className='row h-75'>
-                                    
-                                        
-                            <a
-                            href="https://m.facebook.com/iitrsocialsummit/"
-                            target="blank"
-                            rel="noreferrer"
-                            className="th-link"
-                            style={{height :'100%', width:'25%'}}>
-                              <div className='col-md-12 h-75' 
-                                             style={{  backgroundImage : `url(${Facebook})`,  backgroundSize: 'contain', backgroundRepeat :'no-repeat', backgroundPosition:'center'}}
-                                            ></div>
-                             </a>
-                                           
-                             <a
-                            href="https://instagram.com/iitrsocialsummit?utm_medium=copy_link"
-                            target="blank"
-                            rel="noreferrer"
-                            className="th-link"
-                            style={{height :'100%', width:'25%'}}>
-                                        <div className='col-md-12 h-75' style={{ backgroundImage : `url(${Instagram})`,  backgroundSize: 'contain', backgroundRepeat :'no-repeat', backgroundPosition:'center'}}></div>
-                                        </a>
-
-                             <a
-                            href="https://twitter.com/natsocialsummit?t=_E-S4iDRCvoqO3bGh4u6sw&s=08"
-                            target="blank"
-                            rel="noreferrer"
-                            className="th-link"
-                            style={{height :'100%', width:'25%'}}>
-                                        <div className='col-md-12 h-75' style={{ backgroundImage : `url(${Twitter})`,  backgroundSize: 'contain', backgroundRepeat :'no-repeat', backgroundPosition:'center'}}></div>
-                            </a>
-                            <a
-                            href="https://www.linkedin.com/company/national-social-summit"
-                            target="blank"
-                            rel="noreferrer"
-                            className="th-link"
-                            style={{height :'100%', width:'25%'}}>
-                               <div className='col-md-12 h-75' style={{ backgroundImage : `url(${Linkedin})`,  backgroundSize: 'contain', backgroundRepeat :'no-repeat', backgroundPosition:'center'}}></div>
-                                   </a>
-                                   
-                                    </div>
+                        <div className='footer-social-media-icons'>
+                            <div className=''>
+                                <div className=' footer-find-us-head'> @copyright | National Social Summit</div>
+                                <div className=''>
                                 </div>
 
                             </div>

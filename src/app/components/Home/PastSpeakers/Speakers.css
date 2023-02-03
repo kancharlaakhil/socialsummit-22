@@ -1,0 +1,102 @@
+.speaker-container{
+    height: 60vh;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    margin-bottom: 2em;
+}
+.speakercontent{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-left: 4em;
+}
+.mobspkrcontent{
+    display: none;
+}
+.hd{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: rgba(34, 73, 90, 1);
+}
+
+.mobsprbtn{
+    display: none;
+}
+
+.imgbox2{
+    /* border: 1px solid blue; */
+    position: absolute;
+    /* left: 10vw; */
+    margin-left: 18em;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (width<=720px){
+    .speaker-container{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 200vh;
+        width: 100vw;
+        /* position: absolute;
+        left: 2em; */
+        margin-left: 0px;
+        /* border: 1px solid black; */
+
+    }
+    .speakercontent{
+        display: none;
+    }
+    .mobspkrcontent{
+        /* display: flex; */
+        width: 20vw;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    .imgbox2{
+        margin-top: 5em;
+        margin-left: 0em;
+        width: 80vw;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+    .mobhd{
+        display:flex;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        
+        /* identical to box height, or 29px */
+
+        /* text-align: center; */
+
+        /* CP/Blue */
+
+        color: #22495A;
+
+    }
+    #speakrbtn{
+        display: none;
+    }
+    .mobsprbtn{
+        display: flex;
+        position: relative;
+        top: 180vh;
+    }
+
+}

@@ -1,0 +1,106 @@
+shadow-effect {
+  background: #000;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+.text-center{
+  color: #22495A;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 6%;
+}
+.background{
+  background-color: rgb(255, 152, 13, 0.2);
+  height: 20% !important;
+}
+
+#shadow-effect p {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 300;
+}
+
+.img-circle {
+  vertical-align: middle;
+  max-width: 120px;
+  /* min-height: 90px; */
+  transform-style: preserve-3d;
+  margin: -16% auto 0;
+}
+
+.inv{
+  max-height: 64px;
+}
+
+#customer-testimonoals {
+  margin-top: 2%;
+}
+
+.testimonial-name {
+  /* margin: -17px auto 0; */
+  display: table;
+  width: 90%;
+  background-color: #FD652D;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+  padding: 5% 5% 20% 5%;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lato';
+  box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12), 0px 5px 7px rgba(0, 0, 0, 0.5);
+}
+.test-name{
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.test-post{
+margin-top: 0;
+color: #22495A;
+}
+
+#customer-testimonoals .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 0px;
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+#customer-testimonoals .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #56423D;
+  transform: translate3d(0px, -50%, 0px) scale(0.8);
+}
+
+.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  /* background: #eaa400; */
+  background: #56423D;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+}
