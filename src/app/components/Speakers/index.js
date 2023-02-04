@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 // import content from "./components/ReadMore"
 // import Speaker from "./components/Speaker";
 
@@ -94,7 +94,7 @@
 
 import Speaker from './components/Speaker';
 // import './App.css';
-import React from "react";
+//import React from "react";
 import "./styles/Speakers.css";
 // import Speaker from './main/Main';
 // import './main/Mains.css';

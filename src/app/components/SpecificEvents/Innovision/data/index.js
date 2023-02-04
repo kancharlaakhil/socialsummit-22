@@ -1,3 +1,4 @@
+import React from 'react'
 import Innovision from './innovision.svg'
 
 export const header = {

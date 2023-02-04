@@ -1,3 +1,4 @@
+import React from 'react'
 import PolicyCase from './policyCase.svg'
 
 export const header = {

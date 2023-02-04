@@ -1,3 +1,4 @@
+import React from 'react'
 import "./FirstComp.css";
 function FirstComp() {
   return (

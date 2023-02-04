@@ -1,8 +1,9 @@
+import React from 'react'
 import backgroundTop from "../../../images/backgroundTop.png";
 //import SocioContent from "./SocioContent";
 import "./css/Header.css";
 import socioimage from "./../../../Sociothon.svg";
-import React from 'react'
+
 //import data from './data'
 
 const Header = ({data}) => {

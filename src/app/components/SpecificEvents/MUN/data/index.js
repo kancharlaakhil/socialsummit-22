@@ -1,3 +1,4 @@
+import React from 'react'
 import unhcr from './unhcr.png';
 import uncsw from './uncsw.png';
 import lokSabha from './lok-sabha.png'
