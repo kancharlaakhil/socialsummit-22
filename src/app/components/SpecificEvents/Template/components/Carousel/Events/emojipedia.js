@@ -1,4 +1,4 @@
-
+import React from 'react'
 import Abhivyakti from './images/Abhivyakti.svg';
 import ActionPlan from './images/ActionPlan.svg';
 import CaseStudy from './images/CaseStudy.svg';

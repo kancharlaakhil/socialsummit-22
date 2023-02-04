@@ -1,3 +1,4 @@
+import React from 'react'
 import Workshop from './Workshop.svg'
 
 export const header = {

@@ -1,3 +1,4 @@
+import React from 'react'
 import TurnCoat from './turnCoat.svg'
 
 export const header = {
