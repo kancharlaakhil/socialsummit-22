@@ -2,12 +2,13 @@ import backgroundTop from "../../../images/backgroundTop.png";
 //import SocioContent from "./SocioContent";
 import "./css/Header.css";
 import socioimage from "./../../../Sociothon.svg";
-
+import React from 'react'
 //import data from './data'
 
 const Header = ({data}) => {
   
   return (
+    <>
     <div className="header-component">
       <div
         style={{
@@ -75,6 +76,7 @@ const Header = ({data}) => {
       </div>
       {/* <div><Event /></div> */}
     </div>
+    </>
   );
 }
 
