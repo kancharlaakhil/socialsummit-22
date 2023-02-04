@@ -50,7 +50,7 @@ class SideDrawerMob extends Component {
                 <p className="th-sidebar-list-item mb-3">Events</p>
               </Link>
               <Link
-                to="/teams"
+                to="/speakers"
                 onClick={this.props.clicked}
                 className="th-link"
               >
@@ -63,34 +63,25 @@ class SideDrawerMob extends Component {
               >
                 <p className="th-sidebar-list-item mb-3">Contact</p>
               </Link>
-              <hr style={{ width: "70%", color: "#FFFFFF", opacity: "1" }} />
-              {
-                auth.isLoggedIn ? 
-                <Link
-                to="/dashboard"
-                onClick={this.props.clicked}
-                className="th-link"
-              >
-                <p className="th-sidebar-list-item mb-3">Dashboard</p>
-              </Link>
-              :
+ 
               <div className="th-sidebar-list-item1">
                 <Link
                   to="/login"
                   onClick={this.props.clicked}
                   className="th-link"
                 >
-                  <p className="th-sidebar-list-item mb-3">Login</p>
+                  <button type="button" className="button-mob">Log In</button>
                 </Link>
                 <Link
                   to="/signup"
                   onClick={this.props.clicked}
                   className="th-link ms-5"
                 >
-                  <p className="th-sidebar-list-item mb-3">Register</p>
+                 <button type="button" className="button-mob">Register</button>
                 </Link>
               </div>
-              }
+              
+              
               
             </div>
           </div>

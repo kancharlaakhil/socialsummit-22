@@ -52,11 +52,10 @@ body {
     color: azure
     ;
 } 
+
+
 @media only screen and (max-width: 576px) {
-    .th-register-col-1 {
-      width: 23rem;
-      margin: auto;
-    }
+
   }
   
   @media only screen and (max-width: 767px) {

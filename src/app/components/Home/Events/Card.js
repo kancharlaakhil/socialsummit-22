@@ -13,10 +13,11 @@ function Card(props) {
             <p id='p2'>Price Worth:<span>{props.price}</span></p>
         </div>
         <div className="hoverbox">
-          <button id='hoverbtn1'>Register</button>
-          <button id='hoverbtn2'>Rulebook</button>
+          <button className='btns' id='hoverbtn1'>
+          <a className='Rlink2' href="https://socialsummit.iitr.ac.in/signup">Register</a></button>
+          <button className='btns' id='hoverbtn2'>Rulebook</button>
           {/* <a href="">Know More</a> */}
-          <button id="hoverbtn3">Know More</button>
+          <button  id="hoverbtn3">Know More</button>
         </div>
       
     </div>

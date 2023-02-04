@@ -5,10 +5,11 @@
     /* border: 1px solid red; */
     position: absolute;
     left: 32vw;
-    top: 53em;
+    /* top: 50em; */
     width: 35em;
     /* height: 15em; */
     text-align: center;
+    margin-top: 6em;
 }
 #p2{
     color: rgba(34, 73, 90, 1);
@@ -21,6 +22,7 @@
         width: 100vw;
     }
     .parent{
+        /* top: 52em; */
         left: 2em;
         width: 20em;
     }

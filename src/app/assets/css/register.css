@@ -2,37 +2,44 @@ body {
     background: #fafafa;
   }
   .th-registration {
-    background-image: url("../images/bg-signup.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-position: bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .th-login {
-    background-image: url("../images/bg-login.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
+
+  #nsslogin1{
+    height: 82vh;
+    width:522px;
+  }
+
   .th-registration-btn,
   .th-registration-btn-2 {
-    background: #663aa3;
-    border-radius: 5px;
-    text-decoration: none !important;
-    cursor: pointer;
-    text-align: center;
-    color: #ffffff;
+    position: absolute;
+    width: 71px;
+    height: 32px;
+    background: #FD652D;
+    border: 1px solid #FD652D;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color:white;
   }
   .th-registration-btn {
     padding: 10px 42px;
   }
-  .th-registration-btn-2 {
-    padding: 6px 40px;
-    font-family: Inter;
-  }
+
   .th-registration-btn-2:focus {
     box-shadow: none !important;
   }
@@ -50,17 +57,26 @@ body {
     display: flex;
     flex-direction: column;
     /* margin-top: 6rem; */
-    justify-content: center;
     text-align: center;
     font-family: Raleway;
   }
-  
+
+  .colqq{
+    display: flex;
+    align-items: left;
+    width:50%;
+  }
+
+  .login_img{
+    margin-left:104px;
+  }
   .th-register-right-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font-family: Raleway;
+    margin-left:6%;
   }
   
   .th-right-text-1 {
@@ -71,25 +87,126 @@ body {
     font-size: 18px;
     font-family: Inter;
     color: #aaaaaa;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 2%;
   }
   
   .th-right-link {
-    text-decoration: underline !important;
-    color: #521e86;
+    /* text-decoration: underline !important; */
+    /* color: #521e86; */
+    /* text-align: right; */
   }
-  
+
+  #regtxt1{
+    display:flex;
+  }
+
+#black1{
+  color:black;
+  padding-right:10px;
+}
+
+  #regnow{
+    margin-top:16px;
+  }
+
+  .logintxthead{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .star1{
+    color:#FD652D;
+  }
+
+  .pad-left{
+    padding-right:0rem !important;
+    margin:auto;
+  }
+
+  #forgotpasslog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .registration-form {
-    background: #ffffff;
-    box-shadow: 2px 2px 4px rgba(102, 58, 163, 0.25);
-    border-radius: 10px;
+ 
   }
+  #logintxthead1{
+    /* position: absolute; */
+    /* width: 54px; */
+    /* height: 24px; */
+
+    font-family: 'Lato';
+    font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #22495A;
+  margin-bottom:2%;
+  }
+  #regtxthead1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #22495A;
+    text-align: left;
+    margin-bottom:2%;
+  }
+
+#namephone{
+  display:flex;
+  flex-direction: row;
+}
+
+  #mainlogdiv{
+    display: flex;
+    flex-direction: row;
+ 
+  }  
+
+#forgotpass{
+  margin-top:3%;
+} 
+
+#loginlinehead{
+  /* position: absolute; */
+  width: 70%;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+}
+
+.star1{
+  text-align:left;
+}
+
+#leftregdiv{
+  height:40.6%;
+  width:40.6%;
+} 
+
+#regbtn{
+  margin-top:2%;
+}
+
+#regtxt{
+  margin-top:17%;
+}
+
   
-  @media only screen and (max-width: 768px) {
-    .th-registration-text {
-      font-size: 26px;
-      line-height: 150%;
+  /* @media only screen and (max-width: 1000px) {
+    #mainlogdiv{
+      display: flex;
+      flex-direction: column;
     }
-  }
+
+
+  } */
   
   .th-registration-overlay {
     position: absolute;
@@ -109,9 +226,22 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
+
+
+
+  #regimg{
+    height:100%;
+    width:100%;
+    margin-left:15%;
+  }
+
+  #rightregdiv{
+    margin-left:15%;
+  }
+
   .th-form-group label {
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
     margin-bottom: 5px;
     font-family: Poppins;
     font-style: normal;
@@ -123,25 +253,161 @@ body {
   }
   
   .th-form-control {
-    transition: all 0.3s ease !important;
-    background: #f3ebff;
-    border-radius: 5px !important;
-    border: none !important;
+    /* transition: all 0.3s ease !important; */
+    /* background: #f3ebff; */
+    background: #FFFFFF;
+    /* Neutral/5 */
+    
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    width: 62%;
+  }
+  .th-form-control1 {
+    /* transition: all 0.3s ease !important; */
+    /* background: #f3ebff; */
+    background: #FFFFFF;
+    /* Neutral/5 */
+    
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    width: 92%;
   }
   
+/* #passwordinput{
+  margin-bottom:16px;
+  width:61.45%;
+} */
+
+.regmaindiv{
+  display:flex;
+  /* margin:auto; */
+}
+
+.colmarg{
+  padding-left:4rem;
+}
+
   .th-form-control:focus {
     outline: none !important;
     border-color: none !important;
-    background: #d5bbf8 !important;
-    color: #663aa3 !important;
+    /* background: #d5bbf8 !important; */
+    /* color: #663aa3 !important; */
     box-shadow: none !important;
     border: none !important;
   }
-  @media only screen and (max-width: 576px) {
-    .th-register-col-1 {
-      width: 23rem;
-      margin: auto;
+
+  @media only screen and (max-width: 990px) {
+
+    #nsslogin1{
+      display:none;
     }
+
+    .th-form-control{
+      width:85%;
+    }
+
+    .colmarg{
+      padding:0rem;
+    }
+
+    .registration-form{
+      margin:auto;
+    }
+
+    .th-registration-text {
+      font-size: 26px;
+      line-height: 150%;
+    }
+.th-form-control1 {
+display: inline-block;
+}
+    #rightregdiv{
+    margin:auto;
+   }
+
+   #loginlinehead{
+    width:61vw;
+   }
+
+    #regimg{
+      margin:0px;
+    }
+  
+    #leftregdiv{
+      height:0px;
+      width:0px;
+    }
+
+    #namephone{
+      flex-direction:column;
+    }
+
+    #mainlogdiv{
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* #loginlinehead{
+      width:100%;
+    } */
+
+    /* #nsslogin1{
+      display:none;
+    } */
+
+    #regimg{
+      display:none;
+    }
+
+
+
+    #newacctxt{
+      display: none;
+    }
+
+    #newacctxt1{
+      display: none;
+    }
+
+
+    #logcont{
+      display:flex;
+    }
+    
+  }
+
+
+/* 
+  @media only screen and (max-width: 776px) {
+      .colmarg{
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+      .th-form-control{
+        width:100%;
+      }
+
+      #logintxthead1{
+        display: flex;
+        justify-content: center;
+        margin-bottom:2%;
+      }
+      #forgotpass{
+        text-align:left;
+        margin-bottom:5%;
+        margin-left:0px;
+      }
+      #loginbtn{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #mainlogdiv{
+        display: flex;
+        flex-direction: column;
+      }
+  
   }
   
   @media only screen and (max-width: 767px) {
@@ -151,10 +417,19 @@ body {
   
     .th-registration-btn-1 {
       text-align: center !important;
+      display: flex;
+      justify-content: center;
+    }
+    .th-form-control{
+      display: inline-block;
     }
   }
   @media only screen and (min-width: 768px) {
     .th-register-col-2-mobile {
       display: none !important;
     }
-  }
+    .th-form-control{
+      display: inline-block;
+    }
+  
+  } */

@@ -8,7 +8,7 @@ function Imgbox(props) {
       <div className="info">
         <div className="contents">
         <h5>{props.heading}</h5>
-        <p>{props.desc}</p>
+        {/* <p>{props.desc}</p> */}
         </div> 
       </div>
 

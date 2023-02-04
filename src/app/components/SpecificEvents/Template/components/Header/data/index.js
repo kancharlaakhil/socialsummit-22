@@ -1,3 +1,4 @@
+import React from 'react'
 const data = {
     "eventName" : "Sociothon",
     "eventInfo" : "19th Mar’22 ; 10 am-1pm",

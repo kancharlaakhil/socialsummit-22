@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 // Hooks can be used only within functional react components.
 
 export const useWidthAndHeight = () => {

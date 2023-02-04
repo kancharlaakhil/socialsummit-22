@@ -31,7 +31,9 @@ function Events() {
             
             
         </div>
-        <button className='btn3'>See More</button>
+        <button className='btn3'>
+          <a className='plink' href="https://socialsummit.iitr.ac.in/events">See More</a>
+        </button>
       
     </div>
   )

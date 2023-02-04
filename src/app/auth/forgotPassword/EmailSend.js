@@ -33,13 +33,13 @@ const EmailSend = () => {
 
   return (
     <div className="th-login">
-      <div className="row login" style={{ paddingTop: "8rem" }}>
-        <div class="th-register-col-2 col-md-5 offset-md-1 col-sm-12 th-register-right-mobile mb-4">
+      <div className="login" id="forgotpasslog" style={{ paddingTop: "8rem" }}>
+        <div class="th-register-col-2 col-md-5 th-register-right-mobile">
           <div class="th-right-text-1">Forgot Password ?</div>
 
         </div>
-        <div class="th-register-col-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
-          <form class="p-5 registration-form"
+        <div class="th-register-col-1 col-md-6 offset-md-1 col-sm-8 offset-sm-2">
+          <form class="p-3 registration-form"
             onSubmit = {(event) => {
               event.preventDefault();
                 onSubmit()
@@ -71,7 +71,7 @@ const EmailSend = () => {
                 className="col-md-6 th-registration-btn-1 pb-5"
                 th-form-group
               >
-                <button class="th-registration-btn-2 btn mt-4" type="submit" style={{ color : `${buttonState.color}`, backgroundColor:`${buttonState.backgroundColor}` }}>
+                <button class="th-registration-btn-2 btn mt-4" type="submit" style={{ color : `${buttonState.color}`, backgroundColor:" #FD652D;" }}>
                   {buttonState.text}
                 </button>
               </div>

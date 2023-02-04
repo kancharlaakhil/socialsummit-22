@@ -2,7 +2,7 @@
     /* background-color: purple; */
     /* border:1px solid purple; */
     width: 16vw;
-    background-color:black;
+    /* background-color:black; */
     cursor: pointer;
     height: 50vh;
     margin-right: 2em;
@@ -11,13 +11,17 @@
     filter: blur(20px);
 }
 .img-container:hover .info{
+    /* transition-delay: 0.5s; */
     opacity: 1;
 }
 .img-container:hover{
+    /* transition-delay: 0.5s; */
     margin-right: 4em;
     margin-left: 4em;
 }
 .img-container:hover .timgs{
+    /* transition-delay: 0.5s; */
+    /* transition:width 0.5s; */
     transform: scalex(1.2);
     filter: grayscale(0);
     background-color: purple;
@@ -27,7 +31,7 @@
 .timgs{
     width: 16vw;
     height: 50vh;
-    filter:grayscale(100%)
+    /* filter:grayscale(100%) */
 }
 .info{
     width: 16vw;
@@ -42,6 +46,62 @@
     justify-content: space-around;
     /* left:5px; */
     /* border: 1px solid red; */
+}
+
+
+@media only screen and (width<=720px) {
+    .img-container{
+        /* border: 2px solid black; */
+        width: 80vw;
+        margin-bottom: 0em;
+    }
+    .timgs{
+        /* border: 1px solid black; */
+        width: 80vw;
+        height: 40vh;
+        filter: grayscale(0);
+        z-index: -1;
+    }
+    .img-container:hover .timgs{
+        transform: none;
+        
+        /* background-color: purple;
+        box-shadow: 10px 10px inset; */
+    }
+    .img-container:hover{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .info{
+        /* border: 1px solid red; */
+        width: 78vw; 
+        /* position:unset; */
+        /* filter: blur(20%); */
+        z-index: 10;
+        position: relative;
+        bottom: 2.4em;
+        justify-content: left;
+        
+        /* padding:10vh; */
+        
+        opacity: 1;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        /* CP/White */
+
+        color: #FCFCFC;
+    }
+    /* .contents{
+        margin-top: 10em;
+    } */
+    
+    
 }
 
 

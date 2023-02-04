@@ -1,3 +1,4 @@
+import React from 'react'
 import TreasureHunt from './treasureHunt.png'
 
 export const header = {

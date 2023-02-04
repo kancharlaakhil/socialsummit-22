@@ -1,3 +1,4 @@
+import React from 'react'
 const data = [
     {
         description : "Incubation opportunity worth 1 Crore"

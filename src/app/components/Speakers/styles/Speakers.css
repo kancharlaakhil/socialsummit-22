@@ -1,7 +1,12 @@
 .speakersPage {
-  width: 80%;
+  width: 100vw;
   margin: 0 auto;
   margin-top: 8rem;
+}
+
+.headingSpeaker{
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .headingSpeaker h1 {
@@ -24,4 +29,10 @@
   margin-bottom: 4vw;
   letter-spacing: 0.04em;
   color: #aaaaaa;
+}
+
+@media only screen and (max-width:993px){
+  .headingSpeaker h1{
+    font-size: 60px;
+  }
 }
