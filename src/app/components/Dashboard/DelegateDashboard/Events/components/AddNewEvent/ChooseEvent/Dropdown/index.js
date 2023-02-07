@@ -12,13 +12,13 @@ const Dropdown = ({eventsList, handleSelectChange}) => {
       handleSelectChange(op.index)
     
   };
-  const options = eventsList?.map((ele, index)=>{
+  const options = eventsList?eventsList.map((ele, index)=>{
     return ({
       ...ele, 
       label : ele.name,
       index 
     })
-  })
+  }):0;
   /*
   
   const options = [

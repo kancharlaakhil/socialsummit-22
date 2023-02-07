@@ -40,8 +40,8 @@ const Details = ({ tasks, index }) => {
   };
 
   const convertDate = (date) => {
-    const d = date?.split("T")[0];
-    const use = d?.split("-");
+    const d = date?date.split("T")[0]:0;
+    const use = d?d.split("-"):0;
     if (use) {
       const month = getMonth(use[1]);
       const day = use[2];
@@ -53,13 +53,13 @@ const Details = ({ tasks, index }) => {
     }
   };
 
-  const issuedDate = convertDate(tasks[index]?.issuedDate);
-  const deadlineDate = convertDate(tasks[index]?.deadlineDate);
+  const issuedDate = convertDate(tasks[index]?tasks[index].issuedDate:null);
+  const deadlineDate = convertDate(tasks[index]?tasks[index].deadlineDate:null);
 
   const details = [
     {
       detailName: `Task #${index + 1}`,
-      detailValue: tasks[index]?.description,
+      detailValue: tasks[index]?tasks[index].description:null,
     },
     {
       detailName: "Date Issued",
@@ -71,8 +71,8 @@ const Details = ({ tasks, index }) => {
     },
     {
       detailName: "Points to gain",
-      detailValue: `${tasks[index]?.totalPoints} points (${tasks[index]?.eachPoints} each)`,
-    },
+      detailValue: `${tasks[index]?tasks[index].totalPoints:null} points (${tasks[index]?tasks[index].eachPoints:null} each)`,
+    }
   ];
 
   return (

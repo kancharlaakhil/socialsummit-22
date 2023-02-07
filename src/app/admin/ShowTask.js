@@ -23,8 +23,8 @@ const ShowTask = ({task}) => {
       }
 
     const convertDate = (date) => {
-        const d = date?.split('T')[0];
-        const use = d?.split('-');
+        const d = date?date.split('T')[0]:null;
+        const use = d?d.split('-'):null;
         if(use){
             const month = getMonth(use[1]);
             const day = use[2];

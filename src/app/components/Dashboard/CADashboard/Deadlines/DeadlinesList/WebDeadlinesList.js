@@ -35,8 +35,8 @@ function WebDeadlinesList() {
     
 
       const dateArray = t.map((ele) => {
-        const date = ele?.deadlineDate.split('T')[0];
-        const use = date?.split('-');
+        const date = ele?ele.deadlineDate.split('T')[0]:null;
+        const use = date?ele.split('-'):null;
         const month = getMonth(use[1]);
         const day = use[2]
         return{
