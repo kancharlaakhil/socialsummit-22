@@ -7,6 +7,7 @@ import { useWidthAndHeight } from "../../../hooks/useWidthAndHeight";
 import Testimonials from "./Testimonials/Testimonials";
 import "./css/slider.css";
 import "./css/home.css";
+import Background from "./Background";
 const HomeMain = () => {
   let [width] = useWidthAndHeight();
   // returns the screen/window width.
@@ -19,6 +20,7 @@ const HomeMain = () => {
         <PastSpeakers width={width} />
         <Events width={width} />
         <Footfall width={width} />
+        <Background/>
         <Testimonials width={width} />
       </div>
     </div>

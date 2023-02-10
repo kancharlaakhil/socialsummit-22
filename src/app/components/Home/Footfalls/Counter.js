@@ -6,8 +6,8 @@ class Counter extends Component {
   render() {
     return (
       <div className="container th-home-footfall-container">
-        <div className="row justify-content-center p-0 m-0">
-          <div className="col-sm-3 col-6 text-center">
+        <div className="row justify-content-center p-0 m-0 ft-box" >
+          <div className="col-sm-3 col-6 text-center ft-text">
             <CountUp
               start={0}
               end={12000}
@@ -17,7 +17,7 @@ class Counter extends Component {
             />
             <p className="th-home-count-text mb-0">Footfall</p>
           </div>
-          <div className="col-sm-3 col-6 text-center">
+          <div className="col-sm-3 col-6 text-center ft-text">
             <CountUp
               start={0}
               end={100}
@@ -27,7 +27,7 @@ class Counter extends Component {
             />
             <p className="th-home-count-text mb-0">Partners</p>
           </div>
-          <div className="col-sm-3 col-6 text-center">
+          <div className="col-sm-3 col-6 text-center ft-text">
             <CountUp
               start={0}
               end={100}
@@ -37,7 +37,7 @@ class Counter extends Component {
             />
             <p className="th-home-count-text mb-0">Prizes</p>
           </div>
-          <div className="col-sm-3 col-6 text-center">
+          <div className="col-sm-3 col-6 text-center ft-text">
             <CountUp
               start={0}
               end={20}

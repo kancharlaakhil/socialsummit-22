@@ -1,5 +1,5 @@
 .speaker-container{
-    height: 60vh;
+    height: 50vh;
     margin-top: 2em;
     display: flex;
     flex-direction: row;
@@ -37,9 +37,10 @@
     /* left: 10vw; */
     margin-left: 18em;
     width: 80vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 @media only screen and (width<=720px){

@@ -10,23 +10,26 @@ function Events() {
         <div className="cardbox">
             <Card
             src={img1}
-            heading="Action Plan"
-            description="Lorem ipsum dolor sit amet consectetur. Eu scelerisque et iaculis ut quis magnis quisque dolor laoreet...."
+            heading="Nukkad Natak"
+            description="It is a street-play competition wherein you speak in the lingo of the common folks to emphasise socially relevant issues in our society. With the aid of shouts, chants, drums and catchy songs, it is an extremely effective way of theatrical art to convey a social or political message"
             price="10k"/>
             <Card
             src={img1}
-            heading="Action Plan"
-            description="Lorem ipsum dolor sit amet consectetur. Eu scelerisque et iaculis ut quis magnis quisque dolor laoreet...."
+            heading="Debate"
+            description="There's not a better way to develop your critical thinking skills than a good debate. It tests your knowledge by compelling you to make rational and reasonable arguments in the favour of your view. 
+            Do join us in this battle of brains and test your knowledge on the hottest topics. 
+            "
             price="10k"/>
             <Card
             src={img1}
-            heading="Action Plan"
-            description="Lorem ipsum dolor sit amet consectetur. Eu scelerisque et iaculis ut quis magnis quisque dolor laoreet...."
+            heading="Case Study"
+            description="This includes an in-depth understanding research on an issue to contrive feasible and practical solutions. It stipulates individuals with critical thinking standards on various issues. People still get discriminated on basis of caste, gender, religion, social and economic backgrounds, etc. 
+           "
             price="10k"/>
             <Card
             src={img1}
-            heading="Action Plan"
-            description="Lorem ipsum dolor sit amet consectetur. Eu scelerisque et iaculis ut quis magnis quisque dolor laoreet...."
+            heading="Sociothon"
+            description="This is a technology and design-based competition to solve social problems. It's an unique opportunity for all of you to apply skills and knowledge to address real world issues and create meaningful impact for society. This is an development hackathon to foster innovation culture and civic engagement. "
             price="10k"/>
             
             
