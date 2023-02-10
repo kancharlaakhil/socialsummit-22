@@ -1,24 +1,15 @@
 import React from 'react'
 import './OurStory.css'
+import aboutimg from './assets/Web_about us.png'
+import maimg from './assets/Mobile_about us.png'
 
 function OurStory() {
   return (
     <div className='ourstory-container'>
       <div className="images">
-      <div id='id1'  className="imagbox id">
-        {/* <img className='id' src='images/image 6.png' alt="" /> */}
-      </div>
-      <div id='id2'  className="imagbox id">
-        {/* <img className='id' src="images/image 5.png" alt="" /> */}
-
-      </div>
-      <div id='id3' className="imagbox id">
-        {/* <img className='id' src="images/image 4.png" alt="" /> */}
-      </div>
-      <div id='id4'  className="imagbox id">
-        {/* <img className='id' src="images/image 10.png" alt="" /> */}
-      </div>
-
+        <img className='aimg' src={aboutimg} alt="" />
+        <img className='maimg' src={maimg} alt="" />
+      
       </div>
       <div className="content">
         <h3 className='hd1'>OUR STORY</h3>
