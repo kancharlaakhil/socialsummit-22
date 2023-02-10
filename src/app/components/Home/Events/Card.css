@@ -1,6 +1,6 @@
 .card-container{
     /* border: 1px solid black; */
-    height: 40vh;
+    height: 45vh;
     width: 17vw;
     background: #FCFCFC;
     box-shadow: 2px 3px 12px 2px rgba(0, 0, 0, 0.08);
@@ -85,7 +85,7 @@ color: #22495A;
 .hoverbox{
     padding-top: 10vh;
     padding-left: 1vw;
-    height: 40vh;
+    height: 45vh;
     display: none;
 }
 .card-container:hover .hoverbox{

@@ -40,7 +40,7 @@ class Header extends Component {
    const {auth} = this.props;
 
     return (
-      <div className="pe-3 ps-3">
+      <div className="pe-3 ps-3 gradient">
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Link to="/">

@@ -10,7 +10,7 @@ function Card(props) {
         <div className="cardinfo">
             <h5>{props.heading}</h5>
             <p>{props.description}</p>
-            <p id='p2'>Price Worth:<span>{props.price}</span></p>
+            {/* <p id='p2'>Price Worth:<span>{props.price}</span></p> */}
         </div>
         <div className="hoverbox">
           <button className='btns' id='hoverbtn1'>
