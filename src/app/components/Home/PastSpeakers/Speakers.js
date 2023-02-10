@@ -13,14 +13,13 @@ function Speakers() {
     <div className='speaker-container'>
         <div className="speakercontent">
             <h2 className='hd'>Past <br /> Speakers</h2>
+            <h2  id='mobhd'>Past Speakers</h2>
             
             <button id='speakrbtn' className='btn3'>
               <a className='plink' href="https://socialsummit.iitr.ac.in/speakers">See More</a>
             </button>
         </div>
-        <div className="mobspkrcontent">
-          <h3 className='mobhd'>Past Speakers</h3>
-        </div>
+        
         <div className="imgbox2">
                 <Imgbox
                 heading="DEVENDRA JHAJHARIA"

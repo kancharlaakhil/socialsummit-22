@@ -26,6 +26,9 @@
     line-height: 120%;
     color: rgba(34, 73, 90, 1);
 }
+#mobhd{
+    display: none;
+}
 
 .mobsprbtn{
     display: none;
@@ -56,9 +59,9 @@
         /* border: 1px solid black; */
 
     }
-    .speakercontent{
+    /* .speakercontent{
         display: none;
-    }
+    } */
     .mobspkrcontent{
         /* display: flex; */
         width: 20vw;
@@ -68,13 +71,19 @@
         align-items: center;
     }
     .imgbox2{
-        margin-top: 5em;
+        margin-top: 35em;
         margin-left: 0em;
         width: 80vw;
         flex-direction: column;
         /* justify-content: space-evenly; */
     }
-    .mobhd{
+    .hd{
+        display: none;
+    }
+    #mobhd{
+        margin-right: 2em;
+        width: 7em;
+        
         display:flex;
         font-family: 'Lato';
         font-style: normal;
