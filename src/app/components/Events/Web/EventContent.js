@@ -2,13 +2,13 @@ import React from "react";
 import EventCard from "./EventCard";
 // import actionimg from '..//images/action plan.png'
 import ActionPlan from "../images/action plan.svg";
-import MUN from "../images/MUN.svg";
+import MUN from "../images/mun.svg";
 // import SocialConclave from "../images/socialConclave.svg";
 import Sociothon from "../images/sociothon.svg";
 import PolicyCase from "../images/Policy Case.svg";
 import WorkPresentation from "../images/Work Presentation.svg";
 import CaseStudy from "../images/Case study.svg";
-import Workshop from "../images/workshop.svg";
+import Workshop from "../images/Workshop.svg";
 import NukkadNatak from "../images/Nukkad Natak.svg";
 import Debate from "../images/Debate.svg";
 import TreasureHunt from "../images/Treasure Hunt.svg";
