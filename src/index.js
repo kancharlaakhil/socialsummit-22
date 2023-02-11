@@ -6,6 +6,7 @@ import App from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from 'react-redux';
 import store from './redux/store'
+import ContextProvider from "./ContextProvider";
 
 import axios from 'axios';
 
@@ -19,7 +20,9 @@ axios.defaults.baseURL = "https://api.socialsummit.iitr.ac.in/api"
 ReactDOM.render(
   <React.StrictMode>
     <Provider store = {store}>
+      <ContextProvider>
       <App />
+      </ContextProvider>
     </Provider>
     
   </React.StrictMode>,

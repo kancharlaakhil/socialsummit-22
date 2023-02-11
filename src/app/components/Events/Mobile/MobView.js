@@ -5,9 +5,6 @@ import EventContent from "./EventContent";
 
 import './css/index.css'
 
-
-
-
 const MobView = () => {
     return(
         <div className="mob-container">
@@ -16,7 +13,7 @@ const MobView = () => {
                     height : '10%'
                 }}
             >
-                <Header/>
+                {/* <Header/> */}
             </div>
             <div className="row mob-content"
                 style={{
