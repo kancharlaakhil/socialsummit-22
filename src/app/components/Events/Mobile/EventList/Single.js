@@ -1,13 +1,13 @@
-import React from "react";
+// import React from "react";
 
-import '../css/eventList.css'
+// import '../css/eventList.css'
 
-const Single = ({name}) => {
-    return(
-        <div className="mobile-single-event">
-            {name}
-        </div>
-    )
-}
+// const Single = ({name}) => {
+//     return(
+//         <div className="mobile-single-event">
+//             {name}
+//         </div>
+//     )
+// }
 
-export default Single;
+// export default Single;

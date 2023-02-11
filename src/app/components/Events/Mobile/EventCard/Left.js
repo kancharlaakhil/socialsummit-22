@@ -4,8 +4,8 @@ import '../css/EventCard.css'
 
 const EventCardLeft = ({image, name, description, rulebook, prizeWorth, id, link1, link2, eventLink}) => {
     return (
-        <div className="mobile-single-event-container">
-            <div className="row h-100">
+        // <div className="mobile-single-event-container">
+            {/* <div className="row h-100">
             <div className="col-5 h-100 mobile-image-container"
                 style={{
                     backgroundImage : `url(${image})`,
@@ -61,7 +61,7 @@ const EventCardLeft = ({image, name, description, rulebook, prizeWorth, id, link
                 </div>
             </div>
             </div>
-        </div>
+        </div> */}
     )
 }
 
