@@ -11,10 +11,13 @@ function LoginForm(props) {
  const [user,setUser]=useState(false);
   const [loginState, setLoginState] = useState({});
   const history = useHistory();
-
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
   return (
 <>
-    <div className="th-login">
+    <div className="th-login" id="maindiv1">
       <div className="login" id="mainlogdiv" style={{ paddingTop: "8rem" }}>  
         <div class="th-register-col-2  th-register-right-mobile  login_img ">
           <img src={nsslogin} id="nsslogin1" alt="img" />
@@ -57,7 +60,7 @@ function LoginForm(props) {
               <div className="th-form-group" id="passwordinput">
                 <input
                 required
-                  type="text"
+                  type={passwordShown ? "text" : "password"}  
                   className="th-form-control form-control flex"
                   id=""
                   name=""
@@ -85,9 +88,8 @@ function LoginForm(props) {
                 </button>
               </div>
               <div id="regnow">
-              <Link to="/signup" className="th-right-link">
-              <div id="regtxt1"><div id="black1">Don't have an account?</div> Register</div>
-            </Link>
+              
+              <div id="regtxt1"><div id="black1">Don't have an account?</div> <Link to="/signup" className="th-right-link">Register</Link></div>
             </div>
             </div>
           </form>

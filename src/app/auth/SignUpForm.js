@@ -13,6 +13,10 @@ function SignUpForm({user, signup}) {
   const checkFields = ()=>{
    if(userState.name==undefined) alert('enter name')
   }
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
   return (
     
       <div className="regmaindiv" style={{ paddingTop: "8rem" }}>
@@ -28,7 +32,7 @@ function SignUpForm({user, signup}) {
             }}
           >
         <div id="regtxthead1">Register</div>
-        <div id="loginlinehead"></div>
+        <div id="loginlinehead" class="regline"></div>
             <div >
               <div id="namephone">
                 <div className="th-form-group">
@@ -110,7 +114,7 @@ function SignUpForm({user, signup}) {
               <div className="th-form-group">
                 <input
                 required
-                  type="text"
+                  type={passwordShown ? "text" : "password"}
                   className="th-form-control1 form-control"
                   id=""
                   name=""
@@ -126,7 +130,7 @@ function SignUpForm({user, signup}) {
               <div className="th-form-group">
                 <input
                 required
-                  type="text"
+                  type={passwordShown ? "text" : "password"}  
                   className="th-form-control1 form-control"
                   id=""
                   name=""
