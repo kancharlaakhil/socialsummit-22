@@ -2,7 +2,6 @@ import React from "react";
 import EventCard from "./EventCard";
 import ActionPlan from "../images/action plan.svg";
 import MUN from "../images/MUN.svg";
-// import SocialConclave from "../images/socialConclave.svg";
 import Sociothon from "../images/sociothon.svg";
 import PolicyCase from "../images/Policy Case.svg";
 import WorkPresentation from "../images/Work Presentation.svg";
