@@ -162,6 +162,11 @@ body {
 #namephone{
   display:flex;
   flex-direction: row;
+  margin-top:2%;
+}
+
+.regline{
+  width:100% !important
 }
 
   #mainlogdiv{
@@ -279,9 +284,13 @@ body {
   width:61.45%;
 } */
 
+#maindiv1{
+  margin-bottom:3%;
+}
 .regmaindiv{
   display:flex;
   /* margin:auto; */
+  margin-bottom:2%; 
 }
 
 .colmarg{
