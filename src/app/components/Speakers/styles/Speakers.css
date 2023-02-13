@@ -10,7 +10,6 @@
   padding-bottom: 5px;
   margin-bottom: 40px;
   
-  
 }
 
 .headingSpeaker h1 {
@@ -20,7 +19,7 @@
   font-size: 3.625vw;
   line-height: 126.19%;
   /* or 73px */
-  color: #333333;
+  color: #22495A;
 }
 
 .headingSpeaker p {

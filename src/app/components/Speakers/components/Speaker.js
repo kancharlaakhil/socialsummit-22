@@ -1,52 +1,5 @@
  import React from "react";
 
-// import "../styles/Speaker.css";
-// import Content from  "./ReadMore";
-
-// function Speaker(props) {
-//   return (
-//     <div className="speaker">
-//       <div className="left" style={{ order: props.id % 2 === 1 ? 0 : 1 }}>
-//         <img src={props.image} alt="" />
-
-//         <div
-//           className="title"
-//           style={{ right: props.id % 2 === 1 ? "-119%" : "85%" }}
-//         >
-//           <h1 style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-//             {props.name}
-//           </h1>
-//           <p style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-//             {props.post}
-//           </p>
-//         </div>
-//       </div>
-//       <div className="leftmob" style={{ order: props.id % 2 === 1 ? 0 : 0 }}>
-//         <img src={props.image} className="img2" />
-
-//         {/* <div
-//           className="titlemob"
-       
-//         >
-//           <h1 style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-//             {props.name}
-//           </h1>
-//         </div> */}
-//       </div>
-//       <div className="right">
-//         <div className="whitespace"></div>
-//         <div className="para">
-//           { <p>{props.descp}</p> }
-//           <Content data={props.descp}/>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Speaker;
-
-
 import "../styles/Speaker.css";
 import Content from './ReadMore';
 
@@ -54,27 +7,8 @@ function Speaker(props) {
    return (
      <div className="speaker"  >
       { <img src={props.image} className="img"  style={{ order: props.id % 2 == 1 ? 0 : 1 }}/> }
-       {/* <div className="left" style={{ order: props.id % 2 == 1 ? 0 : 1  }}   >
-         
- 
-        
-       </div>
-       <div className="leftmob" style={{ order: props.id % 2 === 1 ? 1 : 0 }}>
-        <img src={props.imagemob} className="img2"  
-        style={{backgroundColor: props.id%2==1 ? '#22495A':'#FFFFFF'}}/>
-
-      </div> */}
       <div className="leftmob" style={{ order: props.id % 2 === 1 ? 0 : 0 }}>
         <img src={props.imagemob} className="img2"  />
-
-        {/* <div
-          className="titlemob"
-       
-        >
-          <h1 style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-            {props.name}
-          </h1>
-        </div> */}
       </div>
        
        
@@ -84,7 +18,7 @@ function Speaker(props) {
            className="title"
            >
          
-           <h1 style={{textAlign:"center"}}>
+           <h1 style={{textAlign:"left"}}>
              {props.name}
            </h1>
            <p >
@@ -103,7 +37,7 @@ function Speaker(props) {
            className="titlemob"
            >
          
-           <h1 style={{textAlign:"center"}}>
+           <h1>
              {props.name}
            </h1>
            <p >
