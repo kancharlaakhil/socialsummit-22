@@ -165,9 +165,7 @@ body {
   margin-top:2%;
 }
 
-.regline{
-  width:100% !important
-}
+
 
   #mainlogdiv{
     display: flex;
@@ -304,6 +302,12 @@ body {
     /* color: #663aa3 !important; */
     box-shadow: none !important;
     border: none !important;
+  }
+
+  @media only screen and (min-width: 990px) {
+    .regline{
+      width:100% !important
+    }
   }
 
   @media only screen and (max-width: 990px) {
