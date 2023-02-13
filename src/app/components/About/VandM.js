@@ -7,7 +7,7 @@ function VandM() {
         <div className="vision-container">
             <div className="vcontent">
             <h3 className='hd1' id='h3'>VISION</h3>
-            <p className='para'>National Social Summit 2022 envisions an inclusive society
+            <p className='para'>National Social Summit 2023 envisions an inclusive society
             for ourselves and our posterity. Today, the Indian society falls short due to theprevalence of prejudices, bigotry and disproportionate representation. This year we seek to reform these societal values and bring abouvt the much needed change.</p>
 
             </div>

@@ -9,7 +9,7 @@ function Main() {
         </div>
         <div className="cont">
             <span className='date'>11th - 12th March 2023</span>
-            <p>Take the next step forward with National Social Summit <br /> 2022 and dabble in the color of inclusion.</p>
+            <p>Take the next step forward with National Social Summit <br /> 2023 and dabble in the color of inclusion.</p>
         </div>
         <div className="btnbox">
             <button className='btn2'>
