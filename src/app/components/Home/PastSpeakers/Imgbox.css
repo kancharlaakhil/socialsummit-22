@@ -6,6 +6,7 @@
     cursor: pointer;
     height: 40vh;
     margin-right: 1em;
+    overflow: hidden;
 }
 .img-container::after{
     filter: blur(20px);
@@ -15,14 +16,19 @@
     opacity: 1;
 }
 .img-container:hover{
+
     /* transition-delay: 0.5s; */
     /* margin-right: 4em;
     margin-left: 4em; */
+    
+}
+.timgs{
+    transition: transform .5s ease;
 }
 .img-container:hover .timgs{
     /* transition-delay: 0.5s; */
     /* transition:width 0.5s; */
-    /* transform: scalex(1.2); */
+    transform: scale(1.2);
     /* filter: grayscale(0);
     background-color: purple;
     box-shadow: 10px 10px inset; */
