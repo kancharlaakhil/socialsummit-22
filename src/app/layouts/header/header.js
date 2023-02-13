@@ -69,11 +69,7 @@ class Header extends Component {
                   Events
                 </p>
               </NavLink>
-              <NavLink to="/contact">
-                <p className="mb-0 navmar th-nss" activeClassName="active">
-                  Contact Us
-                </p>
-              </NavLink>
+              
               {
                 auth.isLoggedIn ? 
                 <NavLink

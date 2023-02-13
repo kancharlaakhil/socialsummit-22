@@ -81,7 +81,7 @@ const App = ({ user }) => {
           <Route exact path={["/home", "/"]} component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/speakers" component={Speakers} />
-          <Route exact path="/partners" component={Partner} />
+          <Route exact path="/partners" component={Home} />
           <Route exact path="/events" component={Events} />
 
           <Route exact path="/contact" component={Contact} />
