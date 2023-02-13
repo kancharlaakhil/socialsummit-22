@@ -48,28 +48,23 @@
 
 
 import "../styles/Speaker.css";
-import Content from './ReadMore'
+import Content from './ReadMore';
 
 function Speaker(props) {
    return (
-     <div className="speaker">
-       <div className="left" style={{ order: props.id % 2 === 1 ? 0 : 1 ,background: props.color,}}   >
-         { <img src={props.image} className="img" style={{right: props.id % 2 === 1 ? "-35%" : "60%",width:props.id % 2 === 1 ? "424px":"424px"}}/> }
+     <div className="speaker"  >
+      { <img src={props.image} className="img"  style={{ order: props.id % 2 == 1 ? 0 : 1 }}/> }
+       {/* <div className="left" style={{ order: props.id % 2 == 1 ? 0 : 1  }}   >
+         
  
-         {/* <div
-           className="title"
-           style={{ right: props.id % 2 === 1 ? "-100%" : "85%" }}
-         >
-           <h1 style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-             {props.name}
-           </h1>
-           <p style={{ textAlign: props.id % 2 === 1 ? "left" : "right" }}>
-             {props.post}
-           </p>
-           ,width: props.id%2===0 ? "487px":"487px"
-         </div> */}
+        
        </div>
-       <div className="leftmob" style={{ order: props.id % 2 === 1 ? 0 : 0 }}>
+       <div className="leftmob" style={{ order: props.id % 2 === 1 ? 1 : 0 }}>
+        <img src={props.imagemob} className="img2"  
+        style={{backgroundColor: props.id%2==1 ? '#22495A':'#FFFFFF'}}/>
+
+      </div> */}
+      <div className="leftmob" style={{ order: props.id % 2 === 1 ? 0 : 0 }}>
         <img src={props.imagemob} className="img2"  />
 
         {/* <div
@@ -82,8 +77,9 @@ function Speaker(props) {
         </div> */}
       </div>
        
-       <div className="right">
-         {/* <div className="whitespace"></div> */}
+       
+       <div className="right" >
+         
          <div
            className="title"
            >
@@ -95,9 +91,10 @@ function Speaker(props) {
              {props.post}
            </p>
          </div>
-         <div className="para" style={{paddingLeft: props.id===1? "18vw":"18vw" }}>
+         <div className="para" style={{paddingLeft: "0vw" }}>
              <p>{props.descp}</p>  
-           {/* { <Content data={props.descp}/> } */}
+           {/* { <Content data={props.descp}/> }
+           style={{backgroundColor: props.id%2==1 ?  '#22495A':'#FFFFFF'}} */}
          </div>
        </div>
        <div className="rightmob">

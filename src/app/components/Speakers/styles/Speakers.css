@@ -2,11 +2,15 @@
   width: 100vw;
   margin: 0 auto;
   margin-top: 8rem;
+
 }
 
 .headingSpeaker{
   text-align: center;
   padding-bottom: 5px;
+  margin-bottom: 40px;
+  
+  
 }
 
 .headingSpeaker h1 {
