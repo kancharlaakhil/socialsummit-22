@@ -1,3 +1,22 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5px !important;
+}
+
 .testimonial-name p{
     color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+.test-name{
+    color: #22495A;
+    font-weight: 400;
+
+}
+.test-post{
+    color: #22495A !important;
+    font-weight: normal !important;
 }
