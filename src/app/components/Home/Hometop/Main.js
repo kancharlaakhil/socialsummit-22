@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Main.css"
+import downarrow from './downarrow.png'
 
 function Main() {
   return (
@@ -18,6 +19,12 @@ function Main() {
             <button  className='btn3'>
               <a className='plink' href="https://secure-ptg.payphi.com/pg/portal/pay/initiatePayOrder?merchantID=P_30861" target="_blank" rel="noopener noreferrer">Payment</a></button>
         </div>
+        <div className='cont'>
+        <p >Slide down to know more</p>
+        <img  src={downarrow} alt="" />
+
+        </div>
+
         
       
     </div> 

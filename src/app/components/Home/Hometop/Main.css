@@ -3,19 +3,21 @@
     height: 90vh;
     /* padding: 25%; */
     width: 98vw;
+    background: linear-gradient(rgba(217, 217, 217, 0),rgba(253, 232, 204, 1));
+
 }
 .imgbox{
     margin-top: 2em;
     padding-top: 2em;
     height: 60vh;
-    background: url("./image1.png");
+    background: url("./finalimghome.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     /* background-position-y:25em; */
 }
 .cont{
-    margin-top: 2em;
+    margin-top: 1.5em;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -87,6 +89,8 @@ color: #333333;
     color: white;
     text-decoration: none;
 }
+
+
 
 @media only screen and (width<=720px){
     .main-container{

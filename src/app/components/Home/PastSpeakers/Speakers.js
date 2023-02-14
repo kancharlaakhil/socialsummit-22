@@ -22,6 +22,14 @@ function Speakers() {
         
         <div className="imgbox2">
                 <Imgbox
+                heading="Shri. Pushkar Singh Dhami"
+                src={img3}
+                />
+                <Imgbox
+                heading="Sonam Wangchuk"
+                src={img4}
+                />
+                <Imgbox
                 heading="DEVENDRA JHAJHARIA"
                 // desc="daal do kuch bhi"
                 src={img1}
@@ -32,14 +40,7 @@ function Speakers() {
                 // desc="daal do kuch bhi"
                 src={img2}
                 />
-                <Imgbox
-                heading="Shri. Pushkar Singh Dhami"
-                src={img3}
-                />
-                <Imgbox
-                heading="Sonam Wangchuk"
-                src={img4}
-                />
+                
                 
 
             </div>
