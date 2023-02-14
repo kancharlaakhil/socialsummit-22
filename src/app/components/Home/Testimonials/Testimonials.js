@@ -5,9 +5,9 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import userPic from './Assets/Ellipse6.svg';
 import './testimonials.css'
-import Sahil from './images/sahil.png';
-import Abhishek from './images/abhishek.png';
-import Priyanka from './images/priyanka.png';
+import Ramit from './images/ramit.png';
+import Nikhil from './images/nikhil.png';
+import Kirubakar from './images/kirubakar.png';
 
 const TestiMonials = () => {
 
@@ -17,8 +17,8 @@ const TestiMonials = () => {
             number:1,
             address: "Past Delegate",
             description: "NSS IIT-Roorkee gave me a remarkable experience! It was a comprehensive system with supportive management and an awesome team atmosphere like a family. I honed my leadership, communication, management, and networking skills, and it was a great platform to improve myself. Thank you, National Social Summit IIT-R!",
-            name:"Rachit Jain",
-            img:Sahil
+            name:"Ramit Jain",
+            img:Ramit
           },
           {
             id: 2,
@@ -26,7 +26,7 @@ const TestiMonials = () => {
             address: "Past Delegate",
             description: "Working for the National Social Summit was a truly amazing experience. Valuable connections, teamwork with amazing students, overcoming challenges and a place to learn with enthusiasm, it had it all. The challenges we faced along the way only served to further deepen our sense of teamwork and camaraderie, and the satisfaction of overcoming these hurdles in the pursuit of making the event a resounding success was a feeling like no other.",
             name:"Kirubakar",
-            img:Priyanka
+            img:Kirubakar
           },
           {
             id: 3,
@@ -34,7 +34,7 @@ const TestiMonials = () => {
             address: "Past Delegate",
             description: "Being a part of the National Social Summit was a fantastic experience! Diverse work, public interaction, flexible hours, and working with students made it enjoyable and a great opportunity for growth. It is the type of work I'd like to do more of in the future. Highly recommended for students seeking extra hours and a chance to meet new people!",
             name : "Nikhil Mishra",
-            img:Abhishek
+            img:Nikhil
           },
     ]
     //Owl Carousel Settings
