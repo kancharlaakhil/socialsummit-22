@@ -9,7 +9,6 @@ import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
 import UploadTaskForm from "../app/admin/UploadTaskForm";
 import RegisterCAForm from "../app/admin/RegisterCA";
 import CAList from "../app/admin/CAList";
-
 import { connect } from "react-redux";
 import GetAllRegistration from "../app/admin/GetAllRegistration";
 
