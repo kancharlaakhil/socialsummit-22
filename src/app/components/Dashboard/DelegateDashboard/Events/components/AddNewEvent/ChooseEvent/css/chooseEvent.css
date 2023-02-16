@@ -11,12 +11,9 @@
 .checkbox-container input{
     margin : 0.5rem
 }
-.main-component-container{
-    position: relative;
-    z-index: 100000000;
-}
+
 .choose-event-not-registered{
-    background: #663AA3;
+    background: orangered !important;
     padding-left : 1rem;
     padding-right: 1rem;
     padding-top: 0.7rem;
