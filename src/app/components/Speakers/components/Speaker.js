@@ -25,10 +25,11 @@ function Speaker(props) {
              {props.post}
            </p>
          </div>
-         <div className="para" style={{paddingLeft: "0vw" }}>
+         <div className="paraSpeaker" >
              <p>{props.descp}</p>  
            {/* { <Content data={props.descp}/> }
-           style={{backgroundColor: props.id%2==1 ?  '#22495A':'#FFFFFF'}} */}
+           style={{backgroundColor: props.id%2==1 ?  '#22495A':'#FFFFFF'}} 
+           style={{paddingLeft: "0vw" }}*/}
          </div>
        </div>
        <div className="rightmob">
