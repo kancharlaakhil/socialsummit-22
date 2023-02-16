@@ -9,8 +9,11 @@
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.1rem;
-    text-decoration-line: underline;
-    color: #663AA3;
+    text-decoration-line: none;
+    color: orangered;
+    border-bottom: 0.1rem solid orangered;
+    padding-left: 2.5em;
+    padding-bottom: 0.9em;
 }
 
 .not-selected-tab{

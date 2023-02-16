@@ -5,8 +5,8 @@ import './css/mobile-navbox.css'
 const SingleComponent = ({componentName, selected}) =>{
 
     
-    const backgroundColor = selected ? `#663AA3` : `#fafafa`;
-    const fontColor = selected ? `#FFFFFF` : `#222222`
+    const backgroundColor = selected ? `#ff5349` : `#fafafa`;
+    const fontColor = selected ? `#FFFFFF` : `#ff5349`
 
   
     
