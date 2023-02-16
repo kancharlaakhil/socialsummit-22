@@ -93,7 +93,7 @@ console.log("hell")
   return (
     <>
       <div className="eventMain">
-        <div className="left">
+        <div className="e-left">
 
           <a href="#1" 
          className={
@@ -186,7 +186,7 @@ console.log("hell")
             setStyle("Presummit")
           }}>Pre Summit Events</a>
         </div>
-        <div className="line"></div>
+
       </div>
 
       {/* <div className="mobileView">
