@@ -116,18 +116,21 @@
 
 }
 
-.para {
+.paraSpeaker {
   /* height: 17rem; */
  /* padding: 20%; */
 
   /* height: 60%; */
+  color: #22495A;
   position: relative;
   padding: 5vw; 
+  padding-left: 0vw ;
+  
   /* padding-right: 50px ; */
   /* text-align:center; */
   min-height: 60%;
   text-align: left;
-  color: #22495A;
+  
   padding-top: 2vw;
   max-width: max-content;
   margin-bottom: auto;
@@ -138,13 +141,14 @@
   /* border-radius: 0.55vw; */
 }
 
-.speaker.right.para p {
+.speaker.right.paraSpeaker p {
   margin: 0;
   /* padding-left: 30px; */
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 1.5vw;
+  z-index:100;
   /* line-height: 28px; */
   /* or 140% */
   /* text-align: justify; */
@@ -188,13 +192,13 @@
     top:88%;
     right:-18%;
   }
-  .para{
+  .paraSpeaker{
     text-align: center;
     padding: 16px;
     /* padding-left: 10px;*/
     padding-right: 130px; 
   }
-  .para p{
+  .paraSpeaker p{
     /* font-size: 30px; */
     font-size: 4rempx;
 
@@ -219,7 +223,7 @@
   .titlemob{
     display: none;
   }
-  .speaker.rightmob.para p {
+  .speaker.rightmob.paraSpeaker p {
     margin: 0;
     width:100%;
     text-align: center;
