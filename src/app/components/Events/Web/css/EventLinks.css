@@ -7,29 +7,28 @@
   }
   .eventMain {
     width:20vw;
-    height: 100vh;
-    /* display: flex; */
+    height: 90vh;
   }
-  .line-events{
+  /* .line-events{
     height: 20vh;
     width: 5vw;
     background-color: rgba(253, 101, 45, 1);
-  }
-  .left {
+  } */
+  .e-left {
     margin-left: -4vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   height: 93%;
+   height: 100%;
     background: #fafafa;
     box-shadow: 2px 2px 5px 1px rgba(102, 58, 163, 0.12),
       -4px -4px 7px 3px rgba(255, 255, 255, 0.6);
     /* border-radius: 15px; */
-    margin-top: -19vh;
+    margin-top: -43%;
     /* padding-left: 3vw; */
   }
   
-  .left hr {
+  .e-left hr {
     background: linear-gradient(
       270deg,
       rgba(102, 58, 163, 0) 0%,
@@ -41,37 +40,24 @@
   }
 
   
-  .left a {
+  .e-left a {
     text-decoration: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     /* line-height: 126.19%; */
-height: 7vh;
-    /* or 20px */
+height: 10%;
     color: #444444;
-    padding-top: 15px;
-    /* margin: 0.3vw 0; */
-    /* display: flex; */
+    padding-top: 5%;
     text-align: center;
     justify-content: center;
-/* justify-items: center; */
-
 
   }
   
   @media screen and (max-width: 600px) {
     .mobileView {
       display: inline-block;
-    }
-  
-  
-    .dropdown {
-      float: right;
-      display: inline-block;
-      position: relative;
-      margin: 5vw 0;
     }
   
     .buttonDrop {
