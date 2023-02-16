@@ -13,7 +13,6 @@ import NukkadNatak from "../images/Nukkad Natak.svg";
 import Debate from "../images/Debate.svg";
 import TreasureHunt from "../images/Treasure Hunt.svg";
 import PreSummit from "../images/Pre Summit events.svg";
-
 import "./css/EventContent.css";
 
 function EventContent(props) {
@@ -24,7 +23,7 @@ function EventContent(props) {
       eventLink : "Action Plan",
       name: "Action Plan",
       rulebook:
-        "https://drive.google.com/file/d/1feGRr4-fBLLQrRrjvuYgb5YDetv5hh0p/view?usp=share_link",
+  "https://drive.google.com/file/d/1Zu9oQ5D37TXI7ujcTX9GuMrVYlfULah7/view?usp=sharing",
       prizeWorth: "10K",
       description:
         " This competition provides a platform for those entrepreneurs who bring feasible solutions to real-time problems with their innovative ideas. The competition will be of two rounds and is open for all age groups. A maximum of 4 members in a team can participate in the competition.",
@@ -39,7 +38,7 @@ function EventContent(props) {
       image: MUN,
       name: "Model United Nations",
       eventLink : "MUN",
-      rulebook : "https://drive.google.com/file/d/17eTa4YeqOLRUP5vsdhflLZWiHVFmcWqj/view?usp=share_link",
+      rulebook : "https://drive.google.com/file/d/1d-5rUQDnYipRMw1Il4RozDbmrwg9zvaG/view?usp=sharing",
       prizeWorth : "120K",
       description:
         "This event provides a platform for the students to have practical experience of diplomacy and allow them to be the representative of a country or an organization and let them speak up about the issues and find their solutions along with other delegates.",
@@ -56,7 +55,7 @@ function EventContent(props) {
       prizeWorth: "50K",
       name: "Sociothon",
       rulebook:
-        "https://drive.google.com/file/d/1mwQQfkV59VqRqdc_jtGe873qDDLMR5uA/view?usp=share_link",
+        "https://drive.google.com/file/d/1kbZeTHcWn_UnK2gjgqNcVqSX_R8ayROC/view?usp=sharing",
       description:
         "Sociothon is an event where participants will be provided with a problem statement and they will be asked to present their solutions by critically analysing the issue. This event aims to enhance the creative minds of the participants.",
         perk1:"Skill Enhancement Courses",
@@ -69,7 +68,7 @@ function EventContent(props) {
       image: PolicyCase,
       eventLink : "PolicyCase",
       rulebook:
-"https://drive.google.com/file/d/19VD_8nKUUE2NYI_4JSMYPb7vAs1FmqJt/view?usp=share_link",
+"https://drive.google.com/file/d/1mb2YeZ1aF8GQKCAZeMdL13fDiSxDyk_a/view?usp=sharing",
       prizeWorth: "50K",
       name: "Policy Case Competition",
       link1:
@@ -91,7 +90,7 @@ function EventContent(props) {
       prizeWorth: "50K",
       description:
         "In this competition, we invite every NGO to showcase their past works towards society. This also allows us to express our gratitude to them. The competition will be of 2 rounds with each team consisting of up to 4 members.",
-      rulebook : "https://drive.google.com/file/d/1F2MHHf-e5ZAhqrOfQerHIFv2AHnIAXd2/view?usp=share_link",
+      rulebook : "https://drive.google.com/file/d/11mHcrPMOC7tlw5igy8WQ_pVynqBo5JP5/view?usp=sharing",
       perk1:"Skill Enhancement Courses",
       perk2:"Winners will be featured on our social media platforms.",
       perk3:"Attendee kit will be provided to all participants.",
@@ -103,7 +102,7 @@ function EventContent(props) {
       eventLink : "CaseStudy",
       name: "Case Studies",
       rulebook:
-        "https://drive.google.com/file/d/1xy0_8DCq9p_551Hn0x3mxJqD_ym6fR72/view?usp=share_link",
+  "https://drive.google.com/file/d/19l2_YRWBDexOeeUlq4hXPs_8PYBedvC5/view?usp=sharing",
         perk1:"Skill Enhancement Courses",
         perk2:"Winners will be featured on our social media platforms.",
         perk3:"Attendee kit will be provided to all participants.",
@@ -121,7 +120,7 @@ function EventContent(props) {
       image: Workshop,
       eventLink : "Workshop",
       name: "Workshops",
-      rulebook:"https://drive.google.com/file/d/10xMG_Szi6D7x7_RTXK3Vv-emShhpm6cN/view?usp=share_link",
+      rulebook:"https://drive.google.com/file/d/1kL7m4krRBff_rdPfK9Wsb-OsKKXu8JJV/view?usp=sharing",
       description:
         "Like every year this year also the National Social Summit 2023, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social aspects and formulate socially active mindsets among people.",
         perk1:"Skill Enhancement Courses",
@@ -136,7 +135,7 @@ function EventContent(props) {
       eventLink : "Abhivyakti",
       name: "Nukkad Natak",
       rulebook:
-        "https://drive.google.com/file/d/1H1bdpd6bWKYSx5yrxrq5N0jO4Fsa1Gr-/view?usp=share_link",
+  "https://drive.google.com/file/d/1n-v_xz5F3qHEL2GowiRjhTX0lfa-oAVr/view?usp=sharing",
       prizeWorth: "15K",
       description:
         "It is a street-play competition wherein you speak in the lingo of the common folks to emphasise socially relevant issues in our society. With the aid of shouts, chants, drums, and catchy songs, it is an extremely effective way of theatrical art to convey a social or political message. ",
@@ -149,7 +148,7 @@ function EventContent(props) {
       id: 10,
       image: Debate,
       eventLink : "TurnCoat",
-rulebook:"https://drive.google.com/file/d/1kz_1qN1AQ5jqiTMheGz7pdYH0-C-hNry/view?usp=sharing",
+rulebook:"https://drive.google.com/file/d/1aymYBlDtagA8OXSH6wDFG_serqh3vCzy/view?usp=sharing",
       prizeWorth: "15K",
       name: "Debate",
       description:
@@ -182,7 +181,7 @@ rulebook:"https://drive.google.com/file/d/1kz_1qN1AQ5jqiTMheGz7pdYH0-C-hNry/view
       name: "Pre Summit Events",
       description:
         "To merge you all in the vibe of our social fest the National Social Summit 2023, we are presenting you with some amazing pre-summit events like Pixels, Caricature, Microfiction, Meme making competition, and Inquisition. These fun engaging events will give you all a glimpse of our Summit. Come and show up your talents and be a part of this rich legacy of the National Social Summit.",
-        rulebook:"https://drive.google.com/file/d/1h5a3fxGpPA5F0cy9PSwdbk7ABnZ24wuk/view?usp=share_link",
+        rulebook:"https://drive.google.com/file/d/1AnvhDMqOiMtQ77Fq30xZLwyXsD2OvCYX/view?usp=sharing",
         perk1:"Skill Enhancement Courses",
         perk2:"Winners will be featured on our social media platforms.",
         perk3:"Attendee kit will be provided to all participants.",

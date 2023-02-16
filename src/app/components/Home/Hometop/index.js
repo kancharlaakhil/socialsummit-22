@@ -35,7 +35,7 @@ class Hometop extends Component {
             <p className=" th-hometop-event-date ">19th - 20th MARCH, 2022</p>
 
             <p className=" th-hometop-content ">
-            Take the next step forward with National Social Summit 2022 and dabble in the color of inclusion.
+            Take the next step forward with National Social Summit 2023 and dabble in the color of inclusion.
 
             </p>
             <div className="d-flex mt-3">
