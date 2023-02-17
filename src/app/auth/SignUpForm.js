@@ -5,15 +5,17 @@ import { connect } from 'react-redux';
 import nsslogin from "../assets/images/nsslogin1.png";
 import { AuthActionType } from '../../redux/actions/type'
 import { SignupAuthAction } from '../../redux/actions/AuthAction'
-import axios from "axios"
+
 function SignUpForm({user, signup}) {
   const [userState, setUserState] = useState({})
   const [cPassword,setCPassword] = useState();
   const history = useHistory()
   const checkFields = ()=>{
-    console.log("ok")
-
-    
+   if(userState.name==undefined) alert('enter name')
+  }
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
   };
   return (
     
@@ -112,7 +114,7 @@ function SignUpForm({user, signup}) {
               <div className="th-form-group">
                 <input
                 required
-                  type={true ? "text" : "password"}
+                  type={passwordShown ? "text" : "password"}
                   className="th-form-control1 form-control"
                   id=""
                   name=""
@@ -128,7 +130,7 @@ function SignUpForm({user, signup}) {
               <div className="th-form-group">
                 <input
                 required
-                  type={true ? "text" : "password"}  
+                  type={passwordShown ? "text" : "password"}  
                   className="th-form-control1 form-control"
                   id=""
                   name=""

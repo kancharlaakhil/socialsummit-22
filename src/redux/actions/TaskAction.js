@@ -5,7 +5,7 @@ import axios from 'axios'
 export const GetAllTasksAction = (taskState) => {
     return async (dispatch) => {
         try {
-            const {data}= await axios.get("https://api.socialsummit.iitr.ac.in/api/tasks");
+            const {data}= await axios.get("/tasks");
             const tasks = data.data.data;
             
              
