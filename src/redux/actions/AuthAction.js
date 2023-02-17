@@ -6,7 +6,7 @@ export const SignupAuthAction = (userState, history) => {
     return async (dispatch) => {
       
         try {
-            const {data}= await axios.post("/auth/signup", userState);
+            const {data}= await axios.post("https://api.socialsummit.iitr.ac.in/api/auth/signup", userState);
             
             const newUser = {
                 expiresIn : data.expiresIn,
@@ -27,6 +27,7 @@ export const SignupAuthAction = (userState, history) => {
             })
             history.push('/dashboard')
         } catch (error) {
+            console.log(window.location.origin);
             if(error.message){
             dispatch({
                 type : AuthActionType.SIGNUP_FAIL,
@@ -40,7 +41,7 @@ export const SignupAuthAction = (userState, history) => {
 export const LoginAuthAction = (loginState, history) => {
     return async (dispatch) => {
         try {
-            const {data}= await axios.post("/auth/login", loginState);
+            const {data}= await axios.post("https://api.socialsummit.iitr.ac.in/api/auth/login", loginState);
 
             const newUser = {
            expiresIn : data.expiresIn,
@@ -75,7 +76,7 @@ export const LoginAuthAction = (loginState, history) => {
 export const LogoutAuthAction = (history) => {
     return async (dispatch) => {
         try {
-            const {data}= await axios.get("/auth/logout");
+            const {data}= await axios.get("https://api.socialsummit.iitr.ac.in/api/auth/logout");
           
             dispatch({
                 type : AuthActionType.LOGOUT_SUCCESS,
@@ -99,7 +100,7 @@ export const ProfileCompletionAction = (userState, history) => {
     
     return async (dispatch) => {
         try {
-            const {data}= await axios.patch("/users/updateMe", userState);
+            const {data}= await axios.patch("https://api.socialsummit.iitr.ac.in/api/users/updateMe", userState);
 
        
             

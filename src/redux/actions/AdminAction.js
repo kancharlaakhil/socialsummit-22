@@ -5,7 +5,7 @@ import axios from 'axios'
 export const UploadTaskAction = (taskState) => {
     return async (dispatch) => {
         try {
-            const {data}= await axios.post("/tasks", taskState);
+            const {data}= await axios.post("https://api.socialsummit.iitr.ac.in/api/tasks", taskState);
             const task = data.data;
             
             const newTask = {
