@@ -13,9 +13,11 @@ function RegisterCAForm() {
   const history = useHistory()
 
   const RegisterCA = async () => {
-      
-      const {data} = await axios.post("/admin/registerCA", userState);
-      
+      //console.log(userState);
+      const {data} = await axios.post("/admin/registerCA", userState).then((e)=>{
+        alert('CA created successfully');
+        window.location = "/admin/registerCA"
+      });
   }
  
   return (
@@ -46,6 +48,25 @@ function RegisterCAForm() {
                   />
                   <label>
                     Name <span className="th-required-span">*</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-12 mb-4">
+                <div className="th-form-group">
+                  <input
+                    type="text"
+                    className="th-form-control form-control"
+                    id=""
+                    name=""
+                    onChange = {(event) => {
+                        const summitID = event.target.value;
+                        setUserState({...userState, ...{ summitID }})
+                    }}
+                  />
+                  <label>
+                    SummitID <span className="th-required-span">*</span>
                   </label>
                 </div>
               </div>
