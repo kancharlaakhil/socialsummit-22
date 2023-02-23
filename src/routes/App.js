@@ -6,6 +6,7 @@ import Footer from "../app/layouts/Footer/ContactUs";
 import { ComingSoon } from "../app/components/ComingSoon";
 import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
+import AdminDashboard from "../app/components/Dashboard/AdminDashboard/Index";
 import UploadTaskForm from "../app/admin/UploadTaskForm";
 import RegisterCAForm from "../app/admin/RegisterCA";
 import CAList from "../app/admin/CAList";
@@ -127,6 +128,8 @@ const App = ({ user }) => {
             </Route>
           ) : user.user.role === "delegate" ? (
             <Route exact path="/dashboard" component={DelegateDashboard} />
+          ) : user.user.role === "admin" ? (
+            <Route exact path="/dashboard" component={AdminDashboard} />
           ) : (
             <Route exact path="/dashboard" component={CADashboard} />
           )}

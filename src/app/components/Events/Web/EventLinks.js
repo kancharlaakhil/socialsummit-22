@@ -32,54 +32,54 @@ getScrollPercent();
 useEffect(()=>{
   if(scroll>=0 && scroll<10){
     setStyle("Homes")
-  console.log("hell")
+  
 
 }
   if(scroll>=10 && scroll<20){
     setStyle("MUN")
-  console.log("hell")
+  
 
 }
 if(scroll>=20 && scroll<28){
   setStyle("Sociothon")
-console.log("hell")
+
 }
 if(scroll>=28 && scroll<37){
   setStyle("policyCase")
-console.log("hell")
+
 }
 if(scroll>=37 && scroll<46){
   setStyle("Innovision")
-console.log("hell")
+
 }
 if(scroll>=46 && scroll<55){
   setStyle("caseStudy")
-console.log("hell")
+
 
 }
 if(scroll>=55 && scroll<64){
   setStyle("Workshop")
-console.log("hell")
+
 
 }
 if(scroll>=64 && scroll<74){
   setStyle("Abhi")
-console.log("hell")
+
 
 }
 if(scroll>=74 && scroll<84){
   setStyle("Turncoat")
-console.log("hell")
+
 
 }
 if(scroll>=84 && scroll<93){
   setStyle("Thunt")
-console.log("hell")
+
 
 }
 if(scroll>=93){
   setStyle("Presummit")
-console.log("hell")
+
 
 }
 })
