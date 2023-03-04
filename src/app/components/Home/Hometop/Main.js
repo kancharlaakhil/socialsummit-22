@@ -18,7 +18,7 @@ function Main() {
               <a className='Rlink' href="https://socialsummit.iitr.ac.in/signup">Register</a>
               </button>
             <button  className='btn3'>
-              <a className='plink' href="#" target="_blank" rel="noopener noreferrer">Payment</a></button>
+              <a className='plink' href="https://forms.gle/2zwcQb8dhHpgRssE8" target="_blank" rel="noopener noreferrer">Payment</a></button>
         </div>
         <div className='cont'>
         <p >Slide down to know more</p>
