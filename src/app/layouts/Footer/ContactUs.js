@@ -14,12 +14,16 @@ function ContactUs() {
           <div className="socialmain">
             <img src={im1} alt="" />
             <h2 className="hd1">BREAKING CONVENTIONS</h2>
-            <br />
-            <br />
+            <p>
+              <a href="mailto:socialsummit@iitr.ac.in">
+                socialsummit@iitr.ac.in
+              </a>
+            </p>
+            <p>+91 8791101131</p>
 
             <p>Follow us on</p>
             <div className="socialicons">
-              <img src={im2} alt="" >
+              <img src={im2} alt="">
                 {/* <a href="https://www.instagram.com/iitrsocialsummit/?utm_medium=copy_link"></a> */}
               </img>
               <img src={im3} alt="" />
@@ -31,28 +35,45 @@ function ContactUs() {
         <div className="contactright">
           <h4>Contact Us</h4>
           <div>
-            <form action="https://formspree.io/f/xyyakoor" method="POST"  >
+            <form action="https://formspree.io/f/xyyakoor" method="POST">
               <div className="form">
-              <div className="formcss">
-                <input name="Name" className="inputbox" type="text" placeholder="Name" />
-                <input name="Number" className="inputbox" type="text" placeholder="Contact" />
-                <input name="Email"
-                  className="inputbox"
-                  type="email"
-                  placeholder="Email ID"
-                />
+                <div className="formcss">
+                  <input
+                    name="Name"
+                    className="inputbox"
+                    type="text"
+                    placeholder="Name"
+                  />
+                  <input
+                    name="Number"
+                    className="inputbox"
+                    type="text"
+                    placeholder="Contact"
+                  />
+                  <input
+                    name="Email"
+                    className="inputbox"
+                    type="email"
+                    placeholder="Email ID"
+                  />
+                </div>
+
+                <textarea
+                  name="Message"
+                  className="textarea"
+                  id=""
+                  cols="30"
+                  rows="6"
+                >
+                  Message
+                </textarea>
               </div>
 
-              <textarea name="Message" className="textarea"  id="" cols="30" rows="6">
-                Message
-              </textarea>
-
-              </div>
-              
-              <button type="submit" className="formbutton">Send Message</button>
+              <button type="submit" className="formbutton">
+                Send Message
+              </button>
             </form>
           </div>
-          
         </div>
       </div>
 

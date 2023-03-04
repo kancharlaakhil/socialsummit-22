@@ -84,7 +84,7 @@ const App = ({ user }) => {
           <Route exact path="/partners" component={Home} />
           <Route exact path="/events" component={Events} />
 
-          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/contact" component={Contact} /> */}
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
 
