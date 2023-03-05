@@ -109,7 +109,22 @@ function SignUpForm({user, signup}) {
               </div>
             </div>
             </div>
-
+            <div class="row">
+            <div className="th-form-group">
+              <input
+              required
+                type= "text" 
+                className="th-form-control1 form-control"
+                id=""
+                name=""
+                onChange = {(event) => {
+                  const college = event.target.value;
+                  setUserState({...userState, ...{ college }})
+              }}
+              />
+              <label><span className="th-required-span star1">*</span>College/Institute</label>
+            </div>
+          </div>
             <div class="row">
               <div className="th-form-group">
                 <input
