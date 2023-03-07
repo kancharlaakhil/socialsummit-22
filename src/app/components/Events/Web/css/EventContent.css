@@ -8,6 +8,7 @@ width: 129%;
 margin-top: -9%;
 
 }
+
 .eright-header{
 display: flex;
 /* background-color: aqua; */
@@ -75,9 +76,29 @@ color: #FD652D;
 .perksandimg{
   display: flex;
 }
+.nperksandimg{
+  display: flex;
+}
 .perks{
   margin-top: 6vh;
 
+}
+.nperks{
+  width: 55%;
+  margin-top: 20px;
+}
+.nperks h1{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+
+color: #22495A;
+}
+.nperks p{
+  font-family: 'Lato';
+font-style: normal;
 }
 .perks h1{
   font-family: 'Lato';
@@ -104,9 +125,13 @@ line-height: 150%;
 
 color: #333333;
 }
+
 .perksandimg img{
   margin: 4vh;
 margin-left: 5vw;
+}
+.nperksandimg img{
+  margin: 4vh;
 }
 .register{
   margin-top: 2vh;
@@ -125,6 +150,16 @@ border: 1px solid #FD652D;
 
 box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 border-radius: 2px;
+}
+.view-btn{
+  margin-top: -8px;
+  margin-bottom: 15px;
+  width: 130px;
+  border: 1px solid #FD652D;
+  background: #FD652D;
+height: 38px;
+box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+border-radius: 4px;
 }
 .rulebook{
   width: 91px;

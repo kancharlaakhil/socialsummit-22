@@ -2,7 +2,7 @@ import React from "react";
 
 import "./PartnerMainMob.css";
 import Image from "./ImageComponent";
-
+import HeritagePartner from "./assets/Heritagepartner.png";
 import UNESCO from "./assets/UNESCO.png";
 import Recode from "./assets/Recode.png";
 import GeeksForGeeks from "./assets/GeeksForGeeks.png";
@@ -50,19 +50,19 @@ import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import PayPhi from "./assets/PayPhi.png";
 
-const WebView = () => {
+const PartnerMob = () => {
   return (
     <div className="partnerPageMob">
       <div className="patronageMob">
         <h1 className="headingMob">UNDER THE PATRONAGE OF</h1>
         <Image
           image={UNESCO}
-          width="30rem"
+          width="20rem"
           height="15rem"
           link="https://en.unesco.org/"
         />
       </div>
-      <div className="patronageMob">
+      {/* <div className="patronageMob">
         <h1 className="headingMob">TITLE SPONSOR</h1>
         <Image image={titlesponsor} width="30rem" height="15rem" link="" />
       </div>
@@ -83,12 +83,17 @@ const WebView = () => {
           height="15rem"
           link="https://payphi.com/"
         />
-      </div>
+      </div> */}
 
       <div className="sponsorsMob">
         <h1 className="headingMob">SPONSORS</h1>
         <div className="logo2Mob">
-          <Image
+        <Image
+            image={HeritagePartner}
+            title="Heritage Partner"
+            link="https://www.iitr-heritagefund.org/"
+          />
+          {/* <Image
             image={GeeksForGeeks}
             title="Learning Partner"
             link="https://www.geeksforgeeks.org/"
@@ -110,17 +115,17 @@ const WebView = () => {
             title="Green Initiative Partner"
             link="https://sankalptaru.org/"
           />
-        </div>
+        </div> */}
         <div className="logo2Mob">
-          <Image
+          {/* <Image
             image={Lakshyam}
             title="Education Partner"
             link="https://www.lakshyam.co.in/"
           />
-          <Image image={bharat} title="Training Partner" link="" />
+          <Image image={bharat} title="Training Partner" link="" /> */}
         </div>
         <div className="logo2Mob">
-          <Image
+          {/* <Image
             image={Sponbar}
             title="Relation Partner"
             link="https://sponbar.tech/"
@@ -129,10 +134,10 @@ const WebView = () => {
             image={Certopus}
             title="Certificate Partner"
             link="https://certopus.com/"
-          />
+          /> */}
         </div>
         <div className="logo2Mob">
-          <Image
+          {/* <Image
             image={SponPartner}
             title="Sponsorship Partner"
             linnk="http://sponsorbull.com/"
@@ -141,9 +146,9 @@ const WebView = () => {
             image={D2C}
             title="Online Hosting Partner"
             link="https://dare2compete.com/"
-          />
+          /> */}
         </div>
-        <div className="logo2Mob">
+        {/* <div className="logo2Mob">
           <Image image={C3india} title="Research Partner" link="" />
           <Image image={Vskills} title="Growth Partner" link="" />
         </div>
@@ -168,7 +173,7 @@ const WebView = () => {
             title="Case Study Partner"
             link="https://www.mridagroup.com/"
           />
-        </div>
+        </div> 
         <div className="logo3Mob">
           <Image
             image={ADR}
@@ -266,10 +271,11 @@ const WebView = () => {
             title="Online Media Partner"
             link="https://www.indiaeducation.net/"
           />
-        </div>
+        </div> */}
       </div>
+    </div>
     </div>
   );
 };
 
-export default WebView;
+export default PartnerMob;

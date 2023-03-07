@@ -35,12 +35,12 @@ useEffect(()=>{
   
 
 }
-  if(scroll>=10 && scroll<20){
+  if(scroll>=10 && scroll<18){
     setStyle("MUN")
   
 
 }
-if(scroll>=20 && scroll<28){
+if(scroll>=18 && scroll<28){
   setStyle("Sociothon")
 
 }

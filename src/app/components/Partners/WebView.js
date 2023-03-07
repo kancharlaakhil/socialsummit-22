@@ -2,9 +2,9 @@ import React from "react";
 
 import "./PartnersMain.css";
 import Image from "./ImageComponent";
-
 import UNESCO from "./assets/UNESCO.png";
 import Recode from "./assets/Recode.png";
+import HeritagePartner from "./assets/Heritagepartner.png";
 import GeeksForGeeks from "./assets/GeeksForGeeks.png";
 import IndiaIsUs from "./assets/IndiaIsUs.png";
 import Tides from "./assets/Tides.png";
@@ -50,7 +50,7 @@ import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import PayPhi from "./assets/PayPhi.png";
 
-const WebView = () => {
+const PartnerWeb = () => {
   return (
     <div className="partnerPage">
       <div className="patronage">
@@ -62,7 +62,7 @@ const WebView = () => {
           link="https://en.unesco.org/"
         />
       </div>
-      <div className="patronage">
+      {/* <div className="patronage">
         <h1 className="heading">TITLE SPONSOR</h1>
         <Image image={titlesponsor} width="30rem" height="15rem" link="" />
       </div>
@@ -83,12 +83,17 @@ const WebView = () => {
           height="15rem"
           link="https://payphi.com/"
         />
-      </div>
+      </div> */}
 
       <div className="sponsors">
         <h1 className="heading">SPONSORS</h1>
         <div className="logo2">
-          <Image
+        <Image
+            image={HeritagePartner}
+            title="Heritage Partner"
+            link="https://www.iitr-heritagefund.org/"
+          />
+          {/* <Image
             image={GeeksForGeeks}
             title="Learning Partner"
             link="https://www.geeksforgeeks.org/"
@@ -253,23 +258,23 @@ const WebView = () => {
             image={PanIIT}
             title="Online Media Partner"
             link="https://www.paniit.org/"
-          />
+          /> */}
         </div>
         <div className="logo3">
-          <Image image={amarujala} title="News Partner" link="" />
+          {/* <Image image={amarujala} title="News Partner" link="" />
           <Image image={edtimes} title="Blog Partner" link="" />
-          <Image image={collegeduniya} title="Online Media Partner" link="" />
+          <Image image={collegeduniya} title="Online Media Partner" link="" /> */}
         </div>
         <div className="logo3 logo4">
-          <Image
+          {/* <Image
             image={IndiaEducation}
             title="Online Media Partner"
             link="https://www.indiaeducation.net/"
-          />
+          /> */}
         </div>
       </div>
     </div>
   );
 };
 
-export default WebView;
+export default PartnerWeb;

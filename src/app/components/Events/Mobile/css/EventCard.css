@@ -37,6 +37,13 @@ margin-left: 6%;
 
 color: #333333;
 }
+.mperks{
+    /* background-color: #222222; */
+    width: 85%;
+    margin-left: 5%;
+justify-content: center;
+align-content: center;
+}
 .mperks h1{
     font-family: 'Lato';
     font-style: normal;
