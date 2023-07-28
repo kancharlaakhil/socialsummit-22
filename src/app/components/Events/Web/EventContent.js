@@ -23,7 +23,7 @@ function EventContent(props) {
       eventLink: "Action Plan",
       name: "Action Plan",
       rulebook:
-        "https://drive.google.com/file/d/17CcP6ekACh0zuz4wFfUS7cL5gjgzmioE/view?usp=sharing",
+        "https://drive.google.com/file/d/1vsdMCq05IgSgNudY1kDwNKYv36le8TPL/view?usp=share_link",
       prizeWorth: "10K",
       description:
         " This competition provides a platform for those entrepreneurs who bring feasible solutions to real-time problems with their innovative ideas. The competition will be of two rounds and is open for all age groups. A maximum of 4 members in a team can participate in the competition.",
@@ -39,7 +39,7 @@ function EventContent(props) {
       name: "Model United Nations",
       eventLink: "MUN",
       rulebook:
-        "https://drive.google.com/file/d/1d-5rUQDnYipRMw1Il4RozDbmrwg9zvaG/view?usp=sharing",
+        "https://drive.google.com/file/d/1aVRnR3PIDB8-SdF-dM86jhQ8fWFh6ne1/view?usp=share_link",
       prizeWorth: "120K",
       description:
         "This event provides a platform for the students to have practical experience of diplomacy and allow them to be the representative of a country or an organization and let them speak up about the issues and find their solutions along with other delegates.",
@@ -56,7 +56,11 @@ function EventContent(props) {
       prizeWorth: "50K",
       name: "Sociothon",
       rulebook:
-        "https://drive.google.com/file/d/1iWCY-GnwAl75XZXtZZ40coRlxnAUnZDR/view?usp=sharing",
+        "https://drive.google.com/file/d/1NAxunk-gxf0CUyb38cIZNFChct-9A95T/view?usp=share_link",
+      problemstatement1:"1. AI for Mental Health : Develop a machine learning model that can identify individuals at risk of mental health issues, such as depression, anxiety, or suicide.",  
+      problemstatement2:"2. Fighting Fake News : Develop a machine learning model that can detect and flag fake  news and disinformation online. The model should be designed to be scalable and adaptable to different types of media,", 
+      problemstatement3:"3. Open Theme : Do you have your own Problem Statement? No Problem. sociothon brings you open opportunity to present your own problem statement and solution to it. Innovative ideas that can help to break the common conventions are most welcome.",
+problink:"https://drive.google.com/file/d/1TMwMPtYjevOG193aXJiALwQobYXPe1F8/view?usp=sharing", 
       description:
         "Sociothon is an event where participants will be provided with a problem statement and they will be asked to present their solutions by critically analysing the issue. This event aims to enhance the creative minds of the participants.",
       perk1: "Skill Enhancement Courses",
@@ -70,9 +74,13 @@ function EventContent(props) {
       image: PolicyCase,
       eventLink: "PolicyCase",
       rulebook:
-        "https://drive.google.com/file/d/1Rt9trsxzkOZaN8y94rU-J2tfJLBo0LMk/view?usp=sharing",
+        "https://drive.google.com/file/d/1frI_HU8UKkxS4GLDA-rfYua3BdMVf7M_/view?usp=share_link",
       prizeWorth: "50K",
       name: "Policy Case Competition",
+      problemstatement1:"1. Healthcare improvement in Remote areas :  India has made significant strides in improving healthcare access to the society in the recent years, yet a significant proportion of the population lacks access to quality healthcare services, particularly those living in remote and underserved areas. This policy case focuses on the efforts to provide healthcare services to underserved populations in India.",  
+      problemstatement2:"2. Gender Discrimination in Work Life : Gender discrimination in the workplace is a pervasive issue in India, with women often facing barriers to equal employment opportunities, unequal pay, and harassment. This case study highlights the experiences of women in India facing gender discrimination in their work life.", 
+      problemstatement3:"", 
+      problink:"https://drive.google.com/file/d/1rghn_QaboZo8qwcj0s6Rvz_6NeA-dzKn/view?usp=share_link",
       link1:
         "https://drive.google.com/file/d/1LNVxt6bMusyVC07Pfng183rDK8iMzHPt/view?usp=sharing",
       link2:
@@ -94,7 +102,7 @@ function EventContent(props) {
       description:
         "In this competition, we invite every NGO to showcase their past works towards society. This also allows us to express our gratitude to them. The competition will be of 2 rounds with each team consisting of up to 4 members.",
       rulebook:
-        "https://drive.google.com/file/d/1OMbqWgavsLcBkWddpE_Hk1XTH8Igwsqt/view?usp=sharing",
+        "https://drive.google.com/file/d/1GbO7vts5LxTkhaZM--IrbX_gdncLAszY/view?usp=share_link",
       perk1: "Skill Enhancement Courses",
       perk2: "Winners will be featured on our social media platforms.",
       perk3: "Attendee kit will be provided to all participants.",
@@ -106,8 +114,12 @@ function EventContent(props) {
       image: CaseStudy,
       eventLink: "CaseStudy",
       name: "Case Studies",
+      problemstatement1:"1. Why Millets? : Millets were widely grown as fodder for out birds and animals until we realized its other health benefits.Over the last decade, the production of jowar has fallen, the production of pearl millet (bajra) has stagnated, and the production of other millets has stagnated or declined. How they can be a sustainable and economic source of nutrition in India.",  
+      problemstatement2:"2. Empowering Women Entrepreneurs in Rural India : Women entrepreneurs in rural India face significant challenges in accessing resources,building networks, and scaling their businesses. This case study focuses on initiatives to empower women entrepreneursin rural India.", 
+      problemstatement3:"", 
+      problink:"https://drive.google.com/file/d/1Wz4_MIRsJNBrRwzuXm1-5yDa-Db8I7Ms/view?usp=share_link",
       rulebook:
-        "https://drive.google.com/file/d/13lFg4tys6To8KFcl3ZZeITI_H2bMFPoa/view?usp=sharing",
+        "https://drive.google.com/file/d/1Wb49hOg46umuzVH6k7InhcIbyWuF2nU_/view?usp=share_link",
       perk1: "Skill Enhancement Courses",
       perk2: "Winners will be featured on our social media platforms.",
       perk3: "Attendee kit will be provided to all participants.",
@@ -127,7 +139,7 @@ function EventContent(props) {
       eventLink: "Workshop",
       name: "Workshops",
       rulebook:
-        "https://drive.google.com/file/d/1jNrdD82TqOSrIng_E1KQ67xNupIyElyD/view?usp=sharing",
+        "https://drive.google.com/file/d/1cjfmhHj-T7hpBhAXQFJPaNzPvxl2LAfn/view?usp=share_link",
       description:
         "Like every year this year also the National Social Summit 2023, IIT Roorkee, is going to organize various workshops to provide hands-on experiences on different social aspects and formulate socially active mindsets among people.",
       perk1: "Skill Enhancement Courses",
@@ -142,7 +154,7 @@ function EventContent(props) {
       eventLink: "Abhivyakti",
       name: "Nukkad Natak",
       rulebook:
-        "https://drive.google.com/file/d/1av6naNOWBjDQVcrdckZoKodCtimSwr6J/view?usp=sharing",
+        "https://drive.google.com/file/d/1lAa0J8Dat9J7Jl__0A-_lJovsxWgaCP6/view?usp=share_link",
       prizeWorth: "15K",
       description:
         "It is a street-play competition wherein you speak in the lingo of the common folks to emphasise socially relevant issues in our society. With the aid of shouts, chants, drums, and catchy songs, it is an extremely effective way of theatrical art to convey a social or political message. ",
@@ -157,7 +169,7 @@ function EventContent(props) {
       image: Debate,
       eventLink: "TurnCoat",
       rulebook:
-        "https://drive.google.com/file/d/12sO81vWJofPW4r2nEYj3DJUvdu-F0ZY4/view?usp=sharing",
+        "https://drive.google.com/file/d/16gtjM_M2ESfmltWcFmdG4smsfm2ctETA/view?usp=share_link",
       prizeWorth: "15K",
       name: "Debate",
       description:
@@ -192,7 +204,7 @@ function EventContent(props) {
       description:
         "To merge you all in the vibe of our social fest the National Social Summit 2023, we are presenting you with some amazing pre-summit events like Pixels, Caricature, Microfiction, Meme making competition, and Inquisition. These fun engaging events will give you all a glimpse of our Summit. Come and show up your talents and be a part of this rich legacy of the National Social Summit.",
       rulebook:
-        "https://drive.google.com/file/d/1AnvhDMqOiMtQ77Fq30xZLwyXsD2OvCYX/view?usp=sharing",
+        "https://drive.google.com/file/d/1cNVHrLye41a0Sdl_NEAi2jXlupW4wmfM/view?usp=share_link",
       perk1: "Skill Enhancement Courses",
       perk2: "Winners will be featured on our social media platforms.",
       perk3: "Attendee kit will be provided to all participants.",
@@ -222,6 +234,10 @@ function EventContent(props) {
               perk3={element.perk3}
               perk4={element.perk4}
               perk5={element.perk5}
+              prob1={element.problemstatement1}
+              prob2={element.problemstatement2}
+              prob3={element.problemstatement3}
+              problink={element.problink}
             />
           </div>
         );
