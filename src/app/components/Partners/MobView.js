@@ -49,6 +49,7 @@ import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import PayPhi from "./assets/PayPhi.png";
+import StreeImg from "./assets/stree.png";
 
 const PartnerMob = () => {
   return (
@@ -61,6 +62,7 @@ const PartnerMob = () => {
           height="15rem"
           link="https://en.unesco.org/"
         />
+
       </div>
       {/* <div className="patronageMob">
         <h1 className="headingMob">TITLE SPONSOR</h1>
@@ -92,6 +94,11 @@ const PartnerMob = () => {
             image={HeritagePartner}
             title="Heritage Partner"
             link="https://www.iitr-heritagefund.org/"
+          />
+             <Image
+            image={StreeImg}
+            title="NGO Partner"
+            link="https://streesafety.com/"
           />
           {/* <Image
             image={GeeksForGeeks}

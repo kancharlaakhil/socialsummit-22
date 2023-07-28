@@ -48,7 +48,7 @@ import supreme from "./assets/supreme.png";
 import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
-import PayPhi from "./assets/PayPhi.png";
+import StreeImg from "./assets/stree.png";
 
 const PartnerWeb = () => {
   return (
@@ -92,6 +92,11 @@ const PartnerWeb = () => {
             image={HeritagePartner}
             title="Heritage Partner"
             link="https://www.iitr-heritagefund.org/"
+          />
+           <Image
+            image={StreeImg}
+            title="NGO Partner"
+            link="https://streesafety.com/"
           />
           {/* <Image
             image={GeeksForGeeks}
