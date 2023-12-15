@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials/Testimonials";
 import "./css/slider.css";
 import "./css/home.css";
 import Background from "./Background";
+import HomeContent from "../../layouts/header/UpdatedPage/Components/HomeContent";
 const HomeMain = () => {
   let [width] = useWidthAndHeight();
   // returns the screen/window width.
@@ -16,9 +17,11 @@ const HomeMain = () => {
   return (
     <div className="homeContainer">
       <div className="th-home-top-container">
-        <Hometop width={width} />
+        <HomeContent/>
+        {/* <Hometop width={width} /> */}
         <PastSpeakers width={width} />
         <Events width={width} />
+        
         <Footfall width={width} />
         <Background/>
         <Testimonials width={width} />

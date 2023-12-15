@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Logo from "../../assets/images/nss-logo.png";
+import Logo from "../header/UpdatedPage/Image/logo.png";
 import { Menu } from "react-feather";
 import { Link } from "react-router-dom";
 import SideDrawer from "../sideDrawer";
 import BackDrop from "../sideDrawer/Backdrop";
 import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux'
+import HeaderTop from "./UpdatedPage/Components/HeaderTop";
+import HeaderContent from "./UpdatedPage/Components/HomeContent";
 
 class Header extends Component {
   constructor(props) {
@@ -40,11 +42,14 @@ class Header extends Component {
    const {auth} = this.props;
 
     return (
-      <div className="pe-3 ps-3 gradient">
+    <>
+      <div className="pe-3 ps-3 gradient" >
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
+              <span className="th-header-new th-nss" >National Social Summit</span>
+              <div className="summit_date"> 17th-19th Feb 2023</div>
             </Link>
             <div style={{ position: "absolute", marginLeft: "25vw" }}
             className="navbar1  d-flex align-items-center pl-5"  >
@@ -107,6 +112,7 @@ class Header extends Component {
         />
         {backdrop}
       </div>
+      </>
     );
   }
 }
