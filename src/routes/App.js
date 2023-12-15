@@ -12,6 +12,7 @@ import RegisterCAForm from "../app/admin/RegisterCA";
 import CAList from "../app/admin/CAList";
 import { connect } from "react-redux";
 import GetAllRegistration from "../app/admin/GetAllRegistration";
+import HeaderTop from "../app/layouts/header/UpdatedPage/Components/HeaderTop";
 
 const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
@@ -75,6 +76,7 @@ const SpecificEvents = React.lazy(() =>
 const App = ({ user }) => {
   return (
     <BrowserRouter>
+      <HeaderTop/>
       <Header />
       <Suspense fallback={<Loader />}>
         <Switch>
