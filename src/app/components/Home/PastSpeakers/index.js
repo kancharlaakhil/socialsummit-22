@@ -76,7 +76,6 @@ class PastSpeakers extends Component {
               })}
             </Slider>
           </div>
-
         </div>
       </div>
     );

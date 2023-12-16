@@ -17,12 +17,12 @@ const HomeMain = () => {
   return (
     <div className="homeContainer">
       <div className="th-home-top-container">
-        <HomeContent/>
-        {/* <Hometop width={width} /> */}
+
+        <Hometop width={width} />
+        <Footfall width={width} />
         <PastSpeakers width={width} />
         <Events width={width} />
-        
-        <Footfall width={width} />
+
         <Background/>
         <Testimonials width={width} />
       </div>
