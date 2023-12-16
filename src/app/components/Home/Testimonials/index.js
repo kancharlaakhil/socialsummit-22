@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import LeftArrow from "../Slider/LeftArrow";
 import RightArrow from "../Slider/RightArrow";
+import bgimg from './images/image 38.png'
 
 
 import Entry from "./Entry";
@@ -57,7 +58,7 @@ function createEntry(emojiTerm) {
 class Testimonials extends Component {
   render() {
     return (
-      <div className="">
+      <div className="" >
         {this.props.width > 1024 ? (
           <div>
             <div className="th-home-event-parent">
@@ -68,7 +69,7 @@ class Testimonials extends Component {
             </div>
           </div>
         ) : (
-          <div>
+          <div className="social-updated-bg" >
             <div className="th-home-event-parent">
               <h1>Testimonials</h1>
             

@@ -29,7 +29,7 @@ let customStyle= {
 
   
   return (
-    <div className="th-home-testimonial-card" >
+    <div className="th-home-testimonial-card"  >
       <div className="th-home-testimonial-uc" style={customStyle}>
        {props.description}
       </div>

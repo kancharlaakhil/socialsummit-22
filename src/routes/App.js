@@ -76,7 +76,6 @@ const SpecificEvents = React.lazy(() =>
 const App = ({ user }) => {
   return (
     <BrowserRouter>
-      <HeaderTop/>
       <Header />
       <Suspense fallback={<Loader />}>
         <Switch>

@@ -7,6 +7,7 @@ import { useWidthAndHeight } from "../../../hooks/useWidthAndHeight";
 import Testimonials from "./Testimonials/Testimonials";
 import "./css/slider.css";
 import "./css/home.css";
+import HeaderTop from '../../layouts/header/UpdatedPage/Components/HeaderTop'
 import Background from "./Background";
 import HomeContent from "../../layouts/header/UpdatedPage/Components/HomeContent";
 const HomeMain = () => {
@@ -18,8 +19,10 @@ const HomeMain = () => {
     <div className="homeContainer">
       <div className="th-home-top-container">
 
+
         <Hometop width={width} />
         <Footfall width={width} />
+          
         <PastSpeakers width={width} />
         <Events width={width} />
 

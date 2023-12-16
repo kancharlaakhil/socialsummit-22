@@ -8,14 +8,18 @@ const testiMonialsDetail = ({testiMonialDetail}) => {
         <div className="item">
             <div className="shadow-effect">
             </div>
-            <div className="testimonial-name">
-                <img alt='' className='inv' src={InvertedComma} />
-                <br />
-                <p>{description}</p>
+            <div className="testimonial-name d-flex">
+            <div style={{marginTop:"10%"}}>
+            
+            <img alt='' className="img-circle" src={img} />
+            <h2 className='test-name'>{name}</h2>
+            {/* <p className='test-post'>{address}</p> */}
             </div>
-                <img alt='' className="img-circle" src={img} />
-                <h2 className='test-name'>{name}</h2>
-                <p className='test-post'>{address}</p>
+            <div style={{width:"80%", textAlign:'justify', margin:"20px"}}>
+                <img alt='' className='inv' src={InvertedComma} style={{textAlign:"left"}} /> 
+                <p>{description}</p>  
+                </div>             
+                </div>
         </div>
     );
 };
