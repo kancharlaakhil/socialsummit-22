@@ -5,6 +5,7 @@
     margin-top: 10rem;
     margin-left: 4rem ;
     width: 85%;
+    
   }
   
   .formpara p {
@@ -48,7 +49,7 @@
   .contents {
     display: flex;
     height: 50%;
-  
+  background: #041723;;
     justify-content: space-between;
   }
   
