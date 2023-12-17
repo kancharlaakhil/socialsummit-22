@@ -45,7 +45,9 @@ const TestiMonials = () => {
         items: 3,
         margin: 0,
         autoplay: true,
+        // dotsContainer:true,
         dots: true,
+        dotsData:true,
         autoplayTimeout: 3500,
         smartSpeed: 450,
         nav: false,
@@ -57,12 +59,12 @@ const TestiMonials = () => {
                 items: 3
             },
             1000: {
-                items: 3
+                items: 4
             }
         }
     };
     return (
-        <section id="testimonial" className="testimonials pt-70 pb-70">
+        <section id="testimonial" className="testimonials pt-70 pb-70" style={{backgroundColor:'#041723'}}>
             <div className="container mt-5">
                 <div className="miniTitle text-center">Testimonials</div>
                 <div className="row">

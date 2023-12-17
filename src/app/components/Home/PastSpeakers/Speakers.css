@@ -105,8 +105,9 @@
 .speakersbox{
     display: inline-flex;
     backdrop-filter: opacity(10%);
-    margin-top: 30px;
-    width: 100vw;
+    padding-top: 5vh;
+    width: 98vw;
+    background-color: #041723;
 }
 .sbox2{
     width: 65vw;
@@ -118,6 +119,7 @@
     margin: 0px;
     position: absolute;
     left: 0px;
+    z-index: 100;
 }
 .puimg1{
     width: 91%;
@@ -135,6 +137,7 @@
 .spimg2{
     margin: 0px;
     position: absolute;
+    z-index: 100000;
     left: 38.1%;
 }
 .puimg2{
@@ -154,6 +157,7 @@
 .spimg3{
     margin: 0px;
     position: absolute;
+    z-index: 10000000;
     left: 67.7%;
 }
 .puimg3{
@@ -177,7 +181,7 @@
     padding: 150px 50px 150px 120px;
 }
 .scontent{
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
@@ -198,7 +202,7 @@
     background: linear-gradient(94deg, #028BA3 22.96%, #006E9B 98.15%);
     box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 17px;
     font-weight: 700;
     line-height: normal;

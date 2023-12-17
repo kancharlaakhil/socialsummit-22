@@ -1,10 +1,12 @@
 import React from "react";
 import "./HomeContent.css";
+import background from "../Image/background.png"
 
 export default function Content() {
   return (
     <>
       <div className="home-top-content-wrapper">
+      <img src={background} alt="" className="backimg" />
         <div className="header-bottom">
           <h1 className="header-bottom-heading">Educate Empower Sustain</h1>
           <div className="header-bottom-para1">

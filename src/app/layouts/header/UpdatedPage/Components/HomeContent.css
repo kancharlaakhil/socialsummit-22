@@ -5,7 +5,8 @@
 
 
 .header-bottom {
-    background-image: url("../Image/image\ 38.png");
+    /* background-image: url("../Image/image\ 38.png"); */
+    position: relative;
     height: auto;
     text-align: center;
     padding: 6vh 14vw;
@@ -13,9 +14,16 @@
     margin: 0;
 
 }
-
+.backimg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -10;
+    width: 98.75vw;
+    filter: brightness(50%);
+  }
 .header-bottom-heading {
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -31,7 +39,7 @@
 
 .header-bottom-para1 {
     text-align: center;
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -49,7 +57,7 @@
 .header-bottom-para3 {
     color: #FFF;
     text-align: center;
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -75,7 +83,7 @@
     border: 1px solid #5AB9BE;
     box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-size: 20px;
     font-style: normal;
     font-weight: 600;

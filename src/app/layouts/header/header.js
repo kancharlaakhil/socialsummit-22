@@ -43,13 +43,13 @@ class Header extends Component {
 
     return (
     <>
-      <div className="pe-3 ps-3 gradient" >
+      <div className="pe-3 ps-3 gradient" style={{fontFamily:"Mulish" }}>
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
-              <span className="th-header-new th-nss" >National Social Summit</span>
-              <div className="summit_date"> 17th-19th Feb 2023</div>
+              <span className="th-header-new th-nss" style={{width:"12%",marginTop:10}}>National Social Summit</span>
+              <div className="summit_date" style={{marginTop:-5,marginLeft:7}}> 17th-19th Feb 2024</div>
             </Link>
             <div style={{ position: "absolute", marginLeft: "25vw" }}
             className="navbar1  d-flex align-items-center pl-5"  >

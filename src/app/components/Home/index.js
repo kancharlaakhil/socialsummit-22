@@ -1,6 +1,6 @@
 import React from "react";
 import Hometop from "./Hometop/Main";
-import Events from "./Events/Events";
+import Events from "./HomeEvents/Events";
 import Footfall from "./Footfalls";
 import PastSpeakers from "./PastSpeakers/Speakers";
 import { useWidthAndHeight } from "../../../hooks/useWidthAndHeight";
@@ -17,10 +17,11 @@ const HomeMain = () => {
   // Can be used only within functional components
   return (
     <div className="homeContainer">
+        {/* <Hometop width={width} /> */}
       <div className="th-home-top-container">
 
 
-        <Hometop width={width} />
+        <HomeContent width={width}/>
         <Footfall width={width} />
           
         <PastSpeakers width={width} />

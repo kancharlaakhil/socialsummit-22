@@ -53,7 +53,7 @@
 }
 
 .th-home-top-header {
-  font-family: Raleway;
+  font-family: ""Raleway"";
   font-style: normal;
   font-weight: 600;
   font-size: 6vw;
@@ -602,8 +602,9 @@ color: #444444;
 .footfall{
   margin: 0px;
   padding-top: 100px;
-  padding-bottom: 50px;
-  margin-bottom: 5px;
+  
+  /* padding-bottom: 10vh; */
+  /* margin-bottom: 5px; */
   display: flex;
   justify-content: space-between;
   padding-left: 7vw;
@@ -680,7 +681,7 @@ color: #444444;
 }
 .ftext{
   color: #FFF;
-  font-family: Mulish;
+  font-family: ""Mulish"";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -690,18 +691,19 @@ color: #444444;
   margin-top: 13px;
   text-align: center;
   text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
-  font-family: Mulish;
+  font-family: ""Mulish"";
   font-size: 34px;
   font-style: normal;
   font-weight: 900;
   color: #FCFCFC;
 }
 .backimg{
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   top: 0px;
   z-index: 0;
-  width: 100vw;
+  width: 98.75vw;
+  height: 250%;
   filter: brightness(50%);
 }
 .footfallbox{

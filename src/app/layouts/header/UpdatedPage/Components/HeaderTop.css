@@ -1,14 +1,9 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .header-top{
     position:relative;
 }
 .header-img-wrapper{
     display: grid;
-    grid-template-columns: 25vw 17vw 21vw 14vw 22vw;
+    grid-template-columns: 25vw 17vw 21vw 14vw ;
     grid-template-rows:23vh 2vh 14vh 14vh 25vh ;
     grid-gap: 0px;
  
@@ -108,7 +103,7 @@
 
 .text .para1{
     color: #FFF;
-font-family: Mulish;
+font-family: ""Mulish"";
 font-size: 50px;
 font-style: normal;
 font-weight: 600;
@@ -119,7 +114,7 @@ padding: 10px ;
 
 .text .para2{
     color: #8FEFE9;
-font-family: Mulish;
+font-family: ""Mulish"";
 font-size: 24px;
 font-style: normal;
 font-weight: 700;

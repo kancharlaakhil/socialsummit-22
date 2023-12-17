@@ -1,8 +1,10 @@
- .speaker {
+.speaker {
   display: flex;
   flex-direction: row;
   margin-bottom: 0vw;
-  width:99vw;
+  width:98.75vw;
+  margin-top: 3vh;
+  padding-bottom: 8vh;
   /* height:400px; */
   max-height: max-content;
   /* max-height: 300px; */
@@ -10,7 +12,6 @@
   /* opacity: 0.1; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .left {
   position: relative;
   flex-direction: row;
@@ -27,6 +28,7 @@
 .left img {
   /* width: 100%; */
   position: relative;
+  z-index: 1000;
   /* width: 100%; */
   height: 100%;
   
@@ -35,11 +37,12 @@
 
 .img{
     /* height: 100%; */
-    /* aspect-ratio: 	187∶250; */
+    /* aspect-ratio: 	187âˆ¶250; */
     /* height: 100%; */
     /* height: 500px; */
-   width:35%; 
-   height:auto;
+   width:30%; 
+   padding-left: 70px;
+   position: relative;
    /* height: max-content; */
    
    /* width:auto; */
@@ -49,7 +52,7 @@
   }
   
   .title {
-   color: #FD652D;
+   color: #2BB4EE;
   position: relative;
   margin-top: 40px;
   /* padding: 0.5vw 1vw;
@@ -63,8 +66,7 @@
 
 .title>p{
   text-align: left !important;
-  color: #555555 !important;
-  font-style: italic !important;
+  color: #D4D4D4;
 }
 .right.title{
   text-align: center;
@@ -75,9 +77,9 @@
 .right.title h1 {
   text-align: right;
   margin: 0.5vw 0;
-  font-family: "Raleway";
+  font-family: "lato";
   font-style: normal;
-  font-weight: 1000;
+  font-weight: 800;
   font-size: 2.3vw;
   /* line-height: 49px; */
   letter-spacing: 0.005em;
@@ -89,7 +91,7 @@
 
 .title p {
   margin: 0;
-  font-family: "Inter";
+  font-family: "lato";
   font-style: normal;
   font-weight: 400;
   font-size: 1vw;
@@ -100,7 +102,18 @@
 .whitespace {
   height: 40%;
 }
-
+.imgdot1{
+  margin-left: 5vw;
+  margin-right: 1vw;
+}
+.imgdot2{
+  margin-right: 5vw;
+  position: relative;
+}
+.dot2{
+  position: absolute;
+  bottom: 40px;
+}
 .right {
   
   display: flex;
@@ -112,7 +125,7 @@
   /* min-height: fit-content; */
   /* box-shadow: 3px 3px 8px rgba(102, 58, 163, 0.12); */
   /* margin: 5vw; */
-  margin-left: 5vw;
+  
 
 }
 
@@ -121,16 +134,16 @@
  /* padding: 20%; */
 
   /* height: 60%; */
-  color: #22495A;
+  color: rgba(255, 255, 255, 0.60);
   position: relative;
-  padding: 5vw; 
   padding-left: 0vw ;
   
   /* padding-right: 50px ; */
   /* text-align:center; */
   min-height: 60%;
   text-align: left;
-  
+  font-family: "lato";
+  font-weight: 400;
   padding-top: 2vw;
   max-width: max-content;
   margin-bottom: auto;
