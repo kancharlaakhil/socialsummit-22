@@ -107,7 +107,7 @@
     backdrop-filter: opacity(10%);
     padding-top: 5vh;
     width: 98vw;
-    background-color: #041723;
+    /* background-color: #041723; */
 }
 .sbox2{
     width: 65vw;

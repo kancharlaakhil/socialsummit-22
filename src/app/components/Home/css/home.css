@@ -701,9 +701,9 @@ color: #444444;
   /* position: absolute; */
   left: 0px;
   top: 0px;
-  z-index: 0;
+  z-index: -1000;
   width: 98.75vw;
-  height: 250%;
+  height: 350%;
   filter: brightness(50%);
 }
 .footfallbox{
