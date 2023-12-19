@@ -11,7 +11,7 @@ export default function Content() {
           <h1 className="header-bottom-heading">Educate Empower Sustain</h1>
           <div className="header-bottom-para1">
             <p>National Social Summit 2024</p>
-            <p className="header-bottom-line2">17th - 19th Feb 2024</p>
+            <p className="header-bottom-line2">10th - 11th Feb 2024</p>
           </div>
           <p className="header-bottom-para3">
             Welcome to the annual Social Summit of NSS IIT Roorkee with the

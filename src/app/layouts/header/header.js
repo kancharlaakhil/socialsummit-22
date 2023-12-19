@@ -49,7 +49,7 @@ class Header extends Component {
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
               <span className="th-header-new th-nss" style={{width:"12%",marginTop:10}}>National Social Summit</span>
-              <div className="summit_date" style={{marginTop:-5,marginLeft:7}}> 17th-19th Feb 2024</div>
+              <div className="summit_date" style={{marginTop:-5,marginLeft:7}}> 10th-11th Feb 2024</div>
             </Link>
             <div style={{ position: "absolute", marginLeft: "25vw" }}
             className="navbar1  d-flex align-items-center pl-5"  >

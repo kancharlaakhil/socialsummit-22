@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <div className="text">
             <p className="para1">National Social Summit</p>
-            <p className="para2">17th - 19th Feb 2024</p>
+            <p className="para2">10th - 11th Feb 2024</p>
           </div>
         </div>
       </div>

@@ -75,7 +75,7 @@ class Counter extends Component {
           <p className="fcount">
             <CountUp
                 start={0}
-                end={12000}
+                end={15000}
                 className="mb-1 th-home-count"
                 suffix="+"
                 duration={2}
@@ -85,12 +85,12 @@ class Counter extends Component {
         <div className="partnersbox">
           <div className="pinbox">
             <img src={pimg} alt="" className="pimg1" />
-            <p className="ftext">Partners</p>
+            <p className="ftext">Collabrations</p>
           </div>
           <p className="fcount">
             <CountUp
                 start={0}
-                end={12000}
+                end={50}
                 className="mb-1 th-home-count"
                 suffix="+"
                 duration={2}
@@ -100,12 +100,12 @@ class Counter extends Component {
         <div className="prizesbox">
           <div className="prinbox">
             <img src={primg} alt="" className="primg1" />
-            <p className="ftext">Prizes</p>
+            <p className="ftext">Colleges Covered</p>
           </div>
           <p className="fcount">
             <CountUp
                 start={0}
-                end={12000}
+                end={500}
                 className="mb-1 th-home-count"
                 suffix="+"
                 duration={2}
@@ -115,12 +115,12 @@ class Counter extends Component {
         <div className="eventsbox">
           <div className="einbox">
             <img src={eimg} alt="" className="eimg1" />
-            <p className="ftext">Events</p>
+            <p className="ftext">Zonals</p>
           </div>
           <p className="fcount">
             <CountUp
                 start={0}
-                end={12000}
+                end={30}
                 className="mb-1 th-home-count"
                 suffix="+"
                 duration={2}

@@ -23,7 +23,7 @@ function ContactUs() {
               </p>
             </div>
             <div className="date-box">
-              <p>17th-19th Feb 2024</p>
+              <p>10th-11th Feb 2024</p>
             </div>
           </div>
         </div>
