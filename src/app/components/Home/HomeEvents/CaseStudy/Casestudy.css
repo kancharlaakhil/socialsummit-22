@@ -120,7 +120,8 @@
 }
 .modal1-content-right-middle-head{
     font-weight: bold;
-    height: fit-content;
+    font-size: 1.5rem;
+    margin-block: 0.5rem;
 }
 .modal1-content-right-btns{
     display: flex;
@@ -129,7 +130,7 @@
     justify-content: space-between;
     width: 40%;
     box-sizing: border-box;
-    margin-block: 1rem;
+    margin-block: 1.5rem;
 }
 .modal1-content-right-btns-register-1{
     border-radius: 8px;

@@ -116,7 +116,8 @@ backdrop-filter: blur(12.809917449951172px);
 }
 .modal3-content-right-middle-head{
     font-weight: bold;
-    height: fit-content;
+    font-size: 1.5rem;
+    margin-block: 0.5rem;
 }
 .modal3-content-right-btns{
     display: flex;
@@ -125,7 +126,7 @@ backdrop-filter: blur(12.809917449951172px);
     justify-content: space-between;
     width: 40%;
     box-sizing: border-box;
-    margin-block: 1rem;
+    margin-block: 1.5rem;
 }
 .modal3-content-right-btns-register{
     border-radius: 8px;
