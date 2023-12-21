@@ -27,7 +27,6 @@
     fill: linear-gradient(180deg, rgba(252, 85, 73, 0.50) 17.76%, rgba(102, 8, 8, 0.50) 100%);
     filter: drop-shadow(7.884px 7.884px 63.073px rgba(0, 0, 0, 0.50));
     backdrop-filter: blur(12.809917449951172px);
-  
   }
 
 .modal2-content{
@@ -106,7 +105,8 @@
 }
 .modal2-content-right-middle-head{
     font-weight: bold;
-    height: fit-content;
+    font-size: 1.5rem;
+    margin-block: 0.5rem;
 }
 .modal2-content-right-btns{
     display: flex;
@@ -115,7 +115,7 @@
     justify-content: space-between;
     width: 40%;
     box-sizing: border-box;
-    margin-block: 1rem;
+    margin-block: 1.5rem;
 }
 .modal2-content-right-btns-register-2{
     border-radius: 8px;
