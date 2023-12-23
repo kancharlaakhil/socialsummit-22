@@ -36,7 +36,7 @@ export default function MUN({passfunction}) {
   <div className='modal2-content-left'>
   <div className='modal2-content-left-head'>
     <span className='modal2-content-left-head-1'>Model United Nations</span>
-    <span className='modal2-content-left-head-2'>11th March - 22nd March</span>
+    <span className='modal2-content-left-head-2'>10th-11th Feb 2024</span>
   </div>
   <div className='modal2-content-left-mid'>
     <img src={casestudy} alt='sdfd' className='modal2-content-left-mid-img'>
@@ -84,7 +84,7 @@ export default function MUN({passfunction}) {
     <span>Summit</span>
     </div>
     <div className='modal2-logo-content-date'>
-    17th - 19th Feb 2024
+    10th-11th Feb 2024
     </div>
   </div>
   </div>

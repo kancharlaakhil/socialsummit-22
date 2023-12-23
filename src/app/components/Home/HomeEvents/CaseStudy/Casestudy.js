@@ -36,7 +36,7 @@ export default function Casestudy({passfunction}) {
   <div className='modal1-content-left'>
   <div className='modal1-content-left-head'>
     <span className='modal1-content-left-head-1'>Case Study</span>
-    <span className='modal1-content-left-head-2'>11th March - 22nd March</span>
+    <span className='modal1-content-left-head-2'>10th-11th Feb 2024</span>
   </div>
   <div className='modal1-content-left-mid'>
     <img src={casestudy} alt='sdfd' className='modal1-content-left-mid-img'>
@@ -84,7 +84,7 @@ export default function Casestudy({passfunction}) {
     <span>Summit</span>
     </div>
     <div className='modal1-logo-content-date'>
-    17th - 19th Feb 2024
+    10th-11th Feb 2024
     </div>
   </div>
   </div>

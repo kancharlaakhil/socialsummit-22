@@ -49,6 +49,7 @@ import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import StreeImg from "./assets/stree.png";
+import Heritage from "./assets/Heritage.png"
 
 const PartnerWeb = () => {
   return (
@@ -85,19 +86,109 @@ const PartnerWeb = () => {
         />
       </div> */}
 
-      <div className="sponsors">
-        <h1 className="heading">SPONSORS</h1>
-        <div className="logo2">
+      {/* <div className="sponsors">
+        {/* <h1 className="heading">SPONSORS</h1>
+        <div className="sponsor-content">
+        <div className="logo2"> */}
+        {/* <Image
+            image={HeritagePartner}
+            title="Heritage Partner"
+            link="https://www.iitr-heritagefund.org/"
+          />
+          </div>
+          <div className="logo2">
         <Image
             image={HeritagePartner}
             title="Heritage Partner"
             link="https://www.iitr-heritagefund.org/"
           />
-           <Image
+          </div>
+          <div className="logo2">
+        <Image
+            image={HeritagePartner}
+            title="Heritage Partner"
+            link="https://www.iitr-heritagefund.org/"
+          /> */}
+          {/* </div>
+          <div className="logo2">
+        <Image
+            image={HeritagePartner}
+            title="Heritage Partner"
+            link="https://www.iitr-heritagefund.org/"
+          />
+          </div>
+          </div>
+          </div> */} 
+
+<div className="partners-sponsers">
+<h1 className="partners-sponsers-heading">Our Esteemed Sponsers</h1>
+
+<div className="partners-sponser-content">
+  <div className="partner-sponser-content-box-outer">
+  <div className="partner-sponser-content-box">
+    <div className="img">
+   
+    </div>
+  </div>
+  <span className="partner-sponser-content-box-heritage">iit roorkee heritage foundation</span>
+  </div>
+
+  <div className="partner-sponser-content-box-outer">
+  <div className="partner-sponser-content-box">
+  <div className="img">
+   
+   </div>
+  </div>
+  <span className="partner-sponser-content-box-heritage">iit roorkee heritage foundation</span>
+  </div>
+
+  <div className="partner-sponser-content-box-outer">
+  <div className="partner-sponser-content-box">
+  <div className="img">
+   
+   </div>
+  </div>
+  <span className="partner-sponser-content-box-heritage">iit roorkee heritage foundation</span>
+  </div>
+
+  <div className="partner-sponser-content-box-outer">
+  <div className="partner-sponser-content-box">
+  <div className="img">
+   
+   </div>
+  </div>
+  <span className="partner-sponser-content-box-heritage">iit roorkee heritage foundation</span>
+  </div>
+  
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+      </div>
+
+
+    );
+  };
+  
+  export default PartnerWeb;
+
+
+
+
+           {/* <Image
             image={StreeImg}
             title="NGO Partner"
             link="https://streesafety.com/"
-          />
+          /> */}
           {/* <Image
             image={GeeksForGeeks}
             title="Learning Partner"
@@ -264,22 +355,17 @@ const PartnerWeb = () => {
             title="Online Media Partner"
             link="https://www.paniit.org/"
           /> */}
-        </div>
-        <div className="logo3">
+        
+        {/* <div className="logo3"> */}
           {/* <Image image={amarujala} title="News Partner" link="" />
           <Image image={edtimes} title="Blog Partner" link="" />
           <Image image={collegeduniya} title="Online Media Partner" link="" /> */}
-        </div>
-        <div className="logo3 logo4">
+        
+        {/* <div className="logo3 logo4"> */}
           {/* <Image
             image={IndiaEducation}
             title="Online Media Partner"
             link="https://www.indiaeducation.net/"
           /> */}
-        </div>
-      </div>
-    </div>
-  );
-};
+        
 
-export default PartnerWeb;
