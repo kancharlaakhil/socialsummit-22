@@ -22,8 +22,8 @@
 /* padding-left: 30px;
      
 font-size: 1.5vw;
-
 letter-spacing: 0.005em; */
+
 
 /* .para{ */
   /* text-align: center; */
@@ -31,9 +31,16 @@ letter-spacing: 0.005em; */
   padding-left: 3px; */
    /*padding-right: 40px; */
 /* } */
+.read-or-hide{
+  color: blue;  
+ /* color: #444444; */
+cursor: pointer;
+}
+        
+
       .read-or-hide{
         color: blue;  
        /* color: #444444; */
       cursor: pointer;
       }
-      
+

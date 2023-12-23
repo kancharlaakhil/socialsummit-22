@@ -59,6 +59,9 @@ import img from './images/puskarbw.png';
 import imgc from './images/puskarcl.png';
 import { useState } from 'react';
 
+import {Link} from 'react-router-dom';
+
+
 
 function Speakers() {
   const [image,setimage]=useState(img);
@@ -86,7 +89,9 @@ function Speakers() {
     <div className="speakersbox">
       <div className="sbox1">
         <p className="scontent">Know Our Past Speakers</p>
-        <button className="sbutton">View All</button>
+
+        <Link to="../../speakers"><button className="sbutton">View All</button></Link>
+
       </div>
       <div className="sbox2">
         <div className="spimg1">

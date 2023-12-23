@@ -2,7 +2,7 @@ import React from "react";
 
 import "./PartnersMain.css";
 import Image from "./ImageComponent";
-import UNESCO from "./assets/UNESCO.png";
+import UNESCO from "./assets/Group 119.png";
 import Recode from "./assets/Recode.png";
 import HeritagePartner from "./assets/Heritagepartner.png";
 import GeeksForGeeks from "./assets/GeeksForGeeks.png";
@@ -49,19 +49,35 @@ import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import StreeImg from "./assets/stree.png";
+import background from './assets/background.png';
+import nsslogo from './assets/Group 92.png';
+import {Link} from 'react-router-dom';
+
 import Heritage from "./assets/Heritage.png"
+
 
 const PartnerWeb = () => {
   return (
     <div className="partnerPage">
       <div className="patronage">
-        <h1 className="heading">UNDER THE PATRONAGE OF</h1>
-        <Image
-          image={UNESCO}
-          width="30rem"
-          height="15rem"
-          link="https://en.unesco.org/"
-        />
+        <div className="partcontent">
+          <div className="nssl">
+            <img src={nsslogo} alt="" className="nssin" />
+            <div className="headcontent">
+              <p className="headingtext">National</p>
+              <p className="headingtext">Social</p>
+              <p className="headingtext">Summit</p>
+              <p className="datelogo">10th - 11th Feb 2024</p>
+            </div>
+          </div>
+          <div className="downcontent">
+            Social Summit is under the patronage of UNESCO and INCCU. We are proud to receive such a honor.Social Summit is under the patronage of UNESCO and INCCU. We are proud to receive such a honor.
+          </div>
+        </div>
+        <img src={background} alt="" className="backpart"/>
+        <a href="https://en.unesco.org/" className="rightimage" target="blank">
+          <img src={UNESCO} alt="" className="rightimg"/>
+        </a>
       </div>
       {/* <div className="patronage">
         <h1 className="heading">TITLE SPONSOR</h1>

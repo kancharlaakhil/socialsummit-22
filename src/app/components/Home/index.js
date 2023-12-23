@@ -17,6 +17,7 @@ const HomeMain = () => {
   // Can be used only within functional components
   return (
     <div className="homeContainer">
+
         {/* <Hometop width={width} /> */}
       <div className="th-home-top-container">
 
@@ -24,6 +25,7 @@ const HomeMain = () => {
         <HomeContent width={width}/>
         <Footfall width={width} />
           
+
         <PastSpeakers width={width} />
         <Events width={width} />
 

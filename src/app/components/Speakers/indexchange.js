@@ -19,8 +19,7 @@ function Speakers() {
       post: "",
       descp:
         "Devendra Jhajharia was born in 1981 and hails from the churu district of rajasthan. He is an Indian Paralympic javelin thrower competing in F46 events. He is the first Indian Paralympics player to win two gold medals at the Paralympics. He won his first gold in the javelin throw at the 2004 Summer Paralympics in Athens, becoming the second gold medalist at the Paralympics for his country. At the 2016 Summer Paralympics in Rio de Janeiro, he won a second gold medal in the same event, bettering his previous record.He became India's most decorated Paralympic player by winning his third medal, a silver at the 2020 Summer Paralympics at Tokyo.He delivered an astonishing lecture on 'A journey beyond differences', to inspire youths out of his journey, during national social summit 2022 ",
-        
-       
+
       image: Devendra,
     },
     {

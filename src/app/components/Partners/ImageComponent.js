@@ -21,6 +21,7 @@ function ImageComponent(props) {
             width: `${width}`,
             height: `${height}`,
             backgroundImage: `url(${props.image})`,
+            zIndex:"10",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -34,3 +35,4 @@ function ImageComponent(props) {
 }
 
 export default ImageComponent;
+

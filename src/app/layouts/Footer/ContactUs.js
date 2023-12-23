@@ -3,7 +3,9 @@ import "./ContactUs.css";
 import im1 from "./images/logo2.svg";
 import im2 from "./images/Vector.png";
 import im3 from "./images/Instagram.png";
+
 import im4 from "./images/Linked-in.png";
+
 import im5 from "./images/Twitter.png";
 import im6 from "./images/Gmail.png";
 function ContactUs() {

@@ -43,6 +43,9 @@
    width:30%; 
    padding-left: 70px;
    position: relative;
+
+   padding-right: 30px;
+
    /* height: max-content; */
    
    /* width:auto; */
@@ -103,8 +106,10 @@
   height: 40%;
 }
 .imgdot1{
-  margin-left: 5vw;
+  margin-left: 3.5vw;
   margin-right: 1vw;
+  position: relative;
+
 }
 .imgdot2{
   margin-right: 5vw;
