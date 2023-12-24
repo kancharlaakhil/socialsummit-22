@@ -1,4 +1,12 @@
-.testimonials {
+shadow-effect {
+  background: #000;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+.testimonials{
   margin-top: -45vh;
   font-family: 'Mulish', sans-serif; 
   padding-bottom: 60px;
@@ -9,6 +17,7 @@
   color: #0886bb;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 6%;
 }
 
 .background {
@@ -26,11 +35,14 @@
 
 .img-circle {
   vertical-align: middle;
-  max-width: 320px;
+  max-width: 120px;
+  /* min-height: 90px; */
+  transform-style: preserve-3d;
+  margin: -16% auto 0;
 }
 
-.inv {
-  max-height: 26px;
+.inv{
+  max-height: 56px;
 }
 
 #customer-testimonoals {
@@ -50,6 +62,7 @@
   color: #fff;
   font-family: 'Lato', sans-serif; 
   box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12), 0px 5px 7px rgba(0, 0, 0, 0.5);
+  
 }
 
 .test-name {

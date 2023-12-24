@@ -43,13 +43,14 @@ class Header extends Component {
 
     return (
     <>
+
       <div className="pe-3 ps-3 gradient" style={{fontFamily:"Mulish" }}>
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
-              <span className="th-header-new th-nss" style={{width:"12%",marginTop:10}}>National Social Summit</span>
-              <div className="summit_date" style={{marginTop:-5,marginLeft:7}}> 10th-11th Feb 2024</div>
+              <span className="th-header-new th-nss" style={{width:"17%",marginTop:8}}>National Social Summit</span>
+              <div className="summit_date" style={{marginTop:-3,marginLeft:7}}> 10th-11th Feb 2024</div>
             </Link>
             <div style={{ position: "absolute", marginLeft: "25vw" }}
             className="navbar1  d-flex align-items-center pl-5"  >
@@ -74,6 +75,11 @@ class Header extends Component {
                   Events
                 </p>
               </NavLink>
+              <NavLink to="/events">
+                <p className="mb-0 navmar th-nss" id="th-register-btn">
+                  Register
+                </p>
+              </NavLink>
               
               {
                 auth.isLoggedIn ? 
@@ -90,7 +96,7 @@ class Header extends Component {
               to="/login"
               
             >
-              <button type="button" className="b1234">Login</button>
+              <button type="button" className=" th-login-btn"><i className="fa-solid fa-user"></i><span>Login</span></button>
               {/* <p className="mb-0 th-nss" activeClassName="active">
                 
               </p> */}

@@ -3,9 +3,12 @@ import Image1 from "../../assets/images/nss-logo.png";
 import Image2 from "../../assets/images/coming-soon.png";
 import Image3 from "../../assets/images/bg-signup.png";
 import "../../assets/css/ComingSoon.css";
+import Header from "../../layouts/header/index";
 
 export const ComingSoon = () => {
   return (
+    <>
+    <Header/>
     <div className="th-comingsoon">
          <div className="row h-75" style={{ paddingTop: "8rem" }}>
         
@@ -27,6 +30,7 @@ export const ComingSoon = () => {
       
         
     </div>
+    </>
 
   );
 };

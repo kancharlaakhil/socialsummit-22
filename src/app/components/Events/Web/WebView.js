@@ -6,6 +6,8 @@ import "./css/index.css";
 
 function WebView() {
   return (
+    <>
+    <Header/>
     <div className="events-container">
         <div className=" row events-header"
             style={{
@@ -29,6 +31,7 @@ function WebView() {
             </div>
         </div>
     </div>
+    </>
   );
 }
 

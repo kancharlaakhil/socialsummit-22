@@ -8,9 +8,12 @@ import Facebook from './images/facebook.svg';
 import Instagram from './images/instagram.svg';
 import Linkedin from './images/linkedin.svg';
 import Twitter from './images/twitter.svg'
+import Header from "../../layouts/header/index";
 
 function index() {
   return (
+    <>
+    <Header/>
     <div className="mainContact">
       <div className="headings">
         <h1>Contact Us</h1>
@@ -175,6 +178,7 @@ function index() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

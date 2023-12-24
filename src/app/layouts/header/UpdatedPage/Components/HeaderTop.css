@@ -1,6 +1,9 @@
 .header-top{
     position:relative;
 }
+.header-top{
+    position:relative;
+}
 .header-img-wrapper{
     display: grid;
     grid-template-columns: 25vw 17vw 21vw 14vw ;

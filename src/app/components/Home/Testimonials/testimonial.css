@@ -1,19 +1,9 @@
 
 .item {
     display: flex;
-    width: 70vw;
     flex-direction: column;
-    padding: 10px 5px !important;
-    transform: rotateZ(-270deg);
-    font-family: 'Lato';
-    /* height: auto; */
-  }
-  
-  .item.active.center {
-    opacity: 1;
-    z-index: 10000; /* Set full opacity for the center item */
-  }
-  
+    padding: 50px 5px !important;
+}
 
 .testimonial-name p{
     color: white;
@@ -27,11 +17,6 @@
 .test-name{
     color: #22495A;
     font-weight: 400;
-    padding: 20px 30px;
-    background-color: white;
-  font-family: ""Mulish"";
-  
-    font-size: 20px;
 
 }
 .test-post{

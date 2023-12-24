@@ -126,7 +126,7 @@ border-radius: 2px;
     }
     .th-nss,
     .th-clg-name {
-      font-size: 12px;
+      font-size: 17px;
     }
   }
   .navbar1{
@@ -192,7 +192,7 @@ border-radius: 2px;
     height: 100%;
     
     
-    background: orangered;
+    background: #101010;;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -236,7 +236,7 @@ border-radius: 2px;
 
   .th-sidebar-arrow,
   .th-sidebar-icon {
-    color: #444444;
+    color: white;
     opacity: 0.8;
   }
 
@@ -273,3 +273,70 @@ border-radius: 2px;
     text-decoration-color:rgb(8, 208, 248);;
    
   } 
+
+
+  #th-register-btn{
+    display: inline-flex;
+    padding: 7px 19px 7px 19px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+background: linear-gradient(180deg, #03506D 0%, #1A7090 100%);
+box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.15);
+/* position: relative;
+right: -1vw; */
+
+  }
+
+  .th-login-btn{
+    width:110px;
+    padding: 7px 16px;
+    border-radius: 24px;
+box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.15);
+background:transparent;
+border: 2px solid white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+  }
+
+  .th-login-btn i{
+    width: 26.4px;
+height: 26.871px;
+color: white;
+border: 2.2px solid white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items:last baseline;
+font-size: 19px;
+  }
+  .th-login-btn span{
+    color: #DFEFF5;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
+  /* @media screen and (min-width:1500px){
+    #th-register-btn{
+      right:-200px;
+    }
+    
+  }
+@media screen and (min-width:1400px){
+  #th-register-btn{
+    right:-100px;
+  }
+  
+}
+@media screen and (min-width:1300px){
+  #th-register-btn{
+    right:-10px;
+  }
+  
+} */

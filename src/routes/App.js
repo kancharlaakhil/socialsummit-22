@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
+import React, { Suspense, useEffect,useState } from "react";
+import { Switch, Route, BrowserRouter, Redirect,} from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
 import Footer from "../app/layouts/Footer/ContactUs";
@@ -13,6 +13,8 @@ import CAList from "../app/admin/CAList";
 import { connect } from "react-redux";
 import GetAllRegistration from "../app/admin/GetAllRegistration";
 import HeaderTop from "../app/layouts/header/UpdatedPage/Components/HeaderTop";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+// import { useLocation } from "react-router-dom";
 
 const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
@@ -74,10 +76,21 @@ const SpecificEvents = React.lazy(() =>
 );
 
 const App = ({ user }) => {
+
+// console.log(window.location.pathname)
+// var [userLocation,setUserLocation]  =  useState("/");
+
+// useEffect(()=>{
+//   setUserLocation(window.location.pathname)
+//   console.log(window.location.pathname)
+
+// });
+
+
   return (
     <BrowserRouter>
-      {/* <HeaderTop/> */}
-      <Header />
+      {/* <HeaderTop/>
+      <Header /> */}
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path={["/home", "/"]} component={Home} />
@@ -181,8 +194,11 @@ const App = ({ user }) => {
       </Suspense>
       <Footer />
     </BrowserRouter>
+    // <BrowserRouter>
+    // <Routing/>
+    // </BrowserRouter>
   );
-};
+}
 
 const mapStateToProps = (state) => {
   return {
@@ -193,4 +209,5 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {};
 };
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);

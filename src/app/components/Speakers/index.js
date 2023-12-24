@@ -132,6 +132,9 @@ import img1mob from './assets/Group 701.png';
 
 import background from './assets/background.png';
 import mark from './assets/mark.png';
+
+import Header from "../../layouts/header/index"
+
 import mark1 from './assets/mark1.png';
 import pushkar from './assets/pushkar.png';
 import kiran from './assets/kiranbedi.png';
@@ -255,6 +258,8 @@ function Speakers() {
 
   
   return (
+    <>
+    <Header/>
     <div className="Speaker-Wrapper">
         <img src={background} alt="" className="backimgspeaker" />
     <div className="speakersPage">
@@ -277,6 +282,7 @@ function Speakers() {
       })}
     </div>
     </div>
+    </>
   );
 }
 

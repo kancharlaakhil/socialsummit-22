@@ -10,22 +10,27 @@ import "./css/home.css";
 import HeaderTop from '../../layouts/header/UpdatedPage/Components/HeaderTop'
 import Background from "./Background";
 import HomeContent from "../../layouts/header/UpdatedPage/Components/HomeContent";
+import Header from "../../layouts/header/index";
 const HomeMain = () => {
   let [width] = useWidthAndHeight();
   // returns the screen/window width.
   // Very useful tacking screen specific tasks within react component.
   // Can be used only within functional components
   return (
+    <>
+    <HeaderTop/>
+    <Header />
+
     <div className="homeContainer">
 
         {/* <Hometop width={width} /> */}
       <div className="th-home-top-container">
 
 
+
         <HomeContent width={width}/>
         <Footfall width={width} />
           
-
         <PastSpeakers width={width} />
         <Events width={width} />
 
@@ -33,6 +38,7 @@ const HomeMain = () => {
         <Testimonials width={width} />
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "../../layouts/header/index";
 
 function OurTeam() {
   return (
     <div>
+      <Header/>
       <h1>Our Team</h1>
       <p>
         NSS IIT Roorkee is taking a step forward to dedicate the next edition of

@@ -49,6 +49,9 @@ import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import StreeImg from "./assets/stree.png";
+
+import Header from "../../layouts/header/index";
+
 import background from './assets/background.png';
 import nsslogo from './assets/Group 92.png';
 import {Link} from 'react-router-dom';
@@ -56,8 +59,11 @@ import {Link} from 'react-router-dom';
 import Heritage from "./assets/Heritage.png"
 
 
+
 const PartnerWeb = () => {
   return (
+    <>
+    <Header/>
     <div className="partnerPage">
       <div className="patronage">
         <div className="partcontent">
@@ -383,5 +389,12 @@ const PartnerWeb = () => {
             title="Online Media Partner"
             link="https://www.indiaeducation.net/"
           /> */}
-        
+
+        </div>
+      </div>
+    </div>
+    </>
+  );
+};
+
 

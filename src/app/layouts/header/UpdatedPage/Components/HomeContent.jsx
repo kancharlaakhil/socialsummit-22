@@ -30,8 +30,9 @@ export default function Content() {
           </p>
 
           <div className="header-bottom-button">
-            <button id="btn-1">Register</button>
-            <button>Payment</button>
+            <a href="https://socialsummit.iitr.ac.in/signup"  target="_blank" ><button id="btn-1">Register</button></a>
+            
+            {/* <button>Payment</button> */}
           </div>
         </div>
       </div>

@@ -5,8 +5,11 @@ import EventContent from "./EventContent";
 
 import './css/index.css'
 
+
 const MobView = () => {
     return(
+        <>
+        <Header/>
         <div className="mob-container">
             <div className="row mob-header"
                 style={{
@@ -24,6 +27,7 @@ const MobView = () => {
             </div>
 
         </div>
+        </>
     )
 }
 

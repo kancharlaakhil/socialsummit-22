@@ -50,9 +50,12 @@ import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import PayPhi from "./assets/PayPhi.png";
 import StreeImg from "./assets/stree.png";
+import Header from "../../layouts/header/index";
 
 const PartnerMob = () => {
   return (
+    <>
+    <Header/>
     <div className="partnerPageMob">
       <div className="patronageMob">
         <h1 className="headingMob">UNDER THE PATRONAGE OF</h1>
@@ -282,6 +285,7 @@ const PartnerMob = () => {
       </div>
     </div>
     </div>
+    </>
   );
 };
 
