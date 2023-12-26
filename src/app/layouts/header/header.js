@@ -49,8 +49,8 @@ class Header extends Component {
           <div className="d-flex align-items-center">
             <Link to="/">
               <img src={Logo} alt="logo" className="th-header-logo" />
-              <span className="th-header-new th-nss" style={{width:"17%",marginTop:8}}>National Social Summit</span>
-              <div className="summit_date" style={{marginTop:-3,marginLeft:7}}> 10th-11th Feb 2024</div>
+              <span className="th-header-new th-nss" style={{width:"12%",marginTop:8}}>National Social Summit</span>
+              <div className="summit_date" style={{marginTop:-4,marginLeft:7}}> 10th-11th Feb 2024</div>
             </Link>
             <div style={{ position: "absolute", marginLeft: "25vw" }}
             className="navbar1  d-flex align-items-center pl-5"  >
@@ -75,11 +75,11 @@ class Header extends Component {
                   Events
                 </p>
               </NavLink>
-              <NavLink to="/events">
+              {/* <NavLink to="/events">
                 <p className="mb-0 navmar th-nss" id="th-register-btn">
                   Register
                 </p>
-              </NavLink>
+              </NavLink> */}
               
               {
                 auth.isLoggedIn ? 

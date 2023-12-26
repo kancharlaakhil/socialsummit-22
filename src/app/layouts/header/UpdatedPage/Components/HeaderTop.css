@@ -4,12 +4,13 @@
 .header-top{
     position:relative;
 }
-.header-img-wrapper{
-    display: grid;
-    grid-template-columns: 25vw 17vw 21vw 14vw ;
+.header-img-wrapper img{
+    /* display: grid;
+    grid-template-columns: 25vw 17vw 21vw 13.8vw ;
     grid-template-rows:23vh 2vh 14vh 14vh 25vh ;
-    grid-gap: 0px;
- 
+    grid-gap: 0px; */
+ height: 100vh;
+ width:98.85vw;
 }
 
 .ss-header-img1{

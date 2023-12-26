@@ -1,14 +1,23 @@
-
 .item {
     display: flex;
-    flex-direction: column;
-    padding: 50px 5px !important;
+    width:70vw;
+    flex-direction: row;
+    padding: 10px 5px !important;
+    /* transform:rotateZ(-270deg); */
+    height: auto;
 }
+
+
+  .item.active.center {
+    opacity: 1;
+    z-index: 10000; /* Set full opacity for the center item */
+  }
+
 
 .testimonial-name p{
     color: white;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6rem;
   font-family: ""Mulish"";
 
@@ -17,6 +26,11 @@
 .test-name{
     color: #22495A;
     font-weight: 400;
+    padding: 20px 30px;
+    background-color: white;
+  font-family: ""Mulish"";
+    
+    font-size: 20px;
 
 }
 .test-post{

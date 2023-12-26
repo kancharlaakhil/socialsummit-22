@@ -1,0 +1,413 @@
+
+.Contact {
+    height: 60vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #041723;
+    padding: 5vh 2vw 5vh 2vw;
+}
+
+.footerCol1 {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    height: 50vh;
+    align-items: center;
+    padding: 3%;
+    gap: 50px;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    height: 20%;
+    padding-right: 8%;
+
+}
+
+.logoImg {
+    width: 40%;
+    height: 100%;
+    padding: 2%;
+
+}
+
+.logoContaint {
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+
+}
+
+.NSS {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 19.381px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 99%;
+
+
+}
+
+.date-box {
+    color: #8FEFE9;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footerText {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 94%;
+    height: 35%;
+}
+
+.contactusBtn {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 94%;
+    height: 15%;
+}
+
+
+.footerText {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 94%;
+    height: 35%;
+}
+
+.contactusBtn {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 94%;
+    height: 15%;
+}
+
+.footerCol2 {
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    height: 50vh;
+    gap: 10px;
+    padding: 6vh 6vw 6vh 6vw;
+}
+
+.col1 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 23vw;
+    height: 38vh;
+}
+
+
+.footerCol3 {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 3vw 10vh 3vw;
+    color: #FFF;
+}
+
+.icon-box {
+    width: 24vw;
+    height: 30vh;
+    gap: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 10%;
+    height: 10%;
+}
+
+.fabIcon {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1180px) {
+    .Contact {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .logoContaint {
+        gap: 0.5vh;
+        margin-left: 1vw;
+    }
+
+    .NSS {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 95%;
+    }
+
+    .logo {
+        width: 72.002px;
+        height: 83.865px;
+    }
+
+    .date-box {
+        font-size: 10px;
+
+        font-weight: 600;
+
+    }
+
+    .footerText {
+        font-size: 14px;
+        font-weight: 450;
+    }
+
+    .contactusBtn {
+        font-size: 20px;
+        width: 94%;
+        height: 12%;
+    }
+
+    .footerCol3 {
+        padding: 10vh 0vw 10vh 0vw;
+    }
+
+    .icon-box {
+        width: 30vw;
+
+    }
+
+    .fabIcon {
+        width: 80%;
+        height: 85%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .logoContaint {
+        gap: 0.5vh;
+        margin-left: 2vw;
+    }
+
+    .NSS {
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 93%;
+
+
+    }
+
+    .logo {
+        width: 60px;
+        height: 70px;
+    }
+
+    .date-box {
+        font-size: 8px;
+        font-weight: 500;
+
+    }
+
+    .footerText {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .col1 {
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 350;
+    }
+
+    .footerCol2 {
+        padding: 6vh 0vw 6vh 0vw;
+    }
+
+}
+
+@media (max-width:750) {
+    .footerCol1 {
+        width: 35vw;
+    }
+
+    .footerCol2 {
+        width: 35vw;
+    }
+
+    .footerCol3 {
+        width: 26vw;
+    }
+
+    .logo {
+        width: 50px;
+        height: 60px;
+    }
+
+    .NSS {
+        font-size: 14px;
+        font-weight: 350;
+        line-height: 80%;
+    }
+
+    .logoContaint {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/* @media (max-width:700px) {
+    .Contact {
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #041723;
+        padding: 5vh 2vw 5vh 2vw;
+    }
+
+    .footerCol1 {
+        width: 96vw;
+        height: 20vh;
+        padding: 3%;
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerCol2 {
+        width: 96vw;
+        height: 40vh;
+        gap: 10px;
+        padding: 6vh 6vw 6vh 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerCol3 {
+        width: 100vw;
+        height: 20vh;
+        padding: 3vh 3vw 6vh 3vw;
+    }
+
+    .footerLogo {
+        display: flex;
+        width: 46%;
+        height: 94%;
+    }
+
+    .footerText {
+        width: 50%;
+        height: 94%;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .contactusBtn {
+        display: none;
+    }
+
+    .logoContaint {
+        width: 50%;
+        height: 96%;
+        padding: 2%;
+
+    }
+
+    .logoImg {
+        width: 46%;
+        height: 96%;
+    }
+    .col1{
+        font-size: 16px;
+    }
+    .col2{
+        font-size: 16px;
+    }
+    .icon {
+        width: 10%;
+        height: 10%;
+    }
+    
+    .fabIcon {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:450px) {
+    .Contact {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #041723;
+        padding: 2.5vh 2vw 2.5vh 2vw;
+    }
+
+    .footerCol1 {
+        width: 96vw;
+        height: 20vh;
+        padding: 3%;
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerCol2 {
+        width: 96vw;
+        height: 35vh;
+        gap: 10px;
+        padding: 6vh 6vw 6vh 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerCol3 {
+        width: 100vw;
+        height: 10vh;
+        padding: 0vh 3vw 5vh 3vw;
+    }
+} */

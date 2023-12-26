@@ -1,11 +1,11 @@
-shadow-effect {
+/* shadow-effect {
   background: #000;
   padding: 20px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid #ECECEC;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
-}
+} */
 .testimonials{
   margin-top: -45vh;
   font-family: 'Mulish', sans-serif; 
@@ -33,20 +33,16 @@ shadow-effect {
   font-weight: 300;
 }
 
-.img-circle {
-  vertical-align: middle;
-  max-width: 120px;
-  /* min-height: 90px; */
-  transform-style: preserve-3d;
-  margin: -16% auto 0;
-}
+
 
 .inv{
-  max-height: 56px;
+  max-height: 40px;
 }
 
 #customer-testimonoals {
   margin-top: 2%;
+  margin-left: -16%;
+  width: 108.8vw;
 }
 
 .testimonial-name {
@@ -83,12 +79,13 @@ shadow-effect {
   margin-bottom: 40px;
   opacity: 0.15;
   transform: scale3d(0.8, 0.8, 1);
+  width: 70vw;
   transition: all 0.3s ease-in-out;
 }
 
 #customer-testimonoals .owl-item.active.center .item {
   opacity: 1;
-  margin-left: -20vw;
+  /* margin-left: -20vw; */
   transform: scale3d(1.0, 1.0, 1);
 }
 

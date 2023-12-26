@@ -36,7 +36,7 @@
 .downcontent{
   margin-top: 1.5rem;
   color: #FFF;
-  font-family: Mulish;
+  font-family: ""Mulish"";
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
@@ -57,7 +57,7 @@
   margin-top: 2px;
   padding: 0px;
   color: #FFF;
-  font-family: Mulish;
+  font-family: ""Mulish"";
   font-size: 38.819px;
   font-style: normal;
   font-weight: 600;
@@ -67,7 +67,7 @@
 .datelogo{
   margin-top: 0.5rem;
   color: #8FEFE9;
-  font-family: Mulish;
+  font-family: ""Mulish"";
   font-size: 14.557px;
   font-style: normal;
   font-weight: 500;
@@ -82,44 +82,25 @@
 }
 .associate {
   width: 40%;
-  margin: auto;
+  /* margin: auto; */
 }
-/* .sponsors{
-  display: flex;
-  flex-direction: column;
-}
-.sponsor-content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-} */
-
-/* .sponsor-content .logo2 {
-  width: 20%;
-}
-
-.logo2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* updating css*/
 
 .partners-sponsers{
-width: 100%;
+width: 98.85vw;
 background: url(./assets/sponser-back.png);
 background-position: center;
 background-size: cover;
 display: flex;
+padding-top: 10vh;
+padding-bottom: 10vh;
 flex-direction: column;
-box-sizing: border-box;
-padding-block: 7rem;
+filter: brightness(90%);
+  box-sizing: border-box;
+/* padding-block: 7rem; */
 background-color: rgba(0, 0, 0, 0.5);
-row-gap: 3rem;
+/* row-gap: 3rem; */
 }
+
 .partners-sponsers-heading{
   text-align: center;
   color: white;
@@ -158,7 +139,7 @@ align-content: center;
 .partner-sponser-content-box-outer{
 display: flex;
 flex-direction: column;
-row-gap: 1.75rem;
+/* row-gap: 1.75rem; */
 width: 18%;
 
 }
@@ -173,25 +154,6 @@ text-align: center;
 font-family: 'Mulish', sans-serif;
 
 }
-/* .sponsors .logo3 {
-  width: 80%;
-  margin: auto;
-}
-
-.onlinePartner .logo3 {
-  width: 80%;
-  margin: auto;
-}
-
-.logo3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.logo4 {
-  justify-content: space-around;
-} */
 
 .heading {
   font-family: "Inter";
