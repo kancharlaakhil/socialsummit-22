@@ -5,84 +5,84 @@ import "./css/EventLinks.css";
 
 
 function EventLinks() {
-const [style, setStyle]= useState("Homes")
-const{scroll, setScroll} = useContext(DataContext)
+// const [style, setStyle]= useState("Homes")
+// const{scroll, setScroll} = useContext(DataContext)
 
-function getScrollPercent() {
-  var h = document.documentElement,
-    b = document.body,
-    st = "scrollTop",
-    sh = "scrollHeight";
+// function getScrollPercent() {
+//   var h = document.documentElement,
+//     b = document.body,
+//     st = "scrollTop",
+//     sh = "scrollHeight";
 
-  var scrollPercent = Math.round(
-    ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
-  );
+//   var scrollPercent = Math.round(
+//     ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
+//   );
 
-  setScroll(isNaN(scrollPercent) ? "" : scrollPercent);
-}
+//   setScroll(isNaN(scrollPercent) ? "" : scrollPercent);
+// }
 
-React.useEffect(() => {
-  window.addEventListener("scroll", getScrollPercent);
+// React.useEffect(() => {
+//   window.addEventListener("scroll", getScrollPercent);
 
-  return () => {
-    window.removeEventListener("scroll", getScrollPercent);
-  };
-}, []);
-getScrollPercent();
-useEffect(()=>{
-  if(scroll>=0 && scroll<10){
-    setStyle("Homes")
+//   return () => {
+//     window.removeEventListener("scroll", getScrollPercent);
+//   };
+// }, []);
+// getScrollPercent();
+// useEffect(()=>{
+//   if(scroll>=0 && scroll<10){
+//     setStyle("Homes")
   
 
-}
-  if(scroll>=10 && scroll<18){
-    setStyle("MUN")
+// }
+//   if(scroll>=10 && scroll<18){
+//     setStyle("MUN")
   
 
-}
-if(scroll>=18 && scroll<28){
-  setStyle("Sociothon")
+// }
+// if(scroll>=18 && scroll<28){
+//   setStyle("Sociothon")
 
-}
-if(scroll>=28 && scroll<37){
-  setStyle("policyCase")
+// }
+// if(scroll>=28 && scroll<37){
+//   setStyle("policyCase")
 
-}
-if(scroll>=37 && scroll<46){
-  setStyle("Innovision")
+// }
+// if(scroll>=37 && scroll<46){
+//   setStyle("Innovision")
 
-}
-if(scroll>=46 && scroll<55){
-  setStyle("caseStudy")
-
-
-}
-if(scroll>=55 && scroll<64){
-  setStyle("Workshop")
+// }
+// if(scroll>=46 && scroll<55){
+//   setStyle("caseStudy")
 
 
-}
-if(scroll>=64 && scroll<74){
-  setStyle("Abhi")
+// }
+// if(scroll>=55 && scroll<64){
+//   setStyle("Workshop")
 
 
-}
-if(scroll>=74 && scroll<84){
-  setStyle("Turncoat")
+// }
+// if(scroll>=64 && scroll<74){
+//   setStyle("Abhi")
 
 
-}
-if(scroll>=84 && scroll<93){
-  setStyle("Thunt")
+// }
+// if(scroll>=74 && scroll<84){
+//   setStyle("Turncoat")
 
 
-}
-if(scroll>=93){
-  setStyle("Presummit")
+// }
+// if(scroll>=84 && scroll<93){
+//   setStyle("Thunt")
 
 
-}
-})
+// }
+// if(scroll>=93){
+//   setStyle("Presummit")
+
+
+// }
+// })
 // function scrollYByVh() {
 //   const clientHeight = document.body.clientHeight;
 //   window.scrollBy(0, clientHeight);
@@ -92,7 +92,7 @@ if(scroll>=93){
 // window.scrollBy(0, 100);
   return (
     <>
-      <div className="eventMain">
+      {/* <div className="eventMain">
         <div className="e-left">
 
           <a href="#1" 
@@ -191,7 +191,7 @@ if(scroll>=93){
 
       {/* <div className="mobileView">
         <DropDown></DropDown>
-      </div> */}
+      </div> */} 
     </>
   );
 }

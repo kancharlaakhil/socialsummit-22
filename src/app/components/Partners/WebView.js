@@ -49,6 +49,7 @@ import earthhouse from "./assets/earthhouse.jpg";
 import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import StreeImg from "./assets/stree.png";
+import Heritage from "./assets/Heritage.png"
 
 import Header from "../../layouts/header/index";
 
@@ -390,11 +391,13 @@ const PartnerWeb = () => {
             link="https://www.indiaeducation.net/"
           /> */}
 
+
         </div>
       </div>
     </div>
     </>
   );
 };
+
 
 
