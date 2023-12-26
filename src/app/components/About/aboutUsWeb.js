@@ -12,7 +12,7 @@ function AboutUsWeb() {
     const [hover,setHover]=useState(false)
     return (
         <div className='About-container'>
-            <div className="ourstory">
+            {/* <div className="ourstory">
 
                 <img src={aboutimgcover} className='aboutbg1' />
 
@@ -28,7 +28,7 @@ function AboutUsWeb() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="ourstory2">
                 <div className="aboutbg2">
                     <img src={aboutbg2} className='aboutbg2Img' />
