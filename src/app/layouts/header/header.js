@@ -48,7 +48,7 @@ class Header extends Component {
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Link to="/">
-              <img src={Logo} alt="logo" className="th-header-logo" />
+              <img src={Logo} alt="logo" className="th-header-logo th-new" />
               <span className="th-header-new th-nss" style={{width:"12%",marginTop:8}}>National Social Summit</span>
               <div className="summit_date" style={{marginTop:-4,marginLeft:7}}> 10th-11th Feb 2024</div>
             </Link>

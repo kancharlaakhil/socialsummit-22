@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { X } from "react-feather";
 import { connect } from 'react-redux'
+import Logo from "../header/UpdatedPage/Image/logo.png";
 
 class SideDrawerMob extends Component {
   render() {
@@ -21,10 +22,22 @@ class SideDrawerMob extends Component {
                 size={28}
                 onClick={this.props.clicked}
                 className="th-theme-color mt-1 ml-2 float-right"
-                style={{ cursor: "pointer", color: "#FFFFFF" }}
+                style={{ cursor: "pointer", color: "white" }}
               />
             </div>
             <div>
+            <Link to="/">
+              <div style={{margin:"50px 0px", display:"flex",justifyContent:"center", alignItems:"center", }}>
+              <div><img src={Logo} alt="logo" className="th-header-logo" style={{marginRight:"20px"}}/></div>
+              <div>
+                <div style={{color:"white", fontSize:"22px", margin:"0px"}}>National</div>
+                <div style={{color:"white",fontSize:"22px", margin:"0px"}}>Social</div>
+                <div style={{color:"white", fontSize:"22px", margin:"0px"}}>Summit</div>
+                <div style={{color:"#8FEFE9"}}>10th-11th Feb 2024</div>
+                </div>
+                </div>
+            </Link>
+
               <Link to="/home" onClick={this.props.clicked} className="th-link">
                 <p className="th-sidebar-list-item mb-3">Home</p>
               </Link>
@@ -65,20 +78,22 @@ class SideDrawerMob extends Component {
               </Link>
  
               <div className="th-sidebar-list-item1">
-                <Link
-                  to="/login"
-                  onClick={this.props.clicked}
-                  className="th-link"
-                >
-                  <button type="button" className="button-mob">Log In</button>
-                </Link>
-                <Link
+              <Link
                   to="/signup"
                   onClick={this.props.clicked}
                   className="th-link ms-5"
                 >
                  <button type="button" className="button-mob">Register</button>
                 </Link>
+
+                <Link
+                  to="/login"
+                  onClick={this.props.clicked}
+                  className="th-link"
+                >
+                  <button type="button" className="button-mob th-login-btn"><i className="fa-solid fa-user"></i> Login</button>
+                </Link>
+                
               </div>
               
               
