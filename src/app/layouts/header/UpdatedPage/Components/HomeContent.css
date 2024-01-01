@@ -98,3 +98,72 @@
     background: linear-gradient(94deg, #5AB8BD 22.96%, #35A89B 98.15%);
     box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.25);
 }
+.home-logo-display{
+    font-weight: 600px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+@media only screen and (max-width:900px){
+    .home-logo-display{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:1090px){
+    .header-bottom-heading{
+        font-size: 55px;
+    }
+}
+@media only screen and (max-width:930px){
+    .header-bottom-heading{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:940px){
+    .header-bottom-heading{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:760px){
+    .header-bottom{
+        padding: 5vh 12vw;
+    }
+}
+@media only screen and (max-width:720px){
+    .header-bottom-heading{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .header-bottom-heading{
+        font-size: 35px;
+    }
+    .header-bottom-para1{
+        font-size: 22px;
+    }
+    .header-bottom-line2{
+        font-size:17px;
+    }
+    .header-bottom-para3{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:560px){
+    .header-bottom-heading{
+        font-size: 30px;
+    }
+    .header-bottom-line2{
+        font-size: 18px;
+    }
+    .header-bottom-para3{
+        font-size:14px
+    }
+    .header-bottom-para3{
+        font-size: 16px;
+    }
+}

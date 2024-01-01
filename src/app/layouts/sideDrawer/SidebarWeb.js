@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { X } from "react-feather";
 import { connect } from "react-redux";
+import Logo from "../header/UpdatedPage/Image/logo.png";
 
 class SideDrawerWeb extends Component {
   render() {
@@ -67,20 +68,21 @@ class SideDrawerWeb extends Component {
                 </Link>
               ) : (
                 <div className="th-sidebar-list-item1">
-                  <Link
+                 <Link
                     to="/login"
                     onClick={this.props.clicked}
                     className="th-link"
                   >
-                    <p className="th-sidebar-list-item mb-3">Login</p>
+                    <p className="th-sidebar-list-item th-login-btn mb-3"><i className="fa-solid fa-user" />Login</p>
                   </Link>
                   <Link
                     to="/signup"
                     onClick={this.props.clicked}
                     className="th-link ms-5"
                   >
-                    <p className="th-sidebar-list-item mb-3">Sign Up</p>
+                    <p className="th-sidebar-list-item mb-3">Register</p>
                   </Link>
+                  
                 </div>
               )}
             </div>
