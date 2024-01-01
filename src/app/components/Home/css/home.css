@@ -602,7 +602,6 @@ color: #444444;
 .footfall{
   margin: 0px;
   padding-top: 100px;
-  
   /* padding-bottom: 10vh; */
   /* margin-bottom: 5px; */
   display: flex;
@@ -611,6 +610,7 @@ color: #444444;
   padding-right: 7vw;
   text-align: center;
   position: relative;
+  flex-wrap: wrap;
 }
 .finbox{
   width: 19vw;
@@ -736,11 +736,137 @@ color: #444444;
 .eimg1{
   width: 92px;
 }
-@media (max-width:850px) {
+@media (max-width:1277px) and (min-width:1000px) {
+  .fimg1{
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+  .pimg1{
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+  .eimg1{
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+}
+@media (max-width:1000px){
+  .ftext{
+    font-size: 20px;
+  }
+  .fcount{
+    font-size: 20px;
+  }
+  .finbox{
+    width: 240px;
+  }
+  .pinbox{
+    width: 240px;
+  }
+  .prinbox{
+    width: 240px;
+  }
+  .einbox{
+    width: 240px;
+  }
+  .fimg1{
+    width: 98px;
+  }
+  .pimg1{
+    width: 90px;
+  }
+  .primg1{
+    width: 65px;
+  }
+  .eimg1{
+    width: 70px;
+  }
+  .footfall{
+    justify-content: space-evenly;
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+}
+@media (max-width:850px){
+  .footfall{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width:700px){
+  .footfall{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .finbox{
+    width: 200px;
+  }
+  .pinbox{
+    width: 200px;
+  }
+  .prinbox{
+    width: 200px;
+  }
+  .einbox{
+    width: 200px;
+  }
+}
+@media (max-width:600px){
   .footfall{
     padding-left: 0px;
     padding-right: 0px;
-    justify-content: space-evenly;
+  }
+  .finbox{
+    width: 200px;
+  }
+  .pinbox{
+    width: 200px;
+  }
+  .prinbox{
+    width: 200px;
+  }
+  .einbox{
+    width: 200px;
+  }
+}
+@media (max-width:450px){
+  .finbox{
+    width: 150px;
+  }
+  .pinbox{
+    width: 150px;
+  }
+  .prinbox{
+    width: 150px;
+  }
+  .einbox{
+    width: 150px;
+  }
+  .fimg1{
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+  .pimg1{
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+  .eimg1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width:320px){
+  .finbox{
+    width: 130px;
+  }
+  .pinbox{
+    width: 130px;
+  }
+  .prinbox{
+    width: 130px;
+  }
+  .einbox{
+    width: 130px;
   }
 }
 /*Footfall ends  */

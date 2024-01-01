@@ -3,7 +3,7 @@ import React from "react";
 import "./PartnerMainMob.css";
 import Image from "./ImageComponent";
 import HeritagePartner from "./assets/Heritagepartner.png";
-import UNESCO from "./assets/UNESCO.png";
+import UNESCO from "./assets/Group 119.png";
 import Recode from "./assets/Recode.png";
 import GeeksForGeeks from "./assets/GeeksForGeeks.png";
 import IndiaIsUs from "./assets/IndiaIsUs.png";
@@ -50,6 +50,9 @@ import titlesponsor from "./assets/titlesponsor.png";
 import bharat from "./assets/bharat.png";
 import PayPhi from "./assets/PayPhi.png";
 import StreeImg from "./assets/stree.png";
+
+import backgroundmob from "./assets/background.png";
+
 import Header from "../../layouts/header/index";
 
 const PartnerMob = () => {
@@ -57,15 +60,17 @@ const PartnerMob = () => {
     <>
     <Header/>
     <div className="partnerPageMob">
-      <div className="patronageMob">
-        <h1 className="headingMob">UNDER THE PATRONAGE OF</h1>
-        <Image
-          image={UNESCO}
-          width="20rem"
-          height="15rem"
-          link="https://en.unesco.org/"
-        />
-
+      <div className="patronagemob">
+        <div className="hpartmob">
+          <h1>Know Our Partners</h1>
+        </div>
+        <a href="https://en.unesco.org/" className="partimgmob" target="blank">
+          <img src={UNESCO} alt="" className="rightimgmob"/>
+        </a>
+        <img src={backgroundmob} alt="" className="backpartmob"/>
+        <div className="partcontentmob">
+          Social Summit is under the patronage of UNESCO and INCCU. We are proud to receive such a honor.Social Summit is under the patronage of UNESCO and INCCU. We are proud to receive such a honor.
+        </div>
       </div>
       {/* <div className="patronageMob">
         <h1 className="headingMob">TITLE SPONSOR</h1>

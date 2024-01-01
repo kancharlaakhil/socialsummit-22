@@ -11,6 +11,77 @@
 
 .patronage {
   display: flex;
+
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.backpart{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 90vh;
+  filter: brightness(60%);
+  z-index: -10000;
+}
+.partcontent{
+  color: #FFF;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.8rem;
+  padding-top: 2rem;
+}
+.downcontent{
+  margin-top: 1.5rem;
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.nssl{
+  display: flex;
+  padding-left: 2rem;
+}
+.headcontent{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
+.headingtext{
+  margin: 0px;
+  margin-top: 2px;
+  padding: 0px;
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 38.819px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 99%; /* 38.431px */
+  letter-spacing: 2px;
+}
+.datelogo{
+  margin-top: 0.5rem;
+  color: #8FEFE9;
+  font-family: Mulish;
+  font-size: 14.557px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rightimage{
+  z-index: 10;
+}
+.rightimg{
+  width: 600px;
+  height: 330px;
+}
+.associate {
+  width: 40%;
   margin: auto;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -164,4 +235,9 @@ font-family: 'Mulish', sans-serif;
   /* identical to box height */
   text-align: center;
   color: #4f4f4f;
+}
+@media (max-width:1150px){
+  .patronage{
+    display: none;
+  }
 }

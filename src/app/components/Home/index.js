@@ -31,6 +31,7 @@ const HomeMain = () => {
         <HomeContent width={width}/>
         <Footfall width={width} />
           
+
         <PastSpeakers width={width} />
         <Events width={width} />
 

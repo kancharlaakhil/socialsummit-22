@@ -1,9 +1,60 @@
 import React from "react";
 
 import "./PartnersMain.css";
+
+import Image from "./ImageComponent";
+import UNESCO from "./assets/Group 119.png";
+import Recode from "./assets/Recode.png";
+import HeritagePartner from "./assets/Heritagepartner.png";
+import GeeksForGeeks from "./assets/GeeksForGeeks.png";
+import IndiaIsUs from "./assets/IndiaIsUs.png";
+import Tides from "./assets/Tides.png";
+import SankalpTaru from "./assets/SankalpTaru.png";
+import Lakshyam from "./assets/Lakshyam.png";
+import Sponbar from "./assets/Sponbar.png";
+import Certopus from "./assets/Certopus.png";
+import SponPartner from "./assets/SponPartner.png";
+import D2C from "./assets/D2C.png";
+import Timed from "./assets/Timed.png";
+import hackerearth from "./assets/hackerearth.png";
+import izone from "./assets/3izone.png";
+import mrida from "./assets/mrida.png";
+import ADR from "./assets/ADR.png";
+import CSR from "./assets/CSR.png";
+import divami from "./assets/divami.png";
+import Straw from "./assets/Straw.png";
+import Milan from "./assets/Milan.png";
+import Pagalguy from "./assets/Pagalguy.png";
+import youth from "./assets/youth.png";
+import DUupdates from "./assets/DUupdates.png";
+import KnowAfest from "./assets/KnowAfest.png";
+import ohcampus from "./assets/ohcampus.png";
+import PanIIT from "./assets/PanIIT.png";
+import IndiaEducation from "./assets/IndiaEducation.png";
+import AFI from "./assets/AFI.png";
+import amarujala from "./assets/amarujala.png";
+import atai from "./assets/atai.png";
+import C3india from "./assets/C3india.png";
+import avtar from "./assets/avtar.png";
+import collegeduniya from "./assets/collegeduniya.png";
+import edtimes from "./assets/edtimes.jpg";
+import Goonj from "./assets/Goonj.png";
+import Homeflicwegrow from "./assets/Homeflicwegrow.png";
+import prepp from "./assets/prepp.jpg";
+import unltd from "./assets/unltd.png";
+import Vskills from "./assets/Vskills.png";
+import zoutons from "./assets/zoutons.png";
+import makeroom from "./assets/makeroom.png";
+import supreme from "./assets/supreme.png";
+import earthhouse from "./assets/earthhouse.jpg";
+import titlesponsor from "./assets/titlesponsor.png";
+import bharat from "./assets/bharat.png";
+import StreeImg from "./assets/stree.png";
+
 import UNESCO from "./assets/Group 119.png";
 import partback from "./assets/sponser-back.png"
 import Header from "../../layouts/header/index";
+
 
 import background from './assets/background.png';
 import nsslogo from './assets/Group 92.png';

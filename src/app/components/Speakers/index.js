@@ -127,13 +127,16 @@
 // export default Speakers;
 import React from "react";
 import Speaker from './components/Speaker';
+import Speakermob from "./components/speakermob";
 import "./styles/Speakers.css";
+
 import img1mob from './assets/Group 701.png';
 
 import background from './assets/background.png';
 import mark from './assets/mark.png';
 
 import Header from "../../layouts/header/index"
+
 
 import mark1 from './assets/mark1.png';
 import pushkar from './assets/pushkar.png';
@@ -157,7 +160,7 @@ function Speakers() {
       image: pushkar,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+      imagemob: pushkar,
       color: '#FD652D',
       left: '50px',
     },
@@ -170,7 +173,7 @@ function Speakers() {
       image: kiran,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+      imagemob: kiran,
       color: '#FD652D',
       left: '50px',
     },
@@ -183,7 +186,10 @@ function Speakers() {
       image: sonamw,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: sonamw,
+
+
       color: '#FD652D',
       left: '50px',
     },
@@ -196,7 +202,9 @@ function Speakers() {
       image: roderico,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: roderico,
+
       color: '#FD652D',
       left: '50px',
     },
@@ -209,7 +217,9 @@ function Speakers() {
       image: aruna,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: aruna,
+
       color: '#FD652D',
       left: '50px',
     },
@@ -224,7 +234,9 @@ function Speakers() {
      
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: major,
+
       color: '#FD652D',
       left: '50px',
     },
@@ -237,7 +249,9 @@ function Speakers() {
       image: ashneer,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: ashneer,
+
       color: '#FD652D',
       left: '50px',
     },
@@ -250,7 +264,9 @@ function Speakers() {
       image: priyanka,
       imagedot:mark,
       imagedot1:mark1,
-      imagemob: img1mob,
+
+      imagemob: priyanka,
+
       color: '#FD652D',
       left: '50px',
     }
@@ -265,6 +281,7 @@ function Speakers() {
     <div className="speakersPage">
       {data.map((element) => {
         return (
+          <>
           <Speaker
             key={element.id}
             id={element.id}
@@ -274,10 +291,18 @@ function Speakers() {
             image={element.image}
             imagedot={element.imagedot}
             imagedot1={element.imagedot1}
-            color={element.color}
-            left={element.left}
-            imagemob={element.imagemob}
           />
+          <Speakermob
+            key={element.id}
+            id={element.id}
+            name={element.name}
+            post={element.post}
+            descp={element.descp}
+            image={element.image}
+            imagedot={element.imagedot}
+            imagedot1={element.imagedot1}
+          />
+          </>
         );
       })}
     </div>

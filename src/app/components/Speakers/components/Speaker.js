@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../styles/Speaker.css";
-import Content from './ReadMore';
 
 function Speaker(props) {
    return (
@@ -10,11 +9,7 @@ function Speaker(props) {
       <div className="imgdot1">
         <img src={props.imagedot} className="dot1" />
       </div>
-      <div className="leftmob" style={{ order: props.id % 2 === 1 ? 0 : 0 }}>
-        <img src={props.imagemob} className="img2"  />
-      </div>
-       
-       
+      
       <div className="right" >
         <div className="title">
           <h1 style={{textAlign:"left"}}>
@@ -26,35 +21,11 @@ function Speaker(props) {
         </div>
         <div className="paraSpeaker" >
              <p>{props.descp}</p>  
-           {/* { <Content data={props.descp}/> }
-           style={{backgroundColor: props.id%2==1 ?  '#22495A':'#FFFFFF'}} 
-           style={{paddingLeft: "0vw" }}*/}
         </div>
       </div>
       <div className="imgdot2">
         <img src={props.imagedot1} className="dot2" />
       </div>
-      <div className="rightmob">
-         {/* <div className="whitespace"></div> */}
-         <div
-           className="titlemob"
-           >
-         
-           <h1>
-             {props.name}
-           </h1>
-           <p >
-             {props.post}
-           </p>
-         </div>
-         { <Content data={props.descp}/> } 
-         {/* <div className="para" style={{paddingLeft: props.id===1? "18vw":"18vw" }}>
-         </div> */}
-            {/* { <p>{props.descp}</p>  } */}
-            
-        
-       </div>
-
      </div>
    );
  }

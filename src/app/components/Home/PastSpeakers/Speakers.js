@@ -55,8 +55,12 @@
 // export default Speakers
 import React from 'react'
 import "./Speakers.css"
-import img from './images/puskarbw.png';
-import imgc from './images/puskarcl.png';
+import img from './images/pushkarbw.png';
+import imgc from './images/pushkarcl.png';
+import img1 from './images/ashneerbw.png';
+import imgc1 from './images/ashneercl.png';
+import img2 from './images/kiranbedibw.png';
+import imgc2 from './images/kiranbedicl.png';
 import { useState } from 'react';
 
 import {Link} from 'react-router-dom';
@@ -71,19 +75,19 @@ function Speakers() {
   const offHover = () => {
     setimage(img);
   }
-  const [image1,setimage1]=useState(img);
+  const [image1,setimage1]=useState(img1);
   const onHover1 = () => {
-    setimage1(imgc);
+    setimage1(imgc1);
   }
   const offHover1 = () => {
-    setimage1(img);
+    setimage1(img1);
   }
-  const [image2,setimage2]=useState(img);
+  const [image2,setimage2]=useState(img2);
   const onHover2 = () => {
-    setimage2(imgc);
+    setimage2(imgc2);
   }
   const offHover2 = () => {
-    setimage2(img);
+    setimage2(img2);
   }
   return (
     <div className="speakersbox">
