@@ -17,7 +17,7 @@ function AboutUsMob() {
                         <div className="mob-aboutbgcover">
                             <div className="mob-bg">
                                 <div className="mob-imgbg">
-                                    <img src={aboutimgcover} className='mob-aboutbgcoverImg' />
+                                    {/* <img src={aboutimgcover} className='mob-aboutbgcoverImg' /> */}
                                 </div>
                                 <div className="mob-nss"><p>Team National Social Summit </p></div>
                             </div>
