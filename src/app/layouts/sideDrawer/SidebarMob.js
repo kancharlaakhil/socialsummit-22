@@ -18,11 +18,12 @@ class SideDrawerMob extends Component {
         <div className={drawerClasses}>
           <div className="pt-2 pb-4 ps-3 pe-3">
             <div className="d-flex justify-content-end mb-3">
+
               <X
                 size={28}
                 onClick={this.props.clicked}
-                className="th-theme-color mt-1 ml-2 float-right"
-                style={{ cursor: "pointer", color: "white" }}
+                className=" mt-1 ml-2 float-right"
+                style={{ cursor: "pointer",color: "white" }}
               />
             </div>
             <div>

@@ -17,7 +17,7 @@ const TestiMonials = () => {
             id: 1,
             number:1,
             address: "Past Delegate",
-            description: "Shri. Pushkar Singh Dhami, hon’ble Chief Minister of Uttarakhand had joined us at our institute and made the opening ceremony of the first ever event of NSS, IITR called Sustainability Conclave, was organized in alignment with the United Nations Sustainable Development Goals.Pushkar Singh Dhami launched the TechSarthi scheme which will focus on industries to help adopt technically sound solutions, gear up their growth, and realize the objective of “Local to Global”. The Conclave was divided into conferences for sustainable development, followed by a series of innovative exchanges of strategies to help achieve long-term sustainability, workshops, hackathons, ideation, case studies and policy case competitions, among others. He hosted The Sustainability Conclave 2022 which aimed to model and address the rising issues including climate change, environmental degradation, energy crisis, and water shortage. His presence made the day and the ceremony even more contented.",
+            description: "The National Social Summit 2023 was more than just a meet-up; it was a game-changer. Ashneer Grover's talk wasn't just about shaking things up; it was a crash course in how to actually do it. The hands-on experiences weren't just about hearing fancy concepts; they were about living and breathing change. Walking away from the summit, I'm not just motivated; I've got a mindset ready to shake things up. Kudos to the organizers for pulling off an event that goes beyond talk, sparking a genuine call to action.",
             img:pushkar,
             name:"Pushkar Singh Dhami"
           },
@@ -25,7 +25,7 @@ const TestiMonials = () => {
             id: 2,
             number:2,
             address: "Past Delegate",
-            description: "Shri. Pushkar Singh Dhami, hon’ble Chief Minister of Uttarakhand had joined us at our institute and made the opening ceremony of the first ever event of NSS, IITR called Sustainability Conclave, was organized in alignment with the United Nations Sustainable Development Goals.Pushkar Singh Dhami launched the TechSarthi scheme which will focus on industries to help adopt technically sound solutions, gear up their growth, and realize the objective of “Local to Global”. The Conclave was divided into conferences for sustainable development, followed by a series of innovative exchanges of strategies to help achieve long-term sustainability, workshops, hackathons, ideation, case studies and policy case competitions, among others. He hosted The Sustainability Conclave 2022 which aimed to model and address the rising issues including climate change, environmental degradation, energy crisis, and water shortage. His presence made the day and the ceremony even more contented.",
+            description: "The Summit was a real eye-opener for me. The speakers, like Ashneer Grover and Rakhi Pal, brought in diverse perspectives that made me rethink a lot. The on-stage events, especially the Nukkad Natak and Sociothon, proved how thinking outside the box can tackle societal problems. This event lit a fire in me for making positive changes, and I'm grateful to have been part of such an inspiring and open-minded gathering. Excited to see the impact it'll surely have on our society.",
             img:pushkar,
             name:"Pushkar Singh Dhami"
           },
@@ -33,8 +33,8 @@ const TestiMonials = () => {
             id: 3,
             number:3,
             address: "Past Delegate",
-            description: "Shri. Pushkar Singh Dhami, hon’ble Chief Minister of Uttarakhand had joined us at our institute and made the opening ceremony of the first ever event of NSS, IITR called Sustainability Conclave, was organized in alignment with the United Nations Sustainable Development Goals.Pushkar Singh Dhami launched the TechSarthi scheme which will focus on industries to help adopt technically sound solutions, gear up their growth, and realize the objective of “Local to Global”. The Conclave was divided into conferences for sustainable development, followed by a series of innovative exchanges of strategies to help achieve long-term sustainability, workshops, hackathons, ideation, case studies and policy case competitions, among others. He hosted The Sustainability Conclave 2022 which aimed to model and address the rising issues including climate change, environmental degradation, energy crisis, and water shortage. His presence made the day and the ceremony even more contented.",
-            img:pushkar,
+            description: "The National Social Summit’23 felt like a well-thought-out journey. It wasn't just about talking; it was about diving into practical innovation. Leaving the summit, I'm not just carrying ideas; I've got a real plan for making change happen. This event isn't about empty words; it's a strategic guide for transforming society.",
+            img:pushkar,    
             name:"Pushkar Singh Dhami"
           },
     ]
@@ -56,7 +56,7 @@ const TestiMonials = () => {
                 items: 1
             },
             600: {
-                items: 2
+                items: 1,
             },
             1000: {
                 items: 2
@@ -68,7 +68,7 @@ const TestiMonials = () => {
             <div className="container mt-5">
                 <div className="miniTitle text-center">Testimonials</div>
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className='testi-container'>
                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                             {
                                 testiMonials.length === 0 ?

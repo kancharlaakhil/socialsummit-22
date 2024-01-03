@@ -85,7 +85,7 @@ class Counter extends Component {
         <div className="partnersbox">
           <div className="pinbox">
             <img src={pimg} alt="" className="pimg1" />
-            <p className="ftext">Collabrations</p>
+            <p className="ftext">Collaborations</p>
           </div>
           <p className="fcount">
             <CountUp

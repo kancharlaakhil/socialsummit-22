@@ -1,47 +1,50 @@
-.eventspage-pop-up{
-    background-image: url(./images/sponser-back.png);
+body{
+    overflow-x: hidden;
+}
+.eve-page-eventspage-pop-up{
+    background-image: url("/images/sponser-back.png");
     /* background-color: black; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-/* width: 100vw; */
+width: 100vw;
 box-sizing: border-box;
 padding-block: 1.5rem;
 display: flex;
 flex-direction: column;
 /* align-items: center; */
-height: 260vh;
-row-gap: 3rem;
+/* height: 260vh; */
+row-gap: 5rem;
     }
-.events-pop-up-heading{
+.eve-page-events-pop-up-heading{
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
 }
-.events-pop-up-cards{
+.eve-page-events-pop-up-cards{
     width: 90%;
     display: flex;
    flex-wrap: wrap;
-   height: 190vh;
+   /* height: 190vh; */
    margin-inline: 5%;
-   gap: 3rem;
+   gap: 8rem;
 }
 
 
-.events-pop-up-cards-2{
+.eve-page-events-pop-up-cards-2{
     width: 25%;
-    height: 22rem;
+    height: 48vh;
     
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: space-evenly;
     border-radius: 8px;
-    background: linear-gradient(180deg, rgba(66, 218, 237, 0.50) 0%, rgba(10, 96, 151, 0.50) 100%);
-    box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.50);
+    background: linear-gradient(180deg, rgba(66, 218, 237, 050) 0%, rgba(10, 96, 151, 050) 100%);
+    box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 050);
 }
-.events-pop-up-cards-2-content-2{
+.eve-page-events-pop-up-cards-2-content-2{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,13 +53,13 @@ row-gap: 3rem;
     height: 12.5rem;
    
 }
-.events-pop-up-cards-2-img{
+.eve-page-events-pop-up-cards-2-img{
     width: 100%;
-    height: 11rem;
+    height: 100%;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
-.events-pop-up-cards-2-topic{
+.eve-page-events-pop-up-cards-2-topic{
     width: 100%;
     height: 1.5rem;
     background: rgba(1, 31, 43, 0.80);
@@ -69,14 +72,14 @@ row-gap: 3rem;
     border-bottom-right-radius: 8px;
     font-weight: bold;
 }
-.events-pop-up-cards-2-btns{
+.eve-page-events-pop-up-cards-2-btns{
     display: flex;
     width: 80%;
     height: 2rem;
     align-items: center;
     justify-content: space-between;
 }
-.events-pop-up-cards-2-btns-register{
+.eve-page-events-pop-up-cards-2-btns-register{
     width: 40%;
     height: 1.75rem;
     text-align: center;
@@ -87,10 +90,10 @@ row-gap: 3rem;
     font-weight: bold;
     
     
-    background: linear-gradient(94deg, #028BA3 22.96%, #006E9B 98.15%);
-    box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(94deg, #028BA3 2296%, #006E9B 98.15%);
+    box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 025);
 }
-.events-pop-up-cards-2-btns-details{
+.eve-page-events-pop-up-cards-2-btns-details{
     width: 40%;
     height: 1.75rem;
     text-align: center;
@@ -106,38 +109,59 @@ row-gap: 3rem;
 
 
 @media (min-width : 1690px) {
-    .events-pop-up{
+    .eve-page-events-pop-up{
         height: 100vh;
     }
-    .events-pop-up-heading{
+    .eve-page-events-pop-up-heading{
         font-size: 2.6rem;
     }
-    .events-pop-up-cards{
+    .eve-page-events-pop-up-cards{
         height: 30rem;
     }
-    .events-pop-up-cards-1-content-1,
-    .events-pop-up-cards-2-content-2,
-    .events-pop-up-cards-3-content-3{
+    .eve-page-events-pop-up-cards-1-content-1,
+    .eve-page-events-pop-up-cards-2-content-2,
+    .eve-page-events-pop-up-cards-3-content-3{
         height: 18.5rem;
     }
 
-    .events-pop-up-cards-1-img,
-    .events-pop-up-cards-2-img,
-    .events-pop-up-cards-3-img{
+    .eve-page-events-pop-up-cards-1-img,
+    .eve-page-events-pop-up-cards-2-img,
+    .eve-page-events-pop-up-cards-3-img{
         height: 16rem;
     }
-    .events-pop-up-cards-1-topic,
-    .events-pop-up-cards-2-topic,
-    .events-pop-up-cards-3-topic{
+    .eve-page-events-pop-up-cards-1-topic,
+    .eve-page-events-pop-up-cards-2-topic,
+    .eve-page-events-pop-up-cards-3-topic{
         height: 2.25rem;
         font-size: 1.25rem;
     }
-    .events-pop-up-cards-1-btns-details , 
-    .events-pop-up-cards-1-btns-register,
-    .events-pop-up-cards-2-btns-details,
-    .events-pop-up-cards-2-btns-register,
-    .events-pop-up-cards-3-btns-details,
-    .events-pop-up-cards-3-btns-register{
+    .eve-page-events-pop-up-cards-1-btns-details , 
+    .eve-page-events-pop-up-cards-1-btns-register,
+    .eve-page-events-pop-up-cards-2-btns-details,
+    .eve-page-events-pop-up-cards-2-btns-register,
+    .eve-page-events-pop-up-cards-3-btns-details,
+    .eve-page-events-pop-up-cards-3-btns-register{
         height: 2rem;
     }
 }
+/* @media (min-width:1024px) and (max-width:1150px) {
+    .eve-page-eventspage-pop-up{
+        height: 220vh;
+    }
+} */
+@media (min-width:540px) and (max-width:1023px) {
+   /* .eve-page-eventspage-pop-up{
+    height: 280vh;
+   } */
+   .eve-page-events-pop-up-cards-2{
+    width: 100%;
+   }
+}
+@media (min-width:320px) and (max-width:540px) {
+    /* .eve-page-eventspage-pop-up{
+     height: 540vh;
+    } */
+    .eve-page-events-pop-up-cards-2{
+     width: 100%;
+    }
+ }

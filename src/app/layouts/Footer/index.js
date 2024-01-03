@@ -1,14 +1,13 @@
 import React from "react";
-import FooterWeb from "./WebView";
-import FooterMob from "./MobileView";
 import { useWidthAndHeight } from "../../../hooks/useWidthAndHeight";
-
+import ContactUs from "./ContactUs"
+import FooterMobileView from "./FooterMobileView";
 const FooterHome = () => {
   const [width] = useWidthAndHeight();
 
   return (
     <React.Fragment>
-      {width > 1150 ? <FooterWeb width={width} /> : <FooterMob width={width} />}
+      {width > 1150 ? <ContactUs width={width} /> : <FooterMobileView width={width} />}
     </React.Fragment>
   );
 };

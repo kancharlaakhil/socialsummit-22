@@ -5,19 +5,19 @@
   z-index: 1000;
   top: 0;
   position: sticky;
-  width: 98.2%;
+  width: 100%;
   padding: 10px 0;
   transition: all ease 0.5s;
   background:#101010;
   border-bottom: 3px solid gray;
   margin-bottom: 0px;
   
-  
-}
-.gradient{
-  
+  transition: top 0.3s ease;
 }
 
+.Header{
+  transition: top 0.3s ease;
+}
 .th-header-bg {
   background:#101010;
   box-shadow: 0 0 10px 0 rgb(50 50 50 / 50%);
@@ -25,7 +25,12 @@
   transition: all ease 0.5s; */
   margin-bottom: 0px;
 }
-
+.mob-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
   .th-header-logo,
   .th-nss-logo {
     width: 70px;
@@ -38,7 +43,7 @@
   }
 
   .th-nss{
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-style: normal;
     font-weight: normal;
     font-size: 18.5px;
@@ -61,7 +66,7 @@
      top: 66px;
   }
   .th-clg-name {
-    font-family: Mulish;
+    font-family: ""Mulish"";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -70,7 +75,7 @@
   .b1234{
     box-sizing: border-box;
     color: #ffffff;
-    font-family: Mulish;
+    font-family: ""Mulish"";
 
 /* Auto layout */
 

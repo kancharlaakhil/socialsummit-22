@@ -2,7 +2,7 @@ import React, { Suspense, useEffect,useState } from "react";
 import { Switch, Route, BrowserRouter, Redirect,} from "react-router-dom";
 import Loader from "../app/loader";
 import Header from "../app/layouts/header/index";
-import Footer from "../app/layouts/Footer/ContactUs";
+import Footer from "../app/layouts/Footer/index";
 import { ComingSoon } from "../app/components/ComingSoon";
 import DelegateDashboard from "../app/components/Dashboard/DelegateDashboard/Dashboard";
 import CADashboard from "../app/components/Dashboard/CADashboard/Dashboard";
@@ -99,7 +99,7 @@ const App = ({ user }) => {
           <Route exact path="/partners" component={Partner} />
           <Route exact path="/events" component={Events} />
 
-          {/* <Route exact path="/contact" component={Contact} /> */}
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
 

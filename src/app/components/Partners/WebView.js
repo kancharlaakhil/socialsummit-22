@@ -3,7 +3,6 @@ import React from "react";
 import "./PartnersMain.css";
 
 import Image from "./ImageComponent";
-import UNESCO from "./assets/Group 119.png";
 import Recode from "./assets/Recode.png";
 import HeritagePartner from "./assets/Heritagepartner.png";
 import GeeksForGeeks from "./assets/GeeksForGeeks.png";

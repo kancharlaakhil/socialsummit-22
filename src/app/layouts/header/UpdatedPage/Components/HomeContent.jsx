@@ -39,19 +39,7 @@ export default function Content() {
             <p className="header-bottom-line2">10th - 11th Feb 2024</p>
           </div>
           <p className="header-bottom-para3">
-            Welcome to the annual Social Summit of NSS IIT Roorkee with the
-            theme Education empowers individuals and communities to make
-            sustainable choices to the annual Social Summit of NSS IIT Roorkee
-            with the theme Education empowers individuals and communities to
-            make sustainable choices. Welcome to the annual Social Summit of NSS
-            IIT Roorkee with the theme Education empowers individuals and
-            communities to make sustainable choices to the annual Social Summit
-            of NSS IIT Roorkee with the theme Education empowers individuals and
-            communities to make sustainable choices. Welcome to the annual
-            Social Summit of NSS IIT Roorkee with the theme Education empowers
-            individuals and communities to make sustainable choices to the
-            annual Social Summit of NSS IIT Roorkee with the theme Education
-            empowers individuals and communities to make sustainable choices.
+          Welcome to the National Social Summit'24—an inspiring convergence of thought leaders, change-makers, and visionaries. As we embark on this transformative journey under the theme "Educate, Empower, Sustain," our mission is clear—to shape a future where knowledge enlightens, empowerment prevails, and sustainability guides our every step. Organized by NSS IIT Roorkee, this dynamic annual event serves as a beacon for constructive dialogue and innovative solutions to the pressing socio-economic challenges of our time. In a world seeking progress, we invite you to be part of a community dedicated to making a lasting impact. Together, let's explore, engage, and envision a society where education is accessible to all, empowerment knows no bounds, and sustainability is at the heart of our collective endeavors. Welcome to the National Social Summit'24—where ideas converge and possibilities unfold.
           </p>
 
           <div className="header-bottom-button">

@@ -228,11 +228,8 @@ line-height: normal;
     }
 }
 @media only screen and (max-width:500px){
-    .logo-heading{
-        left: 19vw;
-    }
-    .logo-img img{
-        height:100px;
-        width: 100px;
+ 
+    .header-top{
+        display: none;
     }
 }

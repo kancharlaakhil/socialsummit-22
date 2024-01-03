@@ -1,7 +1,11 @@
-
+body {
+    overflow-x: hidden;
+  }
+  
 .ourstory {
     width: 98.85vw;
     height: 95vh;
+    overflow-x: hidden;
 }
 
 .aboutbg1 {
@@ -79,6 +83,8 @@ margin-top: 35%;
 .ourstory2 {
     width: 98.85vw;
     height: 100vh;
+    overflow-x: hidden;
+
 }
 
 .col1-abt{
@@ -97,15 +103,16 @@ margin-top: 35%;
     padding: 10% 5% 10% 5%;
 }
 .aboutbg2{
-    width: 98.85vw;
+    width: 100vw;
 
     height: 110vh;
     position:absolute;
-    z-index: 0;
+    z-index: -10;
 
 }
 .aboutbg2Img{
-    width: 98.85vw;
+    width: 100vw;
+    overflow-x: hidden;
 
     height: 100%;
 }

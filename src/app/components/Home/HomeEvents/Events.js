@@ -31,6 +31,7 @@ export default function Events() {
     <div className='events-pop-up'>
       <div className='events-pop-up-heading'>
         Events
+      {/* <button>View All</button> */}
       </div>
       <div className="events-pop-up-cards">
         <div className="events-pop-up-cards-1">

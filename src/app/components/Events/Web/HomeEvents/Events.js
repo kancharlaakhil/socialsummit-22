@@ -3,9 +3,7 @@ import "./EventsPagePOP.css"
 import casestudy from './images/image49.png'
 import nukkadnatak from './images/image51.png'
 import mun from './images/image50.png'
-import Casestudy from './CaseStudy/Casestudy'
-import MUN from './MUN/MUN'
-import Nukkadnatak from './Nukkadnatak/Nukkadnatak'
+import CommonCard from './Common-Card/CommonEvent'
 import EventsData from "./EventData"
 import Card from './Card'
 
@@ -29,30 +27,24 @@ export default function Events() {
   //   setmodal3(!modal3)
   // }
 
-// const [modal , setmodal] = useState(false)
+const [modal , setmodal] = useState(false)
 
-// const togglemodal = () =>{
-//   setmodal(!modal)
-// }
+const togglemodal = () =>{
+  setmodal(!modal)
+}
 
   return (
-    <div className='eventspage-pop-up'>
-      <div className='events-pop-up-heading'>
+    <div className='eve-page-eventspage-pop-up'>
+      <div className='eve-page-events-pop-up-heading'>
         Events
       </div>
-      <div className="events-pop-up-cards">
+      <div className='eve-page-events-pop-up-cards'>
 
         {
           EventsData.map( (val , index) => {
             return(
               <>
-              <Card title={val.title} imgscc={val.imgsrc}/>
-
-             {/* { modal && (
-              <Casestudy title={val.title} />
-              )
-             } */}
-
+              <Card title={val.title} imgscc={val.imgsrc} passFunction={togglemodal} description={val.description}/>
               </>
               )
           })

@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .th-link,
 .th-link:active {
   text-decoration: none !important;
@@ -12,7 +15,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
+.HeaderTop {
+  /* Add your HeaderTop styles here */
+  /* Make sure to set the initial visibility */
+  transition: opacity 0.3s ease; /* Add transition for a smooth effect */
+}
+.Header {
 
+  /* Add your Header styles here */
+  /* Include transition properties for a smooth effect */
+  transition: top 0.3s ease;
+}
 .homeContainer{
  
   margin:0;
@@ -100,7 +113,7 @@ box-sizing: border-box;
   box-sizing: border-box;
   backdrop-filter: blur(20px);
 
-  font-family: Inter;
+  font-family: ""Inter"";
   font-style: normal;
   font-weight: bold;
   font-size: 1.2rem;
@@ -704,7 +717,7 @@ color: #444444;
   left: 0px;
   top: 0px;
   z-index: -1000;
-  width: 98.75vw;
+  width: 100vw;
   height: 350%;
   filter: brightness(50%);
 }

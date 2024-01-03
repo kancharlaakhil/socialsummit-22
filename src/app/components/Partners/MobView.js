@@ -96,18 +96,18 @@ const PartnerMob = () => {
       </div> */}
 
       <div className="sponsorsMob">
-        <h1 className="headingMob">SPONSORS</h1>
-        <div className="logo2Mob">
+        {/* <h1 className="headingMob">SPONSORS</h1> */}
+        <div className="logo2Mob" style={{marginTop:50}}>
         <Image
             image={HeritagePartner}
             title="Heritage Partner"
             link="https://www.iitr-heritagefund.org/"
           />
-             <Image
+             {/* <Image
             image={StreeImg}
             title="NGO Partner"
             link="https://streesafety.com/"
-          />
+          /> */}
           {/* <Image
             image={GeeksForGeeks}
             title="Learning Partner"

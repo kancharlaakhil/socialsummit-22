@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux'
 import HeaderTop from "./UpdatedPage/Components/HeaderTop";
 import HeaderContent from "./UpdatedPage/Components/HomeContent";
+import svlogo from "../Footer/images/logo2.svg"
 
 class Header extends Component {
   constructor(props) {
@@ -105,12 +106,20 @@ class Header extends Component {
               
             </div>
           </div>
+        </div>
+        <div className="mob-nav"  style={{ display: this.props.width > 992 ? 'none' : 'flex' }}>
+          <div style={{display:'flex',flexDirection:'row',}}>
+
+          <img src={svlogo} alt="logo"  style={{marginRight:"0px",width:40,display:'flex',justifyContent:'left',}}/>
+{/* <p style={{color:"white",margin:5}}>National Social Summit</p> */}
+          </div>
           <Menu
             size={this.props.width > 992 ? 0 : 24}
             onClick={this.drawerToggleClickHandler}
             className="th-theme-color"
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer",color:"white" }}
           />
+
         </div>
         <SideDrawer
           show={this.state.sideDrawerOpen}

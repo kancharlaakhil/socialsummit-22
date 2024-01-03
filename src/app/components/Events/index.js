@@ -10,7 +10,7 @@ const Events = () => {
   return (
     <React.Fragment>
       <Header/>
-      {width > 1150 ? <EventsWeb /> : <EventsMob />}
+      {width > 1150 ? <EventsWeb /> : <EventsWeb />}
     </React.Fragment>
   );
 };

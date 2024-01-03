@@ -22,7 +22,7 @@ class SideDrawerWeb extends Component {
                 size={40}
                 onClick={this.props.clicked}
                 className="th-theme-color mt-1 ms-2 mb-3 float-right"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer",color:"white" }}
               />
             </div>
             <div>
