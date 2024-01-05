@@ -5,6 +5,7 @@ import im2 from "./images/Vector.png";
 import im3 from "./images/Instagram.png";
 
 import im4 from "./images/Linked-in.png";
+import { Link } from "react-router-dom";
 
 import im5 from "./images/Twitter.png";
 import im6 from "./images/Gmail.png";
@@ -55,21 +56,21 @@ function ContactUs() {
         </div>
       </div>
       <div className="footerCol3">
-        <div className="icon-box">
+      <div className="icon-box">
           <div className="icon">
-            <a href="/"> <img src={im5} /></a>
+            <Link to="https://twitter.com/natsocialsummit?t=_E-S4iDRCvoqO3bGh4u6sw&s=08" ><img className='fabIcon' src={im5} /></Link>
           </div>
           <div className="icon">
-            <a href="/"> <img src={im4} /></a>
+            <Link to="https://www.linkedin.com/company/national-social-summit"> <img className='fabIcon' src={im4} /></Link>
           </div>
           <div className="icon">
-            <a href="/"> <img src={im3} /></a>
+            <Link to="https://instagram.com/iitrsocialsummit?utm_medium=copy_link"> <img className='fabIcon' src={im3} /></Link>
           </div>
           <div className="icon">
-            <a href="/"> <img src={im2} /></a>
+            <Link   to="https://m.facebook.com/iitrsocialsummit/"> <img className='fabIcon' src={im2} /></Link>
           </div>
           <div className="icon">
-            <a href="/"> <img src={im6} /></a>
+            <a href="/"> <img className='fabIcon' src={im6} /></a>
           </div>
         </div>
       </div>

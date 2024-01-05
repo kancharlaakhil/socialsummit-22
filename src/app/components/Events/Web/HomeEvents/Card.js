@@ -2,11 +2,13 @@ import React,{useState} from 'react'
 import "./EventsPagePOP.css"
 import CommonCard from './Common-Card/CommonEvent'
 import EventData from './EventData'
+import MobPopup from '../../Mobile/Mob-Popup/Mob-popup/Popup'
+import { useWidthAndHeight } from "../../../../../hooks/useWidthAndHeight";
 
 
 export default function Card(props) {
 const [modal , setmodal] = useState(false)
-
+const [width] = useWidthAndHeight();
 const togglemodal = () =>{
   setmodal(!modal)
 }
@@ -24,10 +26,14 @@ const togglemodal = () =>{
 
     </div>
   </div>
-  { modal && (
-              <CommonCard title={props.title} imgscc={props.imgscc} passFunction={togglemodal} desc={props.description}/>
-              )
-             }
+  {modal && (
+  (width > 1150) ? (
+    <CommonCard title={props.title} imgscc={props.imgscc} passFunction={togglemodal} desc={props.description} ruleb={props.rulebook}/>
+  ) : (
+    <MobPopup title={props.title} imgscc={props.imgscc} passFunction={togglemodal} desc={props.description} ruleb={props.rulebook}/>
+  )
+)}
+
     </>
 
   )

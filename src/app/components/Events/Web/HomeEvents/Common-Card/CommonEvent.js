@@ -64,7 +64,7 @@ export default function CommonCard(props) {
 
  <div className='modal2-content-right-btns'>
    <button className='modal2-content-right-btns-register-2'>Register</button>
-   <button className='modal2-content-right-btns-rulebook'>Rule Book</button>
+   <button className='modal2-content-right-btns-rulebook' onClick={()=> window.open(props.ruleb)}>Rule Book</button>
  </div>
 </div>
 

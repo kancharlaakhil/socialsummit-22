@@ -44,7 +44,7 @@ const togglemodal = () =>{
           EventsData.map( (val , index) => {
             return(
               <>
-              <Card title={val.title} imgscc={val.imgsrc} passFunction={togglemodal} description={val.description}/>
+              <Card title={val.title} imgscc={val.imgsrc} passFunction={togglemodal} description={val.description} rulebook={val.rulebook}/>
               </>
               )
           })

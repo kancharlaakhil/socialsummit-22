@@ -70,13 +70,13 @@ class SideDrawerMob extends Component {
               >
                 <p className="th-sidebar-list-item mb-3">Speakers</p>
               </Link>
-              <Link
+              {/* <Link
                 to="/contact"
                 onClick={this.props.clicked}
                 className="th-link"
               >
                 <p className="th-sidebar-list-item mb-3">Contact</p>
-              </Link>
+              </Link> */}
  
               <div className="th-sidebar-list-item1">
               <Link
