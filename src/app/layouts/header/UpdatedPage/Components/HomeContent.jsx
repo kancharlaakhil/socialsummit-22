@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeContent.css";
-import background from "../Image/background.png";
+import background from "../Image/final_background.png";
 import Logo from "../Image/logo.png";
 
 export default function Content() {

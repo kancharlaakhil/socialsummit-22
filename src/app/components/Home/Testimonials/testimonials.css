@@ -7,17 +7,24 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
 } */
 .testimonials{
-  margin-top: -45vh;
+  margin-top: -55vh;
   font-family: 'Mulish', sans-serif; 
   padding-bottom: 60px;
 
 }
 
 .text-center {
-  color: #0886bb;
-  font-size: 40px;
+  font-family: Mulish;
+  font-size: 48px;
+  font-style: normal;
   font-weight: 700;
-  margin-top: 6%;
+  line-height: 99%; 
+  /* color: white; */
+  background: linear-gradient(184deg, #FFF 3.29%, #5DC1C2 176.52%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2vh;
 }
 
 

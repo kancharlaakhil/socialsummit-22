@@ -1,7 +1,7 @@
 import React from 'react'
 // import aboutimg from './assets/aboutUsbg.png'
-import aboutimgcover from './assets/mobileabout.png'
-import aboutbg2 from './assets/aboutbg2.png'
+import aboutimgcover from './Images/part.svg'
+import aboutbg2 from '../Home/images/final_background.png'
 
 import vission from './assets/VISION & MISSION.png'
 
@@ -17,7 +17,7 @@ function AboutUsMob() {
                         <div className="mob-aboutbgcover">
                             <div className="mob-bg">
                                 <div className="mob-imgbg">
-                                    {/* <img src={aboutimgcover} className='mob-aboutbgcoverImg' /> */}
+                                    <img src={aboutimgcover} className='mob-aboutbgcoverImg' />
                                 </div>
                                 <div className="mob-nss"><p>Team National Social Summit </p></div>
                             </div>

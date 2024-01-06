@@ -15,7 +15,7 @@ import GetAllRegistration from "../app/admin/GetAllRegistration";
 import HeaderTop from "../app/layouts/header/UpdatedPage/Components/HeaderTop";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 // import { useLocation } from "react-router-dom";
-
+import "./App.css"
 const Home = React.lazy(() => import("../app/components/Home"));
 const About = React.lazy(() => import("../app/components/About"));
 const SignUpForm = React.lazy(() => import("../app/auth/SignUpForm"));

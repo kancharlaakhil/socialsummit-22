@@ -64,7 +64,7 @@ const TestiMonials = () => {
         }
     };
     return (
-        <section id="testimonial" className="testimonials pt-70 pb-70" style={{backgroundColor:'#041723'}}>
+        <section id="testimonial" className="testimonials pt-70 pb-70" >
             <div className="container mt-5">
                 <div className="miniTitle text-center">Testimonials</div>
                 <div className="row">

@@ -59,7 +59,7 @@ import fimg from './images/Black.png';
 import pimg from './images/Group 112.png';
 import primg from './images/Black1.png';
 import eimg from './images/Group 111.png';
-import background from './images/background.png';
+import background from '../../Home/images/final_background.png';
 import CountUp from "react-countup";
 
 class Counter extends Component {

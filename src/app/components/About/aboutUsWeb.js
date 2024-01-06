@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import aboutimg from './Images/aboutUsbg.jpg'
+import aboutimg from './Images/part_final.svg'
 import aboutimgcover from './Images/webviewPhoto.jpg'
 import aboutbg2 from './assets/aboutbg2.png'
-import abtmain from './Images/aboutbg2.jpg'
+import abtmain from './Images/main.png'
 import img1 from './Images/Group 98.png'
 import img2 from './Images/Component 7.png'
 import img3 from './Images/OUR.png'
@@ -12,7 +12,7 @@ function AboutUsWeb() {
     const [hover,setHover]=useState(false)
     return (
         <div className='About-container'>
-            {/* <div className="ourstory">
+            <div className="ourstory">
 
                 <img src={aboutimgcover} className='aboutbg1' />
 
@@ -21,14 +21,14 @@ function AboutUsWeb() {
 
                     <img src={hover ? abtmain : aboutimg} className={`aboutbgcoverImg ${hover ? 'hovered' : ''}`} />
 
-                    <div className="about-containt-Box">
+                    {/* <div className="about-containt-Box">
 
                         <div className="about-containt">
                             The National Social Summit, organized by the National Service Scheme(NSS) IIT Roorkee was established in 2016. It is a platform to come together to address the socio-economic problems persisting in the country. It brings together the socially active groups present all across the country. This social-fest includes various events such as Panel Discussions, Case Studies, Social Drama, Workshops, Model United Nations and Cultural shows.
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-            </div> */}
+            </div>
             <div className="ourstory2">
                 <div className="aboutbg2">
                     <img src={aboutbg2} className='aboutbg2Img' />

@@ -1,5 +1,5 @@
 .events-pop-up{
-    background-image: url('./images/image48.png');
+    /* background-image: url('../images/final_background.png'); */
     /* background-color: black; */
     background-position: center;
     background-repeat: no-repeat;
@@ -13,17 +13,52 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 row-gap: 3rem;
-margin-top: 20vh;
+margin-top: 12vh;
+    }
+    .sebutton{
+        /* display: inline-flex; */
+        /* margin-top: 25px; */
+        padding: 8px 22px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: linear-gradient(94deg, #028BA3 22.96%, #006E9B 98.15%);
+        box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        margin-left: 31vw;
+        font-family: ""Mulish"";
+        font-size: 17px;
+        font-weight: 500;
+        line-height: normal;
+        transition-property: all;
+        transition-duration: 250ms;
+        transition-timing-function: ease-in;
+    }
+    .sebutton:hover{
+        border: 2px solid #8FEFE9;
+        box-shadow: 4px 4px 16px 2px rgba(153, 238, 232, 0.5);
     }
 .events-pop-up-heading{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
+   display: flex;
+   flex-direction: row;
+
+   margin-left: 35vw;
+
     /* text-align: center; */
 
 }
-.events-pop-up-heading button{
-margin-left: 50vw;
+.events-pop-up-heading h1{
+    font-family: Mulish;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 99%; 
+/* color: white; */
+background: linear-gradient(184deg, #FFF 3.29%, #5DC1C2 176.52%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .events-pop-up-cards{
     width: 90%;
@@ -295,6 +330,9 @@ box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.50);
     body{
         overflow-x: hidden;
     }
+    .sebutton{
+        display: none;
+    }
     .events-pop-up{
         background: #041723;
 
@@ -307,6 +345,10 @@ align-items: center;
 justify-content: center;
 row-gap: 3rem;
 margin-top: 20vh;
+    }
+    .events-pop-up-heading{
+        margin-left: 0;
+        font-size: 30px;
     }
     .events-pop-up-cards{
         width: 100%;

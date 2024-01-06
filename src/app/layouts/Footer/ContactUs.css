@@ -1,11 +1,15 @@
+body{
+    background: #080808;
+z-index: -10000;
+}
 .Contact-container {
-    height: 60vh;
+    height: 50vh;
     /* width: 100vw; */
     display: flex;
     flex-direction: row;
     align-content: space-evenly;
-    background-color: #041723;
-    padding: 5vh 2vw 5vh 2vw;
+    background: #080808;
+    /* padding: 5vh 2vw 5vh 2vw; */
     
 }
 
@@ -13,7 +17,7 @@
     display: flex;
     flex-direction: column;
     width: 25vw;
-    height: 50vh;
+    height: 40vh;
     align-items: center;
     padding: 3%;
     gap: 50px;
@@ -74,6 +78,7 @@
     font-family: ""Mulish"";
     font-size: 20px;
     font-style: normal;
+    margin-top: 2vh;
     font-weight: 700;
     line-height: normal;
     width: 94%;
@@ -105,6 +110,8 @@
 .footerCol2 {
     display: flex;
     flex-direction: row;
+    color: #FFF;
+    text-decoration: none;
     width: 35vw;
     height: 50vh;
     gap: 10px;
@@ -116,6 +123,7 @@
     align-items: flex-start;
     gap: 16px;
     color: #FFF;
+    text-decoration: none;
     font-family: ""Mulish"";
     font-size: 16px;
     font-style: normal;
@@ -124,7 +132,10 @@
     width: 23vw;
     height: 38vh;
 }
-
+.col1 a{
+    text-decoration: none;
+    color: #FFF;
+}
 
 .footerCol3 {
     display: flex;

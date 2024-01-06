@@ -6,7 +6,7 @@ import mun from './images/image50.png'
 import Casestudy from './CaseStudy/Casestudy'
 import MUN from './MUN/MUN'
 import Nukkadnatak from './Nukkadnatak/Nukkadnatak'
-
+import {Link} from 'react-router-dom';
 
 export default function Events() {
 
@@ -30,8 +30,8 @@ export default function Events() {
   return (
     <div className='events-pop-up'>
       <div className='events-pop-up-heading'>
-        Events
-      {/* <button>View All</button> */}
+      <h1>Events </h1>  
+      <Link to="../../events"><button className="sebutton">View All</button></Link>
       </div>
       <div className="events-pop-up-cards">
         <div className="events-pop-up-cards-1">

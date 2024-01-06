@@ -6,7 +6,7 @@ import im3 from "./images/Instagram.png";
 
 import im4 from "./images/Linked-in.png";
 import { Link } from "react-router-dom";
-
+import im7 from "./images/Medium.png"
 import im5 from "./images/Twitter.png";
 import im6 from "./images/Gmail.png";
 function ContactUs() {
@@ -36,41 +36,44 @@ function ContactUs() {
           </p>
         </div>
         <div className="contactusBtn">
-          <button type="button" class="btn btn-primary">Contact Us</button>
+          <button type="button" class="btn btn-primary" onClick={()=>{window.open('mailto:nss@iitr.ac.in.com')}}>Contact Us</button>
         </div>
       </div>
       <div className="footerCol2">
         <div className="col1">
           <h4>About</h4>
-          <a>Our History</a>
-          <a>Blogs</a>
-          <a>Privacy Policy</a>
-          <a>Terms & Conditions</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/speakers">Speakers</a>
+          <a href="/partners">Partners</a>
         </div>
         <div className="col1">
           <h4>Information</h4>
-          <a>Site Map</a>
-          <a>FAQs</a>
-          <a>Privacy Policy</a>
-          <a>Terms & Conditions</a>
+          <a href="/">Site Map</a>
+          <a href="/">FAQs</a>
+          <a href="/">Privacy Policy</a>
+          <a href="/">Terms & Conditions</a>
         </div>
       </div>
       <div className="footerCol3">
       <div className="icon-box">
           <div className="icon">
-            <Link to="https://twitter.com/natsocialsummit?t=_E-S4iDRCvoqO3bGh4u6sw&s=08" ><img className='fabIcon' src={im5} /></Link>
+            <a href="https://twitter.com/natsocialsummit?t=_E-S4iDRCvoqO3bGh4u6sw&s=08" ><img className='fabIcon' src={im5} /></a>
           </div>
           <div className="icon">
-            <Link to="https://www.linkedin.com/company/national-social-summit"> <img className='fabIcon' src={im4} /></Link>
+            <a href="https://www.linkedin.com/company/national-social-summit"> <img className='fabIcon' src={im4} /></a>
           </div>
           <div className="icon">
-            <Link to="https://instagram.com/iitrsocialsummit?utm_medium=copy_link"> <img className='fabIcon' src={im3} /></Link>
+            <a href="https://instagram.com/iitrsocialsummit?utm_medium=copy_link"> <img className='fabIcon' src={im3} /></a>
           </div>
           <div className="icon">
-            <Link   to="https://m.facebook.com/iitrsocialsummit/"> <img className='fabIcon' src={im2} /></Link>
+            <a href="https://m.facebook.com/iitrsocialsummit/"> <img className='fabIcon' src={im2} /></a>
           </div>
           <div className="icon">
-            <a href="/"> <img className='fabIcon' src={im6} /></a>
+            <a href="mailto:nss@iitr.ac.in.com"> <img className='fabIcon' src={im6} /></a>
+          </div>
+          <div className="icon">
+            <a href="https://medium.com/@nssiitr"> <img className='fabIcon' src={im7} /></a>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 .mob-Aboutcontainer {
     width: 99vw;
-    height: 50vh;
+    height: 90vh;
 }
 
 .mob-ourstory {
@@ -26,17 +26,17 @@
     z-index: 1;
 }
 
-/* .mob-bg {
+.mob-bg {
     width: 100%;
-    height: 50%;
-}
+    height: 60%;
+} 
 
 .mob-imgbg {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 2;
-} */
+} 
 
 .mob-aboutbgcoverImg {
     width: 100%;
@@ -73,7 +73,7 @@
 .mob-aboutcontaintBox {
     width: 100%;
     height: 50%;
-    padding: 3%;
+    padding: 2%;
 }
 
 
