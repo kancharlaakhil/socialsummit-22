@@ -1,5 +1,7 @@
 body{
     overflow-x: hidden;
+        background: #080808;
+    z-index: -10000;
 }
 .eve-page-eventspage-pop-up{
     background-image: url("../../../Home/images/final_background.png");

@@ -2,6 +2,7 @@ import React , {useState} from "react";
 import { useHistory } from 'react-router-dom'
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
+import Header from "../layouts/header/index";
 
 import { AuthActionType } from '../../redux/actions/type'
 import { ProfileCompletionAction } from '../../redux/actions/AuthAction'
@@ -13,6 +14,8 @@ function ProfileCompletionForm({user, updateMe}) {
   const history = useHistory()
 
   return (
+    <>
+    <Header/>
     <div className="th-registration">
       <div className="row" style={{ paddingTop: "8rem" }}>
         <div class="th-register-col-2-mobile col-md-7 col-sm-12 th-register-right-mobile mb-4">
@@ -103,6 +106,7 @@ function ProfileCompletionForm({user, updateMe}) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

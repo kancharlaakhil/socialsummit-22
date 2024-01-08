@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import nsslogin from "../assets/images/nsslogin1.png";
 import { AuthActionType } from '../../redux/actions/type'
 import { SignupAuthAction } from '../../redux/actions/AuthAction'
+import Header from "../layouts/header/index";
 
 function SignUpForm({user, signup}) {
   const [userState, setUserState] = useState({})
@@ -18,7 +19,8 @@ function SignUpForm({user, signup}) {
     setPasswordShown(!passwordShown);
   };
   return (
-    
+    <>
+    <Header/>
       <div className="regmaindiv" style={{ paddingTop: "8rem" }}>
         <div id="leftregdiv">
         <img src={nsslogin} id="regimg" alt="img" />
@@ -178,6 +180,7 @@ function SignUpForm({user, signup}) {
           </div>
         </div>
       </div>
+    </>
   );
 }
 

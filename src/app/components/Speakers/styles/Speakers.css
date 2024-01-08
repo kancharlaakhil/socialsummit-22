@@ -1,3 +1,7 @@
+body{
+  background: #080808;
+z-index: -10000;
+}
 .speakersPage {
   width: 100vw;
   /* margin: 0 0; */

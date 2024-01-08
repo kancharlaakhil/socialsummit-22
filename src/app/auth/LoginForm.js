@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import nsslogin from "../assets/images/nsslogin1.png";
 import { LoginAuthAction } from '../../redux/actions/AuthAction'
+import Header from "../layouts/header/index";
 
 function LoginForm(props) {
 
@@ -17,6 +18,7 @@ function LoginForm(props) {
   };
   return (
 <>
+<Header/>
     <div className="th-login" id="maindiv1">
       <div className="login" id="mainlogdiv" style={{ paddingTop: "8rem" }}>  
         <div class="th-register-col-2  th-register-right-mobile  login_img ">
