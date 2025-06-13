@@ -24,7 +24,6 @@ ReactDOM.render(
       <App />
       </ContextProvider>
     </Provider>
-    
   </React.StrictMode>,
   document.getElementById("root")
 );
